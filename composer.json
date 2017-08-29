@@ -1,0 +1,34 @@
+{
+  "name": "localheinz/repository",
+  "description": "Your description here.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andreas Möller",
+      "email": "am@localheinz.com"
+    }
+  ],
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^7.1"
+  },
+  "require-dev": {
+    "codeclimate/php-test-reporter": "0.4.4",
+    "localheinz/php-cs-fixer-config": "~1.4.0",
+    "phpunit/phpunit": "^6.2.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Localheinz\\Repository\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Localheinz\\Repository\\Test\\": "test/"
+    }
+  }
+}
