@@ -1,4 +1,4 @@
-.PHONY: composer coverage cs database it test
+.PHONY: composer coverage cs it test
 
 it: cs test
 
