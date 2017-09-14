@@ -34,7 +34,6 @@ install:
 
 before_script:
   - mkdir -p "$HOME/.php-cs-fixer"
-  - mkdir -p build/logs
 
 script:
   - if [[ "$WITH_CS" == "true" ]]; then vendor/bin/php-cs-fixer fix --config=.php_cs --diff --dry-run --verbose; fi
