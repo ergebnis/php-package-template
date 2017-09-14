@@ -33,7 +33,7 @@ install:
   - if [[ "$WITH_HIGHEST" == "true" ]]; then composer update; fi
 
 before_script:
-  - mkdir -p "$HOME/.php-cs-fixer"
+  - mkdir -p $HOME/.php-cs-fixer
 
 script:
   - if [[ "$WITH_CS" == "true" ]]; then vendor/bin/php-cs-fixer fix --config=.php_cs --diff --dry-run --verbose; fi
