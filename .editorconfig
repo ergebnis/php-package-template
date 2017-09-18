@@ -13,5 +13,8 @@ trim_trailing_whitespace = false
 [*.php]
 indent_size = 4
 
+[*.xml]
+indent_size = 4
+
 [Makefile]
 indent_style = tab
