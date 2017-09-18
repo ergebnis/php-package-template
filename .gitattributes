@@ -1,5 +1,5 @@
-/.travis/           export-ignore
 /.github/           export-ignore
+/.travis/           export-ignore
 /test/              export-ignore
 /.codeclimate.yml   export-ignore
 /.editorconfig      export-ignore
