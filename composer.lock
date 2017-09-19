@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "893c8bd6df13033961d1cf19202ca654",
+    "content-hash": "c1230a092238346f4298f05a9b85649e",
     "packages": [],
     "packages-dev": [
         {
@@ -619,16 +619,16 @@
         },
         {
             "name": "localheinz/test-util",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/test-util.git",
-                "reference": "ce5dd5f34a8a987e722b77fb02e643e53377e7ca"
+                "reference": "60a8a05b0e5fbe3a3ad350979d593c3f7baa8437"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/test-util/zipball/ce5dd5f34a8a987e722b77fb02e643e53377e7ca",
-                "reference": "ce5dd5f34a8a987e722b77fb02e643e53377e7ca",
+                "url": "https://api.github.com/repos/localheinz/test-util/zipball/60a8a05b0e5fbe3a3ad350979d593c3f7baa8437",
+                "reference": "60a8a05b0e5fbe3a3ad350979d593c3f7baa8437",
                 "shasum": ""
             },
             "require": {
@@ -664,7 +664,7 @@
                 "phpunit",
                 "test"
             ],
-            "time": "2017-09-16T16:08:32+00:00"
+            "time": "2017-09-19T11:36:23+00:00"
         },
         {
             "name": "myclabs/deep-copy",
