@@ -14,7 +14,7 @@
     "sort-packages": true
   },
   "require": {
-    "php": "^7.1"
+    "php": "^7.0"
   },
   "require-dev": {
     "codeclimate/php-test-reporter": "0.4.4",

@@ -20,7 +20,7 @@ jobs:
   include:
     - stage: Style
 
-      php: 7.1
+      php: 7.0
 
       before_install:
         - source .travis/xdebug.sh
@@ -41,7 +41,7 @@ jobs:
 
       stage: Test
 
-      php: 7.1
+      php: 7.0
 
       env: WITH_LOWEST=true
 
@@ -65,6 +65,24 @@ jobs:
 
       after_success:
         - if [[ "$WITH_COVERAGE" == "true" ]]; then vendor/bin/test-reporter --coverage-report=build/logs/clover.xml; fi
+
+    - <<: *TEST
+
+      php: 7.0
+
+      env: WITH_LOCKED=true
+
+    - <<: *TEST
+
+      php: 7.0
+
+      env: WITH_HIGHEST=true
+
+    - <<: *TEST
+
+      php: 7.1
+
+      env: WITH_LOWEST=true
 
     - <<: *TEST
 
