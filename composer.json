@@ -20,7 +20,7 @@
     "codeclimate/php-test-reporter": "0.4.4",
     "localheinz/php-cs-fixer-config": "~1.6.1",
     "localheinz/test-util": "0.2.1",
-    "phpunit/phpunit": "^6.2.4"
+    "phpunit/phpunit": "^6.3.1"
   },
   "autoload": {
     "psr-4": {
