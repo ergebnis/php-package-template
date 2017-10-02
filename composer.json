@@ -18,7 +18,7 @@
   },
   "require-dev": {
     "codeclimate/php-test-reporter": "0.4.4",
-    "localheinz/php-cs-fixer-config": "~1.6.1",
+    "localheinz/php-cs-fixer-config": "~1.6.2",
     "localheinz/test-util": "0.2.2",
     "phpunit/phpunit": "^6.3.1"
   },
