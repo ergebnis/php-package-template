@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "92ef48853051dfa55bfead3996e8b841",
+    "content-hash": "0c1237c604817e18fdc2ad5cb09f1cc5",
     "packages": [],
     "packages-dev": [
         {
@@ -619,20 +619,20 @@
         },
         {
             "name": "localheinz/test-util",
-            "version": "0.2.1",
+            "version": "0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/test-util.git",
-                "reference": "60a8a05b0e5fbe3a3ad350979d593c3f7baa8437"
+                "reference": "ec0e9201b0be8de77b7bcd8c7bdbe847a828e70f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/test-util/zipball/60a8a05b0e5fbe3a3ad350979d593c3f7baa8437",
-                "reference": "60a8a05b0e5fbe3a3ad350979d593c3f7baa8437",
+                "url": "https://api.github.com/repos/localheinz/test-util/zipball/ec0e9201b0be8de77b7bcd8c7bdbe847a828e70f",
+                "reference": "ec0e9201b0be8de77b7bcd8c7bdbe847a828e70f",
                 "shasum": ""
             },
             "require": {
-                "fzaninotto/faker": "^1.0.0",
+                "fzaninotto/faker": "^1.7.1",
                 "php": "^7.0",
                 "zendframework/zend-file": "^2.7.1"
             },
@@ -664,7 +664,7 @@
                 "phpunit",
                 "test"
             ],
-            "time": "2017-09-19T11:36:23+00:00"
+            "time": "2017-10-02T11:49:14+00:00"
         },
         {
             "name": "myclabs/deep-copy",
