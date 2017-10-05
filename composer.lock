@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1bd13796c4f2c68108e18778833baf2f",
+    "content-hash": "deaea38a7819efbe14819c6694f8f2d0",
     "packages": [],
     "packages-dev": [
         {
@@ -572,6 +572,49 @@
             "time": "2014-01-28T22:29:15+00:00"
         },
         {
+            "name": "localheinz/classy",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/localheinz/classy.git",
+                "reference": "4736201da461f3ab28e2859796819fe1504974a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/localheinz/classy/zipball/4736201da461f3ab28e2859796819fe1504974a7",
+                "reference": "4736201da461f3ab28e2859796819fe1504974a7",
+                "shasum": ""
+            },
+            "require": {
+                "localheinz/token": "0.2.0",
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "0.4.4",
+                "localheinz/php-cs-fixer-config": "~1.6.2",
+                "localheinz/test-util": "0.2.2",
+                "phpunit/phpunit": "^6.3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Localheinz\\Classy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Möller",
+                    "email": "am@localheinz.com"
+                }
+            ],
+            "description": "Provides a way to collect classy constructs from source or a directory.",
+            "time": "2017-10-05T11:53:14+00:00"
+        },
+        {
             "name": "localheinz/php-cs-fixer-config",
             "version": "1.6.2",
             "source": {
@@ -614,27 +657,27 @@
         },
         {
             "name": "localheinz/test-util",
-            "version": "0.2.2",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/test-util.git",
-                "reference": "ec0e9201b0be8de77b7bcd8c7bdbe847a828e70f"
+                "reference": "7ad1b3e0b00558e0fbe013403bdd99b1b6720bb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/test-util/zipball/ec0e9201b0be8de77b7bcd8c7bdbe847a828e70f",
-                "reference": "ec0e9201b0be8de77b7bcd8c7bdbe847a828e70f",
+                "url": "https://api.github.com/repos/localheinz/test-util/zipball/7ad1b3e0b00558e0fbe013403bdd99b1b6720bb3",
+                "reference": "7ad1b3e0b00558e0fbe013403bdd99b1b6720bb3",
                 "shasum": ""
             },
             "require": {
                 "fzaninotto/faker": "^1.7.1",
-                "php": "^7.0",
-                "zendframework/zend-file": "^2.7.1"
+                "localheinz/classy": "0.1.0",
+                "php": "^7.0"
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "0.4.4",
-                "localheinz/php-cs-fixer-config": "~1.5.1",
-                "phpunit/phpunit": "^6.2.4"
+                "localheinz/php-cs-fixer-config": "~1.6.2",
+                "phpunit/phpunit": "^6.3.1"
             },
             "type": "library",
             "autoload": {
@@ -659,7 +702,49 @@
                 "phpunit",
                 "test"
             ],
-            "time": "2017-10-02T11:49:14+00:00"
+            "time": "2017-10-05T16:21:24+00:00"
+        },
+        {
+            "name": "localheinz/token",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/localheinz/token.git",
+                "reference": "965142e924330fb6778f42150dc65938b1988779"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/localheinz/token/zipball/965142e924330fb6778f42150dc65938b1988779",
+                "reference": "965142e924330fb6778f42150dc65938b1988779",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "0.4.4",
+                "localheinz/php-cs-fixer-config": "~1.6.2",
+                "localheinz/test-util": "0.2.2",
+                "phpunit/phpunit": "^6.3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Localheinz\\Token\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Möller",
+                    "email": "am@localheinz.com"
+                }
+            ],
+            "description": "Provides a simple abstraction for a token and a sequence of tokens.",
+            "time": "2017-10-04T21:52:24+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -3091,108 +3176,6 @@
                 "validate"
             ],
             "time": "2016-11-23T20:04:58+00:00"
-        },
-        {
-            "name": "zendframework/zend-file",
-            "version": "2.7.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zendframework/zend-file.git",
-                "reference": "888fd4852432ee61ffd48a66b6812387b4f83c02"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-file/zipball/888fd4852432ee61ffd48a66b6812387b4f83c02",
-                "reference": "888fd4852432ee61ffd48a66b6812387b4f83c02",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5 || ^7.0",
-                "zendframework/zend-stdlib": "^2.7 || ^3.0"
-            },
-            "require-dev": {
-                "fabpot/php-cs-fixer": "1.7.*",
-                "phpunit/phpunit": "~4.0",
-                "zendframework/zend-coding-standard": "~1.0.0",
-                "zendframework/zend-filter": "^2.6.1",
-                "zendframework/zend-i18n": "^2.6",
-                "zendframework/zend-progressbar": "^2.5.2",
-                "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3",
-                "zendframework/zend-session": "^2.6.2",
-                "zendframework/zend-validator": "^2.6"
-            },
-            "suggest": {
-                "zendframework/zend-filter": "Zend\\Filter component",
-                "zendframework/zend-i18n": "Zend\\I18n component",
-                "zendframework/zend-validator": "Zend\\Validator component"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.7-dev",
-                    "dev-develop": "2.8-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zend\\File\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "homepage": "https://github.com/zendframework/zend-file",
-            "keywords": [
-                "file",
-                "zf2"
-            ],
-            "time": "2017-01-11T17:07:45+00:00"
-        },
-        {
-            "name": "zendframework/zend-stdlib",
-            "version": "3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zendframework/zend-stdlib.git",
-                "reference": "debedcfc373a293f9250cc9aa03cf121428c8e78"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/debedcfc373a293f9250cc9aa03cf121428c8e78",
-                "reference": "debedcfc373a293f9250cc9aa03cf121428c8e78",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0"
-            },
-            "require-dev": {
-                "athletic/athletic": "~0.1",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "^2.6.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1-dev",
-                    "dev-develop": "3.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zend\\Stdlib\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "homepage": "https://github.com/zendframework/zend-stdlib",
-            "keywords": [
-                "stdlib",
-                "zf2"
-            ],
-            "time": "2016-09-13T14:38:50+00:00"
         }
     ],
     "aliases": [],
