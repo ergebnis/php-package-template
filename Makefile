@@ -1,6 +1,9 @@
-.PHONY: composer coverage cs it test
+.PHONY: bench composer coverage cs it test
 
-it: cs test
+it: cs test bench
+
+bench: composer
+	vendor/bin/phpbench run --report=aggregate
 
 composer:
 	composer self-update
