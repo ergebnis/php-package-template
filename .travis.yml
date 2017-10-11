@@ -26,7 +26,7 @@ jobs:
         - source .travis/xdebug.sh
         - xdebug-disable
         - composer validate
-        - composer config github-oauth.github.com $GITHUB_TOKEN
+        - if [[ -n "$GITHUB_TOKEN" ]]; then composer config github-oauth.github.com $GITHUB_TOKEN; fi
 
       install:
         - composer install
@@ -49,7 +49,7 @@ jobs:
         - source .travis/xdebug.sh
         - xdebug-disable
         - composer validate
-        - composer config github-oauth.github.com $GITHUB_TOKEN
+        - if [[ -n "$GITHUB_TOKEN" ]]; then composer config github-oauth.github.com $GITHUB_TOKEN; fi
 
       install:
         - if [[ "$WITH_LOWEST" == "true" ]]; then composer update --prefer-lowest; fi
@@ -63,7 +63,7 @@ jobs:
         - vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
 
       after_success:
-        - if [[ "$WITH_COVERAGE" == "true" ]]; then vendor/bin/test-reporter --coverage-report=build/logs/clover.xml; fi
+        - if [[ "$WITH_COVERAGE" == "true" && -n "$CODECLIMATE_REPO_TOKEN" ]]; then vendor/bin/test-reporter --coverage-report=build/logs/clover.xml; fi
 
     - <<: *TEST
 
