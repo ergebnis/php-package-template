@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "29abe60dcdce0a4775f7385aab9c9513",
+    "content-hash": "b63c0bcf83858aeafb94ae2148638d33",
     "packages": [],
     "packages-dev": [
         {
@@ -743,16 +743,16 @@
         },
         {
             "name": "localheinz/test-util",
-            "version": "0.3.1",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/test-util.git",
-                "reference": "9b7515305250fba79ac7351448d4327be0b10c11"
+                "reference": "491a9d125681ef398ab9dbf5eb8c74164f456f20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/test-util/zipball/9b7515305250fba79ac7351448d4327be0b10c11",
-                "reference": "9b7515305250fba79ac7351448d4327be0b10c11",
+                "url": "https://api.github.com/repos/localheinz/test-util/zipball/491a9d125681ef398ab9dbf5eb8c74164f456f20",
+                "reference": "491a9d125681ef398ab9dbf5eb8c74164f456f20",
                 "shasum": ""
             },
             "require": {
@@ -788,7 +788,7 @@
                 "phpunit",
                 "test"
             ],
-            "time": "2017-10-10T06:54:57+00:00"
+            "time": "2017-10-22T12:16:23+00:00"
         },
         {
             "name": "lstrojny/functional-php",
@@ -1063,7 +1063,7 @@
             ],
             "authors": [
                 {
-                    "name": "Padraic Brady",
+                    "name": "Pádraic Brady",
                     "email": "padraic.brady@gmail.com",
                     "homepage": "http://blog.astrumfutura.com"
                 }
