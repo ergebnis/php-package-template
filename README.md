@@ -1,9 +1,7 @@
 # repository
 
 [![Build Status](https://travis-ci.org/localheinz/repository.svg?branch=php-library)](https://travis-ci.org/localheinz/repository)
-[![Code Climate](https://codeclimate.com/github/localheinz/repository/badges/gpa.svg)](https://codeclimate.com/github/localheinz/repository)
-[![Test Coverage](https://codeclimate.com/github/localheinz/repository/badges/coverage.svg)](https://codeclimate.com/github/localheinz/repository/coverage)
-[![Issue Count](https://codeclimate.com/github/localheinz/repository/badges/issue_count.svg)](https://codeclimate.com/github/localheinz/repository)
+[![codecov](https://codecov.io/gh/localheinz/repository/branch/php-library/graph/badge.svg)](https://codecov.io/gh/localheinz/repository)
 [![Latest Stable Version](https://poser.pugx.org/localheinz/repository/v/stable)](https://packagist.org/packages/localheinz/repository)
 [![Total Downloads](https://poser.pugx.org/localheinz/repository/downloads)](https://packagist.org/packages/localheinz/repository)
 

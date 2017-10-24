@@ -5,7 +5,6 @@ sudo: false
 env:
   global:
     - secure: "Y7c8m+GHtRoCWDtWnxs1NKAmWe5tljdDqY57E8rrOG5X1sbKdx5x3rYRNK8XaaMRms91iVQF6deMzel5nH9gW0BkuU1nW0Q2FhHzLWwD97Xy/xxqbgE3K9A9p2pAzb5Ifxv7qSBnn4Oq/HIIEp+phoGXOvbrerklJnzhBO7JrxrrVHZ8SWuzZimcsN675G1uk9Kqq5q9AxmUZBDZleMszifxmYEGVkosp7Wq6rKksOlFlZlzsQw3OfqWwkFMHMNHLc1lYNfAQysTdvB4ef1e/4gsABVr0yQNUqfT+aBSRnnHzZns06Hp4Yr88Dad/K2Rddh8kO/3A2QXw7Z+mN11FAaHI4pu9Gk8S8zN7lAcK+A5+QMht5HZw1A9i9DQO0jClWBFxQ2WEi+hq2Y9HbnOSlIBi+ggeIGnqIzLY0Zv4jWmc3CO4apfHJa4kmkGXMUn2bfimfNUUrr04Ec/ojGZjGYRMnHNtLYUZZpR0gBggU2Fa0lfxbXGZ5tLZa3KUo6obULZuIlqDTYAUoq6w6+OH2/1ratSekDp9Vjn2DJgzaoYnmO4DPXvLvMa6yD2HFDjXs8Qh/3cS9twUJzNoSB+IDdM9jZlo8SloedM/QBjNmJD79h1Wv5y/Bl1XhHmSuykeG//7gwU+6uU6iM4URmJsHPx4St6WinIV1iYF2eQ/jo="
-    - secure: "GkJwv7sv3G/Q9SsvmBG0CDv3nPDMjla/gvKLtCbfyjdfd35VS6jLYulWOQowsUtxgIOxMftzvd5L4Qoz9SXozzN2WWf5whwfWypyzSiPrje8gskBoFYVflQkSfhUUnGnrU0mI526N0W0ZpUT6cdJmGI3c0lyBIgFHbI4xoiSOlV5q+BiJaKqR/aXXDNkwAupzL+q7L3G0zD3njM+QNNlN8tt03QEZYTY3Rapf7wRJxVLCJ3NYXUx4Z+ljKs36+No5s+dCj6xQz4n+J9toSlNiUMG8btbmB7gW36DWyHIaysjdkwxHxeyj+ti6zEqYIiXAmmw0P9zyqP1j3KFgNkD3NWndlu+OuA4Tnuw6jZXZRApbtKCHXuHqLRRz6BfPmZWKZy6tEVNfPHj+eCQl2nPYHL2NHb5zgu+QLuYwvdtfsG28xw6/cE9/j68y8hr3BMzrGGc8TBUJxXy2jXC5VIvAAqs6n3dav8OLIx3favHrlple4JwtBeyeHz0LE7wFTQhw2lgDHREH3wBn1qJ3msOnJZZp/mNyxxjlGwAfhw/Z9FQSwr9VZuFUN6PIjr17W9ykso04tPCpC0QWSyhzxNZvMALOd5eIh9/8deWxZ2J7OsFFiOep7JP42d4/yI+/CReiOqG5C2hXken6OIw0K2p8Xx65UFN4QbpEAhqBsko5MY="
 
 cache:
   directories:
@@ -63,7 +62,7 @@ jobs:
         - vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
 
       after_success:
-        - if [[ "$WITH_COVERAGE" == "true" && -n "$CODECLIMATE_REPO_TOKEN" ]]; then vendor/bin/test-reporter --coverage-report=build/logs/clover.xml; fi
+        - if [[ "$WITH_COVERAGE" == "true" ]]; then bash <(curl -s https://codecov.io/bash); fi
 
     - <<: *TEST
 
