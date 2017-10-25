@@ -65,7 +65,7 @@ You probably want to adjust
 * `description`
 * `author`
 * `license`
-* `autoload` and autoload-dev` configuration
+* `autoload` and `autoload-dev` configuration
 
 For details see https://getcomposer.org/doc/04-schema.md.
 
