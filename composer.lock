@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7606f35854a9375873990f2c6b72f0a8",
+    "content-hash": "844196ad4deec3c87a12e433bcc89f61",
     "packages": [],
     "packages-dev": [
         {
@@ -333,16 +333,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v2.8.2",
+            "version": "v2.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "b331701944cbe492e466d2b46b2880068803eb08"
+                "reference": "d9ec9b848cbf930c31dea3693d34dbd8b9c95295"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/b331701944cbe492e466d2b46b2880068803eb08",
-                "reference": "b331701944cbe492e466d2b46b2880068803eb08",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/d9ec9b848cbf930c31dea3693d34dbd8b9c95295",
+                "reference": "d9ec9b848cbf930c31dea3693d34dbd8b9c95295",
                 "shasum": ""
             },
             "require": {
@@ -409,7 +409,7 @@
                 }
             ],
             "description": "A tool to automatically fix PHP code style",
-            "time": "2017-11-19T22:51:25+00:00"
+            "time": "2017-11-26T20:45:16+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -554,20 +554,20 @@
         },
         {
             "name": "localheinz/php-cs-fixer-config",
-            "version": "1.7.2",
+            "version": "1.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/php-cs-fixer-config.git",
-                "reference": "306d8484074b3afc31ee0476e51cfe2a8280ac66"
+                "reference": "7cd6b80cefa4333ef6ff3864859a6ef7ff91582a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/php-cs-fixer-config/zipball/306d8484074b3afc31ee0476e51cfe2a8280ac66",
-                "reference": "306d8484074b3afc31ee0476e51cfe2a8280ac66",
+                "url": "https://api.github.com/repos/localheinz/php-cs-fixer-config/zipball/7cd6b80cefa4333ef6ff3864859a6ef7ff91582a",
+                "reference": "7cd6b80cefa4333ef6ff3864859a6ef7ff91582a",
                 "shasum": ""
             },
             "require": {
-                "friendsofphp/php-cs-fixer": "~2.8.2",
+                "friendsofphp/php-cs-fixer": "~2.8.3",
                 "php": "^5.6 || ^7.0"
             },
             "require-dev": {
@@ -590,7 +590,7 @@
                 }
             ],
             "description": "Provides a configuration factory and multiple rule sets for friendsofphp/php-cs-fixer.",
-            "time": "2017-11-20T07:11:11+00:00"
+            "time": "2017-11-27T13:20:56+00:00"
         },
         {
             "name": "localheinz/test-util",
