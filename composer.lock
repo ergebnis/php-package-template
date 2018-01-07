@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "57bb5db1e3badef70a6b1d030ff15f86",
+    "content-hash": "f0b2653ad0dad046944527c0db794841",
     "packages": [],
     "packages-dev": [
         {
@@ -655,16 +655,16 @@
         },
         {
             "name": "localheinz/test-util",
-            "version": "0.6.0",
+            "version": "0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/test-util.git",
-                "reference": "505be001d620a9f4d2de2a607597b1118b566289"
+                "reference": "255edaec4315ee337edb2fba64331a2b1c5e3cf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/test-util/zipball/505be001d620a9f4d2de2a607597b1118b566289",
-                "reference": "505be001d620a9f4d2de2a607597b1118b566289",
+                "url": "https://api.github.com/repos/localheinz/test-util/zipball/255edaec4315ee337edb2fba64331a2b1c5e3cf6",
+                "reference": "255edaec4315ee337edb2fba64331a2b1c5e3cf6",
                 "shasum": ""
             },
             "require": {
@@ -700,7 +700,7 @@
                 "phpunit",
                 "test"
             ],
-            "time": "2017-12-24T20:56:08+00:00"
+            "time": "2018-01-01T18:11:24+00:00"
         },
         {
             "name": "lstrojny/functional-php",
