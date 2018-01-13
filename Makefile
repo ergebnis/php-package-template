@@ -1,6 +1,6 @@
-.PHONY: bench composer coverage cs infection it test
+.PHONY: bench composer coverage cs infection it stan test
 
-it: cs test bench
+it: cs stan test bench
 
 bench: composer
 	vendor/bin/phpbench run --report=aggregate
@@ -18,6 +18,9 @@ cs: composer
 
 infection:
 	vendor/bin/infection --min-covered-msi=80 --min-msi=80
+
+stan:
+	vendor/bin/phpstan analyse -l 7 src
 
 test: composer
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
