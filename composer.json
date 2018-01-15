@@ -1,7 +1,7 @@
 {
   "name": "localheinz/repository",
-  "description": "Your description here.",
   "type": "library",
+  "description": "Your description here.",
   "license": "MIT",
   "authors": [
     {
@@ -9,10 +9,6 @@
       "email": "am@localheinz.com"
     }
   ],
-  "config": {
-    "preferred-install": "dist",
-    "sort-packages": true
-  },
   "require": {
     "php": "^7.0"
   },
@@ -23,6 +19,10 @@
     "phpbench/phpbench": "~0.14.0",
     "phpstan/phpstan": "~0.9.1",
     "phpunit/phpunit": "^6.5.5"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true
   },
   "autoload": {
     "psr-4": {
