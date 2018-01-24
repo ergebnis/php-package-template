@@ -1,19 +1,14 @@
-.PHONY: bench composer coverage cs infection it stan test
+.PHONY: bench coverage cs infection it stan test
 
 it: cs stan test bench
 
-bench: composer
+bench: vendor
 	vendor/bin/phpbench run --report=aggregate
 
-composer:
-	composer self-update
-	composer validate
-	composer install
-
-coverage: composer
+coverage: vendor
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-text
 
-cs: composer
+cs: vendor
 	vendor/bin/php-cs-fixer fix --config=.php_cs --diff --verbose
 
 infection:
@@ -22,6 +17,11 @@ infection:
 stan:
 	vendor/bin/phpstan analyse -l 7 src
 
-test: composer
+test: vendor
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
 	vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
+
+vendor: composer.json composer.lock
+	composer self-update
+	composer validate
+	composer install
