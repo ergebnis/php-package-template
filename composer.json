@@ -2,6 +2,7 @@
   "name": "localheinz/repository",
   "type": "library",
   "description": "Your description here.",
+  "homepage": "https://github.com/localheinz/repository",
   "license": "MIT",
   "authors": [
     {
@@ -33,5 +34,9 @@
     "psr-4": {
       "Localheinz\\Repository\\Test\\": "test/"
     }
+  },
+  "support": {
+    "issues": "https://github.com/localheinz/repository/issues",
+    "source": "https://github.com/localheinz/repository"
   }
 }
