@@ -14,7 +14,7 @@ cs: vendor
 infection:
 	vendor/bin/infection --min-covered-msi=80 --min-msi=80
 
-stan:
+stan: vendor
 	vendor/bin/phpstan analyse --level 7 src test
 
 test: vendor
