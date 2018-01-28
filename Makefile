@@ -15,7 +15,7 @@ infection:
 	vendor/bin/infection --min-covered-msi=80 --min-msi=80
 
 stan:
-	vendor/bin/phpstan analyse -l 7 src
+	vendor/bin/phpstan analyse --level 7 src test
 
 test: vendor
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
