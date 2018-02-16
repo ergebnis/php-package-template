@@ -52,7 +52,7 @@ jobs:
         - composer install
 
       script:
-        - vendor/bin/phpstan analyse --level=max src test
+        - vendor/bin/phpstan analyse --level=max src
 
     - &TEST
 
