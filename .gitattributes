@@ -9,3 +9,4 @@
 /infection.json     export-ignore
 /Makefile           export-ignore
 /phpbench.json      export-ignore
+/phpstan.neon       export-ignore
