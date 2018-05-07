@@ -70,9 +70,9 @@ jobs:
         - if [[ -n "$GITHUB_TOKEN" ]]; then composer config github-oauth.github.com $GITHUB_TOKEN; fi
 
       install:
-        - if [[ "$WITH_LOWEST" == "true" ]]; then rm composer.lock && composer update --prefer-lowest; fi
+        - if [[ "$WITH_LOWEST" == "true" ]]; then composer update --prefer-lowest; fi
         - if [[ "$WITH_LOCKED" == "true" ]]; then composer install; fi
-        - if [[ "$WITH_HIGHEST" == "true" ]]; then rm composer.lock && composer update; fi
+        - if [[ "$WITH_HIGHEST" == "true" ]]; then composer update; fi
 
       script:
         - if [[ "$WITH_COVERAGE" == "true" ]]; then xdebug-enable; fi
