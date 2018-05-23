@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "30d4f2d07b3efd5582cb62d09f0deb21",
+    "content-hash": "c42dc3ab9ccc2a3a03aa9f4f52a7dca1",
     "packages": [],
     "packages-dev": [
         {
@@ -725,16 +725,16 @@
         },
         {
             "name": "localheinz/composer-normalize",
-            "version": "0.7.0",
+            "version": "0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/composer-normalize.git",
-                "reference": "10632f2c53d4fd06e9031a0d616078de7868755c"
+                "reference": "5dd2a43de32fa45d982326d271a12b0b1ea5e6be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/composer-normalize/zipball/10632f2c53d4fd06e9031a0d616078de7868755c",
-                "reference": "10632f2c53d4fd06e9031a0d616078de7868755c",
+                "url": "https://api.github.com/repos/localheinz/composer-normalize/zipball/5dd2a43de32fa45d982326d271a12b0b1ea5e6be",
+                "reference": "5dd2a43de32fa45d982326d271a12b0b1ea5e6be",
                 "shasum": ""
             },
             "require": {
@@ -746,7 +746,7 @@
             "require-dev": {
                 "composer/composer": "^1.1.0",
                 "infection/infection": "^0.8.1",
-                "localheinz/php-cs-fixer-config": "~1.11.0",
+                "localheinz/php-cs-fixer-config": "~1.13.1",
                 "localheinz/test-util": "0.6.1",
                 "mikey179/vfsstream": "^1.6.5",
                 "phpstan/phpstan": "~0.9.2",
@@ -779,7 +779,7 @@
                 "normalizer",
                 "plugin"
             ],
-            "time": "2018-04-07T08:23:10+00:00"
+            "time": "2018-04-24T13:26:04+00:00"
         },
         {
             "name": "localheinz/json-normalizer",
@@ -1825,7 +1825,7 @@
             ],
             "authors": [
                 {
-                    "name": "Padraic Brady",
+                    "name": "Pádraic Brady",
                     "email": "padraic.brady@gmail.com",
                     "homepage": "http://blog.astrumfutura.com"
                 }
