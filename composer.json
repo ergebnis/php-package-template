@@ -21,7 +21,7 @@
     "phpbench/phpbench": "~0.14.0",
     "phpstan/phpstan": "~0.10.1",
     "phpstan/phpstan-strict-rules": "~0.10.0",
-    "phpunit/phpunit": "^7.2.2"
+    "phpunit/phpunit": "^7.2.7"
   },
   "config": {
     "preferred-install": "dist",
