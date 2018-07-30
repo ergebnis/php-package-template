@@ -18,6 +18,7 @@ stan: vendor
 	vendor/bin/phpstan analyse --configuration=phpstan.neon --level=max src
 
 test: vendor
+	vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
 	vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
 
