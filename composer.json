@@ -19,7 +19,7 @@
     "localheinz/php-cs-fixer-config": "~1.14.1",
     "localheinz/test-util": "~0.7.0",
     "phpbench/phpbench": "~0.14.0",
-    "phpstan/phpstan": "~0.10.2",
+    "phpstan/phpstan": "~0.10.3",
     "phpstan/phpstan-strict-rules": "~0.10.1",
     "phpunit/phpunit": "^7.3.1"
   },
