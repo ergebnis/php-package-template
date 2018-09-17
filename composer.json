@@ -14,7 +14,7 @@
     "php": "^7.1"
   },
   "require-dev": {
-    "infection/infection": "~0.10.0",
+    "infection/infection": "~0.10.5",
     "localheinz/composer-normalize": "~0.8.0",
     "localheinz/php-cs-fixer-config": "~1.15.0",
     "localheinz/test-util": "~0.7.0",
