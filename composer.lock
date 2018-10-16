@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "357f0902811a286c934e1bc05c4c05e8",
+    "content-hash": "9f431dd76c94db4f35091e4579f38331",
     "packages": [],
     "packages-dev": [
         {
@@ -794,32 +794,34 @@
         },
         {
             "name": "localheinz/composer-normalize",
-            "version": "0.8.0",
+            "version": "0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/composer-normalize.git",
-                "reference": "5dd2a43de32fa45d982326d271a12b0b1ea5e6be"
+                "reference": "cd7c78c32ca8352e842f4cd8423e7091af27e87f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/composer-normalize/zipball/5dd2a43de32fa45d982326d271a12b0b1ea5e6be",
-                "reference": "5dd2a43de32fa45d982326d271a12b0b1ea5e6be",
+                "url": "https://api.github.com/repos/localheinz/composer-normalize/zipball/cd7c78c32ca8352e842f4cd8423e7091af27e87f",
+                "reference": "cd7c78c32ca8352e842f4cd8423e7091af27e87f",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.1.0",
                 "localheinz/json-normalizer": "0.6.0",
                 "php": "^7.1",
-                "sebastian/diff": "^2.0.1 || ^3.0.0"
+                "sebastian/diff": "^2.0.1 || ^3.0.0",
+                "symfony/console": "^2.5.0 || ^3.0.0 || ^4.0.0"
             },
             "require-dev": {
                 "composer/composer": "^1.1.0",
                 "infection/infection": "^0.8.1",
-                "localheinz/php-cs-fixer-config": "~1.13.1",
+                "localheinz/php-cs-fixer-config": "~1.15.0",
                 "localheinz/test-util": "0.6.1",
                 "mikey179/vfsstream": "^1.6.5",
                 "phpstan/phpstan": "~0.9.2",
-                "phpunit/phpunit": "^7.1.1"
+                "phpstan/phpstan-strict-rules": "^0.9.0",
+                "phpunit/phpunit": "^6.5.7 || ^7.1.5"
             },
             "type": "composer-plugin",
             "extra": {
@@ -848,7 +850,7 @@
                 "normalizer",
                 "plugin"
             ],
-            "time": "2018-04-24T13:26:04+00:00"
+            "time": "2018-10-10T12:39:27+00:00"
         },
         {
             "name": "localheinz/json-normalizer",
