@@ -19,6 +19,10 @@ $ composer require localheinz/repository
 
 :bulb: This is a great place for showing a few usage examples!
 
+## Changelog
+
+Please have a look at [`CHANGELOG.md`](CHANGELOG.md).
+
 ## Contributing
 
 Please have a look at [`CONTRIBUTING.md`](.github/CONTRIBUTING.md).
