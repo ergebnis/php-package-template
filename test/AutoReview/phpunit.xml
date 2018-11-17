@@ -8,8 +8,6 @@
     beStrictAboutTestsThatDoNotTestAnything="true"
     beStrictAboutTodoAnnotatedTests="true"
     bootstrap="../../vendor/autoload.php"
-    cacheResult="true"
-    cacheResultFile="../../.phpunit/auto-review-result.cache"
     colors="true"
     columns="max"
     convertErrorsToExceptions="true"
