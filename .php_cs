@@ -15,6 +15,8 @@ $config = Config\Factory::fromRuleSet(new Config\RuleSet\Php71($header));
 
 $config->getFinder()->in(__DIR__);
 
-$config->setCacheFile(__DIR__ . '/.php-cs-fixer/.php_cs.cache');
+$directory = \getenv('TRAVIS') ? \getenv('HOME') : __DIR__;
+
+$config->setCacheFile($directory . '/.php-cs-fixer/.php_cs.cache');
 
 return $config;
