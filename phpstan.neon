@@ -3,3 +3,6 @@ includes:
 
 parameters:
 	tmpDir: %rootDir%/.phpstan
+
+rules:
+	- Localheinz\PHPStan\Rules\Classes\AbstractOrFinalRule
