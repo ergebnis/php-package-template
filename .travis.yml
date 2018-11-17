@@ -10,6 +10,8 @@ cache:
   directories:
     - $HOME/.composer/cache
     - $HOME/.php-cs-fixer
+    - $HOME/.phpstan
+    - $HOME/.phpunit
 
 stages:
   - style
@@ -48,6 +50,7 @@ jobs:
         - xdebug-disable
         - composer validate
         - if [[ -n "$GITHUB_TOKEN" ]]; then composer config github-oauth.github.com $GITHUB_TOKEN; fi
+        - .phpstan
 
       install:
         - composer install
@@ -68,6 +71,7 @@ jobs:
         - xdebug-disable
         - composer validate
         - if [[ -n "$GITHUB_TOKEN" ]]; then composer config github-oauth.github.com $GITHUB_TOKEN; fi
+        - mkdir -p $HOME/.phpunit
 
       install:
         - if [[ "$WITH_LOWEST" == "true" ]]; then composer update --prefer-lowest; fi
@@ -123,6 +127,7 @@ jobs:
         - xdebug-disable
         - composer validate
         - if [[ -n "$GITHUB_TOKEN" ]]; then composer config github-oauth.github.com $GITHUB_TOKEN; fi
+        - mkdir -p .infection
 
       install:
         - composer install
