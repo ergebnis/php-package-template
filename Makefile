@@ -14,7 +14,7 @@ cs: vendor
 	vendor/bin/php-cs-fixer fix --config=.php_cs --diff --verbose
 
 infection: vendor
-	mkdir -p .infection
+	mkdir -p .infection .phpunit
 	vendor/bin/infection --min-covered-msi=80 --min-msi=80
 
 stan: vendor
