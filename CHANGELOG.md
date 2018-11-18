@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-For a full diff see (https://github.com/localheinz/repository/compare/1902cc2...HEAD).
+For a full diff see [`1902cc2...master`](https://github.com/localheinz/repository/compare/1902cc2...master).
 
 ### Added
 
