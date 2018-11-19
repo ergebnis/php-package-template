@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b82072d63e106bd4f0e43ed78b09df70",
+    "content-hash": "67723d5046977611a4adbc7916e1e4c0",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1496,16 +1496,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.11.1",
+            "version": "0.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "a354c5d5865d9dfe2f58a5ef2ea9a9f2358c83a6"
+                "reference": "62b41f817e116052b7fbdc9c2bababd64aa7f48a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/a354c5d5865d9dfe2f58a5ef2ea9a9f2358c83a6",
-                "reference": "a354c5d5865d9dfe2f58a5ef2ea9a9f2358c83a6",
+                "url": "https://api.github.com/repos/infection/infection/zipball/62b41f817e116052b7fbdc9c2bababd64aa7f48a",
+                "reference": "62b41f817e116052b7fbdc9c2bababd64aa7f48a",
                 "shasum": ""
             },
             "require": {
@@ -1582,7 +1582,7 @@
                 "testing",
                 "unit testing"
             ],
-            "time": "2018-11-13T04:22:01+00:00"
+            "time": "2018-11-18T02:40:38+00:00"
         },
         {
             "name": "jean85/pretty-package-versions",
