@@ -1,8 +1,6 @@
 includes:
 	- vendor/phpstan/phpstan-strict-rules/rules.neon
+	- vendor/localheinz/phpstan-rules/rules.neon
 
 parameters:
 	tmpDir: %rootDir%/.phpstan
-
-rules:
-	- Localheinz\PHPStan\Rules\Classes\AbstractOrFinalRule
