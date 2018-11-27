@@ -3,4 +3,4 @@ includes:
 	- vendor/localheinz/phpstan-rules/rules.neon
 
 parameters:
-	tmpDir: %rootDir%/.phpstan
+	tmpDir: %currentWorkingDirectory%/.phpstan
