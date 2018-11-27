@@ -1,6 +1,7 @@
 includes:
-	- vendor/phpstan/phpstan-strict-rules/rules.neon
 	- vendor/localheinz/phpstan-rules/rules.neon
+	- vendor/phpstan/phpstan-strict-rules/rules.neon
+	- vendor/phpstan/phpstan/conf/config.levelmax.neon
 
 parameters:
 	tmpDir: %currentWorkingDirectory%/.phpstan
