@@ -16,7 +16,7 @@
   },
   "require-dev": {
     "infection/infection": "~0.11.2",
-    "localheinz/php-cs-fixer-config": "~1.16.1",
+    "localheinz/php-cs-fixer-config": "~1.17.0",
     "localheinz/phpstan-rules": "~0.3.0",
     "localheinz/test-util": "~0.7.0",
     "phpbench/phpbench": "~0.14.0",
