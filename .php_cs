@@ -26,6 +26,14 @@ $config = Config\Factory::fromRuleSet(new Config\RuleSet\Php71($header));
 $config->getFinder()
     ->ignoreDotFiles(false)
     ->in(__DIR__)
+    ->exclude([
+        '.github',
+        '.infection',
+        '.php-cs-fixer',
+        '.phpstan',
+        '.phpunit',
+        '.travis',
+    ])
     ->name('.php_cs');
 
 $directory = \getenv('TRAVIS') ? \getenv('HOME') : __DIR__;
