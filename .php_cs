@@ -31,7 +31,6 @@ $config->getFinder()
         '.infection',
         '.php-cs-fixer',
         '.phpstan',
-        '.phpunit',
         '.travis',
     ])
     ->name('.php_cs');
