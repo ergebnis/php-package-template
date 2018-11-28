@@ -9,7 +9,6 @@ cache:
     - $HOME/.composer/cache
     - $HOME/.php-cs-fixer
     - $HOME/.phpstan
-    - $HOME/.phpunit
 
 stages:
   - style
@@ -77,9 +76,6 @@ jobs:
         - if [[ "$WITH_LOCKED" == "true" ]]; then composer install; fi
         - if [[ "$WITH_HIGHEST" == "true" ]]; then composer update; fi
 
-      before_script:
-        - mkdir -p $HOME/.phpunit
-
       script:
         - vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
         - if [[ "$WITH_COVERAGE" == "true" ]]; then xdebug-enable; fi
@@ -135,7 +131,7 @@ jobs:
 
       before_script:
         - xdebug-enable
-        - mkdir -p $HOME/.infection $HOME/.phpunit
+        - mkdir -p $HOME/.infection
 
       script:
         - vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=80 --min-msi=80
