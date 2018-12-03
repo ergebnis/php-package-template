@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ad5cd2d2e9fbc5d161fdc668be5a3fc",
+    "content-hash": "9410d0039e2521073ce2d911776abec7",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1759,16 +1759,16 @@
         },
         {
             "name": "localheinz/phpstan-rules",
-            "version": "0.3.0",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/phpstan-rules.git",
-                "reference": "e73d0627cc05d2606d8dba6b05b9df184cc6ad1e"
+                "reference": "42a1d1b9294059fa6813147290458612f1eac144"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/e73d0627cc05d2606d8dba6b05b9df184cc6ad1e",
-                "reference": "e73d0627cc05d2606d8dba6b05b9df184cc6ad1e",
+                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/42a1d1b9294059fa6813147290458612f1eac144",
+                "reference": "42a1d1b9294059fa6813147290458612f1eac144",
                 "shasum": ""
             },
             "require": {
@@ -1779,7 +1779,7 @@
             "require-dev": {
                 "infection/infection": "~0.11.1",
                 "localheinz/composer-normalize": "^1.0.0",
-                "localheinz/php-cs-fixer-config": "~1.16.1",
+                "localheinz/php-cs-fixer-config": "~1.17.0",
                 "localheinz/test-util": "~0.7.0",
                 "phpstan/phpstan-strict-rules": "~0.10.1",
                 "phpunit/phpunit": "^7.4.3"
@@ -1807,7 +1807,7 @@
                 "phpstan-extreme-rules",
                 "phpstan-rules"
             ],
-            "time": "2018-11-25T10:14:39+00:00"
+            "time": "2018-12-03T07:45:07+00:00"
         },
         {
             "name": "localheinz/test-util",
