@@ -10,7 +10,7 @@ For a full diff see [`1902cc2...master`](https://github.com/localheinz/repositor
 
 ### Added
 
-*
+* Added something ([#9000](https://github.com/localheinz/repository/pulls/9000)), by [@localheinz](https://github.com/localheinz)
 
 ### Changed
 
