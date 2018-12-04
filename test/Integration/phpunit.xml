@@ -9,7 +9,7 @@
     beStrictAboutTodoAnnotatedTests="true"
     bootstrap="../../vendor/autoload.php"
     cacheResult="true"
-    cacheResultFile="../../.phpunit/unit.cache"
+    cacheResultFile="../../.phpunit/integration.cache"
     colors="true"
     columns="max"
     convertErrorsToExceptions="true"
