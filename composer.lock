@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff5d2b537812c8356f31af7dddd4989e",
+    "content-hash": "c216c5ca330bb1882b3c474080c0bc2f",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1565,16 +1565,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.11.3",
+            "version": "0.11.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "c13106c6bbeeaa7b49260b3fdccc798179bc2e91"
+                "reference": "f71d7af4332e0c3760aab45c16a6f750db1475a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/c13106c6bbeeaa7b49260b3fdccc798179bc2e91",
-                "reference": "c13106c6bbeeaa7b49260b3fdccc798179bc2e91",
+                "url": "https://api.github.com/repos/infection/infection/zipball/f71d7af4332e0c3760aab45c16a6f750db1475a6",
+                "reference": "f71d7af4332e0c3760aab45c16a6f750db1475a6",
                 "shasum": ""
             },
             "require": {
@@ -1651,7 +1651,7 @@
                 "testing",
                 "unit testing"
             ],
-            "time": "2018-12-08T08:47:37+00:00"
+            "time": "2018-12-09T15:26:00+00:00"
         },
         {
             "name": "jangregor/phpstan-prophecy",
