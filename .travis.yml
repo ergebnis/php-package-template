@@ -9,6 +9,7 @@ cache:
     - $HOME/.composer/cache
     - $HOME/.php-cs-fixer
     - $HOME/.phpstan
+    - $HOME/.phpunit
 
 stages:
   - style
