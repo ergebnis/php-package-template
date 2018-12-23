@@ -9,4 +9,4 @@ parameters:
 	paths:
 		- src
 		- test
-	tmpDir: %currentWorkingDirectory%/.phpstan
+	tmpDir: %currentWorkingDirectory%/.build/phpstan

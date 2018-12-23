@@ -7,9 +7,9 @@ env:
 cache:
   directories:
     - $HOME/.composer/cache
-    - $HOME/.php-cs-fixer
-    - $HOME/.phpstan
-    - $HOME/.phpunit
+    - $HOME/.build/php-cs-fixer
+    - $HOME/.build/phpstan
+    - $HOME/.build/phpunit
 
 stages:
   - style
@@ -33,7 +33,7 @@ jobs:
         - composer install
 
       before_script:
-        - mkdir -p $HOME/.php-cs-fixer
+        - mkdir -p $HOME/.build/php-cs-fixer
 
       script:
         - composer normalize --dry-run
@@ -53,7 +53,7 @@ jobs:
         - composer install
 
       before_script:
-        - mkdir -p $HOME/.phpstan
+        - mkdir -p $HOME/.build/phpstan
 
       script:
         - vendor/bin/phpstan analyse --configuration=phpstan.neon
@@ -151,7 +151,7 @@ jobs:
 
       before_script:
         - xdebug-enable
-        - mkdir -p $HOME/.infection
+        - mkdir -p $HOME/.build/infection
 
       script:
         - vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=100 --min-msi=100
