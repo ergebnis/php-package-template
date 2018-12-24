@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5cb0c12fbb3909aa7b3f6a37725ec744",
+    "content-hash": "db96cbaf285480f258e26c66a44634eb",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1193,25 +1193,25 @@
     "packages-dev": [
         {
             "name": "beberlei/assert",
-            "version": "v2.9.2",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/beberlei/assert.git",
-                "reference": "2d555f72f3f4ff9e72a7bc17cb8a53c86737c8a0"
+                "reference": "e4f4a40a8739e1151d40fd1ed754a3ed37e1f522"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/beberlei/assert/zipball/2d555f72f3f4ff9e72a7bc17cb8a53c86737c8a0",
-                "reference": "2d555f72f3f4ff9e72a7bc17cb8a53c86737c8a0",
+                "url": "https://api.github.com/repos/beberlei/assert/zipball/e4f4a40a8739e1151d40fd1ed754a3ed37e1f522",
+                "reference": "e4f4a40a8739e1151d40fd1ed754a3ed37e1f522",
                 "shasum": ""
             },
             "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.3"
+                "php": "^7"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.1.1",
-                "phpunit/phpunit": "^4.8.35|^5.7"
+                "friendsofphp/php-cs-fixer": "*",
+                "phpstan/phpstan-shim": "*",
+                "phpunit/phpunit": "*"
             },
             "type": "library",
             "autoload": {
@@ -1244,7 +1244,7 @@
                 "assertion",
                 "validation"
             ],
-            "time": "2018-01-25T13:33:16+00:00"
+            "time": "2018-10-29T11:13:48+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1934,16 +1934,16 @@
         },
         {
             "name": "lstrojny/functional-php",
-            "version": "1.7.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lstrojny/functional-php.git",
-                "reference": "7c2091ddea572e012aa980e5d19d242d3a06ad5b"
+                "reference": "f5b3b4424dcddb406d3dcfcae0d1bc0060099a78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lstrojny/functional-php/zipball/7c2091ddea572e012aa980e5d19d242d3a06ad5b",
-                "reference": "7c2091ddea572e012aa980e5d19d242d3a06ad5b",
+                "url": "https://api.github.com/repos/lstrojny/functional-php/zipball/f5b3b4424dcddb406d3dcfcae0d1bc0060099a78",
+                "reference": "f5b3b4424dcddb406d3dcfcae0d1bc0060099a78",
                 "shasum": ""
             },
             "require": {
@@ -1964,6 +1964,7 @@
                 },
                 "files": [
                     "src/Functional/Average.php",
+                    "src/Functional/ButLast.php",
                     "src/Functional/Capture.php",
                     "src/Functional/ConstFunction.php",
                     "src/Functional/CompareOn.php",
@@ -2068,7 +2069,7 @@
             "keywords": [
                 "functional"
             ],
-            "time": "2018-01-03T10:08:50+00:00"
+            "time": "2018-12-03T16:47:05+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -3105,20 +3106,20 @@
         },
         {
             "name": "phpbench/phpbench",
-            "version": "0.14.0",
+            "version": "0.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpbench/phpbench.git",
-                "reference": "ea2c7ca1cdbfa952b8d50c4f36fc233dbfabe3c9"
+                "reference": "f72b3446c351d8f7ac82a41b30892739890b4d72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpbench/phpbench/zipball/ea2c7ca1cdbfa952b8d50c4f36fc233dbfabe3c9",
-                "reference": "ea2c7ca1cdbfa952b8d50c4f36fc233dbfabe3c9",
+                "url": "https://api.github.com/repos/phpbench/phpbench/zipball/f72b3446c351d8f7ac82a41b30892739890b4d72",
+                "reference": "f72b3446c351d8f7ac82a41b30892739890b4d72",
                 "shasum": ""
             },
             "require": {
-                "beberlei/assert": "^2.4",
+                "beberlei/assert": "^2.4|^3.0",
                 "doctrine/annotations": "^1.2.7",
                 "ext-dom": "*",
                 "ext-json": "*",
@@ -3126,25 +3127,27 @@
                 "ext-reflection": "*",
                 "ext-spl": "*",
                 "lstrojny/functional-php": "1.0|^1.2.3",
-                "php": "^7.0",
-                "phpbench/container": "~1.0",
+                "php": "^7.1",
+                "phpbench/container": "~1.2",
                 "phpbench/dom": "~0.2.0",
-                "seld/jsonlint": "^1.0",
-                "symfony/console": "^2.6|^3.0|^4.0",
+                "seld/jsonlint": "^1.1",
+                "symfony/console": "^3.2|^4.0",
                 "symfony/debug": "^2.4|^3.0|^4.0",
                 "symfony/filesystem": "^2.4|^3.0|^4.0",
                 "symfony/finder": "^2.4|^3.0|^4.0",
                 "symfony/options-resolver": "^2.6|^3.0|^4.0",
-                "symfony/process": "^2.1|^3.0|^4.0"
+                "symfony/process": "^2.1|^3.0|^4.0",
+                "webmozart/path-util": "^2.3"
             },
             "require-dev": {
                 "doctrine/dbal": "^2.4",
-                "liip/rmt": "^1.2",
+                "friendsofphp/php-cs-fixer": "^2.11",
                 "padraic/phar-updater": "^1.0",
                 "phpstan/phpstan": "^0.8.5",
-                "phpunit/phpunit": "^6.0"
+                "phpunit/phpunit": "^6.5 | ^7.0"
             },
             "suggest": {
+                "ext-curl": "For (web) reports extension",
                 "ext-xdebug": "For XDebug profiling extension."
             },
             "bin": [
@@ -3160,7 +3163,8 @@
                 "psr-4": {
                     "PhpBench\\": "lib/",
                     "PhpBench\\Extensions\\Dbal\\": "extensions/dbal/lib/",
-                    "PhpBench\\Extensions\\XDebug\\": "extensions/xdebug/lib/"
+                    "PhpBench\\Extensions\\XDebug\\": "extensions/xdebug/lib/",
+                    "PhpBench\\Extensions\\Reports\\": "extensions/reports/lib/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3174,7 +3178,7 @@
                 }
             ],
             "description": "PHP Benchmarking Framework",
-            "time": "2017-12-05T15:55:57+00:00"
+            "time": "2018-12-02T17:29:27+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -4546,16 +4550,16 @@
         },
         {
             "name": "symfony/debug",
-            "version": "v4.0.6",
+            "version": "v4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "1721e4e7effb23480966690cdcdc7d2a4152d489"
+                "reference": "e0a2b92ee0b5b934f973d90c2f58e18af109d276"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/1721e4e7effb23480966690cdcdc7d2a4152d489",
-                "reference": "1721e4e7effb23480966690cdcdc7d2a4152d489",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/e0a2b92ee0b5b934f973d90c2f58e18af109d276",
+                "reference": "e0a2b92ee0b5b934f973d90c2f58e18af109d276",
                 "shasum": ""
             },
             "require": {
@@ -4571,7 +4575,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "4.2-dev"
                 }
             },
             "autoload": {
@@ -4598,7 +4602,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2018-02-28T21:50:02+00:00"
+            "time": "2018-11-28T18:24:18+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -4665,16 +4669,16 @@
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v4.1.8",
+            "version": "v4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "31e5523373cb06163079ef46d0a2d507d70fe064"
+                "reference": "a9c38e8a3da2c03b3e71fdffa6efb0bda51390ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/31e5523373cb06163079ef46d0a2d507d70fe064",
-                "reference": "31e5523373cb06163079ef46d0a2d507d70fe064",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/a9c38e8a3da2c03b3e71fdffa6efb0bda51390ba",
+                "reference": "a9c38e8a3da2c03b3e71fdffa6efb0bda51390ba",
                 "shasum": ""
             },
             "require": {
@@ -4683,7 +4687,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.2-dev"
                 }
             },
             "autoload": {
@@ -4715,7 +4719,7 @@
                 "configuration",
                 "options"
             ],
-            "time": "2018-11-11T19:51:29+00:00"
+            "time": "2018-11-11T19:52:12+00:00"
         },
         {
             "name": "symfony/polyfill-php70",
@@ -5028,6 +5032,52 @@
                 "validate"
             ],
             "time": "2018-01-29T19:49:41+00:00"
+        },
+        {
+            "name": "webmozart/path-util",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webmozart/path-util.git",
+                "reference": "d939f7edc24c9a1bb9c0dee5cb05d8e859490725"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webmozart/path-util/zipball/d939f7edc24c9a1bb9c0dee5cb05d8e859490725",
+                "reference": "d939f7edc24c9a1bb9c0dee5cb05d8e859490725",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "webmozart/assert": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.6",
+                "sebastian/version": "^1.0.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webmozart\\PathUtil\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "A robust cross-platform utility for normalizing, comparing and modifying file paths.",
+            "time": "2015-12-17T08:42:14+00:00"
         }
     ],
     "aliases": [],
