@@ -139,14 +139,13 @@ jobs:
 
     - stage: Infection
 
-      php: 7.3
+      php: 7.2
 
       before_install:
         - source .travis/xdebug.sh
         - xdebug-disable
         - composer validate
         - if [[ -n "$GITHUB_TOKEN" ]]; then composer config github-oauth.github.com $GITHUB_TOKEN; fi
-        - if [[ "$TRAVIS_PHP_VERSION" == "7.3" ]]; then composer remove --dev localheinz/php-cs-fixer-config; fi
 
       install:
         - composer install
