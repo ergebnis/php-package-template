@@ -64,7 +64,6 @@ $ make bench
 
 to run all the benchmarks.
 
-
 ## Extra lazy?
 
 Run
