@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d6068d0c5f24b6f061f43549a76e91a",
+    "content-hash": "dc12fc88a8f5eb472dbd5e829339c029",
     "packages": [],
     "packages-dev": [
         {
@@ -1096,16 +1096,16 @@
         },
         {
             "name": "localheinz/phpstan-rules",
-            "version": "0.6.0",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/phpstan-rules.git",
-                "reference": "8a5cf3bf0835e7d4b70962237e96b15dea127f63"
+                "reference": "6abfb585a2d384b52e4d0f979c3986d95f2b2ceb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/8a5cf3bf0835e7d4b70962237e96b15dea127f63",
-                "reference": "8a5cf3bf0835e7d4b70962237e96b15dea127f63",
+                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/6abfb585a2d384b52e4d0f979c3986d95f2b2ceb",
+                "reference": "6abfb585a2d384b52e4d0f979c3986d95f2b2ceb",
                 "shasum": ""
             },
             "require": {
@@ -1114,8 +1114,8 @@
                 "phpstan/phpstan": "~0.10.5 || ~0.11.0"
             },
             "require-dev": {
-                "infection/infection": "~0.11.4",
-                "localheinz/composer-normalize": "^1.1.0",
+                "infection/infection": "~0.11.5",
+                "localheinz/composer-normalize": "^1.1.1",
                 "localheinz/php-cs-fixer-config": "~1.19.0",
                 "localheinz/test-util": "~0.7.0",
                 "phpstan/phpstan-deprecation-rules": "~0.10.2 || ~0.11.0",
@@ -1145,7 +1145,7 @@
                 "phpstan-extreme-rules",
                 "phpstan-rules"
             ],
-            "time": "2019-01-16T11:37:00+00:00"
+            "time": "2019-01-17T20:22:00+00:00"
         },
         {
             "name": "localheinz/test-util",

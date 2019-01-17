@@ -6,6 +6,8 @@ includes:
 	- vendor/phpstan/phpstan/conf/config.levelmax.neon
 
 parameters:
+	classesAllowedToBeExtended:
+		- PHPUnit\Framework\TestCase
 	paths:
 		- src
 		- test
