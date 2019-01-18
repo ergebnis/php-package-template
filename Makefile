@@ -6,6 +6,7 @@ bench: vendor
 	vendor/bin/phpbench run --report=aggregate
 
 coverage: vendor
+	mkdir -p .build/phpunit
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-text --prepend=.build/phpunit/xdebug-filter.php
 
@@ -22,6 +23,7 @@ stan: vendor
 	vendor/bin/phpstan analyse --configuration=phpstan.neon
 
 test: vendor
+	mkdir -p .build/phpunit
 	vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
 	vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
