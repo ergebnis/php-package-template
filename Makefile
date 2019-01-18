@@ -7,7 +7,7 @@ bench: vendor
 
 coverage: vendor
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
-	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-text --prepend-.build/phpunit/xdebug-filter.php
+	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-text --prepend=.build/phpunit/xdebug-filter.php
 
 cs: vendor
 	mkdir -p .build/php-cs-fixer
