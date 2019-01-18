@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6696d94aa4c22967085d5320a5994cf",
+    "content-hash": "7a06ae567ab121895ac8c1adff498e99",
     "packages": [],
     "packages-dev": [
         {
@@ -1103,16 +1103,16 @@
         },
         {
             "name": "localheinz/phpstan-rules",
-            "version": "0.7.0",
+            "version": "0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/phpstan-rules.git",
-                "reference": "6abfb585a2d384b52e4d0f979c3986d95f2b2ceb"
+                "reference": "fbbd15c097cd76a42d525badfd5342cd3c7d36a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/6abfb585a2d384b52e4d0f979c3986d95f2b2ceb",
-                "reference": "6abfb585a2d384b52e4d0f979c3986d95f2b2ceb",
+                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/fbbd15c097cd76a42d525badfd5342cd3c7d36a5",
+                "reference": "fbbd15c097cd76a42d525badfd5342cd3c7d36a5",
                 "shasum": ""
             },
             "require": {
@@ -1152,7 +1152,7 @@
                 "phpstan-extreme-rules",
                 "phpstan-rules"
             ],
-            "time": "2019-01-17T20:22:00+00:00"
+            "time": "2019-01-17T22:24:11+00:00"
         },
         {
             "name": "localheinz/test-util",
