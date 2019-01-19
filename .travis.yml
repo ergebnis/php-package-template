@@ -6,10 +6,10 @@ env:
 
 cache:
   directories:
-    - $HOME/.build/php-cs-fixer
-    - $HOME/.build/phpstan
-    - $HOME/.build/phpunit
     - $HOME/.composer/cache
+    - .build/php-cs-fixer
+    - .build/phpstan
+    - .build/phpunit
 
 stages:
   - style
@@ -33,7 +33,7 @@ jobs:
         - composer install
 
       before_script:
-        - mkdir -p $HOME/.build/php-cs-fixer
+        - mkdir -p .build/php-cs-fixer
 
       script:
         - composer normalize --dry-run
@@ -53,7 +53,7 @@ jobs:
         - composer install
 
       before_script:
-        - mkdir -p $HOME/.build/phpstan
+        - mkdir -p .build/phpstan
 
       script:
         - vendor/bin/phpstan analyse --configuration=phpstan.neon
@@ -78,7 +78,7 @@ jobs:
         - if [[ "$WITH_HIGHEST" == "true" ]]; then composer update; fi
         -
       before_script:
-        - mkdir -p $HOME/.build/phpunit
+        - mkdir -p .build/phpunit
 
       script:
         - vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
@@ -154,7 +154,7 @@ jobs:
 
       before_script:
         - xdebug-enable
-        - mkdir -p $HOME/.build/infection
+        - mkdir -p .build/infection
 
       script:
         - vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=100 --min-msi=100
