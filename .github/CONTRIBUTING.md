@@ -1,6 +1,6 @@
 # CONTRIBUTING
 
-We're using [Travis CI](https://travis-ci.com) as a continuous integration system.
+We are using [Travis CI](https://travis-ci.com) as a continuous integration system.
 
 For details, see [`.travis.yml`](../.travis.yml).
 
@@ -30,7 +30,7 @@ to run a static code analysis.
 
 ## Tests
 
-We're using [`phpunit/phpunit`](https://github.com/sebastianbergmann/phpunit) to drive the development.
+We are using [`phpunit/phpunit`](https://github.com/sebastianbergmann/phpunit) to drive the development.
 
 Run
 
@@ -54,7 +54,7 @@ to run mutation tests.
 
 ## Benchmarks
 
-We're using [`phpbench/phpbench`](http://github.com/phpbench/phpbench) to benchmark performance and memory consumption.
+We are using [`phpbench/phpbench`](http://github.com/phpbench/phpbench) to benchmark performance and memory consumption.
 
 Run
 
