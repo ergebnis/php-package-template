@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4f2a969968d11b9a9e5db2c3b67ccf5",
+    "content-hash": "bdf48e38fc643b740891a7c3e96793c5",
     "packages": [],
     "packages-dev": [
         {
@@ -402,16 +402,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v2.14.0",
+            "version": "v2.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "b788ea0af899cedc8114dca7db119c93b6685da2"
+                "reference": "2e82abd1322897eb8aacb861e5ff551af3888349"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/b788ea0af899cedc8114dca7db119c93b6685da2",
-                "reference": "b788ea0af899cedc8114dca7db119c93b6685da2",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/2e82abd1322897eb8aacb861e5ff551af3888349",
+                "reference": "2e82abd1322897eb8aacb861e5ff551af3888349",
                 "shasum": ""
             },
             "require": {
@@ -458,11 +458,6 @@
                 "php-cs-fixer"
             ],
             "type": "application",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.14-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "PhpCsFixer\\": "src/"
@@ -494,7 +489,7 @@
                 }
             ],
             "description": "A tool to automatically fix PHP code style",
-            "time": "2019-01-04T18:29:47+00:00"
+            "time": "2019-02-10T22:52:33+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -1061,20 +1056,20 @@
         },
         {
             "name": "localheinz/php-cs-fixer-config",
-            "version": "1.19.0",
+            "version": "1.19.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/php-cs-fixer-config.git",
-                "reference": "6237bcf8636243bc2d1a995f67c49ac58cb76188"
+                "reference": "2a53a8f1e220a1c817a930384d172886b33f28d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/php-cs-fixer-config/zipball/6237bcf8636243bc2d1a995f67c49ac58cb76188",
-                "reference": "6237bcf8636243bc2d1a995f67c49ac58cb76188",
+                "url": "https://api.github.com/repos/localheinz/php-cs-fixer-config/zipball/2a53a8f1e220a1c817a930384d172886b33f28d0",
+                "reference": "2a53a8f1e220a1c817a930384d172886b33f28d0",
                 "shasum": ""
             },
             "require": {
-                "friendsofphp/php-cs-fixer": "^2.14.0",
+                "friendsofphp/php-cs-fixer": "~2.14.1",
                 "php": "^5.6 || ^7.0"
             },
             "require-dev": {
@@ -1098,7 +1093,7 @@
             ],
             "description": "Provides a configuration factory and multiple rule sets for friendsofphp/php-cs-fixer.",
             "homepage": "https://github.com/localheinz/php-cs-fixer-config",
-            "time": "2019-01-04T23:09:58+00:00"
+            "time": "2019-02-11T07:37:45+00:00"
         },
         {
             "name": "localheinz/phpstan-rules",
@@ -4175,16 +4170,16 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v4.2.1",
+            "version": "v4.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "921f49c3158a276d27c0d770a5a347a3b718b328"
+                "reference": "bd09ad265cd50b2b9d09d65ce6aba2d29bc81fe1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/921f49c3158a276d27c0d770a5a347a3b718b328",
-                "reference": "921f49c3158a276d27c0d770a5a347a3b718b328",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/bd09ad265cd50b2b9d09d65ce6aba2d29bc81fe1",
+                "reference": "bd09ad265cd50b2b9d09d65ce6aba2d29bc81fe1",
                 "shasum": ""
             },
             "require": {
@@ -4235,7 +4230,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2018-12-01T08:52:38+00:00"
+            "time": "2019-01-16T20:35:37+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -4338,16 +4333,16 @@
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v4.2.1",
+            "version": "v4.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "a9c38e8a3da2c03b3e71fdffa6efb0bda51390ba"
+                "reference": "831b272963a8aa5a0613a1a7f013322d8161bbbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/a9c38e8a3da2c03b3e71fdffa6efb0bda51390ba",
-                "reference": "a9c38e8a3da2c03b3e71fdffa6efb0bda51390ba",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/831b272963a8aa5a0613a1a7f013322d8161bbbb",
+                "reference": "831b272963a8aa5a0613a1a7f013322d8161bbbb",
                 "shasum": ""
             },
             "require": {
@@ -4388,7 +4383,7 @@
                 "configuration",
                 "options"
             ],
-            "time": "2018-11-11T19:52:12+00:00"
+            "time": "2019-01-16T21:31:25+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -4672,16 +4667,16 @@
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v4.2.1",
+            "version": "v4.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stopwatch.git",
-                "reference": "ec076716412274e51f8a7ea675d9515e5c311123"
+                "reference": "b1a5f646d56a3290230dbc8edf2a0d62cda23f67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/ec076716412274e51f8a7ea675d9515e5c311123",
-                "reference": "ec076716412274e51f8a7ea675d9515e5c311123",
+                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/b1a5f646d56a3290230dbc8edf2a0d62cda23f67",
+                "reference": "b1a5f646d56a3290230dbc8edf2a0d62cda23f67",
                 "shasum": ""
             },
             "require": {
@@ -4718,7 +4713,7 @@
             ],
             "description": "Symfony Stopwatch Component",
             "homepage": "https://symfony.com",
-            "time": "2018-11-11T19:52:12+00:00"
+            "time": "2019-01-16T20:31:39+00:00"
         },
         {
             "name": "symfony/yaml",
