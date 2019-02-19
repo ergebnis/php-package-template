@@ -17,7 +17,7 @@
     "infection/infection": "~0.12.2",
     "jangregor/phpstan-prophecy": "~0.3.0",
     "localheinz/composer-normalize": "^1.1.2",
-    "localheinz/php-cs-fixer-config": "~1.19.1",
+    "localheinz/php-cs-fixer-config": "~1.19.2",
     "localheinz/phpstan-rules": "~0.7.1",
     "localheinz/test-util": "~0.7.0",
     "phpbench/phpbench": "~0.15.0",

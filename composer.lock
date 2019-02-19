@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "07d2b0b3f9344cf77428ce18706730d2",
+    "content-hash": "ae0bf5f81aaf33759c2d18d2332cab87",
     "packages": [],
     "packages-dev": [
         {
@@ -402,16 +402,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v2.14.1",
+            "version": "v2.14.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "2e82abd1322897eb8aacb861e5ff551af3888349"
+                "reference": "ff401e58261ffc5934a58f795b3f95b355e276cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/2e82abd1322897eb8aacb861e5ff551af3888349",
-                "reference": "2e82abd1322897eb8aacb861e5ff551af3888349",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/ff401e58261ffc5934a58f795b3f95b355e276cb",
+                "reference": "ff401e58261ffc5934a58f795b3f95b355e276cb",
                 "shasum": ""
             },
             "require": {
@@ -431,9 +431,6 @@
                 "symfony/polyfill-php72": "^1.4",
                 "symfony/process": "^3.0 || ^4.0",
                 "symfony/stopwatch": "^3.0 || ^4.0"
-            },
-            "conflict": {
-                "hhvm": "*"
             },
             "require-dev": {
                 "johnkary/phpunit-speedtrap": "^1.1 || ^2.0 || ^3.0",
@@ -489,7 +486,7 @@
                 }
             ],
             "description": "A tool to automatically fix PHP code style",
-            "time": "2019-02-10T22:52:33+00:00"
+            "time": "2019-02-17T17:44:13+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -1056,20 +1053,20 @@
         },
         {
             "name": "localheinz/php-cs-fixer-config",
-            "version": "1.19.1",
+            "version": "1.19.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/php-cs-fixer-config.git",
-                "reference": "2a53a8f1e220a1c817a930384d172886b33f28d0"
+                "reference": "5271e571da9861a60f558bb6652a421dde62d48b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/php-cs-fixer-config/zipball/2a53a8f1e220a1c817a930384d172886b33f28d0",
-                "reference": "2a53a8f1e220a1c817a930384d172886b33f28d0",
+                "url": "https://api.github.com/repos/localheinz/php-cs-fixer-config/zipball/5271e571da9861a60f558bb6652a421dde62d48b",
+                "reference": "5271e571da9861a60f558bb6652a421dde62d48b",
                 "shasum": ""
             },
             "require": {
-                "friendsofphp/php-cs-fixer": "~2.14.1",
+                "friendsofphp/php-cs-fixer": "~2.14.2",
                 "php": "^5.6 || ^7.0"
             },
             "require-dev": {
@@ -1093,7 +1090,7 @@
             ],
             "description": "Provides a configuration factory and multiple rule sets for friendsofphp/php-cs-fixer.",
             "homepage": "https://github.com/localheinz/php-cs-fixer-config",
-            "time": "2019-02-11T07:37:45+00:00"
+            "time": "2019-02-18T06:19:11+00:00"
         },
         {
             "name": "localheinz/phpstan-rules",
