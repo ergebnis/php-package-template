@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bdf48e38fc643b740891a7c3e96793c5",
+    "content-hash": "07d2b0b3f9344cf77428ce18706730d2",
     "packages": [],
     "packages-dev": [
         {
@@ -890,16 +890,16 @@
         },
         {
             "name": "localheinz/composer-normalize",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/composer-normalize.git",
-                "reference": "b8d15ae4146258fa93f8f591290dd5698325b8da"
+                "reference": "506fdf9234447372df695a391331a8405f3c2613"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/composer-normalize/zipball/b8d15ae4146258fa93f8f591290dd5698325b8da",
-                "reference": "b8d15ae4146258fa93f8f591290dd5698325b8da",
+                "url": "https://api.github.com/repos/localheinz/composer-normalize/zipball/506fdf9234447372df695a391331a8405f3c2613",
+                "reference": "506fdf9234447372df695a391331a8405f3c2613",
                 "shasum": ""
             },
             "require": {
@@ -911,14 +911,14 @@
             },
             "require-dev": {
                 "composer/composer": "^1.7.0",
-                "jangregor/phpstan-prophecy": "~0.2.0",
+                "jangregor/phpstan-prophecy": "~0.3.0",
                 "localheinz/php-cs-fixer-config": "~1.19.0",
-                "localheinz/phpstan-rules": "~0.5.0",
-                "localheinz/test-util": "0.6.1",
-                "phpstan/phpstan": "~0.10.7",
-                "phpstan/phpstan-deprecation-rules": "~0.10.2",
-                "phpstan/phpstan-strict-rules": "~0.10.1",
-                "phpunit/phpunit": "^6.5.13 || ^7.5.0",
+                "localheinz/phpstan-rules": "~0.7.1",
+                "localheinz/test-util": "~0.7.0",
+                "phpstan/phpstan": "~0.11.0",
+                "phpstan/phpstan-deprecation-rules": "~0.11.0",
+                "phpstan/phpstan-strict-rules": "~0.11.0",
+                "phpunit/phpunit": "^6.5.13 || ^7.5.2",
                 "symfony/filesystem": "^4.2.1"
             },
             "type": "composer-plugin",
@@ -951,7 +951,7 @@
                 "normalizer",
                 "plugin"
             ],
-            "time": "2019-01-09T15:27:51+00:00"
+            "time": "2019-02-15T20:35:52+00:00"
         },
         {
             "name": "localheinz/json-normalizer",
