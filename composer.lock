@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "069a6b021c0ecbe9e4919db0e803ebce",
+    "content-hash": "10ee57b1ba5a77592453b4c5e457cf00",
     "packages": [],
     "packages-dev": [
         {
@@ -887,16 +887,16 @@
         },
         {
             "name": "localheinz/composer-normalize",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/composer-normalize.git",
-                "reference": "506fdf9234447372df695a391331a8405f3c2613"
+                "reference": "a69d1e8c29c12d7c7d47151ebc58fe96e4301e7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/composer-normalize/zipball/506fdf9234447372df695a391331a8405f3c2613",
-                "reference": "506fdf9234447372df695a391331a8405f3c2613",
+                "url": "https://api.github.com/repos/localheinz/composer-normalize/zipball/a69d1e8c29c12d7c7d47151ebc58fe96e4301e7a",
+                "reference": "a69d1e8c29c12d7c7d47151ebc58fe96e4301e7a",
                 "shasum": ""
             },
             "require": {
@@ -948,7 +948,7 @@
                 "normalizer",
                 "plugin"
             ],
-            "time": "2019-02-15T20:35:52+00:00"
+            "time": "2019-03-13T14:42:11+00:00"
         },
         {
             "name": "localheinz/json-normalizer",
