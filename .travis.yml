@@ -76,7 +76,7 @@ jobs:
         - if [[ "$WITH_LOWEST" == "true" ]]; then composer update --prefer-lowest; fi
         - if [[ "$WITH_LOCKED" == "true" ]]; then composer install; fi
         - if [[ "$WITH_HIGHEST" == "true" ]]; then composer update; fi
-        -
+
       before_script:
         - mkdir -p .build/phpunit
 
@@ -153,8 +153,8 @@ jobs:
         - composer install
 
       before_script:
-        - xdebug-enable
         - mkdir -p .build/infection
+        - xdebug-enable
 
       script:
         - vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=100 --min-msi=100
