@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6278152edeab43db5690ae17989e82c2",
+    "content-hash": "a553f0d3ee81d04ebbce4aa5bba833df",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -2049,16 +2049,16 @@
         },
         {
             "name": "jangregor/phpstan-prophecy",
-            "version": "0.3.0",
+            "version": "0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jan0707/phpstan-prophecy.git",
-                "reference": "a1bfe3c3920829d4004240fb68ed85ab6dd18b14"
+                "reference": "af7e81059e937ad9653410b33ff0896a3f401b01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jan0707/phpstan-prophecy/zipball/a1bfe3c3920829d4004240fb68ed85ab6dd18b14",
-                "reference": "a1bfe3c3920829d4004240fb68ed85ab6dd18b14",
+                "url": "https://api.github.com/repos/Jan0707/phpstan-prophecy/zipball/af7e81059e937ad9653410b33ff0896a3f401b01",
+                "reference": "af7e81059e937ad9653410b33ff0896a3f401b01",
                 "shasum": ""
             },
             "require": {
@@ -2067,7 +2067,7 @@
             },
             "conflict": {
                 "phpspec/prophecy": "<1.7, >=2.0",
-                "phpunit/phpunit": "<6.0, >=8.0"
+                "phpunit/phpunit": "<6.0, >=9.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.13.1",
@@ -2091,7 +2091,7 @@
                 }
             ],
             "description": "Provides a phpstan/phpstan extension for phpspec/prophecy",
-            "time": "2019-01-18T13:44:45+00:00"
+            "time": "2019-04-25T07:24:00+00:00"
         },
         {
             "name": "jean85/pretty-package-versions",
