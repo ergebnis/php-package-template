@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e06320354ed9abae39e7b5d31d3b6879",
+    "content-hash": "dac34bd63ec7c40c2c34982c394fdfaa",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -1822,16 +1822,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v2.14.3",
+            "version": "v2.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "a9132a872dab61e37161c6db2fb8a6f46141d17e"
+                "reference": "adfab51ae979ee8b0fcbc55aa231ec2786cb1f91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/a9132a872dab61e37161c6db2fb8a6f46141d17e",
-                "reference": "a9132a872dab61e37161c6db2fb8a6f46141d17e",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/adfab51ae979ee8b0fcbc55aa231ec2786cb1f91",
+                "reference": "adfab51ae979ee8b0fcbc55aa231ec2786cb1f91",
                 "shasum": ""
             },
             "require": {
@@ -1875,6 +1875,11 @@
                 "php-cs-fixer"
             ],
             "type": "application",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.15-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "PhpCsFixer\\": "src/"
@@ -1906,7 +1911,7 @@
                 }
             ],
             "description": "A tool to automatically fix PHP code style",
-            "time": "2019-05-04T21:34:42+00:00"
+            "time": "2019-05-06T07:13:51+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -2473,20 +2478,20 @@
         },
         {
             "name": "localheinz/php-cs-fixer-config",
-            "version": "1.20.1",
+            "version": "1.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/php-cs-fixer-config.git",
-                "reference": "7fed155336625f766d880f8b53004703d21b9af1"
+                "reference": "4566ad0f1b7f80352cf0bed27a67d9df7937441d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/php-cs-fixer-config/zipball/7fed155336625f766d880f8b53004703d21b9af1",
-                "reference": "7fed155336625f766d880f8b53004703d21b9af1",
+                "url": "https://api.github.com/repos/localheinz/php-cs-fixer-config/zipball/4566ad0f1b7f80352cf0bed27a67d9df7937441d",
+                "reference": "4566ad0f1b7f80352cf0bed27a67d9df7937441d",
                 "shasum": ""
             },
             "require": {
-                "friendsofphp/php-cs-fixer": "~2.14.3",
+                "friendsofphp/php-cs-fixer": "~2.15.0",
                 "php": "^5.6 || ^7.0"
             },
             "require-dev": {
@@ -2510,7 +2515,7 @@
             ],
             "description": "Provides a configuration factory and multiple rule sets for friendsofphp/php-cs-fixer.",
             "homepage": "https://github.com/localheinz/php-cs-fixer-config",
-            "time": "2019-05-05T07:52:35+00:00"
+            "time": "2019-05-06T20:15:45+00:00"
         },
         {
             "name": "localheinz/phpstan-rules",
