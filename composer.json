@@ -24,7 +24,7 @@
     "phpstan/phpstan": "~0.11.6",
     "phpstan/phpstan-deprecation-rules": "~0.11.0",
     "phpstan/phpstan-strict-rules": "~0.11.0",
-    "phpunit/phpunit": "^8.1.4"
+    "phpunit/phpunit": "^8.1.5"
   },
   "config": {
     "preferred-install": "dist",
