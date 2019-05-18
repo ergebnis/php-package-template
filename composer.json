@@ -14,7 +14,7 @@
     "php": "^7.2"
   },
   "require-dev": {
-    "infection/infection": "~0.12.2",
+    "infection/infection": "~0.13.0",
     "jangregor/phpstan-prophecy": "~0.4.0",
     "localheinz/composer-normalize": "^1.1.3",
     "localheinz/php-cs-fixer-config": "~1.22.0",
