@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e6ee2743565923ef468b09e72f06e9a",
+    "content-hash": "71ddcb9311dcae50e292d78b5f835df8",
     "packages": [],
     "packages-dev": [
         {
@@ -1101,16 +1101,16 @@
         },
         {
             "name": "localheinz/phpstan-rules",
-            "version": "0.9.0",
+            "version": "0.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/phpstan-rules.git",
-                "reference": "51d8c8ebc14ef4dec045db03de309aebd2097343"
+                "reference": "c897d1212ca0a8f53522792b0a00f52133f519a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/51d8c8ebc14ef4dec045db03de309aebd2097343",
-                "reference": "51d8c8ebc14ef4dec045db03de309aebd2097343",
+                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/c897d1212ca0a8f53522792b0a00f52133f519a4",
+                "reference": "c897d1212ca0a8f53522792b0a00f52133f519a4",
                 "shasum": ""
             },
             "require": {
@@ -1127,7 +1127,14 @@
                 "phpstan/phpstan-strict-rules": "~0.10.1 || ~0.11.0",
                 "phpunit/phpunit": "^7.5.9"
             },
-            "type": "library",
+            "type": "phpstan-extension",
+            "extra": {
+                "phpstan": {
+                    "includes": [
+                        "rules.neon"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Localheinz\\PHPStan\\Rules\\": "src/"
@@ -1150,7 +1157,7 @@
                 "phpstan-extreme-rules",
                 "phpstan-rules"
             ],
-            "time": "2019-05-07T08:04:14+00:00"
+            "time": "2019-05-20T09:08:06+00:00"
         },
         {
             "name": "localheinz/test-util",
