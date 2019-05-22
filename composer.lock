@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df22b4a8ffea383b5750678e05ce403e",
+    "content-hash": "ca7cfc97d80997471b64052c72ec5957",
     "packages": [],
     "packages-dev": [
         {
@@ -547,16 +547,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.13.0",
+            "version": "0.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "add7355edff8229195e4311a9c83cc6b42224d8a"
+                "reference": "a774020444a5459da2e04bf3f0552cfd06a8dcca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/add7355edff8229195e4311a9c83cc6b42224d8a",
-                "reference": "add7355edff8229195e4311a9c83cc6b42224d8a",
+                "url": "https://api.github.com/repos/infection/infection/zipball/a774020444a5459da2e04bf3f0552cfd06a8dcca",
+                "reference": "a774020444a5459da2e04bf3f0552cfd06a8dcca",
                 "shasum": ""
             },
             "require": {
@@ -632,7 +632,7 @@
                 "testing",
                 "unit testing"
             ],
-            "time": "2019-05-18T15:24:49+00:00"
+            "time": "2019-05-22T05:39:05+00:00"
         },
         {
             "name": "jangregor/phpstan-prophecy",
