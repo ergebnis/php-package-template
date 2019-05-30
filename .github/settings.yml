@@ -1,3 +1,5 @@
+# https://github.com/probot/settings
+
 branches:
   - name: master
     protection:
