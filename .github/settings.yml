@@ -40,6 +40,8 @@ repository:
   description: ":ledger: Provides templates for GitHub repositories."
   has_downloads: true
   has_issues: true
+  has_pages: false
+  has_projects: false
   has_wiki: false
   name: repository
   private: false
