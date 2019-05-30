@@ -1,3 +1,5 @@
+# https://github.com/probot/stale
+
 daysUntilStale: 60
 
 daysUntilClose: 7
