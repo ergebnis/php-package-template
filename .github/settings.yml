@@ -1,0 +1,24 @@
+repository:
+  allow_merge_commit: true
+  allow_rebase_merge: false
+  allow_squash_merge: false
+  default_branch: master
+  description: ":ledger: Provides templates for GitHub repositories."
+  has_downloads: true
+  has_issues: true
+  has_wiki: false
+  name: repository
+  private: false
+
+labels:
+  - name: bug
+    color: ee0701
+
+  - name: dependencies
+    color: 0366d6
+
+  - name: enhancement
+    color: 0e8a16
+
+  - name: stale
+    color: eeeeee
