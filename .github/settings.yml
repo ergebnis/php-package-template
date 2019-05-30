@@ -15,9 +15,7 @@ branches:
           - "Travis CI - Branch"
           - "Travis CI - Pull Request"
         strict: false
-      restrictions:
-        users: []
-        teams: []
+      restrictions: null
 
 labels:
   - name: bug
