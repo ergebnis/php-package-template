@@ -1,0 +1,11 @@
+version: 1
+
+update_configs:
+  - default_assignees:
+      - "localheinz"
+    default_reviewers:
+      - "localheinz"
+    directory: "/"
+    package_manager: "php:composer"
+    update_schedule: "live"
+    version_requirement_updates: "auto"
