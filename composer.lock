@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a37c9a0179010a2ae1a9e3de59ffa21",
+    "content-hash": "8924cf8b0983c8aba9f28fa437a07e7f",
     "packages": [],
     "packages-dev": [
         {
@@ -889,16 +889,16 @@
         },
         {
             "name": "localheinz/composer-normalize",
-            "version": "1.1.4",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/composer-normalize.git",
-                "reference": "367d86157addc98e830c219e273eb23d5f281abf"
+                "reference": "68c0d86519d60b2c9c606d1e3304b7a00dce45ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/composer-normalize/zipball/367d86157addc98e830c219e273eb23d5f281abf",
-                "reference": "367d86157addc98e830c219e273eb23d5f281abf",
+                "url": "https://api.github.com/repos/localheinz/composer-normalize/zipball/68c0d86519d60b2c9c606d1e3304b7a00dce45ed",
+                "reference": "68c0d86519d60b2c9c606d1e3304b7a00dce45ed",
                 "shasum": ""
             },
             "require": {
@@ -911,7 +911,7 @@
             "require-dev": {
                 "composer/composer": "^1.7.0",
                 "jangregor/phpstan-prophecy": "~0.3.0",
-                "localheinz/php-cs-fixer-config": "~1.19.0",
+                "localheinz/php-cs-fixer-config": "~1.22.1",
                 "localheinz/phpstan-rules": "~0.7.1",
                 "localheinz/test-util": "~0.7.0",
                 "phpstan/phpstan": "~0.11.0",
@@ -950,7 +950,7 @@
                 "normalizer",
                 "plugin"
             ],
-            "time": "2019-05-23T14:26:42+00:00"
+            "time": "2019-06-01T17:47:26+00:00"
         },
         {
             "name": "localheinz/json-normalizer",
