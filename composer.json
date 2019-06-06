@@ -1,5 +1,5 @@
 {
-  "name": "localheinz/repository",
+  "name": "localheinz/php-library-template",
   "type": "library",
   "description": "Provides a GitHub repository template for a PHP library.",
   "homepage": "https://github.com/localheinz/php-library-template",
