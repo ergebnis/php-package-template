@@ -35,11 +35,11 @@ repository:
   allow_rebase_merge: false
   allow_squash_merge: false
   default_branch: master
-  description: ":ledger: Provides templates for GitHub repositories."
+  description: ":ledger: Provides a GitHub repository template for a PHP library."
   has_downloads: true
   has_issues: true
   has_pages: false
   has_projects: false
   has_wiki: false
-  name: repository
+  name: php-library-template
   private: false

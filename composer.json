@@ -1,8 +1,8 @@
 {
   "name": "localheinz/repository",
   "type": "library",
-  "description": "Your description here.",
-  "homepage": "https://github.com/localheinz/repository",
+  "description": "Provides a GitHub repository template for a PHP library.",
+  "homepage": "https://github.com/localheinz/php-library-template",
   "license": "MIT",
   "authors": [
     {
@@ -32,16 +32,16 @@
   },
   "autoload": {
     "psr-4": {
-      "Localheinz\\Repository\\": "src/"
+      "Localheinz\\Library\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Localheinz\\Repository\\Test\\": "test/"
+      "Localheinz\\Library\\Test\\": "test/"
     }
   },
   "support": {
-    "issues": "https://github.com/localheinz/repository/issues",
-    "source": "https://github.com/localheinz/repository"
+    "issues": "https://github.com/localheinz/php-library-template/issues",
+    "source": "https://github.com/localheinz/php-library-template"
   }
 }

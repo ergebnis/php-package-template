@@ -8,10 +8,10 @@ declare(strict_types=1);
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
  *
- * @see https://github.com/localheinz/repository
+ * @see https://github.com/localheinz/php-library-template
  */
 
-namespace Localheinz\Repository\Test\AutoReview;
+namespace Localheinz\Library\Test\AutoReview;
 
 use Localheinz\Test\Util\Helper;
 use PHPUnit\Framework;
@@ -29,8 +29,8 @@ final class SrcCodeTest extends Framework\TestCase
     {
         $this->assertClassesHaveTests(
             __DIR__ . '/../../src',
-            'Localheinz\\Repository\\',
-            'Localheinz\\Repository\\Test\\Unit\\'
+            'Localheinz\\Library\\',
+            'Localheinz\\Library\\Test\\Unit\\'
         );
     }
 }

@@ -1,9 +1,9 @@
-# repository
+# php-library-template
 
-[![Build Status](https://travis-ci.com/localheinz/repository.svg?branch=master)](https://travis-ci.com/localheinz/repository)
-[![codecov](https://codecov.io/gh/localheinz/repository/branch/master/graph/badge.svg)](https://codecov.io/gh/localheinz/repository)
-[![Latest Stable Version](https://poser.pugx.org/localheinz/repository/v/stable)](https://packagist.org/packages/localheinz/repository)
-[![Total Downloads](https://poser.pugx.org/localheinz/repository/downloads)](https://packagist.org/packages/localheinz/repository)
+[![Build Status](https://travis-ci.com/localheinz/php-library-template.svg?branch=master)](https://travis-ci.com/localheinz/php-library-template)
+[![codecov](https://codecov.io/gh/localheinz/php-library-template/branch/master/graph/badge.svg)](https://codecov.io/gh/localheinz/php-library-template)
+[![Latest Stable Version](https://poser.pugx.org/localheinz/php-library-template/v/stable)](https://packagist.org/packages/localheinz/php-library-template)
+[![Total Downloads](https://poser.pugx.org/localheinz/php-library-template/downloads)](https://packagist.org/packages/localheinz/php-library-template)
 
 ## Installation
 
@@ -12,7 +12,7 @@
 Run
 
 ```
-$ composer require localheinz/repository
+$ composer require localheinz/php-library-template
 ```
 
 ## Usage
