@@ -15,7 +15,7 @@
   },
   "require-dev": {
     "infection/infection": "~0.13.2",
-    "jangregor/phpstan-prophecy": "~0.4.0",
+    "jangregor/phpstan-prophecy": "~0.4.1",
     "localheinz/composer-normalize": "^1.2.0",
     "localheinz/php-cs-fixer-config": "~1.22.1",
     "localheinz/phpstan-rules": "~0.10.0",
