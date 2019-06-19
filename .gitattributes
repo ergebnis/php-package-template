@@ -1,5 +1,5 @@
-/.github/           export-ignore
 /.dependabot/       export-ignore
+/.github/           export-ignore
 /.travis/           export-ignore
 /test/              export-ignore
 /.editorconfig      export-ignore
