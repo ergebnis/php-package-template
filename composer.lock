@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "355db3f0d227ece5d3509875360dc1cc",
+    "content-hash": "502d37cbf753c55f5c9429d8be254957",
     "packages": [],
     "packages-dev": [
         {
@@ -542,16 +542,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.13.2",
+            "version": "0.13.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "f521704d69ca1a6ea9c945e3843c6be16f43b3bf"
+                "reference": "2bc4a533d39a9117f190a11244201ae2ce7ffcbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/f521704d69ca1a6ea9c945e3843c6be16f43b3bf",
-                "reference": "f521704d69ca1a6ea9c945e3843c6be16f43b3bf",
+                "url": "https://api.github.com/repos/infection/infection/zipball/2bc4a533d39a9117f190a11244201ae2ce7ffcbb",
+                "reference": "2bc4a533d39a9117f190a11244201ae2ce7ffcbb",
                 "shasum": ""
             },
             "require": {
@@ -628,7 +628,7 @@
                 "testing",
                 "unit testing"
             ],
-            "time": "2019-06-10T19:27:47+00:00"
+            "time": "2019-06-24T20:56:26+00:00"
         },
         {
             "name": "jangregor/phpstan-prophecy",
@@ -4839,23 +4839,23 @@
         },
         {
             "name": "symfony/service-contracts",
-            "version": "v1.1.2",
+            "version": "v1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "191afdcb5804db960d26d8566b7e9a2843cab3a0"
+                "reference": "f391a00de78ec7ec8cf5cdcdae59ec7b883edb8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/191afdcb5804db960d26d8566b7e9a2843cab3a0",
-                "reference": "191afdcb5804db960d26d8566b7e9a2843cab3a0",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/f391a00de78ec7ec8cf5cdcdae59ec7b883edb8d",
+                "reference": "f391a00de78ec7ec8cf5cdcdae59ec7b883edb8d",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": "^7.1.3",
+                "psr/container": "^1.0"
             },
             "suggest": {
-                "psr/container": "",
                 "symfony/service-implementation": ""
             },
             "type": "library",
@@ -4893,7 +4893,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2019-05-28T07:50:59+00:00"
+            "time": "2019-06-13T11:15:36+00:00"
         },
         {
             "name": "symfony/stopwatch",
