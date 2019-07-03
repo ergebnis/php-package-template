@@ -6,11 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`1902cc2...master`](https://github.com/localheinz/repository/compare/1902cc2...master).
+For a full diff see [`1902cc2...master`](https://github.com/localheinz/php-library-template/compare/1902cc2...master).
 
 ### Added
 
-* Added something ([#9000](https://github.com/localheinz/repository/pulls/9000)), by [@localheinz](https://github.com/localheinz)
+* Added something ([#9000](https://github.com/localheinz/php-library-template/pull/9000)), by [@localheinz](https://github.com/localheinz)
 
 ### Changed
 
