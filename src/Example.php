@@ -15,9 +15,6 @@ namespace Localheinz\Library;
 
 final class Example
 {
-    /**
-     * @var string
-     */
     private $name;
 
     private function __construct(string $name)
