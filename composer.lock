@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9118e31ee9907fa2fc0578cc6c91c6f4",
+    "content-hash": "369f204de7899781d3ab51b895115b6e",
     "packages": [],
     "packages-dev": [
         {
@@ -632,16 +632,16 @@
         },
         {
             "name": "jangregor/phpstan-prophecy",
-            "version": "0.4.1",
+            "version": "0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jan0707/phpstan-prophecy.git",
-                "reference": "dbe94ae7a0e22d9d4544d4bbdfc448dadb29e5fe"
+                "reference": "23301ff577da974e47e8670bf9313c885d306011"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jan0707/phpstan-prophecy/zipball/dbe94ae7a0e22d9d4544d4bbdfc448dadb29e5fe",
-                "reference": "dbe94ae7a0e22d9d4544d4bbdfc448dadb29e5fe",
+                "url": "https://api.github.com/repos/Jan0707/phpstan-prophecy/zipball/23301ff577da974e47e8670bf9313c885d306011",
+                "reference": "23301ff577da974e47e8670bf9313c885d306011",
                 "shasum": ""
             },
             "require": {
@@ -658,7 +658,14 @@
                 "phpspec/prophecy": "^1.7",
                 "phpunit/phpunit": "^6.0 || ^7.0"
             },
-            "type": "library",
+            "type": "phpstan-extension",
+            "extra": {
+                "phpstan": {
+                    "includes": [
+                        "src/extension.neon"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "JanGregor\\Prophecy\\": "src/"
@@ -675,7 +682,7 @@
                 }
             ],
             "description": "Provides a phpstan/phpstan extension for phpspec/prophecy",
-            "time": "2019-05-27T19:13:03+00:00"
+            "time": "2019-07-31T13:51:23+00:00"
         },
         {
             "name": "jean85/pretty-package-versions",
