@@ -26,7 +26,7 @@ jobs:
       before_install:
         - source .travis/xdebug.sh
         - xdebug-disable
-        - composer validate
+        - composer validate --strict
         - if [[ -n "$GITHUB_TOKEN" ]]; then composer config github-oauth.github.com $GITHUB_TOKEN; fi
 
       install:
@@ -46,7 +46,7 @@ jobs:
       before_install:
         - source .travis/xdebug.sh
         - xdebug-disable
-        - composer validate
+        - composer validate --strict
         - if [[ -n "$GITHUB_TOKEN" ]]; then composer config github-oauth.github.com $GITHUB_TOKEN; fi
 
       install:
@@ -69,7 +69,7 @@ jobs:
       before_install:
         - source .travis/xdebug.sh
         - xdebug-disable
-        - composer validate
+        - composer validate --strict
         - if [[ -n "$GITHUB_TOKEN" ]]; then composer config github-oauth.github.com $GITHUB_TOKEN; fi
 
       install:
@@ -128,7 +128,7 @@ jobs:
       before_install:
         - source .travis/xdebug.sh
         - xdebug-disable
-        - composer validate
+        - composer validate --strict
         - if [[ -n "$GITHUB_TOKEN" ]]; then composer config github-oauth.github.com $GITHUB_TOKEN; fi
 
       install:
