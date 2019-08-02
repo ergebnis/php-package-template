@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4d967063942f02762b85624b1ea1e2b",
+    "content-hash": "f338f206086e28b4734e90a890de2beb",
     "packages": [],
     "packages-dev": [
         {
@@ -3204,16 +3204,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "8.3.1",
+            "version": "8.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "21461ce5b162d0f1a0fa658e27f975517c5d4234"
+                "reference": "e77a49b6da82240f40ddd4be536d30d7dae5c168"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/21461ce5b162d0f1a0fa658e27f975517c5d4234",
-                "reference": "21461ce5b162d0f1a0fa658e27f975517c5d4234",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e77a49b6da82240f40ddd4be536d30d7dae5c168",
+                "reference": "e77a49b6da82240f40ddd4be536d30d7dae5c168",
                 "shasum": ""
             },
             "require": {
@@ -3283,7 +3283,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-08-02T07:54:25+00:00"
+            "time": "2019-08-02T13:42:49+00:00"
         },
         {
             "name": "pimple/pimple",
