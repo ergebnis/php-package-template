@@ -21,7 +21,7 @@
     "localheinz/phpstan-rules": "~0.10.0",
     "localheinz/test-util": "~0.7.0",
     "phpbench/phpbench": "~0.16.9",
-    "phpstan/phpstan": "~0.11.13",
+    "phpstan/phpstan": "~0.11.14",
     "phpstan/phpstan-deprecation-rules": "~0.11.2",
     "phpstan/phpstan-strict-rules": "~0.11.1",
     "phpunit/phpunit": "^8.3.4"
