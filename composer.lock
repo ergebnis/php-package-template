@@ -4,30 +4,35 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c604cd903190fddb285736013d24edcf",
+    "content-hash": "69e89ef17547864b3595c64ae46a042e",
     "packages": [],
     "packages-dev": [
         {
             "name": "beberlei/assert",
-            "version": "v3.2.0",
+            "version": "v3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/beberlei/assert.git",
-                "reference": "fd82f4c8592c8128dd74481034c31da71ebafc56"
+                "reference": "65b8152224aef7d3c197d5db05211d4319711b66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/beberlei/assert/zipball/fd82f4c8592c8128dd74481034c31da71ebafc56",
-                "reference": "fd82f4c8592c8128dd74481034c31da71ebafc56",
+                "url": "https://api.github.com/repos/beberlei/assert/zipball/65b8152224aef7d3c197d5db05211d4319711b66",
+                "reference": "65b8152224aef7d3c197d5db05211d4319711b66",
                 "shasum": ""
             },
             "require": {
+                "ext-ctype": "*",
+                "ext-intl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
                 "php": "^7"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "*",
                 "phpstan/phpstan-shim": "*",
-                "phpunit/phpunit": "*"
+                "phpunit/phpunit": ">=6.0.0 <8"
             },
             "type": "library",
             "autoload": {
@@ -60,7 +65,7 @@
                 "assertion",
                 "validation"
             ],
-            "time": "2018-12-24T15:25:25+00:00"
+            "time": "2019-08-23T17:56:26+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -2287,18 +2292,18 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "role": "Developer",
-                    "email": "arne@blankerts.de"
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
                 },
                 {
                     "name": "Sebastian Heuer",
-                    "role": "Developer",
-                    "email": "sebastian@phpeople.de"
+                    "email": "sebastian@phpeople.de",
+                    "role": "Developer"
                 },
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "Developer",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "Developer"
                 }
             ],
             "description": "Library for handling version information and constraints",
@@ -2446,16 +2451,16 @@
         },
         {
             "name": "phpbench/phpbench",
-            "version": "0.16.9",
+            "version": "0.16.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpbench/phpbench.git",
-                "reference": "5095ccaa24b62d658fcba1c28f80ef35d07823f6"
+                "reference": "00c18b1ab87dbda66e8972c8602a14dd08c69914"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpbench/phpbench/zipball/5095ccaa24b62d658fcba1c28f80ef35d07823f6",
-                "reference": "5095ccaa24b62d658fcba1c28f80ef35d07823f6",
+                "url": "https://api.github.com/repos/phpbench/phpbench/zipball/00c18b1ab87dbda66e8972c8602a14dd08c69914",
+                "reference": "00c18b1ab87dbda66e8972c8602a14dd08c69914",
                 "shasum": ""
             },
             "require": {
@@ -2518,7 +2523,7 @@
                 }
             ],
             "description": "PHP Benchmarking Framework",
-            "time": "2019-03-09T20:49:49+00:00"
+            "time": "2019-09-01T08:08:02+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -3009,8 +3014,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Library that provides collection, processing, and rendering functionality for PHP code coverage information.",
@@ -4181,16 +4186,16 @@
         },
         {
             "name": "symfony/debug",
-            "version": "v4.2.4",
+            "version": "v4.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "de73f48977b8eaf7ce22814d66e43a1662cc864f"
+                "reference": "afcdea44a2e399c1e4b52246ec8d54c715393ced"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/de73f48977b8eaf7ce22814d66e43a1662cc864f",
-                "reference": "de73f48977b8eaf7ce22814d66e43a1662cc864f",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/afcdea44a2e399c1e4b52246ec8d54c715393ced",
+                "reference": "afcdea44a2e399c1e4b52246ec8d54c715393ced",
                 "shasum": ""
             },
             "require": {
@@ -4206,7 +4211,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.2-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -4233,7 +4238,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2019-03-03T18:11:24+00:00"
+            "time": "2019-08-20T14:27:59+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
