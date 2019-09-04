@@ -1,4 +1,4 @@
-.PHONY: bench coverage cs infection help it stan test
+.PHONY: bench coverage cs help infection it stan test
 
 it: cs stan test bench ## Runs the cs, stan, test, and bench targets
 
