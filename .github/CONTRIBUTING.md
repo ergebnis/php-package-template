@@ -73,3 +73,11 @@ $ make
 ```
 
 to enforce coding standards, perform a static code analysis, run tests, and run benchmarks!
+
+:bulb: Run
+
+```
+$ make help
+```
+
+to display a list of available targets with corresponding descriptions.
