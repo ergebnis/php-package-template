@@ -25,7 +25,7 @@ stan: vendor ## Runs a static analysis with phpstan
 	mkdir -p .build/phpstan
 	vendor/bin/phpstan analyse --configuration=phpstan.neon
 
-test: vendor ## Runs a auto-review, unit, and integration tests with phpunit
+test: vendor ## Runs auto-review, unit, and integration tests with phpunit
 	mkdir -p .build/phpunit
 	vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
