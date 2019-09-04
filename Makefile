@@ -17,7 +17,7 @@ cs: vendor ## Fixes code style issues with php-cs-fixer
 help: ## Displays this list of targets with descriptions
 	@grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[32m%-30s\033[0m %s\n", $$1, $$2}'
 
-infection: vendor ## Runs mutations tests with infectio
+infection: vendor ## Runs mutation tests with infection
 	mkdir -p .build/infection
 	vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=100 --min-msi=100
 
