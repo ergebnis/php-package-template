@@ -24,6 +24,11 @@ jobs:
         with:
           args: composer install
 
+      - name: Run localheinz/composer-normalize
+        uses: ./.github/actions/php-7.2
+        with:
+          args: composer normalize --dry-run
+
       - name: Run friendsofphp/php-cs-fixer
         uses: ./.github/actions/php-7.2
         with:
