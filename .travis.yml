@@ -15,32 +15,6 @@ stages:
 
 jobs:
   include:
-    - stage: Coverage
-
-      php: 7.2
-
-      env: WITH_LOWEST=true
-
-      before_install:
-        - source .travis/xdebug.sh
-        - xdebug-disable
-        - if [[ -n "$GITHUB_TOKEN" ]]; then composer config github-oauth.github.com $GITHUB_TOKEN; fi
-
-      install:
-        - composer install
-
-      before_script:
-        - mkdir -p .build/phpunit
-
-      script:
-        - xdebug-enable
-        - vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
-        - vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=build/logs/clover.xml --prepend=.build/phpunit/xdebug-filter.php
-        - xdebug-disable
-
-      after_success:
-        - bash <(curl -s https://codecov.io/bash)
-
     - stage: Infection
 
       php: 7.3

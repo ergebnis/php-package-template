@@ -10,8 +10,6 @@ branches:
         required_approving_review_count: 1
       required_status_checks:
         contexts:
-          - "codecov/patch"
-          - "codecov/project"
           - "Travis CI - Branch"
           - "Travis CI - Pull Request"
         strict: false
