@@ -9,12 +9,14 @@ name: CI
 jobs:
   style:
     name: Style
+
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: Build Docker image
+      - name: Build Docker image for PHP 7.2
         uses: ./.docker/php-7.2
         with:
           args: php -v
@@ -41,12 +43,14 @@ jobs:
 
   static-analysis:
     name: Static Analysis
+
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: Build Docker image
+      - name: Build Docker image for PHP 7.3
         uses: ./.docker/php-7.3
         with:
           args: php -v
@@ -60,3 +64,85 @@ jobs:
         uses: ./.docker/php-7.3
         with:
           args: vendor/bin/phpstan analyse --configuration=phpstan.neon
+
+  test-php-7-2:
+    name: Test on PHP 7.2
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        composer-command:
+          - 'update --prefer-lowest'
+          - 'install'
+          - 'update'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Build Docker image for PHP 7.2
+        uses: ./.docker/php-7.2
+        with:
+          args: php -v
+
+      - name: Install dependencies with composer
+        uses: ./.docker/php-7.2
+        with:
+          args: composer ${{ matrix.composer-command }}
+
+      - name: Run auto-review tests with phpunit/phpunit
+        uses: ./.docker/php-7.2
+        with:
+          args: vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
+
+      - name: Run unit tests with phpunit/phpunit
+        uses: ./.docker/php-7.2
+        with:
+          args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
+
+      - name: Run integration tests with phpunit/phpunit
+        uses: ./.docker/php-7.2
+        with:
+          args: vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
+
+  test-php-7-3:
+    name: Test on PHP 7.3
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        composer-command:
+          - 'update --prefer-lowest'
+          - 'install'
+          - 'update'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Build Docker image for PHP 7.3
+        uses: ./.docker/php-7.3
+        with:
+          args: php -v
+
+      - name: Install dependencies with composer
+        uses: ./.docker/php-7.3
+        with:
+          args: composer ${{ matrix.composer-command }}
+
+      - name: Run auto-review tests with phpunit/phpunit
+        uses: ./.docker/php-7.3
+        with:
+          args: vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
+
+      - name: Run unit tests with phpunit/phpunit
+        uses: ./.docker/php-7.3
+        with:
+          args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
+
+      - name: Run integration tests with phpunit/phpunit
+        uses: ./.docker/php-7.3
+        with:
+          args: vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
