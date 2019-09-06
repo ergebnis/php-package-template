@@ -37,7 +37,6 @@ jobs:
 
       script:
         - composer normalize --dry-run
-        - vendor/bin/php-cs-fixer fix --config=.php_cs --diff --dry-run --verbose
 
     - stage: Stan
 

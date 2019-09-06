@@ -1,0 +1,30 @@
+# https://help.github.com/en/categories/automating-your-workflow-with-github-actions
+
+on:
+  - push
+  - pull_request
+
+name: CI
+
+jobs:
+  php-cs-fixer:
+    name: Style
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Build Docker image
+        uses: ./.github/actions/php-7.2
+        with:
+          args: php -v
+
+      - name: Install dependencies with composer
+        uses: ./.github/actions/php-7.2
+        with:
+          args: composer install
+
+      - name: Run friendsofphp/php-cs-fixer
+        uses: ./.github/actions/php-7.2
+        with:
+          args: vendor/bin/php-cs-fixer fix --diff --dry-run --using-cache=no --verbose
