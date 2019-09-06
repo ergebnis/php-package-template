@@ -2,7 +2,7 @@
 
 We are using [GitHub Actions](https://github.com/features/actions) as a continuous integration system.
 
-For details, see [`workflows/ci.yml`](workflows/ci.yml).
+For details, see [`workflows/continuous-integration.yml`](workflows/continuous-integration.yml).
 
 ## Coding Standards
 
