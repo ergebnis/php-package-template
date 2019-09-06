@@ -7,7 +7,7 @@ on:
 name: CI
 
 jobs:
-  php-cs-fixer:
+  style:
     name: Style
     runs-on: ubuntu-latest
     steps:
