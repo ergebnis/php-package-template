@@ -146,3 +146,44 @@ jobs:
         uses: ./.docker/php-7.3
         with:
           args: vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
+
+  code-coverage:
+    name: Code Coverage
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Build Docker image for PHP 7.3 with Xdebug
+        uses: ./.docker/php-7.3-with-xdebug
+        with:
+          args: php -v
+
+      - name: Install dependencies with composer
+        uses: ./.docker/php-7.3-with-xdebug
+        with:
+          args: composer install
+
+      - name: Dump Xdebug filter with phpunit/phpunit
+        uses: ./.docker/php-7.3-with-xdebug
+        with:
+          args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
+
+      - name: Collect coverage with Xdebug and phpunit/phpunit
+        uses: ./.docker/php-7.3-with-xdebug
+        with:
+          args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=build/logs/clover.xml --prepend=.build/phpunit/xdebug-filter.php
+
+      - name: Download code coverage uploader for Codecov.io
+        uses: ./.docker/php-7.3-with-xdebug
+        with:
+          args: 'curl -s https://codecov.io/bash -o codecov'
+
+      - name: Send coverage to Codecov.io
+        uses: ./.docker/php-7.3-with-xdebug
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        with:
+          args: 'bash codecov'
