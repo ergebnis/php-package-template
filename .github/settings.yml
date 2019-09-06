@@ -10,8 +10,10 @@ branches:
         required_approving_review_count: 1
       required_status_checks:
         contexts:
-          - "Travis CI - Branch"
-          - "Travis CI - Pull Request"
+          - "Coding Standards"
+          - "Static Code Analysis"
+          - "Code Coverage"
+          - "Mutation Tests"
         strict: false
       restrictions: null
 
