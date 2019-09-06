@@ -7,21 +7,15 @@ env:
 cache:
   directories:
     - $HOME/.composer/cache
-    - .build/php-cs-fixer
-    - .build/phpstan
     - .build/phpunit
 
 stages:
-  - style
-  - stan
-  - test
+  - coverage
   - infection
 
 jobs:
   include:
-    - &TEST
-
-      stage: Test
+    - stage: Coverage
 
       php: 7.2
 
@@ -33,53 +27,19 @@ jobs:
         - if [[ -n "$GITHUB_TOKEN" ]]; then composer config github-oauth.github.com $GITHUB_TOKEN; fi
 
       install:
-        - if [[ "$WITH_LOWEST" == "true" ]]; then composer update --prefer-lowest; fi
-        - if [[ "$WITH_LOCKED" == "true" ]]; then composer install; fi
-        - if [[ "$WITH_HIGHEST" == "true" ]]; then composer update; fi
+        - composer install
 
       before_script:
         - mkdir -p .build/phpunit
 
       script:
-        - vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
-        - if [[ "$WITH_COVERAGE" == "true" ]]; then xdebug-enable; fi
-        - if [[ "$WITH_COVERAGE" == "true" ]]; then vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php; fi
-        - if [[ "$WITH_COVERAGE" == "true" ]]; then vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=build/logs/clover.xml --prepend=.build/phpunit/xdebug-filter.php; else vendor/bin/phpunit --configuration=test/Unit/phpunit.xml; fi
-        - if [[ "$WITH_COVERAGE" == "true" ]]; then xdebug-disable; fi
-        - vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
+        - xdebug-enable
+        - vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
+        - vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=build/logs/clover.xml --prepend=.build/phpunit/xdebug-filter.php
+        - xdebug-disable
 
       after_success:
-        - if [[ "$WITH_COVERAGE" == "true" ]]; then bash <(curl -s https://codecov.io/bash); fi
-
-    - <<: *TEST
-
-      php: 7.2
-
-      env: WITH_LOCKED=true
-
-    - <<: *TEST
-
-      php: 7.2
-
-      env: WITH_HIGHEST=true
-
-    - <<: *TEST
-
-      php: 7.3
-
-      env: WITH_LOWEST=true
-
-    - <<: *TEST
-
-      php: 7.3
-
-      env: WITH_LOCKED=true WITH_COVERAGE=true
-
-    - <<: *TEST
-
-      php: 7.3
-
-      env: WITH_HIGHEST=true
+        - bash <(curl -s https://codecov.io/bash)
 
     - stage: Infection
 
