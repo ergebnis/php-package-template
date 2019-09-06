@@ -10,7 +10,11 @@ branches:
         required_approving_review_count: 1
       required_status_checks:
         contexts:
-          -  ".github/workflows/ci.yml"
+          -  "Code Coverage"
+          -  "Coding Standards"
+          -  "Mutation Tests"
+          -  "Static Code Analysis"
+          -  "Tests"
         strict: false
       restrictions: null
 
