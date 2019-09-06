@@ -13,10 +13,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - &STEP_CHECKOUT
+
+        name: Checkout
         uses: actions/checkout@master
 
-      - name: "Build Docker image for PHP 7.2"
+      - &STEP_BUILD_DOCKER_IMAGE_PHP_7_2
+
+        name: "Build Docker image for PHP 7.2"
         uses: ./.docker/php-7.2
         with:
           args: php -v
@@ -47,10 +51,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
+      - <<: *STEP_CHECKOUT
 
-      - name: "Build Docker image for PHP 7.3"
+      - &STEP_BUILD_DOCKER_IMAGE_PHP_7_3
+
+        name: "Build Docker image for PHP 7.3"
         uses: ./.docker/php-7.3
         with:
           args: php -v
@@ -71,13 +76,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
+      - <<: *STEP_CHECKOUT
 
-      - name: "Build Docker image for PHP 7.2"
-        uses: ./.docker/php-7.2
-        with:
-          args: php -v
+      - <<: *STEP_BUILD_DOCKER_IMAGE_PHP_7_2
 
       - name: "Install locked dependencies with composer"
         uses: ./.docker/php-7.2
@@ -145,13 +146,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
+      - <<: *STEP_CHECKOUT
 
-      - name: "Build Docker image for PHP 7.3"
-        uses: ./.docker/php-7.3
-        with:
-          args: php -v
+      - <<: *STEP_BUILD_DOCKER_IMAGE_PHP_7_3
 
       - name: "Install locked dependencies with composer"
         uses: ./.docker/php-7.3
@@ -219,10 +216,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
+      - <<: *STEP_CHECKOUT
 
-      - name: "Build Docker image for PHP 7.3 with Xdebug"
+      - &STEP_BUILD_DOCKER_IMAGE_PHP_7_3_WITH_XDEBUG
+
+        name: "Build Docker image for PHP 7.3 with Xdebug"
         uses: ./.docker/php-7.3-with-xdebug
         with:
           args: php -v
@@ -260,13 +258,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
+      - <<: *STEP_CHECKOUT
 
-      - name: "Build Docker image for PHP 7.3 with Xdebug"
-        uses: ./.docker/php-7.3-with-xdebug
-        with:
-          args: php -v
+      - <<: *STEP_BUILD_DOCKER_IMAGE_PHP_7_3_WITH_XDEBUG
 
       - name: "Install dependencies with composer"
         uses: ./.docker/php-7.3-with-xdebug
