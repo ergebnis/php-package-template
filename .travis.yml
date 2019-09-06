@@ -19,25 +19,6 @@ stages:
 
 jobs:
   include:
-    - stage: Style
-
-      php: 7.2
-
-      before_install:
-        - source .travis/xdebug.sh
-        - xdebug-disable
-        - composer validate --strict
-        - if [[ -n "$GITHUB_TOKEN" ]]; then composer config github-oauth.github.com $GITHUB_TOKEN; fi
-
-      install:
-        - composer install
-
-      before_script:
-        - mkdir -p .build/php-cs-fixer
-
-      script:
-        - composer normalize --dry-run
-
     - stage: Stan
 
       php: 7.3
