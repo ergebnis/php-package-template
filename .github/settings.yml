@@ -10,11 +10,12 @@ branches:
         required_approving_review_count: 1
       required_status_checks:
         contexts:
-          -  "Code Coverage"
           -  "Coding Standards"
-          -  "Mutation Tests"
           -  "Static Code Analysis"
-          -  "Tests"
+          -  "Tests on PHP 7.2"
+          -  "Tests on PHP 7.3"
+          -  "Code Coverage"
+          -  "Mutation Tests"
         strict: false
       restrictions: null
 
