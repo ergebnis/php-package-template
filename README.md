@@ -1,7 +1,6 @@
 # php-library-template
 
 [![CI Status](https://github.com/localheinz/php-library-template/workflows/CI/badge.svg)](https://github.com/localheinz/php-library-template/actions)
-[![Build Status](https://travis-ci.com/localheinz/php-library-template.svg?branch=master)](https://travis-ci.com/localheinz/php-library-template)
 [![codecov](https://codecov.io/gh/localheinz/php-library-template/branch/master/graph/badge.svg)](https://codecov.io/gh/localheinz/php-library-template)
 [![Latest Stable Version](https://poser.pugx.org/localheinz/php-library-template/v/stable)](https://packagist.org/packages/localheinz/php-library-template)
 [![Total Downloads](https://poser.pugx.org/localheinz/php-library-template/downloads)](https://packagist.org/packages/localheinz/php-library-template)

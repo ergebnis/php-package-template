@@ -7,8 +7,8 @@ on:
 name: CI
 
 jobs:
-  style:
-    name: Style
+  coding-standards:
+    name: Coding Standards
 
     runs-on: ubuntu-latest
 
@@ -41,8 +41,8 @@ jobs:
         with:
           args: vendor/bin/php-cs-fixer fix --diff --dry-run --using-cache=no --verbose
 
-  static-analysis:
-    name: Static Analysis
+  static-code-analysis:
+    name: Static Code Analysis
 
     runs-on: ubuntu-latest
 
@@ -66,7 +66,7 @@ jobs:
           args: vendor/bin/phpstan analyse --configuration=phpstan.neon
 
   test-php-7-2:
-    name: Test on PHP 7.2
+    name: Tests on PHP 7.2
 
     runs-on: ubuntu-latest
 
@@ -107,7 +107,7 @@ jobs:
           args: vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
 
   test-php-7-3:
-    name: Test on PHP 7.3
+    name: Tests on PHP 7.3
 
     runs-on: ubuntu-latest
 
@@ -187,3 +187,37 @@ jobs:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         with:
           args: 'bash codecov'
+
+  mutation-tests:
+    name: Mutation Tests
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Build Docker image for PHP 7.3 with Xdebug
+        uses: ./.docker/php-7.3-with-xdebug
+        with:
+          args: php -v
+
+      - name: Install dependencies with composer
+        uses: ./.docker/php-7.3-with-xdebug
+        with:
+          args: composer install
+
+      - name: Dump Xdebug filter with phpunit/phpunit
+        uses: ./.docker/php-7.3-with-xdebug
+        with:
+          args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
+
+      - name: Collect coverage with Xdebug and phpunit/phpunit
+        uses: ./.docker/php-7.3-with-xdebug
+        with:
+          args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=build/logs/clover.xml --prepend=.build/phpunit/xdebug-filter.php
+
+      - name: Run mutation tests with infection/infection
+        uses: ./.docker/php-7.3-with-xdebug
+        with:
+          args: vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=100 --min-msi=100
