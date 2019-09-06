@@ -19,6 +19,11 @@ jobs:
         with:
           args: php -v
 
+      - name: Validate composer.json and composer.lock
+        uses: ./.github/actions/php-7.2
+        with:
+          args: composer validate --strict
+
       - name: Install dependencies with composer
         uses: ./.github/actions/php-7.2
         with:
