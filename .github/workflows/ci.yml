@@ -41,6 +41,8 @@ jobs:
 
   static-analysis:
     name: Static Analysis
+    needs:
+      - style
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
