@@ -51,11 +51,6 @@ jobs:
         with:
           args: php -v
 
-      - name: Validate composer.json and composer.lock
-        uses: ./.docker/php-7.3
-        with:
-          args: composer validate --strict
-
       - name: Install dependencies with composer
         uses: ./.docker/php-7.3
         with:
