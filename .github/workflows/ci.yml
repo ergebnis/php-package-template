@@ -15,27 +15,27 @@ jobs:
         uses: actions/checkout@master
 
       - name: Build Docker image
-        uses: ./.github/actions/php-7.2
+        uses: ./.docker/php-7.2
         with:
           args: php -v
 
       - name: Validate composer.json and composer.lock
-        uses: ./.github/actions/php-7.2
+        uses: ./.docker/php-7.2
         with:
           args: composer validate --strict
 
       - name: Install dependencies with composer
-        uses: ./.github/actions/php-7.2
+        uses: ./.docker/php-7.2
         with:
           args: composer install
 
       - name: Run localheinz/composer-normalize
-        uses: ./.github/actions/php-7.2
+        uses: ./.docker/php-7.2
         with:
           args: composer normalize --dry-run
 
       - name: Run friendsofphp/php-cs-fixer
-        uses: ./.github/actions/php-7.2
+        uses: ./.docker/php-7.2
         with:
           args: vendor/bin/php-cs-fixer fix --diff --dry-run --using-cache=no --verbose
 
@@ -47,21 +47,21 @@ jobs:
         uses: actions/checkout@master
 
       - name: Build Docker image
-        uses: ./.github/actions/php-7.3
+        uses: ./.docker/php-7.3
         with:
           args: php -v
 
       - name: Validate composer.json and composer.lock
-        uses: ./.github/actions/php-7.3
+        uses: ./.docker/php-7.3
         with:
           args: composer validate --strict
 
       - name: Install dependencies with composer
-        uses: ./.github/actions/php-7.3
+        uses: ./.docker/php-7.3
         with:
           args: composer install
 
       - name: Run phpstan/phpstan
-        uses: ./.github/actions/php-7.3
+        uses: ./.docker/php-7.3
         with:
           args: vendor/bin/phpstan analyse --configuration=phpstan.neon
