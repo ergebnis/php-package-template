@@ -38,3 +38,30 @@ jobs:
         uses: ./.github/actions/php-7.2
         with:
           args: vendor/bin/php-cs-fixer fix --diff --dry-run --using-cache=no --verbose
+
+  static-analysis:
+    name: Static Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Build Docker image
+        uses: ./.github/actions/php-7.3
+        with:
+          args: php -v
+
+      - name: Validate composer.json and composer.lock
+        uses: ./.github/actions/php-7.3
+        with:
+          args: composer validate --strict
+
+      - name: Install dependencies with composer
+        uses: ./.github/actions/php-7.3
+        with:
+          args: composer install
+
+      - name: Run phpstan/phpstan
+        uses: ./.github/actions/php-7.3
+        with:
+          args: vendor/bin/phpstan analyse --configuration=phpstan.neon
