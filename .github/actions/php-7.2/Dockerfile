@@ -6,6 +6,7 @@ RUN apt-get update \
         git \
         libicu-dev \
         zlib1g-dev \
+        zip \
     && apt-get clean --assume-yes \
     && docker-php-ext-configure intl \
     && docker-php-ext-install \
