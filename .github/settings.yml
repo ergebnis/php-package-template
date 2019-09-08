@@ -12,8 +12,12 @@ branches:
         contexts:
           -  "Coding Standards"
           -  "Static Code Analysis"
-          -  "Tests on PHP 7.2"
-          -  "Tests on PHP 7.3"
+          -  "Tests on PHP 7.2 (lowest)"
+          -  "Tests on PHP 7.2 (locked)"
+          -  "Tests on PHP 7.2 (highest)"
+          -  "Tests on PHP 7.3 (lowest)"
+          -  "Tests on PHP 7.3 (locked)"
+          -  "Tests on PHP 7.3 (highest)"
           -  "Code Coverage"
           -  "Mutation Tests"
         strict: false
