@@ -20,30 +20,30 @@ jobs:
 
     steps:
       - name: Checkout
-        if: github.ref == 'master'
+        if: github.ref == 'refs/heads/master'
         uses: actions/checkout@master
 
       - name: Docker Login
-        if: github.ref == 'master'
+        if: github.ref == 'refs/heads/master'
         uses: actions/docker/login@master
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD : ${{ secrets.DOCKER_PASSWORD }}
 
       - name: "Build and tag Docker image"
-        if: github.ref == 'master'
+        if: github.ref == 'refs/heads/master'
         uses: actions/docker/cli@master
         with:
           args: build --tag localheinz/php-library-template-${{ matrix.image }} .docker/${{ matrix.image }}
 
       - name: "Push  Docker image"
-        if: github.ref == 'master'
+        if: github.ref == 'refs/heads/master'
         uses: actions/docker/cli@master
         with:
           args: push localheinz/php-library-template-${{ matrix.image }}
 
       - name: Docker Logout
-        if: github.ref == 'master'
+        if: github.ref == 'refs/heads/master'
         uses: actions/docker/cli@master
         env:
           args: logout
