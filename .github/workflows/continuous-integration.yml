@@ -198,11 +198,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: "Build Docker image for PHP 7.3 with Xdebug"
-        uses: ./.docker/php-7.3-with-xdebug
-        with:
-          args: php -v
-
       - name: "Install locked dependencies with composer"
         uses: docker://localheinz/php-library-template-php-7.3-with-xdebug
         with:
