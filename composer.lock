@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ee2a8b551804643c139c0cdd9bc08c8",
+    "content-hash": "95fb7a5faf1082d3104f0339f28f444e",
     "packages": [],
     "packages-dev": [
         {
@@ -1170,31 +1170,31 @@
         },
         {
             "name": "localheinz/phpstan-rules",
-            "version": "0.10.0",
+            "version": "0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/phpstan-rules.git",
-                "reference": "eb5d1ae69a744b760dbc153a7bdc5a05877c7cc3"
+                "reference": "0abba7ad2fa82dd441b42792e7df24c94e947dcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/eb5d1ae69a744b760dbc153a7bdc5a05877c7cc3",
-                "reference": "eb5d1ae69a744b760dbc153a7bdc5a05877c7cc3",
+                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/0abba7ad2fa82dd441b42792e7df24c94e947dcb",
+                "reference": "0abba7ad2fa82dd441b42792e7df24c94e947dcb",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "^4.1.0",
+                "nikic/php-parser": "^4.2.3",
                 "php": "^7.1",
-                "phpstan/phpstan": "~0.11.7"
+                "phpstan/phpstan": "~0.11.15"
             },
             "require-dev": {
-                "infection/infection": "~0.12.2",
-                "localheinz/composer-normalize": "^1.1.1",
-                "localheinz/php-cs-fixer-config": "~1.21.0",
+                "infection/infection": "~0.13.6",
+                "localheinz/composer-normalize": "^1.3.1",
+                "localheinz/php-cs-fixer-config": "~1.23.0",
                 "localheinz/test-util": "~0.7.0",
-                "phpstan/phpstan-deprecation-rules": "~0.11.1",
+                "phpstan/phpstan-deprecation-rules": "~0.11.2",
                 "phpstan/phpstan-strict-rules": "~0.11.1",
-                "phpunit/phpunit": "^7.5.9"
+                "phpunit/phpunit": "^7.5.15"
             },
             "type": "phpstan-extension",
             "extra": {
@@ -1226,7 +1226,7 @@
                 "phpstan-extreme-rules",
                 "phpstan-rules"
             ],
-            "time": "2019-05-22T20:35:17+00:00"
+            "time": "2019-09-07T11:25:45+00:00"
         },
         {
             "name": "localheinz/test-util",
@@ -1993,16 +1993,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.2.3",
+            "version": "v4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "e612609022e935f3d0337c1295176505b41188c8"
+                "reference": "97e59c7a16464196a8b9c77c47df68e4a39a45c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/e612609022e935f3d0337c1295176505b41188c8",
-                "reference": "e612609022e935f3d0337c1295176505b41188c8",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/97e59c7a16464196a8b9c77c47df68e4a39a45c4",
+                "reference": "97e59c7a16464196a8b9c77c47df68e4a39a45c4",
                 "shasum": ""
             },
             "require": {
@@ -2040,7 +2040,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-08-12T20:17:41+00:00"
+            "time": "2019-09-01T07:51:21+00:00"
         },
         {
             "name": "ocramius/package-versions",
