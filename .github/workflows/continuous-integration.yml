@@ -70,6 +70,13 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        dependencies:
+          - lowest
+          - locked
+          - highest
+
     steps:
       - name: Checkout
         uses: actions/checkout@master
@@ -79,47 +86,20 @@ jobs:
         with:
           args: php -v
 
-      - name: "Install locked dependencies with composer"
-        uses: ./.docker/php-7.2
-        with:
-          args: composer install
-
-      - name: "Run auto-review tests with phpunit/phpunit"
-        uses: ./.docker/php-7.2
-        with:
-          args: vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
-
-      - name: "Run unit tests with phpunit/phpunit"
-        uses: ./.docker/php-7.2
-        with:
-          args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
-
-      - name: "Run integration tests with phpunit/phpunit"
-        uses: ./.docker/php-7.2
-        with:
-          args: vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
-
       - name: "Install lowest dependencies with composer"
+        if: matrix.dependencies == 'lowest'
         uses: ./.docker/php-7.2
         with:
           args: composer update --prefer-lowest
 
-      - name: "Run auto-review tests with phpunit/phpunit"
+      - name: "Install locked dependencies with composer"
+        if: matrix.dependencies == 'locked'
         uses: ./.docker/php-7.2
         with:
-          args: vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
-
-      - name: "Run unit tests with phpunit/phpunit"
-        uses: ./.docker/php-7.2
-        with:
-          args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
-
-      - name: "Run integration tests with phpunit/phpunit"
-        uses: ./.docker/php-7.2
-        with:
-          args: vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
+          args: composer install
 
       - name: "Install highest dependencies with composer"
+        if: matrix.dependencies == 'highest'
         uses: ./.docker/php-7.2
         with:
           args: composer update
@@ -144,6 +124,13 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        dependencies:
+          - lowest
+          - locked
+          - highest
+
     steps:
       - name: Checkout
         uses: actions/checkout@master
@@ -153,31 +140,24 @@ jobs:
         with:
           args: php -v
 
-      - name: "Install locked dependencies with composer"
-        uses: ./.docker/php-7.3
-        with:
-          args: composer install
-
-      - name: "Run auto-review tests with phpunit/phpunit"
-        uses: ./.docker/php-7.3
-        with:
-          args: vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
-
-      - name: "Run unit tests with phpunit/phpunit"
-        uses: ./.docker/php-7.3
-        with:
-          args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
-
-      - name: "Run integration tests with phpunit/phpunit"
-        uses: ./.docker/php-7.3
-        with:
-          args: vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
-
       - name: "Install lowest dependencies with composer"
+        if: matrix.dependencies == 'lowest'
         uses: ./.docker/php-7.3
         with:
           args: composer update --prefer-lowest
 
+      - name: "Install locked dependencies with composer"
+        if: matrix.dependencies == 'locked'
+        uses: ./.docker/php-7.3
+        with:
+          args: composer install
+
+      - name: "Install highest dependencies with composer"
+        if: matrix.dependencies == 'highest'
+        uses: ./.docker/php-7.3
+        with:
+          args: composer update
+
       - name: "Run auto-review tests with phpunit/phpunit"
         uses: ./.docker/php-7.3
         with:
@@ -192,11 +172,6 @@ jobs:
         uses: ./.docker/php-7.3
         with:
           args: vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
-
-      - name: "Install highest dependencies with composer"
-        uses: ./.docker/php-7.3
-        with:
-          args: composer update
 
       - name: "Run auto-review tests with phpunit/phpunit"
         uses: ./.docker/php-7.3
