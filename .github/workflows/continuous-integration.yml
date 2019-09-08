@@ -177,17 +177,15 @@ jobs:
         with:
           args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=build/logs/clover.xml --prepend=.build/phpunit/xdebug-filter.php
 
-      - name: Download code coverage uploader for Codecov.io
+      - name: "Download code coverage uploader for Codecov.io"
         uses: docker://localheinz/php-library-template-php-7.3-with-xdebug
         with:
           args: 'curl -s https://codecov.io/bash -o codecov'
 
-      - name: Send coverage to Codecov.io
+      - name: "Send coverage to Codecov.io"
         uses: docker://localheinz/php-library-template-php-7.3-with-xdebug
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         with:
-          args: 'bash codecov'
+          args: 'bash codecov -t ${{ secrets.CODECOV_TOKEN }}'
 
   mutation-tests:
     name: "Mutation Tests"
