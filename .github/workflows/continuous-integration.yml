@@ -206,11 +206,6 @@ jobs:
         with:
           args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
 
-      - name: "Collect coverage with Xdebug and phpunit/phpunit"
-        uses: docker://localheinz/php-library-template-php-7.3-with-xdebug
-        with:
-          args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=build/logs/clover.xml --prepend=.build/phpunit/xdebug-filter.php
-
       - name: "Run mutation tests with infection/infection"
         uses: docker://localheinz/php-library-template-php-7.3-with-xdebug
         with:
