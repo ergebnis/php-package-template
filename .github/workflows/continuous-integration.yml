@@ -26,7 +26,7 @@ jobs:
         with:
           args: composer validate --strict
 
-      - name: "Install dependencies with composer"
+      - name: "Install locked dependencies with composer"
         uses: ./.docker/php-7.2
         with:
           args: composer install
@@ -55,7 +55,7 @@ jobs:
         with:
           args: php -v
 
-      - name: "Install dependencies with composer"
+      - name: "Install locked dependencies with composer"
         uses: ./.docker/php-7.3
         with:
           args: composer install
@@ -202,7 +202,7 @@ jobs:
         with:
           args: php -v
 
-      - name: "Install dependencies with composer"
+      - name: "Install locked dependencies with composer"
         uses: ./.docker/php-7.3-with-xdebug
         with:
           args: composer install
@@ -243,7 +243,7 @@ jobs:
         with:
           args: php -v
 
-      - name: "Install dependencies with composer"
+      - name: "Install locked dependencies with composer"
         uses: ./.docker/php-7.3-with-xdebug
         with:
           args: composer install
