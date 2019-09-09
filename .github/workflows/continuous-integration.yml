@@ -4,7 +4,7 @@ on:
   - pull_request
   - push
 
-name: Continuous Integration
+name: "Continuous Integration"
 
 jobs:
   coding-standards:
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: "Checkout"
         uses: actions/checkout@master
 
       - name: "Validate composer.json and composer.lock"
@@ -42,7 +42,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: "Checkout"
         uses: actions/checkout@master
 
       - name: "Install locked dependencies with composer"
@@ -68,7 +68,7 @@ jobs:
           - highest
 
     steps:
-      - name: Checkout
+      - name: "Checkout"
         uses: actions/checkout@master
 
       - name: "Install lowest dependencies with composer"
@@ -117,7 +117,7 @@ jobs:
           - highest
 
     steps:
-      - name: Checkout
+      - name: "Checkout"
         uses: actions/checkout@master
 
       - name: "Install lowest dependencies with composer"
@@ -159,7 +159,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: "Checkout"
         uses: actions/checkout@master
 
       - name: "Install locked dependencies with composer"
@@ -193,7 +193,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: "Checkout"
         uses: actions/checkout@master
 
       - name: "Install locked dependencies with composer"
