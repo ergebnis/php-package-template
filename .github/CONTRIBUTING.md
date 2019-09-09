@@ -52,18 +52,6 @@ $ make infection
 
 to run mutation tests.
 
-## Benchmarks
-
-We are using [`phpbench/phpbench`](http://github.com/phpbench/phpbench) to benchmark performance and memory consumption.
-
-Run
-
-```
-$ make bench
-```
-
-to run all the benchmarks.
-
 ## Extra lazy?
 
 Run
@@ -72,7 +60,7 @@ Run
 $ make
 ```
 
-to enforce coding standards, perform a static code analysis, run tests, and run benchmarks!
+to enforce coding standards, perform a static code analysis, and run tests!
 
 :bulb: Run
 

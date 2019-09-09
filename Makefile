@@ -1,9 +1,6 @@
-.PHONY: bench coverage cs help infection it stan test
+.PHONY: coverage cs help infection it stan test
 
-it: cs stan test bench ## Runs the cs, stan, test, and bench targets
-
-bench: vendor ## Runs benchmarks with phpbench
-	vendor/bin/phpbench run --report=aggregate
+it: cs stan test ## Runs the cs, stan, and test targets
 
 coverage: vendor ## Collects coverage from running unit tests with phpunit
 	mkdir -p .build/phpunit
