@@ -120,8 +120,5 @@ jobs:
       - name: "Install locked dependencies with composer"
         run: php7.3 /usr/bin/composer install
 
-      - name: "Dump Xdebug filter with phpunit/phpunit"
-        run: php7.3 vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
-
       - name: "Run mutation tests with infection/infection"
         run: php7.3 vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=100 --min-msi=100
