@@ -17,24 +17,16 @@ jobs:
         uses: actions/checkout@master
 
       - name: "Validate composer.json and composer.lock"
-        uses: docker://localheinz/php-library-template-php-7.2
-        with:
-          args: composer validate --strict
+        run: php7.2 /usr/bin/composer validate --strict
 
       - name: "Install locked dependencies with composer"
-        uses: docker://localheinz/php-library-template-php-7.2
-        with:
-          args: composer install
+        run: php7.2 /usr/bin/composer install
 
       - name: "Run localheinz/composer-normalize"
-        uses: docker://localheinz/php-library-template-php-7.2
-        with:
-          args: composer normalize --dry-run
+        run: php7.2 /usr/bin/composer normalize --dry-run
 
       - name: "Run friendsofphp/php-cs-fixer"
-        uses: docker://localheinz/php-library-template-php-7.2
-        with:
-          args: vendor/bin/php-cs-fixer fix --diff --dry-run --using-cache=no --verbose
+        run: php7.2 vendor/bin/php-cs-fixer fix --diff --dry-run --using-cache=no --verbose
 
   static-code-analysis:
     name: "Static Code Analysis"
@@ -46,22 +38,22 @@ jobs:
         uses: actions/checkout@master
 
       - name: "Install locked dependencies with composer"
-        uses: docker://localheinz/php-library-template-php-7.3
-        with:
-          args: composer install
+        run: php7.2 /usr/bin/composer install
 
       - name: "Run phpstan/phpstan"
-        uses: docker://localheinz/php-library-template-php-7.3
-        with:
-          args: vendor/bin/phpstan analyse --configuration=phpstan.neon
+        run: php7.2 vendor/bin/phpstan analyse --configuration=phpstan.neon
 
-  tests-php-7-2:
-    name: "Tests on PHP 7.2"
+  tests:
+    name: "Tests"
 
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
+        php-binary:
+          - php7.2
+          - php7.3
+
         dependencies:
           - lowest
           - locked
@@ -73,85 +65,24 @@ jobs:
 
       - name: "Install lowest dependencies with composer"
         if: matrix.dependencies == 'lowest'
-        uses: docker://localheinz/php-library-template-php-7.2
-        with:
-          args: composer update --prefer-lowest
+        run: ${{ matrix.php-binary }} /usr/bin/composer update --prefer-lowest
 
       - name: "Install locked dependencies with composer"
         if: matrix.dependencies == 'locked'
-        uses: docker://localheinz/php-library-template-php-7.2
-        with:
-          args: composer install
+        run: ${{ matrix.php-binary }} /usr/bin/composer install
 
       - name: "Install highest dependencies with composer"
         if: matrix.dependencies == 'highest'
-        uses: docker://localheinz/php-library-template-php-7.2
-        with:
-          args: composer update
+        run: ${{ matrix.php-binary }} /usr/bin/composer update
 
       - name: "Run auto-review tests with phpunit/phpunit"
-        uses: docker://localheinz/php-library-template-php-7.2
-        with:
-          args: vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
+        run: ${{ matrix.php-binary }} vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
 
       - name: "Run unit tests with phpunit/phpunit"
-        uses: docker://localheinz/php-library-template-php-7.2
-        with:
-          args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
+        run: ${{ matrix.php-binary }} vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
 
       - name: "Run integration tests with phpunit/phpunit"
-        uses: docker://localheinz/php-library-template-php-7.2
-        with:
-          args: vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
-
-  tests-php-7-3:
-    name: "Tests on PHP 7.3"
-
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        dependencies:
-          - lowest
-          - locked
-          - highest
-
-    steps:
-      - name: "Checkout"
-        uses: actions/checkout@master
-
-      - name: "Install lowest dependencies with composer"
-        if: matrix.dependencies == 'lowest'
-        uses: docker://localheinz/php-library-template-php-7.3
-        with:
-          args: composer update --prefer-lowest
-
-      - name: "Install locked dependencies with composer"
-        if: matrix.dependencies == 'locked'
-        uses: docker://localheinz/php-library-template-php-7.3
-        with:
-          args: composer install
-
-      - name: "Install highest dependencies with composer"
-        if: matrix.dependencies == 'highest'
-        uses: docker://localheinz/php-library-template-php-7.3
-        with:
-          args: composer update
-
-      - name: "Run auto-review tests with phpunit/phpunit"
-        uses: docker://localheinz/php-library-template-php-7.3
-        with:
-          args: vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
-
-      - name: "Run unit tests with phpunit/phpunit"
-        uses: docker://localheinz/php-library-template-php-7.3
-        with:
-          args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
-
-      - name: "Run integration tests with phpunit/phpunit"
-        uses: docker://localheinz/php-library-template-php-7.3
-        with:
-          args: vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
+        run: ${{ matrix.php-binary }} vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
 
   code-coverage:
     name: "Code Coverage"
@@ -163,29 +94,19 @@ jobs:
         uses: actions/checkout@master
 
       - name: "Install locked dependencies with composer"
-        uses: docker://localheinz/php-library-template-php-7.3-with-xdebug
-        with:
-          args: composer install
+        run: php7.3 /usr/bin/composer install
 
       - name: "Dump Xdebug filter with phpunit/phpunit"
-        uses: docker://localheinz/php-library-template-php-7.3-with-xdebug
-        with:
-          args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
+        run: php7.3 vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
 
       - name: "Collect coverage with Xdebug and phpunit/phpunit"
-        uses: docker://localheinz/php-library-template-php-7.3-with-xdebug
-        with:
-          args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=build/logs/clover.xml --prepend=.build/phpunit/xdebug-filter.php
+        run: php7.3 vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=build/logs/clover.xml --prepend=.build/phpunit/xdebug-filter.php
 
       - name: "Download code coverage uploader for Codecov.io"
-        uses: docker://localheinz/php-library-template-php-7.3-with-xdebug
-        with:
-          args: 'curl -s https://codecov.io/bash -o codecov'
+        run: curl -s https://codecov.io/bash -o codecov
 
       - name: "Send coverage to Codecov.io"
-        uses: docker://localheinz/php-library-template-php-7.3-with-xdebug
-        with:
-          args: 'bash codecov -t ${{ secrets.CODECOV_TOKEN }}'
+        run: bash codecov -t ${{ secrets.CODECOV_TOKEN }}
 
   mutation-tests:
     name: "Mutation Tests"
@@ -197,16 +118,10 @@ jobs:
         uses: actions/checkout@master
 
       - name: "Install locked dependencies with composer"
-        uses: docker://localheinz/php-library-template-php-7.3-with-xdebug
-        with:
-          args: composer install
+        run: php7.3 /usr/bin/composer install
 
       - name: "Dump Xdebug filter with phpunit/phpunit"
-        uses: docker://localheinz/php-library-template-php-7.3-with-xdebug
-        with:
-          args: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
+        run: php7.3 vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
 
       - name: "Run mutation tests with infection/infection"
-        uses: docker://localheinz/php-library-template-php-7.3-with-xdebug
-        with:
-          args: vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=100 --min-msi=100
+        run: php7.3 vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=100 --min-msi=100
