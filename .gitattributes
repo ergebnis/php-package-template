@@ -1,5 +1,4 @@
 /.dependabot/       export-ignore
-/.docker/           export-ignore
 /.github/           export-ignore
 /test/              export-ignore
 /.editorconfig      export-ignore
