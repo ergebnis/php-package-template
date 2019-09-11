@@ -106,7 +106,7 @@ jobs:
         run: curl -s https://codecov.io/bash -o codecov
 
       - name: "Send code coverage report to Codecov.io"
-        run: bash codecov -t ${{ secrets.CODECOV_TOKEN }} -Z
+        run: bash codecov -B ${GITHUB_REF#refs/heads/} -r ${GITHUB_REPOSITORY} -Z
 
   mutation-tests:
     name: "Mutation Tests"
