@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32ff0a1e8fd3106a0f2105fb77c8e4f5",
+    "content-hash": "4476638bccda25a53f83fa301bff27a6",
     "packages": [],
     "packages-dev": [
         {
@@ -1110,16 +1110,16 @@
         },
         {
             "name": "localheinz/phpstan-rules",
-            "version": "0.11.0",
+            "version": "0.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/phpstan-rules.git",
-                "reference": "0abba7ad2fa82dd441b42792e7df24c94e947dcb"
+                "reference": "76963b6c9f3493ac0596a4f8819198bd746ab396"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/0abba7ad2fa82dd441b42792e7df24c94e947dcb",
-                "reference": "0abba7ad2fa82dd441b42792e7df24c94e947dcb",
+                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/76963b6c9f3493ac0596a4f8819198bd746ab396",
+                "reference": "76963b6c9f3493ac0596a4f8819198bd746ab396",
                 "shasum": ""
             },
             "require": {
@@ -1134,7 +1134,9 @@
                 "localheinz/test-util": "~0.7.0",
                 "phpstan/phpstan-deprecation-rules": "~0.11.2",
                 "phpstan/phpstan-strict-rules": "~0.11.1",
-                "phpunit/phpunit": "^7.5.15"
+                "phpunit/phpunit": "^7.5.15",
+                "psr/container": "^1.0.0",
+                "zendframework/zend-servicemanager": "^2.0.0"
             },
             "type": "phpstan-extension",
             "extra": {
@@ -1166,7 +1168,7 @@
                 "phpstan-extreme-rules",
                 "phpstan-rules"
             ],
-            "time": "2019-09-07T11:25:45+00:00"
+            "time": "2019-09-13T20:47:42+00:00"
         },
         {
             "name": "localheinz/test-util",
@@ -2097,18 +2099,18 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "role": "Developer",
-                    "email": "arne@blankerts.de"
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
                 },
                 {
                     "name": "Sebastian Heuer",
-                    "role": "Developer",
-                    "email": "sebastian@phpeople.de"
+                    "email": "sebastian@phpeople.de",
+                    "role": "Developer"
                 },
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "Developer",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "Developer"
                 }
             ],
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
@@ -2752,8 +2754,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "FilterIterator implementation that filters files based on a list of suffixes.",
@@ -2794,8 +2796,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Simple template engine.",
@@ -2843,8 +2845,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Utility class for timing",
@@ -2973,8 +2975,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "The PHP Unit Testing framework.",
@@ -3696,8 +3698,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Collection of value objects that represent the types of the PHP type system",
@@ -3739,8 +3741,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
