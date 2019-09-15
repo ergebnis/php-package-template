@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef0ceae94b32743c561ec9efa290aa35",
+    "content-hash": "84c196833509e07dee78b84219033eb2",
     "packages": [],
     "packages-dev": [
         {
@@ -1110,16 +1110,16 @@
         },
         {
             "name": "localheinz/phpstan-rules",
-            "version": "0.12.0",
+            "version": "0.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/phpstan-rules.git",
-                "reference": "76963b6c9f3493ac0596a4f8819198bd746ab396"
+                "reference": "dfcbc7966ac666cb5332ad6a6847a49527b2d4d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/76963b6c9f3493ac0596a4f8819198bd746ab396",
-                "reference": "76963b6c9f3493ac0596a4f8819198bd746ab396",
+                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/dfcbc7966ac666cb5332ad6a6847a49527b2d4d7",
+                "reference": "dfcbc7966ac666cb5332ad6a6847a49527b2d4d7",
                 "shasum": ""
             },
             "require": {
@@ -1134,7 +1134,7 @@
                 "localheinz/test-util": "~0.7.0",
                 "phpstan/phpstan-deprecation-rules": "~0.11.2",
                 "phpstan/phpstan-strict-rules": "~0.11.1",
-                "phpunit/phpunit": "^7.5.15",
+                "phpunit/phpunit": "^7.5.16",
                 "psr/container": "^1.0.0",
                 "zendframework/zend-servicemanager": "^2.0.0"
             },
@@ -1168,7 +1168,7 @@
                 "phpstan-extreme-rules",
                 "phpstan-rules"
             ],
-            "time": "2019-09-13T20:47:42+00:00"
+            "time": "2019-09-15T12:23:06+00:00"
         },
         {
             "name": "localheinz/test-util",
