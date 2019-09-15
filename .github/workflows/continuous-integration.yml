@@ -38,10 +38,10 @@ jobs:
         uses: actions/checkout@master
 
       - name: "Install locked dependencies with composer"
-        run: php7.2 $(which composer) install --no-interaction --no-progress --no-suggest
+        run: php7.3 $(which composer) install --no-interaction --no-progress --no-suggest
 
       - name: "Run phpstan/phpstan"
-        run: php7.2 vendor/bin/phpstan analyse --configuration=phpstan.neon
+        run: php7.3 vendor/bin/phpstan analyse --configuration=phpstan.neon
 
   tests:
     name: "Tests"
