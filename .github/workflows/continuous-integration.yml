@@ -16,6 +16,9 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@master
 
+      - name: "Disable Xdebug"
+        run: php7.2 --ini | grep xdebug | sed 's/,$//' | xargs sudo rm
+
       - name: "Validate composer.json and composer.lock"
         run: php7.2 $(which composer) validate --strict
 
@@ -36,6 +39,9 @@ jobs:
     steps:
       - name: "Checkout"
         uses: actions/checkout@master
+
+      - name: "Disable Xdebug"
+        run: php7.3 --ini | grep xdebug | sed 's/,$//' | xargs sudo rm
 
       - name: "Install locked dependencies with composer"
         run: php7.3 $(which composer) install --no-interaction --no-progress --no-suggest
@@ -62,6 +68,9 @@ jobs:
     steps:
       - name: "Checkout"
         uses: actions/checkout@master
+
+      - name: "Disable Xdebug"
+        run: ${{ matrix.php-binary }} --ini | grep xdebug | sed 's/,$//' | xargs sudo rm
 
       - name: "Install lowest dependencies with composer"
         if: matrix.dependencies == 'lowest'
