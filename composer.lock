@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac10d6266e5b5aba1bc6f3b6ad6634f2",
+    "content-hash": "c3872cbc63319423d0288fdb8e83be97",
     "packages": [],
     "packages-dev": [
         {
@@ -1122,30 +1122,32 @@
         },
         {
             "name": "localheinz/test-util",
-            "version": "0.7.0",
+            "version": "0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/test-util.git",
-                "reference": "340d168a637f33e9f0d41e8c950c7e1e8bb6b19f"
+                "reference": "75a2719bc7bb846219adb3379fda5ce79cc9091b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/test-util/zipball/340d168a637f33e9f0d41e8c950c7e1e8bb6b19f",
-                "reference": "340d168a637f33e9f0d41e8c950c7e1e8bb6b19f",
+                "url": "https://api.github.com/repos/localheinz/test-util/zipball/75a2719bc7bb846219adb3379fda5ce79cc9091b",
+                "reference": "75a2719bc7bb846219adb3379fda5ce79cc9091b",
                 "shasum": ""
             },
             "require": {
-                "fzaninotto/faker": "^1.7.1",
+                "fzaninotto/faker": "^1.8.0",
                 "localheinz/classy": "0.3.0",
-                "php": "^7.1"
+                "php": "^7.2"
             },
             "require-dev": {
-                "infection/infection": "~0.8.2",
-                "localheinz/php-cs-fixer-config": "~1.14.0",
-                "phpstan/phpstan": "~0.9.2",
-                "phpstan/phpstan-phpunit": "~0.9.4",
-                "phpstan/phpstan-strict-rules": "~0.9.0",
-                "phpunit/phpunit": "^6.0.0 || ^7.0.0"
+                "infection/infection": "~0.11.4",
+                "localheinz/composer-normalize": "^1.0.0",
+                "localheinz/php-cs-fixer-config": "~1.23.0",
+                "localheinz/phpstan-rules": "~0.5.0",
+                "phpstan/phpstan": "~0.10.5",
+                "phpstan/phpstan-phpunit": "~0.10.0",
+                "phpstan/phpstan-strict-rules": "~0.10.1",
+                "phpunit/phpunit": "^7.5.16 || ^8.0.0"
             },
             "type": "library",
             "autoload": {
@@ -1171,7 +1173,7 @@
                 "phpunit",
                 "test"
             ],
-            "time": "2018-06-25T06:22:47+00:00"
+            "time": "2019-10-22T18:17:06+00:00"
         },
         {
             "name": "myclabs/deep-copy",
