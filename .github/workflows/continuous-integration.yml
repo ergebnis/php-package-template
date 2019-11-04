@@ -25,7 +25,7 @@ jobs:
       - name: "Cache composer dependencies"
         uses: actions/cache@preview
         with:
-          path: ${COMPOSER_HOME}/cache/files
+          path: ~/.composer/cache/files
           key: composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-${{ github.sha }}
           restore-keys: |
             composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-
@@ -55,7 +55,7 @@ jobs:
       - name: "Cache composer dependencies"
         uses: actions/cache@preview
         with:
-          path: ${COMPOSER_HOME}/cache/files
+          path: ~/.composer/cache/files
           key: composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-${{ github.sha }}
           restore-keys: |
             composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-
@@ -93,7 +93,7 @@ jobs:
       - name: "Cache composer dependencies"
         uses: actions/cache@preview
         with:
-          path: ${COMPOSER_HOME}/cache/files
+          path: ~/.composer/cache/files
           key: composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-${{ github.sha }}
           restore-keys: |
             composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-
@@ -132,7 +132,7 @@ jobs:
       - name: "Cache composer dependencies"
         uses: actions/cache@preview
         with:
-          path: ${COMPOSER_HOME}/cache/files
+          path: ~/.composer/cache/files
           key: composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-${{ github.sha }}
           restore-keys: |
             composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-
@@ -165,7 +165,7 @@ jobs:
       - name: "Cache composer dependencies"
         uses: actions/cache@preview
         with:
-          path: ${COMPOSER_HOME}/cache/files
+          path: ~/.composer/cache/files
           key: composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-${{ github.sha }}
           restore-keys: |
             composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-
