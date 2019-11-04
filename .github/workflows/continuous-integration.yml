@@ -22,8 +22,6 @@ jobs:
       - name: "Validate composer.json and composer.lock"
         run: php7.2 $(which composer) validate --strict
 
-      - run: env
-
       - name: "Restore composer dependencies"
         uses: actions/cache@preview
         id: cache
@@ -55,7 +53,6 @@ jobs:
       - name: "Disable Xdebug"
         run: php7.3 --ini | grep xdebug | sed 's/,$//' | xargs sudo rm
 
-      - run: env
       - name: "Restore composer dependencies"
         uses: actions/cache@preview
         id: cache
@@ -95,7 +92,6 @@ jobs:
       - name: "Disable Xdebug"
         run: ${{ matrix.php-binary }} --ini | grep xdebug | sed 's/,$//' | xargs sudo rm
 
-      - run: env
       - name: "Restore composer dependencies"
         uses: actions/cache@preview
         id: cache
@@ -136,7 +132,6 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@master
 
-      - run: env
       - name: "Restore composer dependencies"
         uses: actions/cache@preview
         id: cache
@@ -171,7 +166,6 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@master
 
-      - run: env
       - name: "Restore composer dependencies"
         uses: actions/cache@preview
         id: cache
