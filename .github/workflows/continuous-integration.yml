@@ -22,6 +22,16 @@ jobs:
       - name: "Validate composer.json and composer.lock"
         run: php7.2 $(which composer) validate --strict
 
+      - name: "Restore composer dependencies"
+        uses: actions/cache@preview
+        id: cache
+        with:
+          path: ~/.composer/cache/files
+          key: composer-cache-${{ github.ref }}
+          restore-keys: |
+            composer-cache-${{ github.ref }}
+            composer-cache
+
       - name: "Install locked dependencies with composer"
         run: php7.2 $(which composer) install --no-interaction --no-progress --no-suggest
 
@@ -42,6 +52,16 @@ jobs:
 
       - name: "Disable Xdebug"
         run: php7.3 --ini | grep xdebug | sed 's/,$//' | xargs sudo rm
+
+      - name: "Restore composer dependencies"
+        uses: actions/cache@preview
+        id: cache
+        with:
+          path: ~/.composer/cache/files
+          key: composer-cache-${{ github.ref }}
+          restore-keys: |
+            composer-cache-${{ github.ref }}
+            composer-cache
 
       - name: "Install locked dependencies with composer"
         run: php7.3 $(which composer) install --no-interaction --no-progress --no-suggest
@@ -71,6 +91,16 @@ jobs:
 
       - name: "Disable Xdebug"
         run: ${{ matrix.php-binary }} --ini | grep xdebug | sed 's/,$//' | xargs sudo rm
+
+      - name: "Restore composer dependencies"
+        uses: actions/cache@preview
+        id: cache
+        with:
+          path: ~/.composer/cache/files
+          key: composer-cache-${{ github.ref }}
+          restore-keys: |
+            composer-cache-${{ github.ref }}
+            composer-cache
 
       - name: "Install lowest dependencies with composer"
         if: matrix.dependencies == 'lowest'
@@ -102,6 +132,16 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@master
 
+      - name: "Restore composer dependencies"
+        uses: actions/cache@preview
+        id: cache
+        with:
+          path: ~/.composer/cache/files
+          key: composer-cache-${{ github.ref }}
+          restore-keys: |
+            composer-cache-${{ github.ref }}
+            composer-cache
+
       - name: "Install locked dependencies with composer"
         run: php7.3 $(which composer) install --no-interaction --no-progress --no-suggest
 
@@ -125,6 +165,16 @@ jobs:
     steps:
       - name: "Checkout"
         uses: actions/checkout@master
+
+      - name: "Restore composer dependencies"
+        uses: actions/cache@preview
+        id: cache
+        with:
+          path: ~/.composer/cache/files
+          key: composer-cache-${{ github.ref }}
+          restore-keys: |
+            composer-cache-${{ github.ref }}
+            composer-cache
 
       - name: "Install locked dependencies with composer"
         run: php7.3 $(which composer) install --no-interaction --no-progress --no-suggest
