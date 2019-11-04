@@ -26,9 +26,8 @@ jobs:
         uses: actions/cache@preview
         with:
           path: ~/.composer/cache/files
-          key: composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-${{ github.sha }}
+          key: composer-${{ github.sha }}
           restore-keys: |
-            composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-
             composer-
 
       - name: "Install locked dependencies with composer"
@@ -56,9 +55,8 @@ jobs:
         uses: actions/cache@preview
         with:
           path: ~/.composer/cache/files
-          key: composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-${{ github.sha }}
+          key: composer-${{ github.sha }}
           restore-keys: |
-            composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-
             composer-
 
       - name: "Install locked dependencies with composer"
@@ -94,10 +92,9 @@ jobs:
         uses: actions/cache@preview
         with:
           path: ~/.composer/cache/files
-          key: composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-${{ matrix.php-binary }}-${{ matrix.dependencies }}-${{ github.sha }}
+          key: composer-${{ matrix.php-binary }}-${{ matrix.dependencies }}-${{ github.sha }}
           restore-keys: |
-            composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-${{ matrix.php-binary }}-${{ matrix.dependencies }}-
-            composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-
+            composer-${{ matrix.php-binary }}-${{ matrix.dependencies }}-
             composer-
 
       - name: "Install lowest dependencies with composer"
@@ -134,9 +131,8 @@ jobs:
         uses: actions/cache@preview
         with:
           path: ~/.composer/cache/files
-          key: composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-${{ github.sha }}
+          key: composer-${{ github.sha }}
           restore-keys: |
-            composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-
             composer-
 
       - name: "Install locked dependencies with composer"
@@ -167,9 +163,8 @@ jobs:
         uses: actions/cache@preview
         with:
           path: ~/.composer/cache/files
-          key: composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-${{ github.sha }}
+          key: composer-${{ github.sha }}
           restore-keys: |
-            composer-${{ hashFiles(format('{0}{1}', github.workspace, '/composer.json'))}}-
             composer-
 
       - name: "Install locked dependencies with composer"
