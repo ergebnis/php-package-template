@@ -29,9 +29,9 @@ jobs:
         id: cache
         with:
           path: ~/.composer/cache/files
-          key: composer-cache-${{ github.ref }}
+          key: composer-cache-${{ github.sha }}
           restore-keys: |
-            composer-cache-${{ github.ref }}
+            composer-cache-${{ github.sha }}
             composer-cache
 
       - name: "Install locked dependencies with composer"
@@ -61,9 +61,9 @@ jobs:
         id: cache
         with:
           path: ~/.composer/cache/files
-          key: composer-cache-${{ github.ref }}
+          key: composer-cache-${{ github.sha }}
           restore-keys: |
-            composer-cache-${{ github.ref }}
+            composer-cache-${{ github.sha }}
             composer-cache
 
       - name: "Install locked dependencies with composer"
@@ -101,9 +101,9 @@ jobs:
         id: cache
         with:
           path: ~/.composer/cache/files
-          key: composer-cache-${{ github.ref }}
+          key: composer-cache-${{ github.sha }}
           restore-keys: |
-            composer-cache-${{ github.ref }}
+            composer-cache-${{ github.sha }}
             composer-cache
 
       - name: "Install lowest dependencies with composer"
@@ -142,9 +142,9 @@ jobs:
         id: cache
         with:
           path: ~/.composer/cache/files
-          key: composer-cache-${{ github.ref }}
+          key: composer-cache-${{ github.sha }}
           restore-keys: |
-            composer-cache-${{ github.ref }}
+            composer-cache-${{ github.sha }}
             composer-cache
 
       - name: "Install locked dependencies with composer"
@@ -177,9 +177,9 @@ jobs:
         id: cache
         with:
           path: ~/.composer/cache/files
-          key: composer-cache-${{ github.ref }}
+          key: composer-cache-${{ github.sha }}
           restore-keys: |
-            composer-cache-${{ github.ref }}
+            composer-cache-${{ github.sha }}
             composer-cache
 
       - name: "Install locked dependencies with composer"
