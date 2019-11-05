@@ -23,7 +23,7 @@ jobs:
         run: php7.2 $(which composer) validate --strict
 
       - name: "Cache composer dependencies"
-        uses: actions/cache@preview
+        uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
           key: composer-${{ github.sha }}
@@ -52,7 +52,7 @@ jobs:
         run: php7.3 --ini | grep xdebug | sed 's/,$//' | xargs sudo rm
 
       - name: "Cache composer dependencies"
-        uses: actions/cache@preview
+        uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
           key: composer-${{ github.sha }}
@@ -89,7 +89,7 @@ jobs:
         run: ${{ matrix.php-binary }} --ini | grep xdebug | sed 's/,$//' | xargs sudo rm
 
       - name: "Cache composer dependencies"
-        uses: actions/cache@preview
+        uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
           key: composer-${{ matrix.php-binary }}-${{ matrix.dependencies }}-${{ github.sha }}
@@ -128,7 +128,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: "Cache composer dependencies"
-        uses: actions/cache@preview
+        uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
           key: composer-${{ github.sha }}
@@ -160,7 +160,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: "Cache composer dependencies"
-        uses: actions/cache@preview
+        uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
           key: composer-${{ github.sha }}
