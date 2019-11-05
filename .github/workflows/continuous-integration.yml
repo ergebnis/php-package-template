@@ -25,7 +25,7 @@ jobs:
       - name: "Cache composer dependencies"
         uses: actions/cache@preview
         with:
-          path: ~/.composer/cache/files
+          path: ~/.composer/cache
           key: composer-${{ github.sha }}
           restore-keys: |
             composer-
@@ -54,7 +54,7 @@ jobs:
       - name: "Cache composer dependencies"
         uses: actions/cache@preview
         with:
-          path: ~/.composer/cache/files
+          path: ~/.composer/cache
           key: composer-${{ github.sha }}
           restore-keys: |
             composer-
@@ -91,7 +91,7 @@ jobs:
       - name: "Cache composer dependencies"
         uses: actions/cache@preview
         with:
-          path: ~/.composer/cache/files
+          path: ~/.composer/cache
           key: composer-${{ matrix.php-binary }}-${{ matrix.dependencies }}-${{ github.sha }}
           restore-keys: |
             composer-${{ matrix.php-binary }}-${{ matrix.dependencies }}-
@@ -130,7 +130,7 @@ jobs:
       - name: "Cache composer dependencies"
         uses: actions/cache@preview
         with:
-          path: ~/.composer/cache/files
+          path: ~/.composer/cache
           key: composer-${{ github.sha }}
           restore-keys: |
             composer-
@@ -162,7 +162,7 @@ jobs:
       - name: "Cache composer dependencies"
         uses: actions/cache@preview
         with:
-          path: ~/.composer/cache/files
+          path: ~/.composer/cache
           key: composer-${{ github.sha }}
           restore-keys: |
             composer-
