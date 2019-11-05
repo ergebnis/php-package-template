@@ -26,9 +26,9 @@ jobs:
         uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
-          key: composer-${{ github.sha }}
+          key: php7.2-composer-locked-${{ github.sha }}
           restore-keys: |
-            composer-
+            php7.2-composer-locked-
 
       - name: "Install locked dependencies with composer"
         run: php7.2 $(which composer) install --no-interaction --no-progress --no-suggest
@@ -55,9 +55,9 @@ jobs:
         uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
-          key: composer-${{ github.sha }}
+          key: php7.3-composer-locked-${{ github.sha }}
           restore-keys: |
-            composer-
+            php7.3-composer-locked-
 
       - name: "Install locked dependencies with composer"
         run: php7.3 $(which composer) install --no-interaction --no-progress --no-suggest
@@ -92,10 +92,9 @@ jobs:
         uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
-          key: composer-${{ matrix.php-binary }}-${{ matrix.dependencies }}-${{ github.sha }}
+          key: ${{ matrix.php-binary }}-composer-${{ matrix.dependencies }}-${{ github.sha }}
           restore-keys: |
-            composer-${{ matrix.php-binary }}-${{ matrix.dependencies }}-
-            composer-
+            ${{ matrix.php-binary }}-composer-${{ matrix.dependencies }}-
 
       - name: "Install lowest dependencies with composer"
         if: matrix.dependencies == 'lowest'
@@ -131,9 +130,9 @@ jobs:
         uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
-          key: composer-${{ github.sha }}
+          key: php7.3-composer-locked-${{ github.sha }}
           restore-keys: |
-            composer-
+            php7.3-composer-locked-
 
       - name: "Install locked dependencies with composer"
         run: php7.3 $(which composer) install --no-interaction --no-progress --no-suggest
@@ -163,9 +162,9 @@ jobs:
         uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
-          key: composer-${{ github.sha }}
+          key: php7.3-composer-locked-${{ github.sha }}
           restore-keys: |
-            composer-
+            php7.3-composer-locked-
 
       - name: "Install locked dependencies with composer"
         run: php7.3 $(which composer) install --no-interaction --no-progress --no-suggest
