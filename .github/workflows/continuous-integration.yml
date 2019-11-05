@@ -26,7 +26,7 @@ jobs:
         uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
-          key: php7.2-composer-locked-${{ github.sha }}
+          key: php7.2-composer-locked-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
             php7.2-composer-locked-
 
@@ -55,7 +55,7 @@ jobs:
         uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
-          key: php7.3-composer-locked-${{ github.sha }}
+          key: php7.3-composer-locked-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
             php7.3-composer-locked-
 
@@ -92,7 +92,7 @@ jobs:
         uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
-          key: ${{ matrix.php-binary }}-composer-${{ matrix.dependencies }}-${{ github.sha }}
+          key: ${{ matrix.php-binary }}-composer-${{ matrix.dependencies }}-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
             ${{ matrix.php-binary }}-composer-${{ matrix.dependencies }}-
 
@@ -130,7 +130,7 @@ jobs:
         uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
-          key: php7.3-composer-locked-${{ github.sha }}
+          key: php7.3-composer-locked-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
             php7.3-composer-locked-
 
@@ -162,7 +162,7 @@ jobs:
         uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
-          key: php7.3-composer-locked-${{ github.sha }}
+          key: php7.3-composer-locked-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
             php7.3-composer-locked-
 
