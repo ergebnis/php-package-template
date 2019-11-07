@@ -1,7 +1,7 @@
 {
   "name": "localheinz/php-library-template",
   "type": "library",
-  "description": "Provides a GitHub repository template for a PHP library.",
+  "description": "Provides a GitHub repository template for a PHP library, using GitHub actions.",
   "homepage": "https://github.com/localheinz/php-library-template",
   "license": "MIT",
   "authors": [
