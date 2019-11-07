@@ -5,7 +5,8 @@ on:
   push:
     branches:
       - master
-    tags: "(v?)*.*.*"
+    tags:
+      - "**"
 
 name: "Continuous Integration"
 
