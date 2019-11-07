@@ -7,6 +7,15 @@ update_configs:
       - "localheinz"
     default_reviewers:
       - "localheinz"
+    directory: "/.github/workflows"
+    package_manager: "github_actions"
+    update_schedule: "live"
+    version_requirement_updates: "increase_versions"
+
+  - default_assignees:
+      - "localheinz"
+    default_reviewers:
+      - "localheinz"
     directory: "/"
     package_manager: "php:composer"
     update_schedule: "live"
