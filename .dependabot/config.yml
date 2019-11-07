@@ -9,8 +9,7 @@ update_configs:
       - "localheinz"
     directory: "/.github/workflows"
     package_manager: "github_actions"
-    update_schedule: "live"
-    version_requirement_updates: "increase_versions"
+    update_schedule: "daily"
 
   - default_assignees:
       - "localheinz"
