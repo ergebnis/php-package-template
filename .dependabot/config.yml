@@ -7,7 +7,7 @@ update_configs:
       - "localheinz"
     default_reviewers:
       - "localheinz"
-    directory: "/.github/workflows"
+    directory: "/"
     package_manager: "github_actions"
     update_schedule: "daily"
 
