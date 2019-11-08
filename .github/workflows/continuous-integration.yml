@@ -16,58 +16,74 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        php-binary:
+          - php7.2
+
+        dependencies:
+          - locked
+
     steps:
       - name: "Checkout"
         uses: actions/checkout@v1.1.0
 
       - name: "Disable Xdebug"
-        run: php7.2 --ini | grep xdebug | sed 's/,$//' | xargs sudo rm
+        run: ${{ matrix.php-binary }} --ini | grep xdebug | sed 's/,$//' | xargs sudo rm
 
       - name: "Validate composer.json and composer.lock"
-        run: php7.2 $(which composer) validate --strict
+        run: ${{ matrix.php-binary }} $(which composer) validate --strict
 
       - name: "Cache dependencies installed with composer"
         uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
-          key: php7.2-composer-locked-${{ github.sha }}
+          key: ${{ matrix.php-binary }}-composer-${{ matrix.dependencies }}-${{ github.sha }}
           restore-keys: |
-            php7.2-composer-locked-
+            ${{ matrix.php-binary }}-composer-${{ matrix.dependencies }}-
 
       - name: "Install locked dependencies with composer"
-        run: php7.2 $(which composer) install --no-interaction --no-progress --no-suggest
+        run: ${{ matrix.php-binary }} $(which composer) install --no-interaction --no-progress --no-suggest
 
       - name: "Run localheinz/composer-normalize"
-        run: php7.2 $(which composer) normalize --dry-run
+        run: ${{ matrix.php-binary }} $(which composer) normalize --dry-run
 
       - name: "Run friendsofphp/php-cs-fixer"
-        run: php7.2 vendor/bin/php-cs-fixer fix --config=.php_cs --diff --diff-format=udiff --using-cache=no --verbose
+        run: ${{ matrix.php-binary }} vendor/bin/php-cs-fixer fix --config=.php_cs --diff --diff-format=udiff --using-cache=no --verbose
 
   static-code-analysis:
     name: "Static Code Analysis"
 
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        php-binary:
+          - php7.3
+
+        dependencies:
+          - locked
+
     steps:
       - name: "Checkout"
         uses: actions/checkout@v1.1.0
 
       - name: "Disable Xdebug"
-        run: php7.3 --ini | grep xdebug | sed 's/,$//' | xargs sudo rm
+        run: ${{ matrix.php-binary }} --ini | grep xdebug | sed 's/,$//' | xargs sudo rm
 
       - name: "Cache dependencies installed with composer"
         uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
-          key: php7.3-composer-locked-${{ github.sha }}
+          key: ${{ matrix.php-binary }}-composer-${{ matrix.dependencies }}-${{ github.sha }}
           restore-keys: |
-            php7.3-composer-locked-
+            ${{ matrix.php-binary }}-composer-${{ matrix.dependencies }}-
 
       - name: "Install locked dependencies with composer"
-        run: php7.3 $(which composer) install --no-interaction --no-progress --no-suggest
+        run: ${{ matrix.php-binary }} $(which composer) install --no-interaction --no-progress --no-suggest
 
       - name: "Run phpstan/phpstan"
-        run: php7.3 vendor/bin/phpstan analyse --configuration=phpstan.neon
+        run: ${{ matrix.php-binary }} vendor/bin/phpstan analyse --configuration=phpstan.neon
 
   tests:
     name: "Tests"
@@ -126,6 +142,14 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        php-binary:
+          - php7.3
+
+        dependencies:
+          - locked
+
     steps:
       - name: "Checkout"
         uses: actions/checkout@v1.1.0
@@ -134,18 +158,18 @@ jobs:
         uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
-          key: php7.3-composer-locked-${{ github.sha }}
+          key: ${{ matrix.php-binary }}-composer-${{ matrix.dependencies }}-${{ github.sha }}
           restore-keys: |
-            php7.3-composer-locked-
+            ${{ matrix.php-binary }}-composer-${{ matrix.dependencies }}-
 
       - name: "Install locked dependencies with composer"
-        run: php7.3 $(which composer) install --no-interaction --no-progress --no-suggest
+        run: ${{ matrix.php-binary }} $(which composer) install --no-interaction --no-progress --no-suggest
 
       - name: "Dump Xdebug filter with phpunit/phpunit"
-        run: php7.3 vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
+        run: ${{ matrix.php-binary }} vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
 
       - name: "Collect code coverage with Xdebug and phpunit/phpunit"
-        run: php7.3 vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=build/logs/clover.xml --prepend=.build/phpunit/xdebug-filter.php
+        run: ${{ matrix.php-binary }} vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=build/logs/clover.xml --prepend=.build/phpunit/xdebug-filter.php
 
       - name: "Send code coverage report to Codecov.io"
         env:
@@ -157,6 +181,14 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        php-binary:
+          - php7.3
+
+        dependencies:
+          - locked
+
     steps:
       - name: "Checkout"
         uses: actions/checkout@v1.1.0
@@ -165,12 +197,12 @@ jobs:
         uses: actions/cache@v1.0.0
         with:
           path: ~/.composer/cache
-          key: php7.3-composer-locked-${{ github.sha }}
+          key: ${{ matrix.php-binary }}-composer-${{ matrix.dependencies }}-${{ github.sha }}
           restore-keys: |
-            php7.3-composer-locked-
+            ${{ matrix.php-binary }}-composer-${{ matrix.dependencies }}-
 
       - name: "Install locked dependencies with composer"
-        run: php7.3 $(which composer) install --no-interaction --no-progress --no-suggest
+        run: ${{ matrix.php-binary }} $(which composer) install --no-interaction --no-progress --no-suggest
 
       - name: "Run mutation tests with infection/infection"
-        run: php7.3 vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=100 --min-msi=100
+        run: ${{ matrix.php-binary }} vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=100 --min-msi=100
