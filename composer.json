@@ -26,9 +26,6 @@
     "phpunit/phpunit": "^8.4.3"
   },
   "config": {
-    "platform": {
-      "php": "7.2.18"
-    },
     "preferred-install": "dist",
     "sort-packages": true
   },
