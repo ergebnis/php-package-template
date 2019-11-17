@@ -11,6 +11,7 @@ branches:
       required_status_checks:
         contexts:
           - "Coding Standards"
+          - "Dependency Analysis"
           - "Static Code Analysis"
           - "Tests (php7.2, lowest)"
           - "Tests (php7.2, locked)"
