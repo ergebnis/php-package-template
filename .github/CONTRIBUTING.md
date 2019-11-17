@@ -11,7 +11,7 @@ We are using [`friendsofphp/php-cs-fixer`](https://github.com/FriendsOfPHP/PHP-C
 Run
 
 ```
-$ make cs
+$ make coding-standards
 ```
 
 to automatically fix coding standard violations.
@@ -23,7 +23,7 @@ We are using [`phpstan/phpstan`](https://github.com/phpstan/phpstan) to statical
 Run
 
 ```
-$ make stan
+$ make static-code-analysis
 ```
 
 to run a static code analysis.
@@ -47,7 +47,7 @@ We are using [`infection/infection`](https://github.com/infection/infection) to 
 Enable `Xdebug` and run
 
 ```
-$ make infection
+$ make mutation-tests
 ```
 
 to run mutation tests.
