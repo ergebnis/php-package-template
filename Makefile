@@ -1,6 +1,6 @@
-.PHONY: coverage cs help infection it stan test
+.PHONY: coverage cs dependency-analysis help infection it stan test
 
-it: cs stan test ## Runs the cs, stan, and test targets
+it: cs dependency-analysis stan test ## Runs the cs, stan, and test targets
 
 coverage: vendor ## Collects coverage from running unit tests with phpunit
 	mkdir -p .build/phpunit
@@ -10,6 +10,9 @@ coverage: vendor ## Collects coverage from running unit tests with phpunit
 cs: vendor ## Fixes code style issues with php-cs-fixer
 	mkdir -p .build/php-cs-fixer
 	vendor/bin/php-cs-fixer fix --config=.php_cs --diff --diff-format=udiff --verbose
+
+dependency-analysis: vendor ## Runs a dependency analysis with maglnet/composer-require-checker
+	docker run --interactive --rm --tty --workdir=/app --volume ${PWD}:/app localheinz/composer-require-checker-action:1.0.0
 
 help: ## Displays this list of targets with descriptions
 	@grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[32m%-30s\033[0m %s\n", $$1, $$2}'
