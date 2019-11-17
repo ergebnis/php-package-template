@@ -1,14 +1,14 @@
 .PHONY: it
-it: cs dependency-analysis stan test ## Runs the cs, stan, and test targets
+it: coding-standards dependency-analysis static-code-analysis test ## Runs the coding-standards, dependency-analysis, static-code-analysis, and test targets
 
-.PHONY: coverage
-coverage: vendor ## Collects coverage from running unit tests with phpunit/phpunit
+.PHONY: code-coverage
+code-coverage: vendor ## Collects coverage from running unit tests with phpunit/phpunit
 	mkdir -p .build/phpunit
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-text --prepend=.build/phpunit/xdebug-filter.php
 
-.PHONY: cs
-cs: vendor ## Fixes code style issues with php-cs-fixer
+.PHONY: coding-standards
+coding-standards: vendor ## Fixes code style issues with friendsofphp/php-cs-fixer
 	mkdir -p .build/php-cs-fixer
 	vendor/bin/php-cs-fixer fix --config=.php_cs --diff --diff-format=udiff --verbose
 
@@ -20,18 +20,18 @@ dependency-analysis: vendor ## Runs a dependency analysis with maglnet/composer-
 help: ## Displays this list of targets with descriptions
 	@grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[32m%-30s\033[0m %s\n", $$1, $$2}'
 
-.PHONY: infection
-infection: vendor ## Runs mutation tests with infection/infection
+.PHONY: mutation-tests
+mutation-tests: vendor ## Runs mutation tests with infection/infection
 	mkdir -p .build/infection
 	vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=100 --min-msi=100
 
-.PHONY: stan
-stan: vendor ## Runs a static analysis with phpstan/phpstan
+.PHONY: static-code-analysis
+static-code-analysis: vendor ## Runs a static code analysis with phpstan/phpstan
 	mkdir -p .build/phpstan
 	vendor/bin/phpstan analyse --configuration=phpstan.neon
 
-.PHONY: test
-test: vendor ## Runs auto-review, unit, and integration tests with phpunit/phpunit
+.PHONY: tests
+tests: vendor ## Runs auto-review, unit, and integration tests with phpunit/phpunit
 	mkdir -p .build/phpunit
 	vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
