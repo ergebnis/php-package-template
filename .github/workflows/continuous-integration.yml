@@ -133,6 +133,26 @@ jobs:
       - name: "Run phpstan/phpstan"
         run: vendor/bin/phpstan analyse --configuration=phpstan.neon
 
+  test-dependencies-installable-lowest-supported-php-version:
+    name: "Test dependencies installable on lowest supported PHP version"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v1.1.0
+
+      - name: "Disable Xdebug"
+        run: php7.3 --ini | grep xdebug | sed 's/,$//' | xargs sudo rm
+
+      - name: "Setup config.platform.php key in composer.json"
+        run: |
+          jq -M '.config.platform.php = (.require.php | capture("(?<version>(\\d+\\.)?(\\d+\\.)?(\\*|\\d+))$").version)' composer.json > composer.json.tmp
+          mv composer.json.tmp composer.json
+
+      - name: "Install dependencies with composer"
+        run: php7.3 $(which composer) update --dry-run --no-interaction --no-progress --no-suggest
+
   tests:
     name: "Tests"
 
