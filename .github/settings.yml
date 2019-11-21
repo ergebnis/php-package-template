@@ -30,7 +30,7 @@ labels:
   - name: bug
     color: ee0701
 
-  - name: dependencies
+  - name: dependency
     color: 0366d6
 
   - name: enhancement
