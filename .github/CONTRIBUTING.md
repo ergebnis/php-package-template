@@ -16,6 +16,18 @@ $ make coding-standards
 
 to automatically fix coding standard violations.
 
+## Dependency Analysis
+
+We are using [`maglnet/composer-require-checker`](https://github.com/maglnet/ComposerRequireChecker) to prevent the use of unknown symbols in production code.
+
+Run
+
+```
+$ make dependency-analysis
+```
+
+to run a dependency analysis.
+
 ## Static Code Analysis
 
 We are using [`phpstan/phpstan`](https://github.com/phpstan/phpstan) to statically analyze the code.
@@ -60,7 +72,7 @@ Run
 $ make
 ```
 
-to enforce coding standards, perform a static code analysis, and run tests!
+to enforce coding standards, run a dependency analysis, run a static code analysis, and run tests!
 
 ## Help
 
