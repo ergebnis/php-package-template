@@ -1,4 +1,5 @@
 includes:
+	- phpstan-baseline.neon
 	- vendor/jangregor/phpstan-prophecy/src/extension.neon
 	- vendor/localheinz/phpstan-rules/rules.neon
 	- vendor/phpstan/phpstan-deprecation-rules/rules.neon
@@ -7,6 +8,10 @@ includes:
 	- vendor/phpstan/phpstan/conf/config.levelmax.neon
 
 parameters:
+	classesAllowedToBeExtended:
+		- InvalidArgumentException
+		- RuntimeException
+		- Symfony\Component\Console\Command\Command
 	inferPrivatePropertyTypeFromConstructor: true
 	paths:
 		- src
