@@ -33,9 +33,8 @@ static-code-analysis: vendor ## Runs a static code analysis with phpstan/phpstan
 .PHONY: static-code-analysis-baseline
 static-code-analysis-baseline: vendor ## Generates a baseline for static code analysis with phpstan/phpstan
 	mkdir -p .build/phpstan
-	sed -e '/phpstan-baseline\\.neon/ s/^/#/' phpstan.neon > phpstan-without-baseline.neon
-	vendor/bin/phpstan analyze --configuration phpstan-without-baseline.neon --error-format baselineNeon > phpstan-baseline.neon  || true
-	rm phpstan-without-baseline.neon
+	echo '' > phpstan-baseline.neon
+	vendor/bin/phpstan analyze --configuration=phpstan.neon --error-format=baselineNeon > phpstan-baseline.neon  || true
 
 .PHONY: tests
 tests: vendor ## Runs auto-review, unit, and integration tests with phpunit/phpunit
