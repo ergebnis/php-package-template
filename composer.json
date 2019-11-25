@@ -1,8 +1,8 @@
 {
-  "name": "localheinz/php-library-template",
+  "name": "ergebnis/php-library-template",
   "type": "library",
   "description": "Provides a GitHub repository template for a PHP library, using GitHub actions.",
-  "homepage": "https://github.com/localheinz/php-library-template",
+  "homepage": "https://github.com/ergebnis/php-library-template",
   "license": "MIT",
   "authors": [
     {
@@ -31,16 +31,16 @@
   },
   "autoload": {
     "psr-4": {
-      "Localheinz\\Library\\": "src/"
+      "Ergebnis\\Library\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Localheinz\\Library\\Test\\": "test/"
+      "Ergebnis\\Library\\Test\\": "test/"
     }
   },
   "support": {
-    "issues": "https://github.com/localheinz/php-library-template/issues",
-    "source": "https://github.com/localheinz/php-library-template"
+    "issues": "https://github.com/ergebnis/php-library-template/issues",
+    "source": "https://github.com/ergebnis/php-library-template"
   }
 }
