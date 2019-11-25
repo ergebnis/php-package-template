@@ -32,8 +32,8 @@ For a full diff see [`1902cc2...master`][1902cc2...master].
 
 *
 
-[1902cc2...master]: https://github.com/localheinz/php-library-template/compare/1902cc2...master
+[1902cc2...master]: https://github.com/ergebnis/php-library-template/compare/1902cc2...master
 
-[#9000]: https://github.com/localheinz/php-library-template/pull/9000
+[#9000]: https://github.com/ergebnis/php-library-template/pull/9000
 
 [@localheinz]: https://github.com/localheinz

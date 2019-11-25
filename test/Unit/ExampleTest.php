@@ -8,19 +8,19 @@ declare(strict_types=1);
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
  *
- * @see https://github.com/localheinz/php-library-template
+ * @see https://github.com/ergebnis/php-library-template
  */
 
-namespace Localheinz\Library\Test\Unit;
+namespace Ergebnis\Library\Test\Unit;
 
-use Localheinz\Library\Example;
+use Ergebnis\Library\Example;
 use Localheinz\Test\Util\Helper;
 use PHPUnit\Framework;
 
 /**
  * @internal
  *
- * @covers \Localheinz\Library\Example
+ * @covers \Ergebnis\Library\Example
  */
 final class ExampleTest extends Framework\TestCase
 {

@@ -1,9 +1,9 @@
 # php-library-template
 
-[![Continuous Integration](https://github.com/localheinz/php-library-template/workflows/Continuous%20Integration/badge.svg)](https://github.com/localheinz/php-library-template/actions)
-[![Code Coverage](https://codecov.io/gh/localheinz/php-library-template/branch/master/graph/badge.svg)](https://codecov.io/gh/localheinz/php-library-template)
-[![Latest Stable Version](https://poser.pugx.org/localheinz/php-library-template/v/stable)](https://packagist.org/packages/localheinz/php-library-template)
-[![Total Downloads](https://poser.pugx.org/localheinz/php-library-template/downloads)](https://packagist.org/packages/localheinz/php-library-template)
+[![Continuous Integration](https://github.com/ergebnis/php-library-template/workflows/Continuous%20Integration/badge.svg)](https://github.com/ergebnis/php-library-template/actions)
+[![Code Coverage](https://codecov.io/gh/ergebnis/php-library-template/branch/master/graph/badge.svg)](https://codecov.io/gh/ergebnis/php-library-template)
+[![Latest Stable Version](https://poser.pugx.org/ergebnis/php-library-template/v/stable)](https://packagist.org/packages/ergebnis/php-library-template)
+[![Total Downloads](https://poser.pugx.org/ergebnis/php-library-template/downloads)](https://packagist.org/packages/ergebnis/php-library-template)
 
 ## Installation
 
@@ -12,7 +12,7 @@
 Run
 
 ```
-$ composer require localheinz/php-library-template
+$ composer require ergebnis/php-library-template
 ```
 
 ## Usage
