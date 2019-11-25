@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-library-template
  */
 
-use Localheinz\PhpCsFixer\Config;
+use Ergebnis\PhpCsFixer\Config;
 
 $header = <<<'EOF'
 Copyright (c) 2019 Andreas Möller
