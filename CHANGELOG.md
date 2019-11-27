@@ -8,32 +8,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`1902cc2...master`][1902cc2...master].
 
-### Added
-
-* Added something ([#9000]), by [@localheinz]
-
-### Changed
-
-*
-
-### Deprecated
-
-*
-
-### Removed
-
-*
-
-### Fixed
-
-*
-
-### Security
-
-*
-
 [1902cc2...master]: https://github.com/ergebnis/php-library-template/compare/1902cc2...master
-
-[#9000]: https://github.com/ergebnis/php-library-template/pull/9000
-
-[@localheinz]: https://github.com/localheinz
