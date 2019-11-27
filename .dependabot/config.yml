@@ -13,7 +13,10 @@ update_configs:
     package_manager: "github_actions"
     update_schedule: "weekly"
 
-  - default_assignees:
+  - automerged_updates:
+      - match:
+          dependency_type: "development"
+    default_assignees:
       - "localheinz"
     default_labels:
       - "dependency"
