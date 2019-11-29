@@ -138,20 +138,33 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    container:
+      image: php:7.2.0-cli-alpine
+
     steps:
+      - name: "Install Composer"
+        run: |
+          EXPECTED_SIGNATURE="$(curl -L https://composer.github.io/installer.sig)"
+          php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+          ACTUAL_SIGNATURE="$(php -r "echo hash_file('sha384', 'composer-setup.php');")"
+
+          if [ "$EXPECTED_SIGNATURE" != "$ACTUAL_SIGNATURE" ]
+          then
+              >&2 echo 'ERROR: Invalid installer signature'
+              rm composer-setup.php
+              exit 1
+          fi
+
+          php composer-setup.php --quiet --install-dir=/usr/local/bin --filename=composer
+          RESULT=$?
+          rm composer-setup.php
+          exit $RESULT
+
       - name: "Checkout"
         uses: actions/checkout@v1.1.0
 
-      - name: "Disable Xdebug"
-        run: php7.3 --ini | grep xdebug | sed 's/,$//' | xargs sudo rm
-
-      - name: "Setup config.platform.php key in composer.json"
-        run: |
-          jq -M '.config.platform.php = (.require.php | capture("(?<version>(\\d+\\.)?(\\d+\\.)?(\\*|\\d+))$").version)' composer.json > composer.json.tmp
-          mv composer.json.tmp composer.json
-
-      - name: "Install dependencies with composer"
-        run: php7.3 $(which composer) update --dry-run --no-interaction --no-progress --no-suggest
+      - name: "Dry update dependencies with Composer"
+        run: composer update --dry-run --no-interaction --no-progress --no-suggest
 
   tests:
     name: "Tests"
