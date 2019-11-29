@@ -10,9 +10,9 @@ branches:
         required_approving_review_count: 1
       required_status_checks:
         contexts:
-          - "Coding Standards"
-          - "Dependency Analysis"
-          - "Static Code Analysis"
+          - "Coding Standards (7.2)"
+          - "Dependency Analysis (7.4)"
+          - "Static Code Analysis (7.4)"
           - "Tests (7.2, lowest)"
           - "Tests (7.2, locked)"
           - "Tests (7.2, highest)"
@@ -22,8 +22,8 @@ branches:
           - "Tests (7.4, lowest)"
           - "Tests (7.4, locked)"
           - "Tests (7.4, highest)"
-          - "Code Coverage"
-          - "Mutation Tests"
+          - "Code Coverage (7.4)"
+          - "Mutation Tests (7.4)"
           - "codecov/patch"
           - "codecov/project"
         strict: false
