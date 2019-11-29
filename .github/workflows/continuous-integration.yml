@@ -72,21 +72,21 @@ jobs:
         with:
           coverage: none
           extension-csv: "mbstring"
-          php-version: 7.3
+          php-version: 7.4
 
       - name: "Cache dependencies installed with composer"
         uses: actions/cache@v1.0.2
         with:
           path: ~/.composer/cache
-          key: php7.3-composer-locked-${{ hashFiles('**/composer.lock') }}
+          key: php7.4-composer-locked-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
-            php7.3-composer-locked-
+            php7.4-composer-locked-
 
       - name: "Install locked dependencies with composer"
         run: $(which composer) install --no-interaction --no-progress --no-suggest
 
       - name: "Run maglnet/composer-require-checker"
-        uses: docker://localheinz/composer-require-checker-action:1.0.0
+        uses: docker://localheinz/composer-require-checker-action:1.1.0
 
   static-code-analysis:
     name: "Static Code Analysis"
