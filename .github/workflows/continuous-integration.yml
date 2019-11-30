@@ -23,7 +23,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v1.1.0
+        uses: actions/checkout@v1
 
       - name: "Install PHP with extensions"
         uses: shivammathur/setup-php@v1
@@ -36,7 +36,7 @@ jobs:
         run: $(which composer) validate --strict
 
       - name: "Cache dependencies installed with composer"
-        uses: actions/cache@v1.0.2
+        uses: actions/cache@v1
         with:
           path: ~/.composer/cache
           key: php${{ matrix.php-version }}-composer-locked-${{ hashFiles('**/composer.lock') }}
@@ -53,7 +53,7 @@ jobs:
         run: mkdir -p .build/php-cs-fixer
 
       - name: "Cache cache directory for friendsofphp/php-cs-fixer"
-        uses: actions/cache@v1.0.2
+        uses: actions/cache@v1
         with:
           path: ~/.build/php-cs-fixer
           key: php${{ matrix.php-version }}-php-cs-fixer-${{ hashFiles('**/composer.lock') }}
@@ -75,7 +75,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v1.1.0
+        uses: actions/checkout@v1
 
       - name: "Install PHP with extensions"
         uses: shivammathur/setup-php@v1
@@ -85,7 +85,7 @@ jobs:
           php-version: ${{ matrix.php-version }}
 
       - name: "Cache dependencies installed with composer"
-        uses: actions/cache@v1.0.2
+        uses: actions/cache@v1
         with:
           path: ~/.composer/cache
           key: php${{ matrix.php-version }}-composer-locked-${{ hashFiles('**/composer.lock') }}
@@ -110,7 +110,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v1.1.0
+        uses: actions/checkout@v1
 
       - name: "Install PHP with extensions"
         uses: shivammathur/setup-php@v1
@@ -120,7 +120,7 @@ jobs:
           php-version: ${{ matrix.php-version }}
 
       - name: "Cache dependencies installed with composer"
-        uses: actions/cache@v1.0.2
+        uses: actions/cache@v1
         with:
           path: ~/.composer/cache
           key: ${{ matrix.php-version }}-composer-locked-${{ hashFiles('**/composer.lock') }}
@@ -152,7 +152,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v1.1.0
+        uses: actions/checkout@v1
 
       - name: "Install PHP with extensions"
         uses: shivammathur/setup-php@v1
@@ -162,7 +162,7 @@ jobs:
           php-version: ${{ matrix.php-version }}
 
       - name: "Cache dependencies installed with composer"
-        uses: actions/cache@v1.0.2
+        uses: actions/cache@v1
         with:
           path: ~/.composer/cache
           key: php${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('**/composer.lock') }}
@@ -202,7 +202,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v1.1.0
+        uses: actions/checkout@v1
 
       - name: "Install PHP with extensions"
         uses: shivammathur/setup-php@v1
@@ -212,7 +212,7 @@ jobs:
           php-version: ${{ matrix.php-version }}
 
       - name: "Cache dependencies installed with composer"
-        uses: actions/cache@v1.0.2
+        uses: actions/cache@v1
         with:
           path: ~/.composer/cache
           key: php${{ matrix.php-version }}-composer-locked-${{ hashFiles('**/composer.lock') }}
@@ -245,7 +245,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v1.1.0
+        uses: actions/checkout@v1
 
       - name: "Install PHP with extensions"
         uses: shivammathur/setup-php@v1
@@ -255,7 +255,7 @@ jobs:
           php-version: ${{ matrix.php-version }}
 
       - name: "Cache dependencies installed with composer"
-        uses: actions/cache@v1.0.2
+        uses: actions/cache@v1
         with:
           path: ~/.composer/cache
           key: php${{ matrix.php-version }}-composer-locked-${{ hashFiles('**/composer.lock') }}
