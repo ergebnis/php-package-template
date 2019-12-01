@@ -33,7 +33,7 @@ jobs:
           php-version: ${{ matrix.php-version }}
 
       - name: "Validate composer.json and composer.lock"
-        run: $(which composer) validate --strict
+        run: composer validate --strict
 
       - name: "Cache dependencies installed with composer"
         uses: actions/cache@v1
@@ -44,10 +44,10 @@ jobs:
             php${{ matrix.php-version }}-composer-locked-
 
       - name: "Install locked dependencies with composer"
-        run: $(which composer) install --no-interaction --no-progress --no-suggest
+        run: composer install --no-interaction --no-progress --no-suggest
 
       - name: "Run localheinz/composer-normalize"
-        run: $(which composer) normalize --dry-run
+        run: composer normalize --dry-run
 
       - name: "Create cache directory for friendsofphp/php-cs-fixer"
         run: mkdir -p .build/php-cs-fixer
@@ -93,7 +93,7 @@ jobs:
             php${{ matrix.php-version }}-composer-locked-
 
       - name: "Install locked dependencies with composer"
-        run: $(which composer) install --no-interaction --no-progress --no-suggest
+        run: composer install --no-interaction --no-progress --no-suggest
 
       - name: "Run maglnet/composer-require-checker"
         uses: docker://localheinz/composer-require-checker-action:1.1.0
@@ -128,7 +128,7 @@ jobs:
             ${{ matrix.php-version }}-composer-locked-
 
       - name: "Install locked dependencies with composer"
-        run: $(which composer) install --no-interaction --no-progress --no-suggest
+        run: composer install --no-interaction --no-progress --no-suggest
 
       - name: "Run phpstan/phpstan"
         run: vendor/bin/phpstan analyse --configuration=phpstan.neon
@@ -171,15 +171,15 @@ jobs:
 
       - name: "Install lowest dependencies with composer"
         if: matrix.dependencies == 'lowest'
-        run: $(which composer) update --no-interaction --no-progress --no-suggest --prefer-lowest
+        run: composer update --no-interaction --no-progress --no-suggest --prefer-lowest
 
       - name: "Install locked dependencies with composer"
         if: matrix.dependencies == 'locked'
-        run: $(which composer) install --no-interaction --no-progress --no-suggest
+        run: composer install --no-interaction --no-progress --no-suggest
 
       - name: "Install highest dependencies with composer"
         if: matrix.dependencies == 'highest'
-        run: $(which composer) update --no-interaction --no-progress --no-suggest
+        run: composer update --no-interaction --no-progress --no-suggest
 
       - name: "Run auto-review tests with phpunit/phpunit"
         run: vendor/bin/phpunit --configuration=test/AutoReview/phpunit.xml
@@ -220,7 +220,7 @@ jobs:
             php${{ matrix.php-version }}-composer-locked-
 
       - name: "Install locked dependencies with composer"
-        run: $(which composer) install --no-interaction --no-progress --no-suggest
+        run: composer install --no-interaction --no-progress --no-suggest
 
       - name: "Dump Xdebug filter with phpunit/phpunit"
         run: vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --dump-xdebug-filter=.build/phpunit/xdebug-filter.php
@@ -263,7 +263,7 @@ jobs:
             php${{ matrix.php-version }}-composer-locked-
 
       - name: "Install locked dependencies with composer"
-        run: $(which composer) install --no-interaction --no-progress --no-suggest
+        run: composer install --no-interaction --no-progress --no-suggest
 
       - name: "Run mutation tests with infection/infection"
         run: vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=100 --min-msi=100
