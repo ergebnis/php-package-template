@@ -13,6 +13,7 @@ parameters:
 		- RuntimeException
 		- Symfony\Component\Console\Command\Command
 	inferPrivatePropertyTypeFromConstructor: true
+	level: max
 	paths:
 		- src
 		- test
