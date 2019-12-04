@@ -14,7 +14,7 @@ coding-standards: vendor ## Fixes code style issues with friendsofphp/php-cs-fix
 
 .PHONY: dependency-analysis
 dependency-analysis: vendor ## Runs a dependency analysis with maglnet/composer-require-checker
-	docker run --interactive --rm --tty --workdir=/app --volume ${PWD}:/app localheinz/composer-require-checker-action:1.1.0
+	docker run --interactive --rm --tty --workdir=/app --volume ${PWD}:/app localheinz/composer-require-checker-action:1.1.1
 
 .PHONY: help
 help: ## Displays this list of targets with descriptions
