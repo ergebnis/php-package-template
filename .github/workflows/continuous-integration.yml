@@ -55,7 +55,7 @@ jobs:
       - name: "Cache cache directory for friendsofphp/php-cs-fixer"
         uses: actions/cache@v1
         with:
-          path: ~/.build/php-cs-fixer
+          path: .build/php-cs-fixer
           key: php${{ matrix.php-version }}-php-cs-fixer-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
             php${{ matrix.php-version }}-php-cs-fixer-
