@@ -2,10 +2,6 @@ includes:
 	- phpstan-baseline.neon
 
 parameters:
-	classesAllowedToBeExtended:
-		- InvalidArgumentException
-		- RuntimeException
-		- Symfony\Component\Console\Command\Command
 	inferPrivatePropertyTypeFromConstructor: true
 	level: max
 	paths:
