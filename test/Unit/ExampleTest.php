@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace Ergebnis\Library\Test\Unit;
 
 use Ergebnis\Library\Example;
-use Localheinz\Test\Util\Helper;
+use Ergebnis\Test\Util\Helper;
 use PHPUnit\Framework;
 
 /**
