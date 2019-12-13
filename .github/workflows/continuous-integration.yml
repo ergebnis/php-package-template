@@ -23,7 +23,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2.0.0
 
       - name: "Install PHP with extensions"
         uses: shivammathur/setup-php@v1
@@ -75,7 +75,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2.0.0
 
       - name: "Install PHP with extensions"
         uses: shivammathur/setup-php@v1
@@ -110,7 +110,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2.0.0
 
       - name: "Install PHP with extensions"
         uses: shivammathur/setup-php@v1
@@ -152,7 +152,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2.0.0
 
       - name: "Install PHP with extensions"
         uses: shivammathur/setup-php@v1
@@ -202,7 +202,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2.0.0
 
       - name: "Install PHP with extensions"
         uses: shivammathur/setup-php@v1
@@ -242,7 +242,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2.0.0
 
       - name: "Install PHP with extensions"
         uses: shivammathur/setup-php@v1
