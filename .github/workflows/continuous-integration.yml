@@ -96,7 +96,7 @@ jobs:
         run: composer install --no-interaction --no-progress --no-suggest
 
       - name: "Run maglnet/composer-require-checker"
-        uses: docker://localheinz/composer-require-checker-action:1.1.1
+        uses: docker://webfactory/composer-require-checker:2.0.0
 
   static-code-analysis:
     name: "Static Code Analysis"
