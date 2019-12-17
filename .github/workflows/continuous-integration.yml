@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@v2.0.0
 
       - name: "Install PHP with extensions"
-        uses: shivammathur/setup-php@1.6.0
+        uses: shivammathur/setup-php@1.6.1
         with:
           coverage: none
           extensions: "mbstring"
@@ -78,7 +78,7 @@ jobs:
         uses: actions/checkout@v2.0.0
 
       - name: "Install PHP with extensions"
-        uses: shivammathur/setup-php@1.6.0
+        uses: shivammathur/setup-php@1.6.1
         with:
           coverage: none
           extensions: "mbstring"
@@ -113,7 +113,7 @@ jobs:
         uses: actions/checkout@v2.0.0
 
       - name: "Install PHP with extensions"
-        uses: shivammathur/setup-php@1.6.0
+        uses: shivammathur/setup-php@1.6.1
         with:
           coverage: none
           extensions: "mbstring"
@@ -155,7 +155,7 @@ jobs:
         uses: actions/checkout@v2.0.0
 
       - name: "Install PHP with extensions"
-        uses: shivammathur/setup-php@1.6.0
+        uses: shivammathur/setup-php@1.6.1
         with:
           coverage: none
           extensions: "mbstring"
@@ -205,7 +205,7 @@ jobs:
         uses: actions/checkout@v2.0.0
 
       - name: "Install PHP with extensions"
-        uses: shivammathur/setup-php@1.6.0
+        uses: shivammathur/setup-php@1.6.1
         with:
           coverage: pcov
           extensions: "mbstring"
@@ -245,7 +245,7 @@ jobs:
         uses: actions/checkout@v2.0.0
 
       - name: "Install PHP with extensions"
-        uses: shivammathur/setup-php@1.6.0
+        uses: shivammathur/setup-php@1.6.1
         with:
           coverage: pcov
           extensions: "mbstring"
