@@ -2,6 +2,10 @@
 
 branches:
   - name: "master"
+
+    # https://developer.github.com/v3/repos/branches/#remove-branch-protection
+    # https://developer.github.com/v3/repos/branches/#update-branch-protection
+
     protection:
       enforce_admins: false
       required_pull_request_reviews:
@@ -30,6 +34,11 @@ branches:
       restrictions:
         apps:
           - "dependabot-preview"
+        teams: []
+        users: []
+
+# https://developer.github.com/v3/issues/labels/#create-a-label
+# https://developer.github.com/v3/issues/labels/#update-a-label
 
 labels:
   - name: "bug"
@@ -49,6 +58,8 @@ labels:
 
   - name: "stale"
     color: "eeeeee"
+
+# https://developer.github.com/v3/repos/#edit
 
 repository:
   allow_merge_commit: true
