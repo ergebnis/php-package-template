@@ -27,7 +27,9 @@ branches:
           - "codecov/patch"
           - "codecov/project"
         strict: false
-      restrictions: null
+      restrictions:
+        apps:
+          - slug: "dependabot-preview"
 
 labels:
   - name: bug
