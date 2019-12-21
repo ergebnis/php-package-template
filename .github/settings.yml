@@ -29,7 +29,7 @@ branches:
         strict: false
       restrictions:
         apps:
-          - slug: "dependabot-preview"
+          - "dependabot-preview"
 
 labels:
   - name: "bug"
