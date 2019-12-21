@@ -43,21 +43,27 @@ branches:
 labels:
   - name: "bug"
     color: "#ee0701"
+    description: ""
 
   - name: "dependency"
     color: "#0366d6"
+    description: ""
 
   - name: "enhancement"
     color: "#0e8a16"
+    description: ""
 
   - name: "question"
     color: "#cc317c"
+    description: ""
 
   - name: "security"
     color: "#ee0701"
+    description: ""
 
   - name: "stale"
     color: "#eeeeee"
+    description: ""
 
 # https://developer.github.com/v3/repos/#edit
 
