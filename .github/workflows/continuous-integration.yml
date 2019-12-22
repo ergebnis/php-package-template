@@ -11,6 +11,8 @@ on:
 name: "Continuous Integration"
 
 env:
+  MIN_COVERED_MSI: 100
+  MIN_MSI: 100
   REQUIRED_PHP_EXTENSIONS: "mbstring"
 
 jobs:
@@ -274,4 +276,4 @@ jobs:
         run: "composer install --no-interaction --no-progress --no-suggest"
 
       - name: "Run mutation tests with pcov and infection/infection"
-        run: "vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=100 --min-msi=100"
+        run: "vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=${{ env.MIN_COVERED_MSI }} --min-msi=${{ env.MIN_MSI }}"
