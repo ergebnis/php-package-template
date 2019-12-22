@@ -37,7 +37,7 @@ jobs:
         uses: "shivammathur/setup-php@1.6.1"
         with:
           coverage: "none"
-          extensions: "${{env.REQUIRED_PHP_EXTENSIONS}}"
+          extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Validate composer.json and composer.lock"
@@ -90,7 +90,7 @@ jobs:
         uses: "shivammathur/setup-php@1.6.1"
         with:
           coverage: "none"
-          extensions: "${{env.REQUIRED_PHP_EXTENSIONS}}"
+          extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Cache dependencies installed with composer"
@@ -127,7 +127,7 @@ jobs:
         uses: "shivammathur/setup-php@1.6.1"
         with:
           coverage: "none"
-          extensions: "${{env.REQUIRED_PHP_EXTENSIONS}}"
+          extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Cache dependencies installed with composer"
@@ -168,7 +168,7 @@ jobs:
         uses: "shivammathur/setup-php@1.6.1"
         with:
           coverage: "none"
-          extensions: "${{env.REQUIRED_PHP_EXTENSIONS}}"
+          extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Cache dependencies installed with composer"
@@ -220,7 +220,7 @@ jobs:
         uses: "shivammathur/setup-php@1.6.1"
         with:
           coverage: "pcov"
-          extensions: "${{env.REQUIRED_PHP_EXTENSIONS}}"
+          extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Cache dependencies installed with composer"
@@ -262,7 +262,7 @@ jobs:
         uses: "shivammathur/setup-php@1.6.1"
         with:
           coverage: "pcov"
-          extensions: "${{env.REQUIRED_PHP_EXTENSIONS}}"
+          extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Cache dependencies installed with composer"
