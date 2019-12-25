@@ -1,5 +1,6 @@
 # php-library-template
 
+[![Continuous Deployment](https://github.com/ergebnis/php-library-template/workflows/Continuous%20Deployment/badge.svg)](https://github.com/ergebnis/php-library-template/actions)
 [![Continuous Integration](https://github.com/ergebnis/php-library-template/workflows/Continuous%20Integration/badge.svg)](https://github.com/ergebnis/php-library-template/actions)
 [![Code Coverage](https://codecov.io/gh/ergebnis/php-library-template/branch/master/graph/badge.svg)](https://codecov.io/gh/ergebnis/php-library-template)
 [![Latest Stable Version](https://poser.pugx.org/ergebnis/php-library-template/v/stable)](https://packagist.org/packages/ergebnis/php-library-template)
