@@ -14,6 +14,10 @@ jobs:
     runs-on: "ubuntu-latest"
 
     steps:
+      - name: "Determine tag"
+        id: "determine-tag"
+        run: "echo \"::set-output name=tag::${GITHUB_REF#refs/tags/}\""
+
       - name: "Create release"
         uses: "actions/create-release@v1.0.0"
         env:
@@ -21,5 +25,5 @@ jobs:
         with:
           draft: false
           prerelease: false
-          release_name: "${{ github.ref }}"
-          tag_name: "${{ github.ref }}"
+          release_name: "${{ steps.determine-tag.outputs.tag }}"
+          tag_name: "${{ steps.determine-tag.outputs.tag }}"
