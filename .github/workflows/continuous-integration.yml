@@ -138,8 +138,17 @@ jobs:
       - name: "Install locked dependencies with composer"
         run: "composer install --no-interaction --no-progress --no-suggest"
 
+      - name: "Create cache directory for phpstan/phpstan"
+        run: "mkdir -p .build/phpstan"
+
       - name: "Run phpstan/phpstan"
         run: "vendor/bin/phpstan analyse --configuration=phpstan.neon"
+
+      - name: "Create cache directory for vimeo/psalm"
+        run: "mkdir -p .build/psalm"
+
+      - name: "Run vimeo/psalm"
+        run: "vendor/bin/psalm --config=psalm.xml"
 
   tests:
     name: "Tests"
