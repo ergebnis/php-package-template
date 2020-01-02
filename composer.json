@@ -30,6 +30,9 @@
     "vimeo/psalm": "^3.8.1"
   },
   "config": {
+    "platform": {
+      "php": "7.2.25"
+    },
     "preferred-install": "dist",
     "sort-packages": true
   },
