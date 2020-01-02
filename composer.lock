@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd12777f6a4562ac93b8d3638d9e0eec",
+    "content-hash": "93f60615df109ecd3c646325177e3893",
     "packages": [],
     "packages-dev": [
         {
@@ -489,35 +489,35 @@
         },
         {
             "name": "ergebnis/composer-json-normalizer",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/composer-json-normalizer.git",
-                "reference": "e23221df44973cd394fedc8cb70c19caaa6b027d"
+                "reference": "0279214509baf22905c99fe5528e1b74533e6a42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/composer-json-normalizer/zipball/e23221df44973cd394fedc8cb70c19caaa6b027d",
-                "reference": "e23221df44973cd394fedc8cb70c19caaa6b027d",
+                "url": "https://api.github.com/repos/ergebnis/composer-json-normalizer/zipball/0279214509baf22905c99fe5528e1b74533e6a42",
+                "reference": "0279214509baf22905c99fe5528e1b74533e6a42",
                 "shasum": ""
             },
             "require": {
-                "ergebnis/json-normalizer": "~0.10.0",
+                "ergebnis/json-normalizer": "~0.10.1",
                 "ext-json": "*",
                 "justinrainbow/json-schema": "^4.0.0 || ^5.0.0",
-                "php": "^7.2"
+                "php": "^7.1"
             },
             "require-dev": {
-                "ergebnis/php-cs-fixer-config": "~1.1.1",
-                "ergebnis/phpstan-rules": "~0.14.1",
-                "ergebnis/test-util": "~0.9.0",
+                "ergebnis/php-cs-fixer-config": "~1.1.2",
+                "ergebnis/phpstan-rules": "~0.14.2",
+                "ergebnis/test-util": "~0.9.1",
                 "infection/infection": "~0.13.6",
                 "jangregor/phpstan-prophecy": "~0.5.0",
                 "phpstan/extension-installer": "^1.0.3",
                 "phpstan/phpstan": "~0.11.19",
                 "phpstan/phpstan-deprecation-rules": "~0.11.2",
                 "phpstan/phpstan-strict-rules": "~0.11.1",
-                "phpunit/phpunit": "^8.5.0"
+                "phpunit/phpunit": "^7.5.18"
             },
             "type": "library",
             "autoload": {
@@ -542,41 +542,42 @@
                 "json",
                 "normalizer"
             ],
-            "time": "2019-12-15T14:16:33+00:00"
+            "time": "2019-12-19T17:12:18+00:00"
         },
         {
             "name": "ergebnis/composer-normalize",
-            "version": "2.0.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/composer-normalize.git",
-                "reference": "91c456e7a2f3c6e8245895cf748187056914b012"
+                "reference": "38a8ce53a18e0c6b1e00eb3da57c27d695fe38df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/composer-normalize/zipball/91c456e7a2f3c6e8245895cf748187056914b012",
-                "reference": "91c456e7a2f3c6e8245895cf748187056914b012",
+                "url": "https://api.github.com/repos/ergebnis/composer-normalize/zipball/38a8ce53a18e0c6b1e00eb3da57c27d695fe38df",
+                "reference": "38a8ce53a18e0c6b1e00eb3da57c27d695fe38df",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.1.0",
-                "ergebnis/composer-json-normalizer": "^2.0.0",
-                "ergebnis/json-normalizer": "~0.10.0",
-                "ergebnis/json-printer": "^3.0.1",
+                "ergebnis/composer-json-normalizer": "^2.0.1",
+                "ergebnis/json-normalizer": "~0.10.1",
+                "ergebnis/json-printer": "^3.0.2",
                 "localheinz/diff": "^1.0.1",
-                "php": "^7.2"
+                "php": "^7.1"
             },
             "require-dev": {
                 "composer/composer": "^1.7.0",
-                "ergebnis/php-cs-fixer-config": "~1.1.1",
-                "ergebnis/phpstan-rules": "~0.14.1",
-                "ergebnis/test-util": "~0.9.0",
-                "jangregor/phpstan-prophecy": "~0.5.0",
+                "ergebnis/php-cs-fixer-config": "~1.1.2",
+                "ergebnis/phpstan-rules": "~0.14.2",
+                "ergebnis/test-util": "~0.9.1",
+                "jangregor/phpstan-prophecy": "~0.6.0",
                 "phpstan/extension-installer": "^1.0.3",
-                "phpstan/phpstan": "~0.11.19",
-                "phpstan/phpstan-deprecation-rules": "~0.11.2",
-                "phpstan/phpstan-strict-rules": "~0.11.1",
-                "phpunit/phpunit": "^8.5.0",
+                "phpstan/phpstan": "~0.12.3",
+                "phpstan/phpstan-deprecation-rules": "~0.12.0",
+                "phpstan/phpstan-phpunit": "~0.12.3",
+                "phpstan/phpstan-strict-rules": "~0.12.0",
+                "phpunit/phpunit": "^7.5.18",
                 "symfony/filesystem": "^4.4.1"
             },
             "type": "composer-plugin",
@@ -606,32 +607,32 @@
                 "normalizer",
                 "plugin"
             ],
-            "time": "2019-12-17T08:12:55+00:00"
+            "time": "2020-01-01T11:15:02+00:00"
         },
         {
             "name": "ergebnis/json-normalizer",
-            "version": "0.10.0",
+            "version": "0.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/json-normalizer.git",
-                "reference": "a489b84d68f0e8a8c882a849550312a6e0c9b7f0"
+                "reference": "0948169c680527940928d166b447a044b9c9e71e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/json-normalizer/zipball/a489b84d68f0e8a8c882a849550312a6e0c9b7f0",
-                "reference": "a489b84d68f0e8a8c882a849550312a6e0c9b7f0",
+                "url": "https://api.github.com/repos/ergebnis/json-normalizer/zipball/0948169c680527940928d166b447a044b9c9e71e",
+                "reference": "0948169c680527940928d166b447a044b9c9e71e",
                 "shasum": ""
             },
             "require": {
-                "ergebnis/json-printer": "^3.0.1",
+                "ergebnis/json-printer": "^3.0.2",
                 "ext-json": "*",
                 "justinrainbow/json-schema": "^4.0.0 || ^5.0.0",
-                "php": "^7.2"
+                "php": "^7.1"
             },
             "require-dev": {
-                "ergebnis/php-cs-fixer-config": "~1.1.1",
-                "ergebnis/phpstan-rules": "~0.14.1",
-                "ergebnis/test-util": "~0.9.0",
+                "ergebnis/php-cs-fixer-config": "~1.1.2",
+                "ergebnis/phpstan-rules": "~0.14.2",
+                "ergebnis/test-util": "~0.9.1",
                 "infection/infection": "~0.13.6",
                 "jangregor/phpstan-prophecy": "~0.4.2",
                 "phpbench/phpbench": "~0.16.10",
@@ -639,7 +640,7 @@
                 "phpstan/phpstan": "~0.11.19",
                 "phpstan/phpstan-deprecation-rules": "~0.11.2",
                 "phpstan/phpstan-strict-rules": "~0.11.1",
-                "phpunit/phpunit": "^8.5.0"
+                "phpunit/phpunit": "^7.5.18"
             },
             "type": "library",
             "autoload": {
@@ -663,30 +664,30 @@
                 "json",
                 "normalizer"
             ],
-            "time": "2019-12-15T11:48:50+00:00"
+            "time": "2019-12-19T16:36:22+00:00"
         },
         {
             "name": "ergebnis/json-printer",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/json-printer.git",
-                "reference": "182fe2f4223e40ba4f1ca2ccdb35e2dd8c1e0878"
+                "reference": "c7985dc4879777f2e4ab689da25bdd49f59dd2cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/json-printer/zipball/182fe2f4223e40ba4f1ca2ccdb35e2dd8c1e0878",
-                "reference": "182fe2f4223e40ba4f1ca2ccdb35e2dd8c1e0878",
+                "url": "https://api.github.com/repos/ergebnis/json-printer/zipball/c7985dc4879777f2e4ab689da25bdd49f59dd2cb",
+                "reference": "c7985dc4879777f2e4ab689da25bdd49f59dd2cb",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-mbstring": "*",
-                "php": "^7.2"
+                "php": "^7.1"
             },
             "require-dev": {
-                "ergebnis/php-cs-fixer-config": "~1.1.0",
-                "ergebnis/phpstan-rules": "~0.14.0",
+                "ergebnis/php-cs-fixer-config": "~1.1.1",
+                "ergebnis/phpstan-rules": "~0.14.1",
                 "ergebnis/test-util": "~0.9.0",
                 "infection/infection": "~0.13.6",
                 "phpbench/phpbench": "~0.16.10",
@@ -694,7 +695,7 @@
                 "phpstan/phpstan": "~0.11.19",
                 "phpstan/phpstan-deprecation-rules": "~0.11.2",
                 "phpstan/phpstan-strict-rules": "~0.11.1",
-                "phpunit/phpunit": "^8.5.0"
+                "phpunit/phpunit": "^7.5.18"
             },
             "type": "library",
             "autoload": {
@@ -719,7 +720,7 @@
                 "json",
                 "printer"
             ],
-            "time": "2019-12-15T09:53:05+00:00"
+            "time": "2019-12-19T14:42:54+00:00"
         },
         {
             "name": "ergebnis/php-cs-fixer-config",
