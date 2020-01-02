@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa5c0d4e0b7df0e8fa036949d05ee05c",
+    "content-hash": "078fbd659e20c93030df83d15bf47025",
     "packages": [],
     "packages-dev": [
         {
@@ -722,16 +722,16 @@
         },
         {
             "name": "ergebnis/php-cs-fixer-config",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/php-cs-fixer-config.git",
-                "reference": "a8bbd96b28a37b179d14a6ee5bcbb65acd57ecd1"
+                "reference": "3ddee84cc6fb35e391317af2cb1ae2ccd735c707"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/php-cs-fixer-config/zipball/a8bbd96b28a37b179d14a6ee5bcbb65acd57ecd1",
-                "reference": "a8bbd96b28a37b179d14a6ee5bcbb65acd57ecd1",
+                "url": "https://api.github.com/repos/ergebnis/php-cs-fixer-config/zipball/3ddee84cc6fb35e391317af2cb1ae2ccd735c707",
+                "reference": "3ddee84cc6fb35e391317af2cb1ae2ccd735c707",
                 "shasum": ""
             },
             "require": {
@@ -770,7 +770,7 @@
             ],
             "description": "Provides a configuration factory and multiple rule sets for friendsofphp/php-cs-fixer.",
             "homepage": "https://github.com/ergebnis/php-cs-fixer-config",
-            "time": "2019-11-25T19:01:52+00:00"
+            "time": "2019-11-26T13:06:06+00:00"
         },
         {
             "name": "ergebnis/phpstan-rules",
