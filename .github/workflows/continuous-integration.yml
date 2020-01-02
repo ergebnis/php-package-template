@@ -329,3 +329,23 @@ jobs:
 
       - name: "Run mutation tests with pcov and infection/infection"
         run: "vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=${{ env.MIN_COVERED_MSI }} --min-msi=${{ env.MIN_MSI }}"
+
+  approve:
+    name: "Approve"
+
+    runs-on: "ubuntu-latest"
+
+    needs:
+      - "code-coverage"
+      - "coding-standards"
+      - "dependency-analysis"
+      - "mutation-tests"
+      - "static-code-analysis"
+      - "tests"
+
+    steps:
+      - name: "Approve"
+        uses: "hmarr/auto-approve-action@v2.0.0"
+        if: "(github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]') && github.event_name == 'pull_request' && startsWith(github.event.pull_request.title, 'Build(deps-dev)')"
+        with:
+          github-token: "${{ secrets.AUTO_APPROVE_TOKEN }}"
