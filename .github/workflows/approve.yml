@@ -16,4 +16,4 @@ jobs:
         uses: "hmarr/auto-approve-action@v2.0.0"
         if: "(github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]') && startsWith(github.event.pull_request.title, 'Build(deps-dev)')"
         with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          github-token: "${{ secrets.AUTO_APPROVE_TOKEN }}"
