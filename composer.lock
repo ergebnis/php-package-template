@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f059d3bbbef5c91af0fc66ddda165be4",
+    "content-hash": "9ed5fcb23b8696d7a0e7e4ed1dcae51a",
     "packages": [],
     "packages-dev": [
         {
@@ -437,33 +437,34 @@
         },
         {
             "name": "ergebnis/classy",
-            "version": "0.5.0",
+            "version": "0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/classy.git",
-                "reference": "7ba774c203fd1e9b6ab5aad846b500a3d9121fd9"
+                "reference": "e8e1b6f17c82389eb1d232acd6aac290286b3259"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/classy/zipball/7ba774c203fd1e9b6ab5aad846b500a3d9121fd9",
-                "reference": "7ba774c203fd1e9b6ab5aad846b500a3d9121fd9",
+                "url": "https://api.github.com/repos/ergebnis/classy/zipball/e8e1b6f17c82389eb1d232acd6aac290286b3259",
+                "reference": "e8e1b6f17c82389eb1d232acd6aac290286b3259",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": "^7.2"
+                "php": "^7.1"
             },
             "require-dev": {
-                "ergebnis/php-cs-fixer-config": "~1.1.0",
-                "infection/infection": "~0.15.0",
-                "localheinz/composer-normalize": "^1.3.1",
-                "localheinz/phpstan-rules": "~0.13.0",
-                "localheinz/test-util": "0.2.2",
+                "ergebnis/composer-normalize": "^1.3.1",
+                "ergebnis/phpstan-rules": "~0.13.0",
+                "ergebnis/test-util": "~0.7.0",
+                "infection/infection": "~0.13.6",
+                "localheinz/php-cs-fixer-config": "~1.24.0",
                 "phpbench/phpbench": "~0.16.10",
+                "phpstan/extension-installer": "^1.0.3",
                 "phpstan/phpstan": "~0.11.19",
                 "phpstan/phpstan-deprecation-rules": "~0.11.2",
                 "phpstan/phpstan-strict-rules": "~0.11.1",
-                "phpunit/phpunit": "^8.4.3",
+                "phpunit/phpunit": "^7.5.18",
                 "zendframework/zend-file": "^2.8.3"
             },
             "type": "library",
@@ -484,7 +485,7 @@
             ],
             "description": "Provides a way to collect classy constructs from source or a directory.",
             "homepage": "https://github.com/ergebnis/classy",
-            "time": "2019-12-05T22:45:51+00:00"
+            "time": "2019-12-19T08:25:00+00:00"
         },
         {
             "name": "ergebnis/composer-json-normalizer",
@@ -838,32 +839,33 @@
         },
         {
             "name": "ergebnis/test-util",
-            "version": "0.9.0",
+            "version": "0.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/test-util.git",
-                "reference": "c3e52e5ccbe7d70fd902fd19cb3ab3747ee9c3e1"
+                "reference": "c6c40aa40fca705d8756816afb529adc9b083e42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/test-util/zipball/c3e52e5ccbe7d70fd902fd19cb3ab3747ee9c3e1",
-                "reference": "c3e52e5ccbe7d70fd902fd19cb3ab3747ee9c3e1",
+                "url": "https://api.github.com/repos/ergebnis/test-util/zipball/c6c40aa40fca705d8756816afb529adc9b083e42",
+                "reference": "c6c40aa40fca705d8756816afb529adc9b083e42",
                 "shasum": ""
             },
             "require": {
-                "ergebnis/classy": "~0.5.0",
+                "ergebnis/classy": "~0.5.1",
                 "fzaninotto/faker": "^1.9.0",
-                "php": "^7.2"
+                "php": "^7.1"
             },
             "require-dev": {
-                "ergebnis/php-cs-fixer-config": "~1.1.0",
-                "infection/infection": "~0.15.0",
-                "localheinz/composer-normalize": "^1.3.1",
-                "localheinz/phpstan-rules": "~0.13.0",
-                "phpstan/phpstan": "~0.11.6",
+                "ergebnis/composer-normalize": "^1.3.1",
+                "ergebnis/phpstan-rules": "~0.13.0",
+                "infection/infection": "~0.13.6",
+                "localheinz/php-cs-fixer-config": "~1.24.0",
+                "phpstan/extension-installer": "^1.0.3",
+                "phpstan/phpstan": "~0.11.19",
                 "phpstan/phpstan-phpunit": "~0.11.2",
                 "phpstan/phpstan-strict-rules": "~0.11.1",
-                "phpunit/phpunit": "^7.5.16 || ^8.0.0"
+                "phpunit/phpunit": "^7.5.18"
             },
             "type": "library",
             "autoload": {
@@ -889,7 +891,7 @@
                 "phpunit",
                 "test"
             ],
-            "time": "2019-12-07T08:19:59+00:00"
+            "time": "2019-12-19T09:08:28+00:00"
         },
         {
             "name": "felixfbecker/advanced-json-rpc",
@@ -1070,16 +1072,16 @@
         },
         {
             "name": "fzaninotto/faker",
-            "version": "v1.9.0",
+            "version": "v1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "27a216cbe72327b2d6369fab721a5843be71e57d"
+                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/27a216cbe72327b2d6369fab721a5843be71e57d",
-                "reference": "27a216cbe72327b2d6369fab721a5843be71e57d",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/fc10d778e4b84d5bd315dad194661e091d307c6f",
+                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f",
                 "shasum": ""
             },
             "require": {
@@ -1092,7 +1094,9 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": []
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
             },
             "autoload": {
                 "psr-4": {
@@ -1114,7 +1118,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2019-11-14T13:13:06+00:00"
+            "time": "2019-12-12T13:22:17+00:00"
         },
         {
             "name": "infection/infection",
