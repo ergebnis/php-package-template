@@ -175,7 +175,7 @@ jobs:
         run: "mkdir -p .build/psalm"
 
       - name: "Run vimeo/psalm"
-        run: "vendor/bin/psalm --config=psalm.xml"
+        run: "vendor/bin/psalm --config=psalm.xml --show-info=false"
 
   tests:
     name: "Tests"
