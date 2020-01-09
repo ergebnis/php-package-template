@@ -72,6 +72,7 @@ repository:
   allow_merge_commit: true
   allow_rebase_merge: false
   allow_squash_merge: false
+  archived: false
   default_branch: "master"
   description: ":octocat: + :ledger: Provides a GitHub repository template for a PHP library, using GitHub actions."
   has_downloads: true
