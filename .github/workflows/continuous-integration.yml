@@ -330,8 +330,8 @@ jobs:
       - name: "Run mutation tests with pcov and infection/infection"
         run: "vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=${{ env.MIN_COVERED_MSI }} --min-msi=${{ env.MIN_MSI }}"
 
-  approve:
-    name: "Approve"
+  review:
+    name: "Review"
 
     runs-on: "ubuntu-latest"
 
