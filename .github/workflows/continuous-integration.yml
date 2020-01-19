@@ -349,3 +349,9 @@ jobs:
         if: "(github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]') && github.event_name == 'pull_request' && startsWith(github.event.pull_request.title, 'Build(deps-dev)')"
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+
+      - name: "Approve pull requests created by @ergebnis-bot that update the license year"
+        uses: "hmarr/auto-approve-action@v2.0.0"
+        if: "github.actor == 'ergebnis-bot' && github.event_name == 'pull_request' && github.event.pull_request.title == 'Enhancement: Update license year'"
+        with:
+          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
