@@ -6,7 +6,7 @@ declare(strict_types=1);
  * Copyright (c) 2019-2020 Andreas Möller
  *
  * For the full copyright and license information, please view
- * the LICENSE file that was distributed with this source code.
+ * the LICENSE.md file that was distributed with this source code.
  *
  * @see https://github.com/ergebnis/php-library-template
  */
@@ -14,8 +14,8 @@ declare(strict_types=1);
 use Ergebnis\License;
 use Ergebnis\PhpCsFixer\Config;
 
-$license = License\Type\MIT::text(
-    __DIR__ . '/LICENSE',
+$license = License\Type\MIT::markdown(
+    __DIR__ . '/LICENSE.md',
     License\Range::since(
         License\Year::fromString('2019'),
         new \DateTimeZone('UTC')
