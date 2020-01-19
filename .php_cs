@@ -11,18 +11,19 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-library-template
  */
 
+use Ergebnis\License;
 use Ergebnis\PhpCsFixer\Config;
 
-$header = <<<'EOF'
-Copyright (c) 2019 Andreas Möller
+$license = License\Type\MIT::text(
+    __DIR__ . '/LICENSE',
+    License\Year::fromString('2019'),
+    License\Holder::fromString('Andreas Möller'),
+    License\Url::fromString('https://github.com/ergebnis/php-library-template')
+);
 
-For the full copyright and license information, please view
-the LICENSE file that was distributed with this source code.
+$license->save();
 
-@see https://github.com/ergebnis/php-library-template
-EOF;
-
-$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php71($header));
+$config = Config\Factory::fromRuleSet(new Config\RuleSet\Php71($license->header()));
 
 $config->getFinder()
     ->ignoreDotFiles(false)
