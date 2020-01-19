@@ -16,7 +16,10 @@ use Ergebnis\PhpCsFixer\Config;
 
 $license = License\Type\MIT::text(
     __DIR__ . '/LICENSE',
-    License\Year::fromString('2019'),
+    License\Range::since(
+        License\Year::fromString('2019'),
+        new \DateTimeZone('UTC')
+    ),
     License\Holder::fromString('Andreas Möller'),
     License\Url::fromString('https://github.com/ergebnis/php-library-template')
 );
