@@ -28,7 +28,6 @@ branches:
           - "Tests (7.4, highest)"
           - "Code Coverage (7.4, locked)"
           - "Mutation Tests (7.4, locked)"
-          - "Approve"
           - "codecov/patch"
           - "codecov/project"
         strict: false
