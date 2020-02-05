@@ -9,9 +9,6 @@
     "configDir": "test\/Unit"
   },
   "logs": {
-    "badge": {
-      "branch": "master"
-    },
     "text": ".build/infection/infection-log.txt"
   }
 }
