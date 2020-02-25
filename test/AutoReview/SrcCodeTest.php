@@ -28,7 +28,7 @@ final class SrcCodeTest extends Framework\TestCase
     public function testSrcClassesHaveUnitTests(): void
     {
         self::assertClassesHaveTests(
-            __DIR__ . '/../../src',
+            __DIR__ . '/../../src/',
             'Ergebnis\\Library\\',
             'Ergebnis\\Library\\Test\\Unit\\'
         );
