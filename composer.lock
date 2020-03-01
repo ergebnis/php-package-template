@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "58a365a54730bb805cb82ff2719bd094",
+    "content-hash": "f18624f8b95f676a2882b58647e31ad9",
     "packages": [],
     "packages-dev": [
         {
@@ -2111,16 +2111,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.11",
+            "version": "0.12.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "ca5f2b7cf81c6d8fba74f9576970399c5817e03b"
+                "reference": "aa7877f4240a92bdd51524b4305c380df0e73a83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/ca5f2b7cf81c6d8fba74f9576970399c5817e03b",
-                "reference": "ca5f2b7cf81c6d8fba74f9576970399c5817e03b",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/aa7877f4240a92bdd51524b4305c380df0e73a83",
+                "reference": "aa7877f4240a92bdd51524b4305c380df0e73a83",
                 "shasum": ""
             },
             "require": {
@@ -2146,7 +2146,7 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
-            "time": "2020-02-16T14:00:29+00:00"
+            "time": "2020-03-01T22:09:42+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
