@@ -3,8 +3,10 @@
 name: "Prune"
 
 on:
-  schedule:
-    - cron: "0 12 * * *"
+  pull_request:
+  push:
+    branches:
+      - "master"
 
 jobs:
   prune:
