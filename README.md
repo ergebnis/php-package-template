@@ -1,7 +1,9 @@
 # php-library-template
 
-[![Release](https://github.com/ergebnis/php-library-template/workflows/Release/badge.svg?branch=master)](https://github.com/ergebnis/php-library-template/actions)
 [![Integrate](https://github.com/ergebnis/php-library-template/workflows/Integrate/badge.svg?branch=master)](https://github.com/ergebnis/php-library-template/actions)
+[![Prune](https://github.com/ergebnis/php-library-template/workflows/Prune/badge.svg?branch=master)](https://github.com/ergebnis/php-library-template/actions)
+[![Release](https://github.com/ergebnis/php-library-template/workflows/Release/badge.svg?branch=master)](https://github.com/ergebnis/php-library-template/actions)
+[![Renew](https://github.com/ergebnis/php-library-template/workflows/Renew/badge.svg?branch=master)](https://github.com/ergebnis/php-library-template/actions)
 
 [![Code Coverage](https://codecov.io/gh/ergebnis/php-library-template/branch/master/graph/badge.svg)](https://codecov.io/gh/ergebnis/php-library-template)
 [![Type Coverage](https://shepherd.dev/github/ergebnis/php-library-template/coverage.svg)](https://shepherd.dev/github/ergebnis/php-library-template)
