@@ -2,8 +2,8 @@
 
 name: "Integrate"
 
-on:
-  pull_request:
+on: # yamllint disable-line rule:truthy
+  pull_request: null
   push:
     branches:
       - "master"
@@ -30,6 +30,13 @@ jobs:
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v2"
+
+      - name: "Lint YAML files"
+        uses: "ibiqlik/action-yamllint@v1"
+        with:
+          config_file: ".yamllint.yaml"
+          file_or_dir: "."
+          strict: true
 
       - name: "Install PHP with extensions"
         uses: "shivammathur/setup-php@v2"
