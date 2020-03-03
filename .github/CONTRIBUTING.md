@@ -4,10 +4,10 @@ We are using [GitHub Actions](https://github.com/features/actions) as a continuo
 
 For details, take a look at the following workflow configuration files:
 
-- [`workflows/integrate.yml`](workflows/integrate.yml)
-- [`workflows/prune.yml`](workflows/prune.yml)
-- [`workflows/release.yml`](workflows/release.yml)
-- [`workflows/renew.yml`](workflows/renew.yml)
+- [`workflows/integrate.yaml`](workflows/integrate.yaml)
+- [`workflows/prune.yaml`](workflows/prune.yaml)
+- [`workflows/release.yaml`](workflows/release.yaml)
+- [`workflows/renew.yaml`](workflows/renew.yaml)
 
 ## Coding Standards
 
