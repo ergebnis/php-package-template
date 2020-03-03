@@ -1,7 +1,7 @@
 # php-library-template
 
-[![Continuous Deployment](https://github.com/ergebnis/php-library-template/workflows/Continuous%20Deployment/badge.svg?branch=master)](https://github.com/ergebnis/php-library-template/actions)
-[![Continuous Integration](https://github.com/ergebnis/php-library-template/workflows/Continuous%20Integration/badge.svg?branch=master)](https://github.com/ergebnis/php-library-template/actions)
+[![Release](https://github.com/ergebnis/php-library-template/workflows/Release/badge.svg?branch=master)](https://github.com/ergebnis/php-library-template/actions)
+[![Integrate](https://github.com/ergebnis/php-library-template/workflows/Integrate/badge.svg?branch=master)](https://github.com/ergebnis/php-library-template/actions)
 
 [![Code Coverage](https://codecov.io/gh/ergebnis/php-library-template/branch/master/graph/badge.svg)](https://codecov.io/gh/ergebnis/php-library-template)
 [![Type Coverage](https://shepherd.dev/github/ergebnis/php-library-template/coverage.svg)](https://shepherd.dev/github/ergebnis/php-library-template)
