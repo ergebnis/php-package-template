@@ -6,6 +6,7 @@ it: coding-standards dependency-analysis static-code-analysis tests ## Runs the 
 
 .PHONY: code-coverage
 code-coverage: vendor ## Collects coverage from running unit tests with phpunit/phpunit
+	mkdir -p .build/phpunit
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-text
 
 .PHONY: coding-standards
