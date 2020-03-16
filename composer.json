@@ -17,7 +17,7 @@
     "ergebnis/composer-normalize": "^2.3.2",
     "ergebnis/license": "~0.1.0",
     "ergebnis/php-cs-fixer-config": "^2.1.0",
-    "ergebnis/phpstan-rules": "~0.14.3",
+    "ergebnis/phpstan-rules": "~0.14.4",
     "ergebnis/test-util": "~1.0.0",
     "infection/infection": "~0.15.3",
     "jangregor/phpstan-prophecy": "~0.6.2",
