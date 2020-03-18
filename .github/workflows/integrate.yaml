@@ -208,7 +208,7 @@ jobs:
           restore-keys: "php-${{ matrix.php-version }}-psalm-"
 
       - name: "Run vimeo/psalm"
-        run: "vendor/bin/psalm --config=psalm.xml --shepherd --show-info=false --stats"
+        run: "vendor/bin/psalm --config=psalm.xml --diff --diff-methods --shepherd --show-info=false --stats --threads=4"
 
   tests:
     name: "Tests"
