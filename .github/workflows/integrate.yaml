@@ -56,7 +56,7 @@ jobs:
         uses: "actions/cache@v1"
         with:
           path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('**/composer.lock') }}"
+          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
       - name: "Install lowest dependencies from composer.json"
@@ -81,7 +81,7 @@ jobs:
         uses: "actions/cache@v1"
         with:
           path: ".build/php-cs-fixer"
-          key: "php-${{ matrix.php-version }}-php-cs-fixer-${{ hashFiles('**/composer.lock') }}"
+          key: "php-${{ matrix.php-version }}-php-cs-fixer-${{ hashFiles('composer.lock') }}"
           restore-keys: "php-${{ matrix.php-version }}-php-cs-fixer-"
 
       - name: "Run friendsofphp/php-cs-fixer"
@@ -119,7 +119,7 @@ jobs:
         uses: "actions/cache@v1"
         with:
           path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('**/composer.lock') }}"
+          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
       - name: "Install lowest dependencies from composer.json"
@@ -169,7 +169,7 @@ jobs:
         uses: "actions/cache@v1"
         with:
           path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
-          key: "${{ matrix.php-version }}-composer-locked-${{ hashFiles('**/composer.lock') }}"
+          key: "${{ matrix.php-version }}-composer-locked-${{ hashFiles('composer.lock') }}"
           restore-keys: "${{ matrix.php-version }}-composer-locked-"
 
       - name: "Install lowest dependencies from composer.json"
@@ -246,7 +246,7 @@ jobs:
         uses: "actions/cache@v1"
         with:
           path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('**/composer.lock') }}"
+          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
       - name: "Install lowest dependencies from composer.json"
@@ -302,7 +302,7 @@ jobs:
         uses: "actions/cache@v1"
         with:
           path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('**/composer.lock') }}"
+          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
       - name: "Install lowest dependencies from composer.json"
@@ -357,7 +357,7 @@ jobs:
         uses: "actions/cache@v1"
         with:
           path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('**/composer.lock') }}"
+          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
       - name: "Install lowest dependencies from composer.json"
