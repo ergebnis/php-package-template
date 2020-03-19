@@ -12,6 +12,7 @@ env:
   MIN_COVERED_MSI: 100
   MIN_MSI: 100
   REQUIRED_PHP_EXTENSIONS: "mbstring"
+  REQUIRED_PHP_TOOLS: "cs2pr"
 
 jobs:
   coding-standards:
@@ -43,6 +44,7 @@ jobs:
         with:
           coverage: "none"
           extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
+          tools: "${{ env.REQUIRED_PHP_TOOLS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Validate composer.json and composer.lock"
@@ -109,6 +111,7 @@ jobs:
         with:
           coverage: "none"
           extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
+          tools: "${{ env.REQUIRED_PHP_TOOLS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Determine composer cache directory"
@@ -159,6 +162,7 @@ jobs:
         with:
           coverage: "none"
           extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
+          tools: "${{ env.REQUIRED_PHP_TOOLS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Determine composer cache directory"
@@ -195,7 +199,7 @@ jobs:
           restore-keys: "php-${{ matrix.php-version }}-phpstan-"
 
       - name: "Run phpstan/phpstan"
-        run: "vendor/bin/phpstan analyse --configuration=phpstan.neon"
+        run: "vendor/bin/phpstan analyse --configuration=phpstan.neon --error-format=checkstyle | cs2pr"
 
       - name: "Create cache directory for vimeo/psalm"
         run: "mkdir -p .build/psalm"
@@ -236,6 +240,7 @@ jobs:
         with:
           coverage: "none"
           extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
+          tools: "${{ env.REQUIRED_PHP_TOOLS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Determine composer cache directory"
@@ -292,6 +297,7 @@ jobs:
         with:
           coverage: "pcov"
           extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
+          tools: "${{ env.REQUIRED_PHP_TOOLS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Determine composer cache directory"
@@ -347,6 +353,7 @@ jobs:
         with:
           coverage: "pcov"
           extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
+          tools: "${{ env.REQUIRED_PHP_TOOLS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Determine composer cache directory"
