@@ -191,7 +191,7 @@ jobs:
         uses: "actions/cache@v1"
         with:
           path: ".build/phpstan"
-          key: "php-${{ matrix.php-version }}-phpstan-${{ hashFiles('**/composer.lock') }}"
+          key: "php-${{ matrix.php-version }}-phpstan-${{ github.sha }}"
           restore-keys: "php-${{ matrix.php-version }}-phpstan-"
 
       - name: "Run phpstan/phpstan"
@@ -204,7 +204,7 @@ jobs:
         uses: "actions/cache@v1"
         with:
           path: ".build/psalm"
-          key: "php-${{ matrix.php-version }}-psalm-${{ hashFiles('**/composer.lock') }}"
+          key: "php-${{ matrix.php-version }}-psalm-${{ github.sha }}"
           restore-keys: "php-${{ matrix.php-version }}-psalm-"
 
       - name: "Run vimeo/psalm"
