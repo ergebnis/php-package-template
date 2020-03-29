@@ -2,7 +2,7 @@ MIN_COVERED_MSI:=100
 MIN_MSI:=100
 
 .PHONY: it
-it: coding-standards dependency-analysis static-code-analysis tests ## Runs the coding-standards, dependency-analysis, static-code-analysis, and tests targets
+it: coding-standards static-code-analysis tests ## Runs the coding-standards, static-code-analysis, and tests targets
 
 .PHONY: code-coverage
 code-coverage: vendor ## Collects coverage from running unit tests with phpunit/phpunit
