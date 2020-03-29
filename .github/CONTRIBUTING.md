@@ -89,7 +89,7 @@ Run
 $ make
 ```
 
-to enforce coding standards, run a dependency analysis, run a static code analysis, and run tests!
+to enforce coding standards, run a static code analysis, and run tests!
 
 ## Help
 
