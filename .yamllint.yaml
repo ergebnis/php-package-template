@@ -2,6 +2,7 @@ extends: "default"
 
 ignore: |
   .build/
+  .notes/
   vendor/
 
 rules:
