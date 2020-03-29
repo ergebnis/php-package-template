@@ -388,7 +388,13 @@ jobs:
       - "static-code-analysis"
       - "tests"
 
-    if: "github.event_name == 'pull_request' && github.event.pull_request.draft == false && ((github.actor == 'dependabot-preview[bot]' && startsWith(github.event.pull_request.title, 'Build(deps-dev)')) || (github.actor == 'ergebnis-bot' && github.event.pull_request.title == 'Enhancement: Update license year') ||(github.actor == 'localheinz' && contains(github.event.pull_request.labels.*.name, 'merge')))"
+    if: >
+      github.event_name == 'pull_request' &&
+      github.event.pull_request.draft == false && (
+        (github.actor == 'dependabot-preview[bot]' && startsWith(github.event.pull_request.title, 'Build(deps-dev)')) ||
+        (github.actor == 'ergebnis-bot' && github.event.pull_request.title == 'Enhancement: Update license year') ||
+        (github.actor == 'localheinz' && contains(github.event.pull_request.labels.*.name, 'merge'))
+      )
 
     steps:
       - name: "Assign @ergebnis-bot"
