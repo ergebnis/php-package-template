@@ -388,7 +388,7 @@ jobs:
       - "static-code-analysis"
       - "tests"
 
-    if: "(github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]') && github.event_name == 'pull_request' && startsWith(github.event.pull_request.title, 'Build(deps-dev)')"
+    if: "github.actor == 'dependabot-preview[bot]' && github.event_name == 'pull_request' && startsWith(github.event.pull_request.title, 'Build(deps-dev)')"
 
     steps:
       - name: "Assign @ergebnis-bot"
