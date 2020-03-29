@@ -489,3 +489,87 @@ jobs:
               pull_number: pullRequest.number,
               repo: repository.repo,
             })
+
+  merge:
+    name: "Merge"
+
+    runs-on: "ubuntu-latest"
+
+    needs:
+      - "code-coverage"
+      - "coding-standards"
+      - "dependency-analysis"
+      - "mutation-tests"
+      - "static-code-analysis"
+      - "tests"
+
+    if: "github.event_name == 'pull_request' && github.actor == 'localheinz' && contains(github.event.pull_request.labels.*.name, 'merge')"
+
+    steps:
+      - name: "Assign @ergebnis-bot"
+        uses: "actions/github-script@0.8.0"
+        with:
+          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          script: |
+            const pullRequest = context.payload.pull_request
+            const repository = context.repo
+
+            const reviewers = [
+              "ergebnis-bot",
+            ]
+
+            await github.issues.addAssignees({
+              assignees: reviewers,
+              issue_number: pullRequest.number,
+              owner: repository.owner,
+              repo: repository.repo,
+            })
+
+      - name: "Request review from @ergebnis-bot"
+        uses: "actions/github-script@0.8.0"
+        with:
+          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          script: |
+            const pullRequest = context.payload.pull_request
+            const repository = context.repo
+
+            const reviewers = [
+              "ergebnis-bot",
+            ]
+
+            await github.pulls.createReviewRequest({
+                owner: repository.owner,
+                pull_number: pullRequest.number,
+                repo: repository.repo,
+                reviewers: reviewers,
+            })
+
+      - name: "Approve pull request"
+        uses: "actions/github-script@0.8.0"
+        with:
+          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          script: |
+            const pullRequest = context.payload.pull_request
+            const repository = context.repo
+
+            await github.pulls.createReview({
+              event: "APPROVE",
+              owner: repository.owner,
+              pull_number: pullRequest.number,
+              repo: repository.repo,
+            })
+
+      - name: "Merge pull request"
+        uses: "actions/github-script@0.8.0"
+        with:
+          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          script: |
+            const pullRequest = context.payload.pull_request
+            const repository = context.repo
+
+            await github.pulls.merge({
+              merge_method: "merge",
+              owner: repository.owner,
+              pull_number: pullRequest.number,
+              repo: repository.repo,
+            })
