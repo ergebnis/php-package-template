@@ -375,121 +375,6 @@ jobs:
       - name: "Run mutation tests with pcov and infection/infection"
         run: "vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=${{ env.MIN_COVERED_MSI }} --min-msi=${{ env.MIN_MSI }}"
 
-  dependabot:
-    name: "Dependabot"
-
-    runs-on: "ubuntu-latest"
-
-    needs:
-      - "code-coverage"
-      - "coding-standards"
-      - "dependency-analysis"
-      - "mutation-tests"
-      - "static-code-analysis"
-      - "tests"
-
-    if: "github.actor == 'dependabot-preview[bot]' && github.event_name == 'pull_request' && startsWith(github.event.pull_request.title, 'Build(deps-dev)')"
-
-    steps:
-      - name: "Assign @ergebnis-bot"
-        uses: "actions/github-script@0.8.0"
-        with:
-          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
-          script: |
-            const pullRequest = context.payload.pull_request
-            const repository = context.repo
-
-            const reviewers = [
-              "ergebnis-bot",
-            ]
-
-            await github.issues.addAssignees({
-              assignees: reviewers,
-              issue_number: pullRequest.number,
-              owner: repository.owner,
-              repo: repository.repo,
-            })
-
-      - name: "Request review from @ergebnis-bot"
-        uses: "actions/github-script@0.8.0"
-        with:
-          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
-          script: |
-            const pullRequest = context.payload.pull_request
-            const repository = context.repo
-
-            const reviewers = [
-              "ergebnis-bot",
-            ]
-
-            await github.pulls.createReviewRequest({
-                owner: repository.owner,
-                pull_number: pullRequest.number,
-                repo: repository.repo,
-                reviewers: reviewers,
-            })
-
-      - name: "Approve pull request"
-        uses: "actions/github-script@0.8.0"
-        with:
-          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
-          script: |
-            const pullRequest = context.payload.pull_request
-            const repository = context.repo
-
-            await github.pulls.createReview({
-              event: "APPROVE",
-              owner: repository.owner,
-              pull_number: pullRequest.number,
-              repo: repository.repo,
-            })
-
-      - name: "Merge pull request"
-        uses: "actions/github-script@0.8.0"
-        with:
-          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
-          script: |
-            const pullRequest = context.payload.pull_request
-            const repository = context.repo
-
-            await github.pulls.merge({
-              merge_method: "merge",
-              owner: repository.owner,
-              pull_number: pullRequest.number,
-              repo: repository.repo,
-            })
-
-  license:
-    name: "License"
-
-    runs-on: "ubuntu-latest"
-
-    needs:
-      - "code-coverage"
-      - "coding-standards"
-      - "dependency-analysis"
-      - "mutation-tests"
-      - "static-code-analysis"
-      - "tests"
-
-    if: "github.actor == 'ergebnis-bot' && github.event_name == 'pull_request' && github.event.pull_request.title == 'Enhancement: Update license year'"
-
-    steps:
-      - name: "Merge pull request"
-        uses: "actions/github-script@0.8.0"
-        with:
-          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
-          script: |
-            const pullRequest = context.payload.pull_request
-            const repository = context.repo
-
-            await github.pulls.merge({
-              merge_method: "merge",
-              owner: repository.owner,
-              pull_number: pullRequest.number,
-              repo: repository.repo,
-            })
-
   merge:
     name: "Merge"
 
@@ -503,7 +388,7 @@ jobs:
       - "static-code-analysis"
       - "tests"
 
-    if: "github.event_name == 'pull_request' && github.actor == 'localheinz' && contains(github.event.pull_request.labels.*.name, 'merge')"
+    if: "github.event_name == 'pull_request' && github.event.pull_request.draft == false && ((github.actor == 'dependabot-preview[bot]' && startsWith(github.event.pull_request.title, 'Build(deps-dev)')) || (github.actor == 'ergebnis-bot' && github.event.pull_request.title == 'Enhancement: Update license year') ||(github.actor == 'localheinz' && contains(github.event.pull_request.labels.*.name, 'merge')))"
 
     steps:
       - name: "Assign @ergebnis-bot"
@@ -546,6 +431,7 @@ jobs:
 
       - name: "Approve pull request"
         uses: "actions/github-script@0.8.0"
+        if: "github.actor != 'ergebnis-bot'"
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           script: |
