@@ -17,7 +17,7 @@ jobs:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           script: |
             const branchPrefixLabels = {
-              enhancement: "feature",
+              feature: "enhancement",
               fix: "bug",
             }
 
