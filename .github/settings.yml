@@ -28,6 +28,7 @@ branches:
           - "Tests (7.4, highest)"
           - "Code Coverage (7.4, locked)"
           - "Mutation Tests (7.4, locked)"
+          - "Label"
         strict: false
       restrictions:
 
