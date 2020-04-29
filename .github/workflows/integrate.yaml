@@ -169,8 +169,8 @@ jobs:
         uses: "actions/cache@v1"
         with:
           path: "${{ steps.determine-composer-cache-directory.outputs.directory }}"
-          key: "${{ matrix.php-version }}-composer-locked-${{ hashFiles('composer.lock') }}"
-          restore-keys: "${{ matrix.php-version }}-composer-locked-"
+          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
+          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
       - name: "Install lowest dependencies from composer.json"
         if: "matrix.dependencies == 'lowest'"
