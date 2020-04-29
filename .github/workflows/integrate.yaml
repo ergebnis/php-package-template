@@ -420,9 +420,6 @@ jobs:
               reviewers: reviewers,
             })
 
-      - name: "Wait"
-        run: "sleep 3"
-
       - name: "Assign @ergebnis-bot"
         uses: "actions/github-script@0.8.0"
         with:
@@ -442,9 +439,6 @@ jobs:
               repo: repository.repo,
             })
 
-      - name: "Wait"
-        run: "sleep 3"
-
       - name: "Approve pull request"
         uses: "actions/github-script@0.8.0"
         if: "github.actor != 'ergebnis-bot'"
@@ -460,9 +454,6 @@ jobs:
               pull_number: pullRequest.number,
               repo: repository.repo,
             })
-
-      - name: "Wait"
-        run: "sleep 3"
 
       - name: "Merge pull request"
         uses: "actions/github-script@0.8.0"
