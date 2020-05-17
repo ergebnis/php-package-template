@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace Ergebnis\Library\Test\Unit;
 
 use Ergebnis\Library\Example;
-use Ergebnis\Test\Util\Helper;
+use Ergebnis\Test\Util;
 use PHPUnit\Framework;
 
 /**
@@ -24,7 +24,7 @@ use PHPUnit\Framework;
  */
 final class ExampleTest extends Framework\TestCase
 {
-    use Helper;
+    use Util\Helper;
 
     public function testFromNameReturnsExample(): void
     {
