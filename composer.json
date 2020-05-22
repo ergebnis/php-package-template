@@ -26,7 +26,7 @@
     "phpstan/phpstan-deprecation-rules": "~0.12.3",
     "phpstan/phpstan-phpunit": "~0.12.8",
     "phpstan/phpstan-strict-rules": "~0.12.2",
-    "phpunit/phpunit": "^8.5.4",
+    "phpunit/phpunit": "^8.5.5",
     "psalm/plugin-phpunit": "~0.10.0",
     "vimeo/psalm": "^3.11.4"
   },
