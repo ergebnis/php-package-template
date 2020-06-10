@@ -12,3 +12,15 @@ updates:
     schedule:
       interval: "daily"
     versioning-strategy: "increase"
+
+  - commit-message:
+      include: "scope"
+      prefix: "Build"
+    directory: "/"
+    labels:
+      - "dependency"
+    open-pull-requests-limit: 10
+    package-ecosystem: "github-actions"
+    schedule:
+      interval: "daily"
+    versioning-strategy: "increase"
