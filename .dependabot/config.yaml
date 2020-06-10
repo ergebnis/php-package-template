@@ -1,14 +1,16 @@
 # https://dependabot.com/docs/config-file/
 
-version: 1
+version: 2
 
-update_configs:
-  - commit_message:
-      include_scope: true
+updates:
+  - commit-message:
+      include: "scope"
       prefix: "Build"
-    default_labels:
-      - "dependency"
     directory: "/"
-    package_manager: "php:composer"
-    update_schedule: "live"
-    version_requirement_updates: "increase_versions"
+    labels:
+      - "dependency"
+    open-pull-requests-limit: 10
+    package-ecosystem: "composer"
+    schedule:
+      interval: "daily"
+    versioning-strategy: "increase"
