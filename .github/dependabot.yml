@@ -1,3 +1,5 @@
+# https://help.github.com/en/github/administering-a-repository/configuration-options-for-dependency-updates#target-branch
+
 version: 2
 
 updates:
@@ -11,7 +13,6 @@ updates:
     package-ecosystem: "composer"
     schedule:
       interval: "daily"
-    versioning-strategy: "increase"
 
   - commit-message:
       include: "scope"
@@ -23,4 +24,3 @@ updates:
     package-ecosystem: "github-actions"
     schedule:
       interval: "daily"
-    versioning-strategy: "increase"
