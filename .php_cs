@@ -33,7 +33,6 @@ $config->getFinder()
     ->in(__DIR__)
     ->exclude([
         '.build/',
-        '.dependabot/',
         '.github/',
         '.notes/',
     ])
