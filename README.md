@@ -17,7 +17,7 @@
 
 Run
 
-```
+```sh
 $ composer require ergebnis/php-library-template
 ```
 
