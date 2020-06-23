@@ -11,7 +11,7 @@ on: # yamllint disable-line rule:truthy
 env:
   MIN_COVERED_MSI: 100
   MIN_MSI: 100
-  REQUIRED_PHP_EXTENSIONS: "mbstring"
+  PHP_EXTENSIONS: "mbstring"
 
 jobs:
   coding-standards:
@@ -42,7 +42,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           coverage: "none"
-          extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
+          extensions: "${{ env.PHP_EXTENSIONS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Validate composer.json and composer.lock"
@@ -108,7 +108,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           coverage: "none"
-          extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
+          extensions: "${{ env.PHP_EXTENSIONS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Determine composer cache directory"
@@ -158,7 +158,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           coverage: "none"
-          extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
+          extensions: "${{ env.PHP_EXTENSIONS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Determine composer cache directory"
@@ -235,7 +235,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           coverage: "none"
-          extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
+          extensions: "${{ env.PHP_EXTENSIONS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Determine composer cache directory"
@@ -291,7 +291,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           coverage: "pcov"
-          extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
+          extensions: "${{ env.PHP_EXTENSIONS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Determine composer cache directory"
@@ -346,7 +346,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           coverage: "pcov"
-          extensions: "${{ env.REQUIRED_PHP_EXTENSIONS }}"
+          extensions: "${{ env.PHP_EXTENSIONS }}"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Determine composer cache directory"
