@@ -1,4 +1,4 @@
-# https://github.com/actions/stale
+# https://docs.github.com/en/actions
 
 name: "Prune"
 
