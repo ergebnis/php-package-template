@@ -238,6 +238,9 @@ jobs:
           extensions: "${{ env.PHP_EXTENSIONS }}"
           php-version: "${{ matrix.php-version }}"
 
+      - name: "Set up problem matchers for phpunit/phpunit"
+        run: "echo \"::add-matcher::${{ runner.tool_cache }}/phpunit.json\""
+
       - name: "Determine composer cache directory"
         id: "determine-composer-cache-directory"
         run: "echo \"::set-output name=directory::$(composer config cache-dir)\""
@@ -293,6 +296,9 @@ jobs:
           coverage: "pcov"
           extensions: "${{ env.PHP_EXTENSIONS }}"
           php-version: "${{ matrix.php-version }}"
+
+      - name: "Set up problem matchers for phpunit/phpunit"
+        run: "echo \"::add-matcher::${{ runner.tool_cache }}/phpunit.json\""
 
       - name: "Determine composer cache directory"
         id: "determine-composer-cache-directory"
