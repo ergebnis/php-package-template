@@ -8,6 +8,7 @@
     errorLevel="1"
     findUnusedVariablesAndParams="true"
     resolveFromConfigFile="true"
+    strictBinaryOperands="true"
 >
     <issueHandlers>
         <LessSpecificReturnType errorLevel="info" />
