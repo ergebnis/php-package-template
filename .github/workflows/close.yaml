@@ -1,0 +1,51 @@
+name: "Close"
+
+on: # yamllint disable-line rule:truthy
+  pull_request:
+    types:
+      - "opened"
+      - "reopened"
+
+jobs:
+  close:
+    name: "Close"
+
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: "Close pull request based on actors"
+        uses: "actions/github-script@v2.0.1"
+        with:
+          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          script: |
+            const actors = [
+              "localheinz",
+            ]
+
+            const pullRequest = context.payload.pull_request
+            const repository = context.repo
+
+            const actor = context.actor;
+
+            if (actors.includes(actor)) {
+              github.issues.createComment({
+                body: "I'm sorry, @" + actor + ". I'm afraid you can't do that.",
+                issue_number: pullRequest.number,
+                owner: repository.owner,
+                repo: repository.repo,
+              });
+
+              github.pulls.update({
+                owner: repository.owner,
+                pull_number: pullRequest.number,
+                repo: repository.repo,
+                state: "closed",
+              });
+
+              github.issues.lock({
+                issue_number: pullRequest.number,
+                lock_reason: "off-topic",
+                owner: repository.owner,
+                repo: repository.repo,
+              });
+            }
