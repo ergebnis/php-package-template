@@ -8,7 +8,7 @@ on: # yamllint disable-line rule:truthy
 
 env:
   DAYS_BEFORE_CLOSE: 5
-  DAYS_BEFORE_STALE: 5
+  DAYS_BEFORE_STALE: 180
 
 jobs:
   prune:
