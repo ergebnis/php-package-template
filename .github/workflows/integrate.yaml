@@ -61,7 +61,7 @@ jobs:
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
       - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-        uses: "./.github/actions/composer/install"
+        uses: "./.github/actions/composer/composer/install"
         with:
           dependencies: "${{ matrix.dependencies }}"
 
@@ -117,7 +117,7 @@ jobs:
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
       - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-        uses: "./.github/actions/composer/install"
+        uses: "./.github/actions/composer/composer/install"
         with:
           dependencies: "${{ matrix.dependencies }}"
 
@@ -160,7 +160,7 @@ jobs:
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
       - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-        uses: "./.github/actions/composer/install"
+        uses: "./.github/actions/composer/composer/install"
         with:
           dependencies: "${{ matrix.dependencies }}"
 
@@ -233,7 +233,7 @@ jobs:
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
       - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-        uses: "./.github/actions/composer/install"
+        uses: "./.github/actions/composer/composer/install"
         with:
           dependencies: "${{ matrix.dependencies }}"
 
@@ -285,7 +285,7 @@ jobs:
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
       - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-        uses: "./.github/actions/composer/install"
+        uses: "./.github/actions/composer/composer/install"
         with:
           dependencies: "${{ matrix.dependencies }}"
 
@@ -333,7 +333,7 @@ jobs:
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
       - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-        uses: "./.github/actions/composer/install"
+        uses: "./.github/actions/composer/composer/install"
         with:
           dependencies: "${{ matrix.dependencies }}"
 
