@@ -9,6 +9,7 @@ on: # yamllint disable-line rule:truthy
       - "main"
 
 env:
+  ERGEBNIS_BOT_NAME: "ergebnis-bot"
   MIN_COVERED_MSI: 100
   MIN_MSI: 100
   PHP_EXTENSIONS: "mbstring"
@@ -408,7 +409,7 @@ jobs:
       )
 
     steps:
-      - name: "Request review from @ergebnis-bot"
+      - name: "Request review from @${{ env.ERGEBNIS_BOT_NAME }}"
         uses: "actions/github-script@v2.0.1"
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
@@ -417,7 +418,7 @@ jobs:
             const repository = context.repo
 
             const reviewers = [
-              "ergebnis-bot",
+              "${{ env.ERGEBNIS_BOT_NAME }}",
             ]
 
             await github.pulls.createReviewRequest({
@@ -427,7 +428,7 @@ jobs:
               reviewers: reviewers,
             })
 
-      - name: "Assign @ergebnis-bot"
+      - name: "Assign @${{ env.ERGEBNIS_BOT_NAME }}"
         uses: "actions/github-script@v2.0.1"
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
@@ -436,7 +437,7 @@ jobs:
             const repository = context.repo
 
             const assignees = [
-              "ergebnis-bot",
+              "${{ env.ERGEBNIS_BOT_NAME }}",
             ]
 
             await github.issues.addAssignees({
@@ -448,7 +449,7 @@ jobs:
 
       - name: "Approve pull request"
         uses: "actions/github-script@v2.0.1"
-        if: "github.actor != 'ergebnis-bot'"
+        if: "github.actor != '${{ env.ERGEBNIS_BOT_NAME }}'"
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           script: |
