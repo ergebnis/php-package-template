@@ -435,12 +435,12 @@ jobs:
             const pullRequest = context.payload.pull_request
             const repository = context.repo
 
-            const reviewers = [
+            const assignees = [
               "ergebnis-bot",
             ]
 
             await github.issues.addAssignees({
-              assignees: reviewers,
+              assignees: assignees,
               issue_number: pullRequest.number,
               owner: repository.owner,
               repo: repository.repo,
