@@ -120,7 +120,7 @@ jobs:
           dependencies: "${{ matrix.dependencies }}"
 
       - name: "Run maglnet/composer-require-checker"
-        run: "tools/composer-require-checker check"
+        run: "tools/composer-require-checker check --config-file=$(pwd)/composer-require-checker.json"
 
   static-code-analysis:
     name: "Static Code Analysis"
