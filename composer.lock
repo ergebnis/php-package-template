@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "54b0127176bb716dcd1b5f01d1e09b0c",
+    "content-hash": "8ba2bba71dbed384713b44b157c3e762",
     "packages": [],
     "packages-dev": [
         {
@@ -1005,37 +1005,37 @@
         },
         {
             "name": "ergebnis/phpstan-rules",
-            "version": "0.15.1",
+            "version": "0.15.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/phpstan-rules.git",
-                "reference": "e6e2bbf0edd7f78b26dfd72daa01d28500ad3e6c"
+                "reference": "87571fcb13e070946e63c50aedb0adb9ead37b23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/phpstan-rules/zipball/e6e2bbf0edd7f78b26dfd72daa01d28500ad3e6c",
-                "reference": "e6e2bbf0edd7f78b26dfd72daa01d28500ad3e6c",
+                "url": "https://api.github.com/repos/ergebnis/phpstan-rules/zipball/87571fcb13e070946e63c50aedb0adb9ead37b23",
+                "reference": "87571fcb13e070946e63c50aedb0adb9ead37b23",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "nikic/php-parser": "^4.2.3",
-                "php": "^7.1",
+                "php": "^7.2",
                 "phpstan/phpstan": "~0.11.15 || ~0.12.0"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.6.1",
+                "ergebnis/composer-normalize": "^2.7.1",
                 "ergebnis/license": "^1.0.0",
                 "ergebnis/php-cs-fixer-config": "^2.2.1",
                 "ergebnis/test-util": "^1.0.0",
-                "infection/infection": "~0.13.6",
+                "infection/infection": "~0.15.3",
                 "nette/di": "^3.0.1",
                 "phpstan/phpstan-deprecation-rules": "~0.11.2",
                 "phpstan/phpstan-strict-rules": "~0.11.1",
-                "phpunit/phpunit": "^7.5.20",
-                "psalm/plugin-phpunit": "~0.10.1",
+                "phpunit/phpunit": "^8.5.8",
+                "psalm/plugin-phpunit": "~0.11.0",
                 "psr/container": "^1.0.0",
-                "vimeo/psalm": "^3.13.1",
+                "vimeo/psalm": "^3.14.2",
                 "zendframework/zend-servicemanager": "^2.0.0"
             },
             "type": "phpstan-extension",
@@ -1074,7 +1074,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-07-31T18:01:05+00:00"
+            "time": "2020-08-29T09:03:47+00:00"
         },
         {
             "name": "ergebnis/test-util",
