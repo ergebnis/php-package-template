@@ -31,4 +31,9 @@ final class Example
     {
         return $this->name;
     }
+
+    public function renameTo(string $name): void
+    {
+        $this->name = $name;
+    }
 }
