@@ -2,24 +2,24 @@
 
 dependencies="${COMPOSER_INSTALL_DEPENDENCIES}"
 
-if [[ ${dependencies} == "lowest" ]]; then
-  composer update --no-interaction --no-progress --no-suggest --prefer-lowest
+case "${dependencies}" in
+  "lowest")
+    composer update --no-interaction --no-progress --no-suggest --prefer-lowest
+    exit $?
+    ;;
 
-  exit $?
-fi
+  "locked")
+    composer install --no-interaction --no-progress --no-suggest
+    exit $?
+    ;;
 
-if [[ ${dependencies} == "locked" ]]; then
-  composer install --no-interaction --no-progress --no-suggest
+  "highest")
+    composer update --no-interaction --no-progress --no-suggest
+    exit $?
+    ;;
 
-  exit $?
-fi
-
-if [[ ${dependencies} == "highest" ]]; then
-  composer update --no-interaction --no-progress --no-suggest
-
-  exit $?
-fi
-
-echo "::error::The value for the \"dependencies\" input needs to be one of \"lowest\", \"locked\"', \"highest\"' - got \"${dependencies}\" instead."
-
-exit 1
+  *)
+    echo "::error::The value for the \"dependencies\" input needs to be one of \"lowest\", \"locked\"', \"highest\"' - got \"${dependencies}\" instead."
+    exit 1
+    ;;
+esac
