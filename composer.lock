@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8131f5c01422d0c0a56bc2fb114443c7",
+    "content-hash": "410a716a26a3f72863ea65baa9668ad1",
     "packages": [],
     "packages-dev": [
         {
@@ -2443,16 +2443,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.60",
+            "version": "0.12.63",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "d4577922c296d28746e28a5f046e787562143157"
+                "reference": "c97ec4754bd53099a06c24847bd2870b99966b6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d4577922c296d28746e28a5f046e787562143157",
-                "reference": "d4577922c296d28746e28a5f046e787562143157",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c97ec4754bd53099a06c24847bd2870b99966b6a",
+                "reference": "c97ec4754bd53099a06c24847bd2870b99966b6a",
                 "shasum": ""
             },
             "require": {
@@ -2483,7 +2483,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/0.12.60"
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.63"
             },
             "funding": [
                 {
@@ -2499,7 +2499,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-12T13:07:07+00:00"
+            "time": "2020-12-15T16:37:16+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -2618,16 +2618,16 @@
         },
         {
             "name": "phpstan/phpstan-strict-rules",
-            "version": "0.12.6",
+            "version": "0.12.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-strict-rules.git",
-                "reference": "80a77d3c2965b10fd7158b6c94aef1fd8abafbb0"
+                "reference": "03807e3410747ec18cd5f05a6342384adcc423bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/80a77d3c2965b10fd7158b6c94aef1fd8abafbb0",
-                "reference": "80a77d3c2965b10fd7158b6c94aef1fd8abafbb0",
+                "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/03807e3410747ec18cd5f05a6342384adcc423bf",
+                "reference": "03807e3410747ec18cd5f05a6342384adcc423bf",
                 "shasum": ""
             },
             "require": {
@@ -2663,9 +2663,9 @@
             "description": "Extra strict and opinionated rules for PHPStan",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-strict-rules/issues",
-                "source": "https://github.com/phpstan/phpstan-strict-rules/tree/0.12.6"
+                "source": "https://github.com/phpstan/phpstan-strict-rules/tree/0.12.7"
             },
-            "time": "2020-12-12T16:28:23+00:00"
+            "time": "2020-12-13T13:27:14+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
