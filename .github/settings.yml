@@ -16,7 +16,7 @@ branches:
         contexts:
           - "Code Coverage (8.0, locked)"
           - "Coding Standards (7.2, locked)"
-          - "Dependency Analysis (7.4, locked)"
+          - "Dependency Analysis (8.0, locked)"
           - "Mutation Tests (7.4, locked)"
           - "Static Code Analysis (7.4, locked)"
           - "Tests (7.2, highest)"
