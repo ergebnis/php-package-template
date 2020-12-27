@@ -10,8 +10,6 @@ on: # yamllint disable-line rule:truthy
 
 env:
   ERGEBNIS_BOT_NAME: "ergebnis-bot"
-  MIN_COVERED_MSI: 100
-  MIN_MSI: 100
   PHP_EXTENSIONS: "mbstring"
 
 jobs:
@@ -332,7 +330,7 @@ jobs:
           dependencies: "${{ matrix.dependencies }}"
 
       - name: "Run mutation tests with pcov and infection/infection"
-        run: "vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=${{ env.MIN_COVERED_MSI }} --min-msi=${{ env.MIN_MSI }}"
+        run: "vendor/bin/infection --configuration=infection.json"
 
   merge:
     name: "Merge"
