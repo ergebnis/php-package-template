@@ -20,7 +20,6 @@
     "ergebnis/phpstan-rules": "~0.15.3",
     "ergebnis/test-util": "^1.4.0",
     "infection/infection": "~0.18.2",
-    "jangregor/phpstan-prophecy": "~0.8.1",
     "phpstan/extension-installer": "^1.1.0",
     "phpstan/phpstan": "~0.12.64",
     "phpstan/phpstan-deprecation-rules": "~0.12.6",
