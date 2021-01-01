@@ -9,7 +9,6 @@ on: # yamllint disable-line rule:truthy
       - "main"
 
 env:
-  ERGEBNIS_BOT_NAME: "ergebnis-bot"
   PHP_EXTENSIONS: "mbstring"
 
 jobs:
@@ -359,9 +358,9 @@ jobs:
       )
 
     steps:
-      - name: "Request review from @${{ env.ERGEBNIS_BOT_NAME }}"
+      - name: "Request review from @ergebnis-bot"
         uses: "actions/github-script@v3.1"
-        if: "github.actor != '${{ env.ERGEBNIS_BOT_NAME }}'"
+        if: "github.actor != 'ergebnis-bot'"
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           script: |
@@ -369,7 +368,7 @@ jobs:
             const repository = context.repo
 
             const reviewers = [
-              "${{ env.ERGEBNIS_BOT_NAME }}",
+              "ergebnis-bot",
             ]
 
             await github.pulls.requestReviewers({
@@ -379,7 +378,7 @@ jobs:
               reviewers: reviewers,
             })
 
-      - name: "Assign @${{ env.ERGEBNIS_BOT_NAME }}"
+      - name: "Assign @ergebnis-bot"
         uses: "actions/github-script@v3.1"
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
@@ -388,7 +387,7 @@ jobs:
             const repository = context.repo
 
             const assignees = [
-              "${{ env.ERGEBNIS_BOT_NAME }}",
+              "ergebnis-bot",
             ]
 
             await github.issues.addAssignees({
