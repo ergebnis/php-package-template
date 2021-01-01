@@ -7,8 +7,6 @@ on: # yamllint disable-line rule:truthy
     - cron: "0 * 1 1 *"
 
 env:
-  ERGEBNIS_BOT_EMAIL: "bot@ergebn.is"
-  ERGEBNIS_BOT_NAME: "ergebnis-bot"
   PHP_EXTENSIONS: "mbstring"
 
 jobs:
@@ -70,7 +68,7 @@ jobs:
       - name: "Open pull request updating license year"
         uses: "gr2m/create-or-update-pull-request-action@v1.3.3"
         with:
-          author: "${{ env.ERGEBNIS_BOT_NAME }} <${{ env.ERGEBNIS_BOT_EMAIL }}>"
+          author: "ergebnis-bot <bot@ergebn.is>"
           branch: "feature/license-year"
           body: |
             This PR
