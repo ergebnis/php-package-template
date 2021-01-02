@@ -85,7 +85,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "7.4"
+          - "7.3"
 
         dependencies:
           - "locked"
@@ -127,7 +127,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.0"
+          - "7.3"
 
         dependencies:
           - "locked"
@@ -247,7 +247,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.0"
+          - "7.3"
 
         dependencies:
           - "locked"
@@ -297,7 +297,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.0"
+          - "7.3"
 
         dependencies:
           - "locked"
