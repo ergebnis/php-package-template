@@ -26,6 +26,8 @@ jobs:
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v2.3.4"
+        with:
+          token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
 
       - name: "Install PHP with extensions"
         uses: "shivammathur/setup-php@2.9.0"
@@ -65,17 +67,10 @@ jobs:
       - name: "Run friendsofphp/php-cs-fixer"
         run: "vendor/bin/php-cs-fixer fix --config=.php_cs --diff --diff-format=udiff --verbose"
 
-      - name: "Open pull request updating license year"
-        uses: "gr2m/create-or-update-pull-request-action@v1.3.3"
+      - name: "Commit modified files"
+        uses: "stefanzweifel/git-auto-commit-action@v4.8.0"
         with:
-          author: "ergebnis-bot <bot@ergebn.is>"
-          branch: "feature/license-year"
-          body: |
-            This PR
-
-            * [x] updates the license year
-          commit-message: "Enhancement: Update license year"
-          path: "."
-          title: "Enhancement: Update license year"
-        env:
-          GITHUB_TOKEN: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          commit_author: "ergebnis-bot <bot@ergebn.is>"
+          commit_message: "Enhancement: Update license year"
+          commit_user_email: "bot@ergebn.is"
+          commit_user_name: "ergebnis-bot"
