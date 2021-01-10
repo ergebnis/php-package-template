@@ -29,7 +29,7 @@ jobs:
         with:
           token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
 
-      - name: "Install PHP with extensions"
+      - name: "Set up PHP"
         uses: "shivammathur/setup-php@2.9.0"
         with:
           coverage: "none"
