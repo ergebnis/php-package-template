@@ -27,7 +27,7 @@
     "phpstan/phpstan-strict-rules": "~0.12.8",
     "phpunit/phpunit": "~9.2.6",
     "psalm/plugin-phpunit": "~0.15.0",
-    "vimeo/psalm": "^4.3.2"
+    "vimeo/psalm": "^4.4.0"
   },
   "config": {
     "platform": {
