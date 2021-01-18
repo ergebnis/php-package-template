@@ -1,4 +1,4 @@
-This PR
+This pull request
 
 * [x]
 
