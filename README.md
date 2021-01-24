@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/ergebnis/php-library-template)
+
 # php-library-template
 
 [![Integrate](https://github.com/ergebnis/php-library-template/workflows/Integrate/badge.svg)](https://github.com/ergebnis/php-library-template/actions)
