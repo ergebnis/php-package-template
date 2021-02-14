@@ -360,7 +360,7 @@ jobs:
       - name: "Request review from @ergebnis-bot"
         uses: "actions/github-script@v3.1"
         with:
-          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
           script: |
             const pullRequest = context.payload.pull_request
             const repository = context.repo
@@ -379,7 +379,7 @@ jobs:
       - name: "Assign @ergebnis-bot"
         uses: "actions/github-script@v3.1"
         with:
-          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
           script: |
             const pullRequest = context.payload.pull_request
             const repository = context.repo
@@ -398,7 +398,7 @@ jobs:
       - name: "Approve pull request"
         uses: "actions/github-script@v3.1"
         with:
-          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
           script: |
             const pullRequest = context.payload.pull_request
             const repository = context.repo
@@ -413,7 +413,7 @@ jobs:
       - name: "Merge pull request"
         uses: "actions/github-script@v3.1"
         with:
-          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
           script: |
             const pullRequest = context.payload.pull_request
             const repository = context.repo

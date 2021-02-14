@@ -22,7 +22,7 @@ jobs:
         with:
           days-before-close: "${{ env.DAYS_BEFORE_CLOSE }}"
           days-before-stale: "${{ env.DAYS_BEFORE_STALE }}"
-          repo-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
           stale-issue-label: "stale"
           stale-issue-message: |
             Since this issue has not had any activity within the last ${{ env.DAYS_BEFORE_STALE }} days, I have marked it as stale.
