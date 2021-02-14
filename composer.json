@@ -16,18 +16,18 @@
   "require-dev": {
     "ergebnis/composer-normalize": "^2.13.2",
     "ergebnis/license": "^1.1.0",
-    "ergebnis/php-cs-fixer-config": "~2.12.0",
+    "ergebnis/php-cs-fixer-config": "~2.13.0",
     "ergebnis/phpstan-rules": "~0.15.3",
     "ergebnis/test-util": "^1.4.0",
     "infection/infection": "~0.18.2",
     "phpstan/extension-installer": "^1.1.0",
-    "phpstan/phpstan": "~0.12.68",
+    "phpstan/phpstan": "~0.12.75",
     "phpstan/phpstan-deprecation-rules": "~0.12.6",
     "phpstan/phpstan-phpunit": "~0.12.17",
     "phpstan/phpstan-strict-rules": "~0.12.9",
     "phpunit/phpunit": "~9.2.6",
-    "psalm/plugin-phpunit": "~0.15.0",
-    "vimeo/psalm": "^4.4.1"
+    "psalm/plugin-phpunit": "~0.15.1",
+    "vimeo/psalm": "^4.5.1"
   },
   "config": {
     "platform": {
