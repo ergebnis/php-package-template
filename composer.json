@@ -44,12 +44,12 @@
     "preferred-install": "dist",
     "sort-packages": true
   },
-  "extrInquid\
+  "extra": {
     "composer-normalize": {
       "indent-size": 2,
       "indent-style": "space"
     }
-  },Inquid\
+  },
   "autoload": {
     "psr-4": {
       "Ergebnis\\Library\\": "src/"
