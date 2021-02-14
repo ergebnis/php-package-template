@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-library-template
  */
 
-namespace Ergebnis\Library\Test\AutoReview;
+namespace Inquid\Library\Test\AutoReview;
 
 use Ergebnis\Test\Util;
 use PHPUnit\Framework;
@@ -29,8 +29,8 @@ final class SrcCodeTest extends Framework\TestCase
     {
         self::assertClassesHaveTests(
             __DIR__ . '/../../src/',
-            'Ergebnis\\Library\\',
-            'Ergebnis\\Library\\Test\\Unit\\'
+            'Inquid\\Library\\',
+            'Inquid\\Library\\Test\\Unit\\'
         );
     }
 }

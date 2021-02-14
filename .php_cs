@@ -11,8 +11,8 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-library-template
  */
 
-use Ergebnis\License;
-use Ergebnis\PhpCsFixer;
+use Inquid\License;
+use Inquid\PhpCsFixer;
 
 $license = License\Type\MIT::markdown(
     __DIR__ . '/LICENSE.md',

@@ -1,13 +1,21 @@
 {
-  "name": "ergebnis/php-library-template",
+  "name": "inquid/php-library-template",
   "type": "library",
   "description": "Provides a GitHub repository template for a PHP library, using GitHub actions.",
-  "homepage": "https://github.com/ergebnis/php-library-template",
+  "homepage": "https://github.com/inquid/php-library-template",
   "license": "MIT",
   "authors": [
     {
       "name": "Andreas Möller",
       "email": "am@localheinz.com"
+    },
+    {
+      "name": "Inquid",
+      "email": "contact@inquid.co"
+    },
+    {
+      "name": "Luis Gonzalez",
+      "email": "luisarmando1234@gmail.com"
     }
   ],
   "require": {
@@ -36,12 +44,12 @@
     "preferred-install": "dist",
     "sort-packages": true
   },
-  "extra": {
+  "extrInquid\
     "composer-normalize": {
       "indent-size": 2,
       "indent-style": "space"
     }
-  },
+  },Inquid\
   "autoload": {
     "psr-4": {
       "Ergebnis\\Library\\": "src/"
@@ -53,7 +61,7 @@
     }
   },
   "support": {
-    "issues": "https://github.com/ergebnis/php-library-template/issues",
-    "source": "https://github.com/ergebnis/php-library-template"
+    "issues": "https://github.com/inquid/php-library-template/issues",
+    "source": "https://github.com/inquid/php-library-template"
   }
 }

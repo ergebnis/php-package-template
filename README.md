@@ -1,17 +1,17 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/ergebnis/php-library-template)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/inquid/php-library-template)
 
 # inquid-library-template
 
-[![Integrate](https://github.com/ergebnis/php-library-template/workflows/Integrate/badge.svg)](https://github.com/ergebnis/php-library-template/actions)
-[![Prune](https://github.com/ergebnis/php-library-template/workflows/Prune/badge.svg)](https://github.com/ergebnis/php-library-template/actions)
-[![Release](https://github.com/ergebnis/php-library-template/workflows/Release/badge.svg)](https://github.com/ergebnis/php-library-template/actions)
-[![Renew](https://github.com/ergebnis/php-library-template/workflows/Renew/badge.svg)](https://github.com/ergebnis/php-library-template/actions)
+[![Integrate](https://github.com/inquid/php-library-template/workflows/Integrate/badge.svg)](https://github.com/inquid/php-library-template/actions)
+[![Prune](https://github.com/inquid/php-library-template/workflows/Prune/badge.svg)](https://github.com/inquid/php-library-template/actions)
+[![Release](https://github.com/inquid/php-library-template/workflows/Release/badge.svg)](https://github.com/inquid/php-library-template/actions)
+[![Renew](https://github.com/inquid/php-library-template/workflows/Renew/badge.svg)](https://github.com/inquid/php-library-template/actions)
 
-[![Code Coverage](https://codecov.io/gh/ergebnis/php-library-template/branch/main/graph/badge.svg)](https://codecov.io/gh/ergebnis/php-library-template)
-[![Type Coverage](https://shepherd.dev/github/ergebnis/php-library-template/coverage.svg)](https://shepherd.dev/github/ergebnis/php-library-template)
+[![Code Coverage](https://codecov.io/gh/inquid/php-library-template/branch/main/graph/badge.svg)](https://codecov.io/gh/inquid/php-library-template)
+[![Type Coverage](https://shepherd.dev/github/inquid/php-library-template/coverage.svg)](https://shepherd.dev/github/inquid/php-library-template)
 
-[![Latest Stable Version](https://poser.pugx.org/ergebnis/php-library-template/v/stable)](https://packagist.org/packages/ergebnis/php-library-template)
-[![Total Downloads](https://poser.pugx.org/ergebnis/php-library-template/downloads)](https://packagist.org/packages/ergebnis/php-library-template)
+[![Latest Stable Version](https://poser.pugx.org/inquid/php-library-template/v/stable)](https://packagist.org/packages/inquid/php-library-template)
+[![Total Downloads](https://poser.pugx.org/inquid/php-library-template/downloads)](https://packagist.org/packages/inquid/php-library-template)
 
 ## Installation
 
@@ -20,7 +20,7 @@
 Run
 
 ```sh
-$ composer require ergebnis/php-library-template
+$ composer require inquid/php-library-template
 ```
 
 ## Usage

@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/php-library-template
  */
 
-namespace Ergebnis\Library\Test\Unit;
+namespace Inquid\Library\Test\Unit;
 
 use Ergebnis\Library\Example;
 use Ergebnis\Test\Util;
@@ -20,7 +20,7 @@ use PHPUnit\Framework;
 /**
  * @internal
  *
- * @covers \Ergebnis\Library\Example
+ * @covers \Inquid\Library\Example
  */
 final class ExampleTest extends Framework\TestCase
 {
