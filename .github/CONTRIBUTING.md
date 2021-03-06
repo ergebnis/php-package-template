@@ -60,7 +60,6 @@ to run a static code analysis.
 
 We are also using the baseline features of [`phpstan/phpstan`](https://phpstan.org/user-guide/baseline) and [`vimeo/psalm`](https://psalm.dev/docs/running_psalm/dealing_with_code_issues/#using-a-baseline-file).
 
-
 Run
 
 ```sh
