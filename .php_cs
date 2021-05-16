@@ -18,10 +18,10 @@ $license = License\Type\MIT::markdown(
     __DIR__ . '/LICENSE.md',
     License\Range::since(
         License\Year::fromString('2017'),
-        new \DateTimeZone('UTC')
+        new \DateTimeZone('UTC'),
     ),
     License\Holder::fromString('Andreas Möller'),
-    License\Url::fromString('https://github.com/ergebnis/php-library-template')
+    License\Url::fromString('https://github.com/ergebnis/php-library-template'),
 );
 
 $license->save();
