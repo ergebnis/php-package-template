@@ -30,7 +30,7 @@ final class SrcCodeTest extends Framework\TestCase
         self::assertClassesHaveTests(
             __DIR__ . '/../../src/',
             'Ergebnis\\Library\\',
-            'Ergebnis\\Library\\Test\\Unit\\'
+            'Ergebnis\\Library\\Test\\Unit\\',
         );
     }
 }
