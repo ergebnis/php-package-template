@@ -4,7 +4,7 @@
 /.editorconfig                  export-ignore
 /.gitattributes                 export-ignore
 /.gitignore                     export-ignore
-/.php_cs                        export-ignore
+/.php-cs-fixer.php              export-ignore
 /composer-require-checker.json  export-ignore
 /composer.lock                  export-ignore
 /infection.json                 export-ignore
