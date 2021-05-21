@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-    "php": "^7.3 || ^8.0"
+    "php": "^7.4 || ^8.0"
   },
   "require-dev": {
     "ergebnis/composer-normalize": "^2.13.4",
@@ -31,7 +31,7 @@
   },
   "config": {
     "platform": {
-      "php": "7.3.24"
+      "php": "7.4.16"
     },
     "preferred-install": "dist",
     "sort-packages": true
