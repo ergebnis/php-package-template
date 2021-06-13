@@ -8,7 +8,7 @@ declare(strict_types=1);
  * For the full copyright and license information, please view
  * the LICENSE.md file that was distributed with this source code.
  *
- * @see https://github.com/ergebnis/php-library-template
+ * @see https://github.com/ergebnis/php-package-template
  */
 
 use Ergebnis\License;
@@ -21,7 +21,7 @@ $license = License\Type\MIT::markdown(
         new \DateTimeZone('UTC'),
     ),
     License\Holder::fromString('Andreas Möller'),
-    License\Url::fromString('https://github.com/ergebnis/php-library-template'),
+    License\Url::fromString('https://github.com/ergebnis/php-package-template'),
 );
 
 $license->save();

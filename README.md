@@ -1,15 +1,15 @@
-# php-library-template
+# php-package-template
 
-[![Integrate](https://github.com/ergebnis/php-library-template/workflows/Integrate/badge.svg)](https://github.com/ergebnis/php-library-template/actions)
-[![Prune](https://github.com/ergebnis/php-library-template/workflows/Prune/badge.svg)](https://github.com/ergebnis/php-library-template/actions)
-[![Release](https://github.com/ergebnis/php-library-template/workflows/Release/badge.svg)](https://github.com/ergebnis/php-library-template/actions)
-[![Renew](https://github.com/ergebnis/php-library-template/workflows/Renew/badge.svg)](https://github.com/ergebnis/php-library-template/actions)
+[![Integrate](https://github.com/ergebnis/php-package-template/workflows/Integrate/badge.svg)](https://github.com/ergebnis/php-package-template/actions)
+[![Prune](https://github.com/ergebnis/php-package-template/workflows/Prune/badge.svg)](https://github.com/ergebnis/php-package-template/actions)
+[![Release](https://github.com/ergebnis/php-package-template/workflows/Release/badge.svg)](https://github.com/ergebnis/php-package-template/actions)
+[![Renew](https://github.com/ergebnis/php-package-template/workflows/Renew/badge.svg)](https://github.com/ergebnis/php-package-template/actions)
 
-[![Code Coverage](https://codecov.io/gh/ergebnis/php-library-template/branch/main/graph/badge.svg)](https://codecov.io/gh/ergebnis/php-library-template)
-[![Type Coverage](https://shepherd.dev/github/ergebnis/php-library-template/coverage.svg)](https://shepherd.dev/github/ergebnis/php-library-template)
+[![Code Coverage](https://codecov.io/gh/ergebnis/php-package-template/branch/main/graph/badge.svg)](https://codecov.io/gh/ergebnis/php-package-template)
+[![Type Coverage](https://shepherd.dev/github/ergebnis/php-package-template/coverage.svg)](https://shepherd.dev/github/ergebnis/php-package-template)
 
-[![Latest Stable Version](https://poser.pugx.org/ergebnis/php-library-template/v/stable)](https://packagist.org/packages/ergebnis/php-library-template)
-[![Total Downloads](https://poser.pugx.org/ergebnis/php-library-template/downloads)](https://packagist.org/packages/ergebnis/php-library-template)
+[![Latest Stable Version](https://poser.pugx.org/ergebnis/php-package-template/v/stable)](https://packagist.org/packages/ergebnis/php-package-template)
+[![Total Downloads](https://poser.pugx.org/ergebnis/php-package-template/downloads)](https://packagist.org/packages/ergebnis/php-package-template)
 
 ## Installation
 
@@ -18,7 +18,7 @@
 Run
 
 ```sh
-$ composer require ergebnis/php-library-template
+$ composer require ergebnis/php-package-template
 ```
 
 ## Usage

@@ -88,7 +88,7 @@ repository:
   has_pages: false
   has_projects: false
   has_wiki: false
-  name: "php-library-template"
+  name: "php-package-template"
   private: false
 
   # https://docs.github.com/en/rest/reference/repos#replace-all-repository-topics

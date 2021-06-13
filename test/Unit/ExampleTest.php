@@ -8,19 +8,19 @@ declare(strict_types=1);
  * For the full copyright and license information, please view
  * the LICENSE.md file that was distributed with this source code.
  *
- * @see https://github.com/ergebnis/php-library-template
+ * @see https://github.com/ergebnis/php-package-template
  */
 
-namespace Ergebnis\Library\Test\Unit;
+namespace Ergebnis\Package\Test\Unit;
 
-use Ergebnis\Library\Example;
+use Ergebnis\Package\Example;
 use Ergebnis\Test\Util;
 use PHPUnit\Framework;
 
 /**
  * @internal
  *
- * @covers \Ergebnis\Library\Example
+ * @covers \Ergebnis\Package\Example
  */
 final class ExampleTest extends Framework\TestCase
 {
