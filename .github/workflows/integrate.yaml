@@ -3,7 +3,7 @@
 name: "Integrate"
 
 on: # yamllint disable-line rule:truthy
-  pull_request: null
+  pull_request_target: null
   push:
     branches:
       - "main"
@@ -183,7 +183,7 @@ jobs:
       - "tests"
 
     if: >
-      github.event_name == 'pull_request' &&
+      github.event_name == 'pull_request_target' &&
       github.event.pull_request.draft == false && (
         github.event.action == 'opened' ||
         github.event.action == 'reopened' ||
