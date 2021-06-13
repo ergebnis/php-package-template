@@ -82,7 +82,7 @@ repository:
   archived: false
   default_branch: "main"
   delete_branch_on_merge: true
-  description: ":octocat: + :ledger: Provides a GitHub repository template for a PHP library, using GitHub actions."
+  description: ":octocat: + :ledger: Provides a GitHub repository template for a PHP package, using GitHub actions."
   has_downloads: true
   has_issues: true
   has_pages: false
@@ -93,4 +93,4 @@ repository:
 
   # https://docs.github.com/en/rest/reference/repos#replace-all-repository-topics
 
-  topics: "php, library, template"
+  topics: "php, package, template"
