@@ -1,8 +1,8 @@
 {
-  "name": "ergebnis/php-library-template",
+  "name": "ergebnis/php-package-template",
   "type": "library",
   "description": "Provides a GitHub repository template for a PHP library, using GitHub actions.",
-  "homepage": "https://github.com/ergebnis/php-library-template",
+  "homepage": "https://github.com/ergebnis/php-package-template",
   "license": "MIT",
   "authors": [
     {
@@ -44,16 +44,16 @@
   },
   "autoload": {
     "psr-4": {
-      "Ergebnis\\Library\\": "src/"
+      "Ergebnis\\Package\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Ergebnis\\Library\\Test\\": "test/"
+      "Ergebnis\\Package\\Test\\": "test/"
     }
   },
   "support": {
-    "issues": "https://github.com/ergebnis/php-library-template/issues",
-    "source": "https://github.com/ergebnis/php-library-template"
+    "issues": "https://github.com/ergebnis/php-package-template/issues",
+    "source": "https://github.com/ergebnis/php-package-template"
   }
 }
