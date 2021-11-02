@@ -20,6 +20,6 @@ if [[ ${dependencies} == "highest" ]]; then
   exit $?
 fi
 
-echo "::error::The value for the \"dependencies\" input needs to be one of \"lowest\", \"locked\"', \"highest\"' - got \"${dependencies}\" instead."
+echo "::error::The value for the \"dependencies\" input needs to be one of \"lowest\", \"locked\", \"highest\" - got \"${dependencies}\" instead."
 
 exit 1
