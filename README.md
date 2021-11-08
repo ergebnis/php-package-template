@@ -18,7 +18,7 @@
 Run
 
 ```sh
-$ composer require ergebnis/php-package-template
+composer require ergebnis/php-package-template
 ```
 
 ## Usage
