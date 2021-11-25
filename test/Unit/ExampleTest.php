@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace Ergebnis\Package\Test\Unit;
 
-use Ergebnis\Package;
-use Ergebnis\Test\Util;
+use Ergebnis\Package\Example;
+use Ergebnis\Package\Test;
 use PHPUnit\Framework;
 
 /**
@@ -24,13 +24,13 @@ use PHPUnit\Framework;
  */
 final class ExampleTest extends Framework\TestCase
 {
-    use Util\Helper;
+    use Test\Util\Helper;
 
     public function testFromNameReturnsExample(): void
     {
         $name = self::faker()->sentence;
 
-        $example = Package\Example::fromName($name);
+        $example = Example::fromName($name);
 
         self::assertSame($name, $example->name());
     }
