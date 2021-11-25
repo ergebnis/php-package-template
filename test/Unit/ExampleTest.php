@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Ergebnis\Package\Test\Unit;
 
-use Ergebnis\Package\Example;
+use Ergebnis\Package;
 use Ergebnis\Test\Util;
 use PHPUnit\Framework;
 
@@ -30,7 +30,7 @@ final class ExampleTest extends Framework\TestCase
     {
         $name = self::faker()->sentence;
 
-        $example = Example::fromName($name);
+        $example = Package\Example::fromName($name);
 
         self::assertSame($name, $example->name());
     }
