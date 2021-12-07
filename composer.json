@@ -1,20 +1,24 @@
 {
   "name": "ergebnis/php-package-template",
-  "type": "library",
   "description": "Provides a GitHub repository template for a PHP library, using GitHub actions.",
-  "homepage": "https://github.com/ergebnis/php-package-template",
   "license": "MIT",
+  "type": "library",
   "authors": [
     {
       "name": "Andreas Möller",
       "email": "am@localheinz.com"
     }
   ],
+  "homepage": "https://github.com/ergebnis/php-package-template",
+  "support": {
+    "issues": "https://github.com/ergebnis/php-package-template/issues",
+    "source": "https://github.com/ergebnis/php-package-template"
+  },
   "require": {
     "php": "^7.4 || ^8.0"
   },
   "require-dev": {
-    "ergebnis/composer-normalize": "^2.16.0",
+    "ergebnis/composer-normalize": "^2.17.0",
     "ergebnis/data-provider": "^1.0.0",
     "ergebnis/license": "^1.1.0",
     "ergebnis/php-cs-fixer-config": "^3.3.0",
@@ -30,6 +34,16 @@
     "psalm/plugin-phpunit": "~0.16.1",
     "vimeo/psalm": "^4.14.0"
   },
+  "autoload": {
+    "psr-4": {
+      "Ergebnis\\Package\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ergebnis\\Package\\Test\\": "test/"
+    }
+  },
   "config": {
     "platform": {
       "php": "7.4.16"
@@ -42,19 +56,5 @@
       "indent-size": 2,
       "indent-style": "space"
     }
-  },
-  "autoload": {
-    "psr-4": {
-      "Ergebnis\\Package\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Ergebnis\\Package\\Test\\": "test/"
-    }
-  },
-  "support": {
-    "issues": "https://github.com/ergebnis/php-package-template/issues",
-    "source": "https://github.com/ergebnis/php-package-template"
   }
 }
