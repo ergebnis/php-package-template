@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef7c6005f750c8d1f46077cf68ce586a",
+    "content-hash": "640a3e49a1cba932d63e45fbaf686683",
     "packages": [],
     "packages-dev": [
         {
@@ -651,16 +651,16 @@
         },
         {
             "name": "ergebnis/composer-normalize",
-            "version": "2.17.0",
+            "version": "2.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/composer-normalize.git",
-                "reference": "0ac8d06d91063ea7b7ade3d635f3700a8012eb57"
+                "reference": "294fcd40aa2ee991dfdfbd6a106dbee25f54c658"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/composer-normalize/zipball/0ac8d06d91063ea7b7ade3d635f3700a8012eb57",
-                "reference": "0ac8d06d91063ea7b7ade3d635f3700a8012eb57",
+                "url": "https://api.github.com/repos/ergebnis/composer-normalize/zipball/294fcd40aa2ee991dfdfbd6a106dbee25f54c658",
+                "reference": "294fcd40aa2ee991dfdfbd6a106dbee25f54c658",
                 "shasum": ""
             },
             "require": {
@@ -679,7 +679,7 @@
                 "phpunit/phpunit": "^8.5.21",
                 "psalm/plugin-phpunit": "~0.16.1",
                 "symfony/filesystem": "^5.4.0",
-                "vimeo/psalm": "^4.13.1"
+                "vimeo/psalm": "^4.14.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -722,7 +722,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-12-05T11:34:03+00:00"
+            "time": "2021-12-08T09:16:32+00:00"
         },
         {
             "name": "ergebnis/data-provider",
