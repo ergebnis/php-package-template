@@ -45,6 +45,9 @@
     }
   },
   "config": {
+    "allow-plugins": {
+      "ergebnis/composer-normalize": true
+    },
     "platform": {
       "php": "7.4.16"
     },
