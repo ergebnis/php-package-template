@@ -78,7 +78,7 @@ repository:
   archived: false
   default_branch: "main"
   delete_branch_on_merge: true
-  description: ":octocat: + :ledger: Provides a GitHub repository template for a PHP package, using GitHub actions."
+  description: ":octocat: + :ledger: Provides a GitHub repository template for a PHP package, using GitHub Actions."
   enable_automated_security_fixes: true
   enable_vulnerability_alerts: true
   has_downloads: true
