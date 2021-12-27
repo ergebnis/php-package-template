@@ -33,7 +33,7 @@ static-code-analysis: vendor ## Runs a static code analysis with phpstan/phpstan
 	vendor/bin/phpstan --configuration=phpstan.neon --memory-limit=-1
 	mkdir -p .build/psalm
 	vendor/bin/psalm --config=psalm.xml --clear-cache
-	vendor/bin/psalm --config=psalm.xml --diff --show-info=false --stats --threads=4
+	vendor/bin/psalm --config=psalm.xml --show-info=false --stats --threads=4
 
 .PHONY: static-code-analysis-baseline
 static-code-analysis-baseline: vendor ## Generates a baseline for static code analysis with phpstan/phpstan and vimeo/psalm
