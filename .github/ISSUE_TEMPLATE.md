@@ -6,8 +6,8 @@
 
 #### Expected Result
 
-* 
+- 
 
 #### Actual Result
 
-* 
+- 
