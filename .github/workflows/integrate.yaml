@@ -55,6 +55,8 @@ jobs:
           dependencies: "${{ matrix.dependencies }}"
 
       - name: "Collect code coverage with Xdebug and phpunit/phpunit"
+        env:
+          XDEBUG_MODE: "coverage"
         run: "vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=.build/phpunit/logs/clover.xml"
 
       - name: "Send code coverage report to Codecov.io"
@@ -209,6 +211,8 @@ jobs:
           dependencies: "${{ matrix.dependencies }}"
 
       - name: "Run mutation tests with Xdebug and infection/infection"
+        env:
+          XDEBUG_MODE: "coverage"
         run: "vendor/bin/infection --configuration=infection.json --logger-github"
 
   static-code-analysis:
