@@ -332,3 +332,97 @@ jobs:
 
       - name: "Run integration tests with phpunit/phpunit"
         run: "vendor/bin/phpunit --configuration=test/Integration/phpunit.xml"
+
+  merge:
+      name: "Merge"
+
+      runs-on: "ubuntu-latest"
+
+      needs:
+        - "code-coverage"
+        - "coding-standards"
+        - "dependency-analysis"
+        - "mutation-tests"
+        - "static-code-analysis"
+        - "tests"
+
+      if: >
+        github.event_name == 'pull_request' &&
+        github.event.pull_request.draft == false && (
+          github.event.action == 'opened' ||
+          github.event.action == 'reopened' ||
+          github.event.action == 'synchronize'
+        ) && (
+          (github.actor == 'dependabot[bot]' && startsWith(github.event.pull_request.title, 'composer(deps-dev)')) ||
+          (github.actor == 'dependabot[bot]' && startsWith(github.event.pull_request.title, 'github-actions(deps)')) ||
+          (github.actor == 'localheinz' && contains(github.event.pull_request.labels.*.name, 'merge'))
+        )
+
+    steps:
+      - name: "Request review from @ergebnis-bot"
+        uses: "actions/github-script@v5"
+        with:
+          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          script: |
+            const pullRequest = context.payload.pull_request
+            const repository = context.repo
+
+            const reviewers = [
+              "ergebnis-bot",
+            ]
+
+            await github.rest.pulls.requestReviewers({
+              owner: repository.owner,
+              repo: repository.repo,
+              pull_number: pullRequest.number,
+              reviewers: reviewers,
+            })
+
+      - name: "Assign @ergebnis-bot"
+        uses: "actions/github-script@v5"
+        with:
+          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          script: |
+            const pullRequest = context.payload.pull_request
+            const repository = context.repo
+
+            const assignees = [
+              "ergebnis-bot",
+            ]
+
+            await github.rest.issues.addAssignees({
+              owner: repository.owner,
+              repo: repository.repo,
+              issue_number: pullRequest.number
+              assignees: assignees,
+            })
+
+      - name: "Approve pull request"
+        uses: "actions/github-script@v5"
+        with:
+          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          script: |
+            const pullRequest = context.payload.pull_request
+            const repository = context.repo
+
+            await github.rest.pulls.createReview({
+              owner: repository.owner,
+              repo: repository.repo,
+              pull_number: pullRequest.number,
+              event: "APPROVE",
+            })
+
+      - name: "Merge pull request"
+        uses: "actions/github-script@v5"
+        with:
+          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          script: |
+            const pullRequest = context.payload.pull_request
+            const repository = context.repo
+
+            await github.rest.pulls.merge({
+              owner: repository.owner,
+              repo: repository.repo,
+              pull_number: pullRequest.number,
+              merge_method: "merge",
+            })
