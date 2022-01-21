@@ -17,11 +17,27 @@ jobs:
       - name: "Determine release tag"
         run: "echo \"RELEASE_TAG=${GITHUB_REF#refs/tags/}\" >> $GITHUB_ENV"
 
+      - name: "Determine release body"
+        uses: "actions/github-script@v5"
+        with:
+          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          script: |
+            const repository = context.repo
+
+            const response = await github.rest.repos.generateReleaseNotes({
+              owner: repository.owner,
+              repo: repository.repo,
+              tag_name: "${{ env.RELEASE_TAG }}",
+            });
+
+            core.exportVariable("RELEASE_BODY", response.data.body);
+
       - name: "Create release"
         uses: "actions/create-release@v1.1.4"
         env:
           GITHUB_TOKEN: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
         with:
+          body: "${{ env.RELEASE_BODY }}"
           draft: false
           prerelease: false
           release_name: "${{ env.RELEASE_TAG }}"
