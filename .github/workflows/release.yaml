@@ -28,9 +28,9 @@ jobs:
               owner: repository.owner,
               repo: repository.repo,
               tag_name: "${{ env.RELEASE_TAG }}",
-            });
+            })
 
-            core.exportVariable("RELEASE_BODY", response.data.body);
+            core.exportVariable("RELEASE_BODY", response.data.body)
 
       - name: "Create release"
         uses: "actions/create-release@v1.1.4"
