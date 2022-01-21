@@ -22,7 +22,7 @@ jobs:
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           script: |
-            const repository = context.repo
+            const repository = context.repo;
 
             const response = await github.rest.repos.generateReleaseNotes({
               owner: repository.owner,
@@ -33,12 +33,18 @@ jobs:
             core.exportVariable("RELEASE_BODY", response.data.body)
 
       - name: "Create release"
-        uses: "actions/create-release@v1.1.4"
-        env:
-          GITHUB_TOKEN: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+        uses: "actions/github-script@v5"
         with:
-          body: "${{ env.RELEASE_BODY }}"
-          draft: false
-          prerelease: false
-          release_name: "${{ env.RELEASE_TAG }}"
-          tag_name: "${{ env.RELEASE_TAG }}"
+          github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+          script: |
+            const repository = context.repo
+
+            await github.rest.repos.createRelease({
+              body: "${{ env.RELEASE_BODY }}",
+              draft: false,
+              name: "${{ env.RELEASE_TAG }}",
+              owner: repository.owner,
+              prerelease: false,
+              repo: repository.repo,
+              tag_name: "${{ env.RELEASE_TAG }}",
+            })
