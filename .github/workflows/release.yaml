@@ -28,16 +28,16 @@ jobs:
               owner: repository.owner,
               repo: repository.repo,
               tag_name: "${{ env.RELEASE_TAG }}",
-            })
+            });
 
-            core.exportVariable("RELEASE_BODY", response.data.body)
+            core.exportVariable("RELEASE_BODY", response.data.body);
 
       - name: "Create release"
         uses: "actions/github-script@v5"
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           script: |
-            const repository = context.repo
+            const repository = context.repo;
 
             await github.rest.repos.createRelease({
               body: "${{ env.RELEASE_BODY }}",
@@ -47,4 +47,4 @@ jobs:
               prerelease: false,
               repo: repository.repo,
               tag_name: "${{ env.RELEASE_TAG }}",
-            })
+            });
