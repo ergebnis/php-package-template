@@ -25,7 +25,6 @@ jobs:
             };
 
             const pullRequest = context.payload.pull_request;
-            const repository = context.repo;
 
             const branchName = pullRequest.head.ref;
 
@@ -47,8 +46,8 @@ jobs:
                 labels: [
                   label,
                 ],
-                owner: repository.owner,
-                repo: repository.repo,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
               });
             } catch (error) {
               core.setFailed(error.message);

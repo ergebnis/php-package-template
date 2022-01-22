@@ -30,7 +30,6 @@ jobs:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           script: |
             const pullRequest = context.payload.workflow_run.pull_requests[0];
-            const repository = context.repo;
 
             const reviewers = [
               "ergebnis-bot",
@@ -38,8 +37,8 @@ jobs:
 
             try {
               await github.rest.pulls.requestReviewers({
-                owner: repository.owner,
-                repo: repository.repo,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
                 pull_number: pullRequest.number,
                 reviewers: reviewers,
               });
@@ -53,7 +52,6 @@ jobs:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           script: |
             const pullRequest = context.payload.workflow_run.pull_requests[0];
-            const repository = context.repo;
 
             const assignees = [
               "ergebnis-bot",
@@ -61,8 +59,8 @@ jobs:
 
             try {
               await github.rest.issues.addAssignees({
-                owner: repository.owner,
-                repo: repository.repo,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
                 assignees: assignees,
                 issue_number: pullRequest.number
               });
@@ -76,13 +74,12 @@ jobs:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           script: |
             const pullRequest = context.payload.workflow_run.pull_requests[0];
-            const repository = context.repo;
 
             try {
               await github.rest.pulls.createReview({
                 event: "APPROVE",
-                owner: repository.owner,
-                repo: repository.repo,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
                 pull_number: pullRequest.number,
               });
             } catch (error) {
@@ -95,14 +92,13 @@ jobs:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           script: |
             const pullRequest = context.payload.workflow_run.pull_requests[0];
-            const repository = context.repo;
 
             try {
               await github.rest.pulls.merge({
                 merge_method: "merge",
-                owner: repository.owner,
+                owner: context.repo.owner,
                 pull_number: pullRequest.number,
-                repo: repository.repo,
+                repo: context.repo.repo,
               });
             } catch (error) {
               core.setFailed(error.message);
