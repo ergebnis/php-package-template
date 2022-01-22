@@ -22,12 +22,10 @@ jobs:
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           script: |
-            const repository = context.repo;
-
             try {
               const response = await github.rest.repos.generateReleaseNotes({
-                owner: repository.owner,
-                repo: repository.repo,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
                 tag_name: process.env.RELEASE_TAG,
               });
             } catch (error) {
@@ -43,16 +41,14 @@ jobs:
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           script: |
-            const repository = context.repo;
-
             try {
               await github.rest.repos.createRelease({
                 body: process.env.RELEASE_BODY,
                 draft: false,
                 name: process.env.RELEASE_TAG,
-                owner: repository.owner,
+                owner: context.repo.owner,
                 prerelease: false,
-                repo: repository.repo,
+                repo: context.repo.repo,
                 tag_name: process.env.RELEASE_TAG,
               });
             } catch (error) {
