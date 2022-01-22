@@ -27,7 +27,7 @@ jobs:
             const response = await github.rest.repos.generateReleaseNotes({
               owner: repository.owner,
               repo: repository.repo,
-              tag_name: "${{ env.RELEASE_TAG }}",
+              tag_name: process.env.RELEASE_TAG,
             });
 
             core.exportVariable("RELEASE_BODY", response.data.body);
@@ -40,11 +40,11 @@ jobs:
             const repository = context.repo;
 
             await github.rest.repos.createRelease({
-              body: "${{ env.RELEASE_BODY }}",
+              body: process.env.RELEASE_BODY,
               draft: false,
-              name: "${{ env.RELEASE_TAG }}",
+              name: process.env.RELEASE_TAG,
               owner: repository.owner,
               prerelease: false,
               repo: repository.repo,
-              tag_name: "${{ env.RELEASE_TAG }}",
+              tag_name: process.env.RELEASE_TAG,
             });
