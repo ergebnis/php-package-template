@@ -35,7 +35,7 @@ jobs:
               const label = branchPrefixLabels[matches[1]];
 
               try {
-                github.rest.issues.addLabels({
+                await github.rest.issues.addLabels({
                   issue_number: pullRequest.number,
                   labels: [
                     label,
