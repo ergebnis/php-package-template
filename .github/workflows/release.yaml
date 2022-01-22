@@ -24,7 +24,6 @@ jobs:
           script: |
             try {
               await github.rest.repos.createRelease({
-                body: process.env.RELEASE_BODY,
                 draft: false,
                 generate_release_notes: true,
                 name: process.env.RELEASE_TAG,
