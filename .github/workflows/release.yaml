@@ -24,11 +24,17 @@ jobs:
           script: |
             const repository = context.repo;
 
-            const response = await github.rest.repos.generateReleaseNotes({
-              owner: repository.owner,
-              repo: repository.repo,
-              tag_name: process.env.RELEASE_TAG,
-            });
+            try {
+              const response = await github.rest.repos.generateReleaseNotes({
+                owner: repository.owner,
+                repo: repository.repo,
+                tag_name: process.env.RELEASE_TAG,
+              });
+            } catch (error) {
+              core.setFailed(error.message);
+
+              return;
+            }
 
             core.exportVariable("RELEASE_BODY", response.data.body);
 
@@ -39,12 +45,16 @@ jobs:
           script: |
             const repository = context.repo;
 
-            await github.rest.repos.createRelease({
-              body: process.env.RELEASE_BODY,
-              draft: false,
-              name: process.env.RELEASE_TAG,
-              owner: repository.owner,
-              prerelease: false,
-              repo: repository.repo,
-              tag_name: process.env.RELEASE_TAG,
-            });
+            try {
+              await github.rest.repos.createRelease({
+                body: process.env.RELEASE_BODY,
+                draft: false,
+                name: process.env.RELEASE_TAG,
+                owner: repository.owner,
+                prerelease: false,
+                repo: repository.repo,
+                tag_name: process.env.RELEASE_TAG,
+              });
+            } catch (error) {
+              core.setFailed(error.message);
+            }

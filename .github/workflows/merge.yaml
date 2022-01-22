@@ -36,12 +36,16 @@ jobs:
               "ergebnis-bot",
             ];
 
-            await github.rest.pulls.requestReviewers({
-              owner: repository.owner,
-              repo: repository.repo,
-              pull_number: pullRequest.number,
-              reviewers: reviewers,
-            });
+            try {
+              await github.rest.pulls.requestReviewers({
+                owner: repository.owner,
+                repo: repository.repo,
+                pull_number: pullRequest.number,
+                reviewers: reviewers,
+              });
+            } catch (error) {
+              core.setFailed(error.message);
+            }
 
       - name: "Assign @ergebnis-bot"
         uses: "actions/github-script@v5"
@@ -55,12 +59,16 @@ jobs:
               "ergebnis-bot",
             ];
 
-            await github.rest.issues.addAssignees({
-              owner: repository.owner,
-              repo: repository.repo,
-              assignees: assignees,
-              issue_number: pullRequest.number
-            });
+            try {
+              await github.rest.issues.addAssignees({
+                owner: repository.owner,
+                repo: repository.repo,
+                assignees: assignees,
+                issue_number: pullRequest.number
+              });
+            } catch (error) {
+              core.setFailed(error.message);
+            }
 
       - name: "Approve pull request"
         uses: "actions/github-script@v5"
@@ -70,12 +78,16 @@ jobs:
             const pullRequest = context.payload.workflow_run.pull_requests[0];
             const repository = context.repo;
 
-            await github.rest.pulls.createReview({
-              event: "APPROVE",
-              owner: repository.owner,
-              repo: repository.repo,
-              pull_number: pullRequest.number,
-            });
+            try {
+              await github.rest.pulls.createReview({
+                event: "APPROVE",
+                owner: repository.owner,
+                repo: repository.repo,
+                pull_number: pullRequest.number,
+              });
+            } catch (error) {
+              core.setFailed(error.message);
+            }
 
       - name: "Merge pull request"
         uses: "actions/github-script@v5"
@@ -85,9 +97,13 @@ jobs:
             const pullRequest = context.payload.workflow_run.pull_requests[0];
             const repository = context.repo;
 
-            await github.rest.pulls.merge({
-              merge_method: "merge",
-              owner: repository.owner,
-              pull_number: pullRequest.number,
-              repo: repository.repo,
-            });
+            try {
+              await github.rest.pulls.merge({
+                merge_method: "merge",
+                owner: repository.owner,
+                pull_number: pullRequest.number,
+                repo: repository.repo,
+              });
+            } catch (error) {
+              core.setFailed(error.message);
+            }
