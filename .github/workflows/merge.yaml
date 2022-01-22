@@ -38,8 +38,8 @@ jobs:
             try {
               await github.rest.pulls.requestReviewers({
                 owner: context.repo.owner,
-                repo: context.repo.repo,
                 pull_number: pullRequest.number,
+                repo: context.repo.repo,
                 reviewers: reviewers,
               });
             } catch (error) {
@@ -59,10 +59,10 @@ jobs:
 
             try {
               await github.rest.issues.addAssignees({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
                 assignees: assignees,
                 issue_number: pullRequest.number
+                owner: context.repo.owner,
+                repo: context.repo.repo,
               });
             } catch (error) {
               core.setFailed(error.message);
@@ -79,8 +79,8 @@ jobs:
               await github.rest.pulls.createReview({
                 event: "APPROVE",
                 owner: context.repo.owner,
-                repo: context.repo.repo,
                 pull_number: pullRequest.number,
+                repo: context.repo.repo,
               });
             } catch (error) {
               core.setFailed(error.message);
