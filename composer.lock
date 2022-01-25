@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "76604d9cec955d205872fc52f6dbab92",
+    "content-hash": "9dfac0925bcfa939eedb74083a96bb85",
     "packages": [],
     "packages-dev": [
         {
@@ -795,29 +795,29 @@
         },
         {
             "name": "ergebnis/data-provider",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/data-provider.git",
-                "reference": "b4ad8ac2d75cedbfd675d9aeaf213ce3af5a7faf"
+                "reference": "db55595c6b50b4699aeba1f2764616b43cce7587"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/data-provider/zipball/b4ad8ac2d75cedbfd675d9aeaf213ce3af5a7faf",
-                "reference": "b4ad8ac2d75cedbfd675d9aeaf213ce3af5a7faf",
+                "url": "https://api.github.com/repos/ergebnis/data-provider/zipball/db55595c6b50b4699aeba1f2764616b43cce7587",
+                "reference": "db55595c6b50b4699aeba1f2764616b43cce7587",
                 "shasum": ""
             },
             "require": {
-                "fakerphp/faker": "^1.16.0",
-                "php": "^7.3 || ^8.0"
+                "fakerphp/faker": "^1.17.0",
+                "php": "^7.4 || ^8.0"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.16.0",
+                "ergebnis/composer-normalize": "^2.20.0",
                 "ergebnis/license": "^1.1.0",
-                "ergebnis/php-cs-fixer-config": "^3.2.1",
-                "phpunit/phpunit": "~9.5.10",
+                "ergebnis/php-cs-fixer-config": "^3.4.0",
+                "phpunit/phpunit": "^9.5.12",
                 "psalm/plugin-phpunit": "~0.16.1",
-                "vimeo/psalm": "^4.13.1"
+                "vimeo/psalm": "^4.18"
             },
             "type": "library",
             "extra": {
@@ -857,7 +857,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-25T19:54:39+00:00"
+            "time": "2022-01-24T09:36:10+00:00"
         },
         {
             "name": "ergebnis/json-normalizer",
