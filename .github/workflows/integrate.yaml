@@ -57,7 +57,7 @@ jobs:
       - name: "Collect code coverage with Xdebug and phpunit/phpunit"
         env:
           XDEBUG_MODE: "coverage"
-        run: "vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=.build/phpunit/logs/clover.xml"
+        run: "vendor/bin/phpunit --colors=always --configuration=test/Unit/phpunit.xml --coverage-clover=.build/phpunit/logs/clover.xml"
 
       - name: "Send code coverage report to Codecov.io"
         env:
@@ -328,7 +328,7 @@ jobs:
           dependencies: "${{ matrix.dependencies }}"
 
       - name: "Run unit tests with phpunit/phpunit"
-        run: "vendor/bin/phpunit --configuration=test/Unit/phpunit.xml"
+        run: "vendor/bin/phpunit --colors=always --configuration=test/Unit/phpunit.xml"
 
       - name: "Run integration tests with phpunit/phpunit"
-        run: "vendor/bin/phpunit --configuration=test/Integration/phpunit.xml"
+        run: "vendor/bin/phpunit --colors=always --configuration=test/Integration/phpunit.xml"
