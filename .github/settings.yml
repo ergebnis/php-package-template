@@ -13,21 +13,21 @@ branches:
         require_code_owner_reviews: true
         required_approving_review_count: 1
       required_status_checks:
-        contexts:
-          - "Code Coverage (7.4, locked)"
-          - "Coding Standards (7.4, locked)"
-          - "Dependency Analysis (7.4, locked)"
-          - "Mutation Tests (7.4, locked)"
-          - "Static Code Analysis (7.4, locked)"
-          - "Tests (7.4, highest)"
-          - "Tests (7.4, locked)"
-          - "Tests (7.4, lowest)"
-          - "Tests (8.0, highest)"
-          - "Tests (8.0, locked)"
-          - "Tests (8.0, lowest)"
-          - "Tests (8.1, highest)"
-          - "Tests (8.1, locked)"
-          - "Tests (8.1, lowest)"
+        checks:
+          - context: "Code Coverage (7.4, locked)"
+          - context: "Coding Standards (7.4, locked)"
+          - context: "Dependency Analysis (7.4, locked)"
+          - context: "Mutation Tests (7.4, locked)"
+          - context: "Static Code Analysis (7.4, locked)"
+          - context: "Tests (7.4, highest)"
+          - context: "Tests (7.4, locked)"
+          - context: "Tests (7.4, lowest)"
+          - context: "Tests (8.0, highest)"
+          - context: "Tests (8.0, locked)"
+          - context: "Tests (8.0, lowest)"
+          - context: "Tests (8.1, highest)"
+          - context: "Tests (8.1, locked)"
+          - context: "Tests (8.1, lowest)"
         strict: false
       restrictions:
 
