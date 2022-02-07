@@ -21,7 +21,7 @@
     "ergebnis/composer-normalize": "^2.23.1",
     "ergebnis/data-provider": "^1.1.0",
     "ergebnis/license": "^1.2.0",
-    "ergebnis/php-cs-fixer-config": "^4.0.0",
+    "ergebnis/php-cs-fixer-config": "^4.1.0",
     "ergebnis/phpstan-rules": "^1.0.0",
     "fakerphp/faker": "^1.19.0",
     "infection/infection": "~0.26.4",
