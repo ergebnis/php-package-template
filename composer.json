@@ -24,7 +24,7 @@
     "ergebnis/php-cs-fixer-config": "^4.1.0",
     "ergebnis/phpstan-rules": "^1.0.0",
     "fakerphp/faker": "^1.19.0",
-    "infection/infection": "~0.26.5",
+    "infection/infection": "~0.26.6",
     "phpstan/extension-installer": "^1.1.0",
     "phpstan/phpstan": "^1.4.8",
     "phpstan/phpstan-deprecation-rules": "^1.0.0",
