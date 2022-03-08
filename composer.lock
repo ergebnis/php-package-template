@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4684afc501c119d4dbbd9ac11f3cb4c1",
+    "content-hash": "e10e10c8fe22e921491fac1b4df21476",
     "packages": [],
     "packages-dev": [
         {
@@ -1123,16 +1123,16 @@
         },
         {
             "name": "ergebnis/php-cs-fixer-config",
-            "version": "4.2.0",
+            "version": "4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/php-cs-fixer-config.git",
-                "reference": "196fda1bf6d99530b683ade181d86c215bf833c5"
+                "reference": "4c065a29ff30af0b0213febc9cb0255c7f5694d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/php-cs-fixer-config/zipball/196fda1bf6d99530b683ade181d86c215bf833c5",
-                "reference": "196fda1bf6d99530b683ade181d86c215bf833c5",
+                "url": "https://api.github.com/repos/ergebnis/php-cs-fixer-config/zipball/4c065a29ff30af0b0213febc9cb0255c7f5694d5",
+                "reference": "4c065a29ff30af0b0213febc9cb0255c7f5694d5",
                 "shasum": ""
             },
             "require": {
@@ -1144,7 +1144,7 @@
                 "ergebnis/composer-normalize": "^2.23.1",
                 "ergebnis/license": "^1.2.0",
                 "fakerphp/faker": "^1.19.0",
-                "phpunit/phpunit": "^9.5.17",
+                "phpunit/phpunit": "^9.5.18",
                 "psalm/plugin-phpunit": "~0.16.1",
                 "symfony/filesystem": "^4.4.0 || ^5.0.0",
                 "vimeo/psalm": "^4.22"
@@ -1183,7 +1183,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-07T19:21:05+00:00"
+            "time": "2022-03-08T22:04:41+00:00"
         },
         {
             "name": "ergebnis/phpstan-rules",
