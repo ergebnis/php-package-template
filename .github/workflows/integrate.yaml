@@ -323,6 +323,10 @@ jobs:
           key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
+      - name: "Configure platform for composer"
+        if: "matrix.dependencies != 'locked'"
+        run: "composer config platform.php ${{ matrix.php-version }}"
+
       - name: "Install ${{ matrix.dependencies }} dependencies with composer"
         uses: "ergebnis/.github/actions/composer/install@1.3.2"
         with:
