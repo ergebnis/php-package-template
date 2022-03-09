@@ -223,7 +223,7 @@ jobs:
       - name: "Run mutation tests with Xdebug and infection/infection"
         env:
           XDEBUG_MODE: "coverage"
-        run: "vendor/bin/infection --configuration=infection.json --logger-github"
+        run: "vendor/bin/infection --ansi --configuration=infection.json --logger-github"
 
   static-code-analysis:
     name: "Static Code Analysis"
