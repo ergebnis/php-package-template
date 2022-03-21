@@ -330,6 +330,3 @@ jobs:
 
       - name: "Run unit tests with phpunit/phpunit"
         run: "vendor/bin/phpunit --colors=always --configuration=test/Unit/phpunit.xml"
-
-      - name: "Run integration tests with phpunit/phpunit"
-        run: "vendor/bin/phpunit --colors=always --configuration=test/Integration/phpunit.xml"
