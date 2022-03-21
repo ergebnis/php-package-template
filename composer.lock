@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9bc5b12ea599e20d5acf423b867c9acc",
+    "content-hash": "9ea7aea5103c468c073bc92fd9390f85",
     "packages": [],
     "packages-dev": [
         {
@@ -721,16 +721,16 @@
         },
         {
             "name": "ergebnis/composer-normalize",
-            "version": "2.24.0",
+            "version": "2.24.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/composer-normalize.git",
-                "reference": "0492b8de602ac601f5d53a5ef9c9558701a18f31"
+                "reference": "3d5392cfca3d519412cef3f4817c73d2f60d43fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/composer-normalize/zipball/0492b8de602ac601f5d53a5ef9c9558701a18f31",
-                "reference": "0492b8de602ac601f5d53a5ef9c9558701a18f31",
+                "url": "https://api.github.com/repos/ergebnis/composer-normalize/zipball/3d5392cfca3d519412cef3f4817c73d2f60d43fd",
+                "reference": "3d5392cfca3d519412cef3f4817c73d2f60d43fd",
                 "shasum": ""
             },
             "require": {
@@ -742,11 +742,11 @@
                 "php": "^7.4 || ^8.0"
             },
             "require-dev": {
-                "composer/composer": "^2.2.5",
+                "composer/composer": "^2.2.9",
                 "ergebnis/license": "^1.2.0",
                 "ergebnis/php-cs-fixer-config": "^3.4.0",
                 "fakerphp/faker": "^1.19.0",
-                "phpunit/phpunit": "^9.5.17",
+                "phpunit/phpunit": "^9.5.19",
                 "psalm/plugin-phpunit": "~0.16.1",
                 "symfony/filesystem": "^5.4.6",
                 "vimeo/psalm": "^4.22.0"
@@ -792,7 +792,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-09T08:15:05+00:00"
+            "time": "2022-03-19T13:37:12+00:00"
         },
         {
             "name": "ergebnis/data-provider",
