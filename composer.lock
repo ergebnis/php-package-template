@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a71488a6c1629090a2b1deb506fab92",
+    "content-hash": "534a4d1a704737c07ac88e4d77f1d660",
     "packages": [],
     "packages-dev": [
         {
@@ -721,16 +721,16 @@
         },
         {
             "name": "ergebnis/composer-normalize",
-            "version": "2.27.0",
+            "version": "2.28.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/composer-normalize.git",
-                "reference": "1711fce0f7ca73192de22032ea26486fc648b90e"
+                "reference": "a227b49e339700fd4c6c4d15b7a16ff956512da5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/composer-normalize/zipball/1711fce0f7ca73192de22032ea26486fc648b90e",
-                "reference": "1711fce0f7ca73192de22032ea26486fc648b90e",
+                "url": "https://api.github.com/repos/ergebnis/composer-normalize/zipball/a227b49e339700fd4c6c4d15b7a16ff956512da5",
+                "reference": "a227b49e339700fd4c6c4d15b7a16ff956512da5",
                 "shasum": ""
             },
             "require": {
@@ -748,7 +748,7 @@
                 "fakerphp/faker": "^1.19.0",
                 "phpunit/phpunit": "^9.5.20",
                 "psalm/plugin-phpunit": "~0.16.1",
-                "symfony/filesystem": "^5.4.7",
+                "symfony/filesystem": "^5.4.9",
                 "vimeo/psalm": "^4.23.0"
             },
             "type": "composer-plugin",
@@ -786,7 +786,7 @@
                 "issues": "https://github.com/ergebnis/composer-normalize/issues",
                 "source": "https://github.com/ergebnis/composer-normalize"
             },
-            "time": "2022-05-26T09:43:35+00:00"
+            "time": "2022-06-02T09:47:07+00:00"
         },
         {
             "name": "ergebnis/data-provider",
