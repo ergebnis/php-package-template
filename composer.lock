@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ddb6a224fadd97975e8d2488da8f1214",
+    "content-hash": "6918dadfdaca9ec7ee4e9a7e19fd34d4",
     "packages": [],
     "packages-dev": [
         {
@@ -721,16 +721,16 @@
         },
         {
             "name": "ergebnis/composer-normalize",
-            "version": "2.28.2",
+            "version": "2.28.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/composer-normalize.git",
-                "reference": "8fa1ffdd2e65f2deca0de3af3ac7670cb8fa795b"
+                "reference": "ec75a2bf751f6fec165e9ea0262655b8ca397e5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/composer-normalize/zipball/8fa1ffdd2e65f2deca0de3af3ac7670cb8fa795b",
-                "reference": "8fa1ffdd2e65f2deca0de3af3ac7670cb8fa795b",
+                "url": "https://api.github.com/repos/ergebnis/composer-normalize/zipball/ec75a2bf751f6fec165e9ea0262655b8ca397e5c",
+                "reference": "ec75a2bf751f6fec165e9ea0262655b8ca397e5c",
                 "shasum": ""
             },
             "require": {
@@ -742,7 +742,7 @@
                 "php": "^7.4 || ^8.0"
             },
             "require-dev": {
-                "composer/composer": "^2.3.8",
+                "composer/composer": "^2.3.9",
                 "ergebnis/license": "^1.2.0",
                 "ergebnis/php-cs-fixer-config": "^4.4.0",
                 "fakerphp/faker": "^1.19.0",
@@ -786,7 +786,7 @@
                 "issues": "https://github.com/ergebnis/composer-normalize/issues",
                 "source": "https://github.com/ergebnis/composer-normalize"
             },
-            "time": "2022-07-03T10:17:05+00:00"
+            "time": "2022-07-05T16:09:10+00:00"
         },
         {
             "name": "ergebnis/data-provider",
