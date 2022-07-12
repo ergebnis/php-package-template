@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f96f94539be7035130684cc72ce0582f",
+    "content-hash": "6bb4a147c5bc31e7de389d063e6bc4e7",
     "packages": [],
     "packages-dev": [
         {
@@ -1118,21 +1118,21 @@
         },
         {
             "name": "ergebnis/php-cs-fixer-config",
-            "version": "4.5.0",
+            "version": "4.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/php-cs-fixer-config.git",
-                "reference": "5430397b2cfbd8eda0ea484d388e81c824496e5b"
+                "reference": "eb7e34d18c06d533b1309f02ec1ccb6e59734b71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/php-cs-fixer-config/zipball/5430397b2cfbd8eda0ea484d388e81c824496e5b",
-                "reference": "5430397b2cfbd8eda0ea484d388e81c824496e5b",
+                "url": "https://api.github.com/repos/ergebnis/php-cs-fixer-config/zipball/eb7e34d18c06d533b1309f02ec1ccb6e59734b71",
+                "reference": "eb7e34d18c06d533b1309f02ec1ccb6e59734b71",
                 "shasum": ""
             },
             "require": {
                 "ext-filter": "*",
-                "friendsofphp/php-cs-fixer": "~3.9.1",
+                "friendsofphp/php-cs-fixer": "~3.9.2",
                 "php": "^7.4 || ^8.0"
             },
             "require-dev": {
@@ -1172,7 +1172,7 @@
                 "issues": "https://github.com/ergebnis/php-cs-fixer-config/issues",
                 "source": "https://github.com/ergebnis/php-cs-fixer-config"
             },
-            "time": "2022-07-11T11:35:47+00:00"
+            "time": "2022-07-12T07:51:39+00:00"
         },
         {
             "name": "ergebnis/phpstan-rules",
