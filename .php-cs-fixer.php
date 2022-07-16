@@ -36,7 +36,7 @@ $config->getFinder()
     ])
     ->ignoreDotFiles(false)
     ->in(__DIR__)
-    ->name(__FILE__);
+    ->name('.php-cs-fixer.php');
 
 $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');
 
