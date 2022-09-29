@@ -225,6 +225,39 @@ jobs:
           XDEBUG_MODE: "coverage"
         run: "vendor/bin/infection --ansi --configuration=infection.json --logger-github"
 
+  security:
+    name: "Security"
+
+    runs-on: "ubuntu-latest"
+
+    strategy:
+      matrix:
+        php-version:
+          - "7.4"
+
+        dependencies:
+          - "locked"
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v3.0.2"
+
+      - name: "Set up PHP"
+        uses: "shivammathur/setup-php@2.21.2"
+        with:
+          coverage: "none"
+          extensions: "none, ctype, dom, json, mbstring, phar, simplexml, tokenizer, xml, xmlwriter"
+          php-version: "${{ matrix.php-version }}"
+
+      - name: "Set up problem matchers for PHP"
+        run: "echo \"::add-matcher::${{ runner.tool_cache }}/php.json\""
+
+      - name: "Validate composer.json and composer.lock"
+        run: "composer validate --ansi --strict"
+
+      - name: "Check installed packages for security vulnerability advisories"
+        run: "composer audit"
+
   static-code-analysis:
     name: "Static Code Analysis"
 
