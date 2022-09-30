@@ -256,7 +256,7 @@ jobs:
         run: "composer validate --ansi --strict"
 
       - name: "Check installed packages for security vulnerability advisories"
-        run: "composer audit"
+        run: "composer audit --ansi"
 
   static-code-analysis:
     name: "Static Code Analysis"
