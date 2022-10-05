@@ -225,8 +225,8 @@ jobs:
           XDEBUG_MODE: "coverage"
         run: "vendor/bin/infection --ansi --configuration=infection.json --logger-github"
 
-  security:
-    name: "Security"
+  security-analysis:
+    name: "Security Analysis"
 
     runs-on: "ubuntu-latest"
 
