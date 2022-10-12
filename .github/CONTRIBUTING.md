@@ -47,6 +47,18 @@ make dependency-analysis
 
 to run a dependency analysis.
 
+## Security Analysis
+
+We are using [`composer`](https://github.com/composer/composer) to run a security analysis.
+
+Run
+
+```sh
+make security-analysis
+```
+
+to run a security analysis.
+
 ## Static Code Analysis
 
 We are using [`phpstan/phpstan`](https://github.com/phpstan/phpstan) and [`vimeo/psalm`](https://github.com/vimeo/psalm) to statically analyze the code.

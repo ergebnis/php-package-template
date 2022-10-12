@@ -1,5 +1,5 @@
 .PHONY: it
-it: coding-standards static-code-analysis tests ## Runs the coding-standards, static-code-analysis, and tests targets
+it: coding-standards security-analysis static-code-analysis tests ## Runs the coding-standards, security-analysis, static-code-analysis, and tests targets
 
 .PHONY: code-coverage
 code-coverage: vendor ## Collects coverage from running unit tests with phpunit/phpunit
@@ -25,6 +25,10 @@ help: ## Displays this list of targets with descriptions
 mutation-tests: vendor ## Runs mutation tests with infection/infection
 	mkdir -p .build/infection
 	vendor/bin/infection --configuration=infection.json
+
+.PHONY: security-analysis
+security-analysis: vendor
+	composer audit
 
 .PHONY: static-code-analysis
 static-code-analysis: vendor ## Runs a static code analysis with phpstan/phpstan and vimeo/psalm
@@ -52,4 +56,3 @@ tests: vendor ## Runs unit tests with phpunit/phpunit
 vendor: composer.json composer.lock
 	composer validate --strict
 	composer install --no-interaction --no-progress
-	composer audit
