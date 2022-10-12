@@ -258,9 +258,6 @@ jobs:
       - name: "Check installed packages for security vulnerability advisories"
         run: "composer audit --ansi"
 
-      - name: "Run roave/security-advisories"
-        run: "composer require --ansi --dev --dry-run roave/security-advisories"
-
   static-code-analysis:
     name: "Static Code Analysis"
 
