@@ -29,6 +29,7 @@ mutation-tests: vendor ## Runs mutation tests with infection/infection
 .PHONY: security-analysis
 security-analysis: vendor
 	composer audit
+	composer require --dev --dry-run roave/security-advisories
 
 .PHONY: static-code-analysis
 static-code-analysis: vendor ## Runs a static code analysis with phpstan/phpstan and vimeo/psalm

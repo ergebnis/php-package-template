@@ -49,7 +49,7 @@ to run a dependency analysis.
 
 ## Security Analysis
 
-We are using [`composer`](https://github.com/composer/composer) to run a security analysis.
+We are using [`composer`](https://github.com/composer/composer) and [`roave/security-advisories`](https://github.com/Roave/SecurityAdvisories) to run a security analysis.
 
 Run
 
