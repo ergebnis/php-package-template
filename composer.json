@@ -32,7 +32,7 @@
     "phpstan/phpstan-strict-rules": "^1.4.4",
     "phpunit/phpunit": "^9.5.26",
     "psalm/plugin-phpunit": "~0.18.1",
-    "vimeo/psalm": "^4.29"
+    "vimeo/psalm": "^4.30"
   },
   "autoload": {
     "psr-4": {
