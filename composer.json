@@ -24,7 +24,7 @@
     "ergebnis/php-cs-fixer-config": "^4.11.0",
     "ergebnis/phpstan-rules": "^1.0.0",
     "fakerphp/faker": "^1.20.0",
-    "infection/infection": "~0.26.6",
+    "infection/infection": "~0.26.16",
     "phpstan/extension-installer": "^1.2.0",
     "phpstan/phpstan": "^1.9.2",
     "phpstan/phpstan-deprecation-rules": "^1.0.0",
@@ -32,7 +32,7 @@
     "phpstan/phpstan-strict-rules": "^1.4.4",
     "phpunit/phpunit": "^9.5.26",
     "psalm/plugin-phpunit": "~0.18.3",
-    "vimeo/psalm": "^4.30"
+    "vimeo/psalm": "^4.30.0"
   },
   "autoload": {
     "psr-4": {
@@ -52,7 +52,7 @@
       "phpstan/extension-installer": true
     },
     "platform": {
-      "php": "7.4.16"
+      "php": "8.0.25"
     },
     "preferred-install": "dist",
     "sort-packages": true
