@@ -27,7 +27,7 @@ mutation-tests: vendor ## Runs mutation tests with infection/infection
 	vendor/bin/infection --configuration=infection.json
 
 .PHONY: security-analysis
-security-analysis: vendor
+security-analysis: vendor ## Runs a security analysis with composer
 	composer audit
 
 .PHONY: static-code-analysis
