@@ -23,7 +23,7 @@
     "ergebnis/license": "^2.1.0",
     "ergebnis/php-cs-fixer-config": "^5.0.0",
     "ergebnis/phpstan-rules": "^1.0.0",
-    "fakerphp/faker": "^1.20.0",
+    "fakerphp/faker": "^1.21.0",
     "infection/infection": "~0.26.16",
     "phpstan/extension-installer": "^1.2.0",
     "phpstan/phpstan": "^1.9.2",
