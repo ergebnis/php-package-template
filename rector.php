@@ -12,6 +12,7 @@ declare(strict_types=1);
  */
 
 use Rector\Config;
+use Rector\Core;
 
 return static function (Config\RectorConfig $rectorConfig): void {
     $rectorConfig->cacheDirectory(__DIR__ . '/.build/rector/');
@@ -22,4 +23,6 @@ return static function (Config\RectorConfig $rectorConfig): void {
         __DIR__ . '/src/',
         __DIR__ . '/test/',
     ]);
+
+    $rectorConfig->phpVersion(Core\ValueObject\PhpVersion::PHP_80);
 };
