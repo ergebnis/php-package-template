@@ -1,5 +1,5 @@
 .PHONY: it
-it: coding-standards security-analysis static-code-analysis tests ## Runs the coding-standards, security-analysis, static-code-analysis, and tests targets
+it: refactoring coding-standards security-analysis static-code-analysis tests ## Runs the refactoring, coding-standards, security-analysis, static-code-analysis, and tests targets
 
 .PHONY: code-coverage
 code-coverage: vendor ## Collects coverage from running unit tests with phpunit/phpunit
@@ -25,6 +25,10 @@ help: ## Displays this list of targets with descriptions
 mutation-tests: vendor ## Runs mutation tests with infection/infection
 	mkdir -p .build/infection
 	vendor/bin/infection --configuration=infection.json
+
+.PHONY: refactoring
+refactoring: vendor ## Runs automated refactoring with rector/rector
+	vendor/bin/rector process --config=rector.php
 
 .PHONY: security-analysis
 security-analysis: vendor ## Runs a security analysis with composer
