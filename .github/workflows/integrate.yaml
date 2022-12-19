@@ -247,7 +247,7 @@ jobs:
       - name: "Set up PHP"
         uses: "shivammathur/setup-php@2.22.0"
         with:
-          coverage: "xdebug"
+          coverage: "none"
           extensions: "none, ctype, dom, intl, json, mbstring, phar, simplexml, tokenizer, xml, xmlwriter"
           php-version: "${{ matrix.php-version }}"
 
