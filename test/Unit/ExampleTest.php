@@ -28,7 +28,7 @@ final class ExampleTest extends Framework\TestCase
 
     public function testFromNameReturnsExample(): void
     {
-        $name = self::faker()->sentence;
+        $name = self::faker()->sentence();
 
         $example = Example::fromName($name);
 
