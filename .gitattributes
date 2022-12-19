@@ -14,3 +14,4 @@
 /phpstan.neon                   export-ignore
 /psalm-baseline.xml             export-ignore
 /psalm.xml                      export-ignore
+/rector.php                     export-ignore
