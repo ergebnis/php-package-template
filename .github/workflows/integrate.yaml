@@ -2,7 +2,7 @@
 
 name: "Integrate"
 
-on: # yamllint disable-line rule:truthy
+on:  # yamllint disable-line rule:truthy
   pull_request: null
   push:
     branches:
