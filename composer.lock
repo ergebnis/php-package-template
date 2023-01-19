@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b47fbed6ea4f90f1ccde36438d9c2bd5",
+    "content-hash": "72dc5825d6343ee88b215fbb49f1b826",
     "packages": [],
     "packages-dev": [
         {
@@ -175,16 +175,16 @@
         },
         {
             "name": "colinodell/json5",
-            "version": "v2.2.2",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/colinodell/json5.git",
-                "reference": "2b0fabd1ba71fe8079a832d6097ec5c6fd92361d"
+                "reference": "15b063f8cb5e6deb15f0cd39123264ec0d19c710"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colinodell/json5/zipball/2b0fabd1ba71fe8079a832d6097ec5c6fd92361d",
-                "reference": "2b0fabd1ba71fe8079a832d6097ec5c6fd92361d",
+                "url": "https://api.github.com/repos/colinodell/json5/zipball/15b063f8cb5e6deb15f0cd39123264ec0d19c710",
+                "reference": "15b063f8cb5e6deb15f0cd39123264ec0d19c710",
                 "shasum": ""
             },
             "require": {
@@ -197,11 +197,11 @@
             },
             "require-dev": {
                 "mikehaertl/php-shellcommand": "^1.2.5",
-                "phpstan/phpstan": "^0.12.58",
+                "phpstan/phpstan": "^1.4",
                 "scrutinizer/ocular": "^1.6",
-                "squizlabs/php_codesniffer": "^2.3",
-                "symfony/finder": "^4.4|^5.2",
-                "symfony/phpunit-bridge": "^5.1"
+                "squizlabs/php_codesniffer": "^2.3 || ^3.0",
+                "symfony/finder": "^4.4|^5.4|^6.0",
+                "symfony/phpunit-bridge": "^5.4|^6.0"
             },
             "bin": [
                 "bin/json5"
@@ -242,7 +242,7 @@
             ],
             "support": {
                 "issues": "https://github.com/colinodell/json5/issues",
-                "source": "https://github.com/colinodell/json5/tree/v2.2.2"
+                "source": "https://github.com/colinodell/json5/tree/v2.3.0"
             },
             "funding": [
                 {
@@ -262,7 +262,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-02-22T14:42:16+00:00"
+            "time": "2022-12-27T16:44:40+00:00"
         },
         {
             "name": "composer/package-versions-deprecated",
@@ -1874,16 +1874,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.26.16",
+            "version": "0.26.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "d646aafe530ba21b8479694cd151570c93c72312"
+                "reference": "4420d3c25eb985817336a44eb3bd87fc01f7ea4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/d646aafe530ba21b8479694cd151570c93c72312",
-                "reference": "d646aafe530ba21b8479694cd151570c93c72312",
+                "url": "https://api.github.com/repos/infection/infection/zipball/4420d3c25eb985817336a44eb3bd87fc01f7ea4c",
+                "reference": "4420d3c25eb985817336a44eb3bd87fc01f7ea4c",
                 "shasum": ""
             },
             "require": {
@@ -1894,11 +1894,12 @@
                 "ext-json": "*",
                 "ext-libxml": "*",
                 "ext-mbstring": "*",
+                "fidry/cpu-core-counter": "^0.4.0",
                 "infection/abstract-testframework-adapter": "^0.5.0",
                 "infection/extension-installer": "^0.1.0",
                 "infection/include-interceptor": "^0.2.5",
                 "justinrainbow/json-schema": "^5.2.10",
-                "nikic/php-parser": "^4.13.2",
+                "nikic/php-parser": "^4.15.1",
                 "ondram/ci-detector": "^4.1.0",
                 "php": "^8.0",
                 "sanmai/later": "^0.1.1",
@@ -1909,15 +1910,16 @@
                 "symfony/finder": "^5.4 || ^6.0",
                 "symfony/process": "^5.4 || ^6.0",
                 "thecodingmachine/safe": "^2.1.2",
-                "webmozart/assert": "^1.3"
+                "webmozart/assert": "^1.11"
             },
             "conflict": {
                 "dg/bypass-finals": "<1.4.1",
-                "phpunit/php-code-coverage": ">9 <9.1.4"
+                "phpunit/php-code-coverage": ">9,<9.1.4 || >9.2.17,<9.2.21"
             },
             "require-dev": {
                 "brianium/paratest": "^6.3",
                 "ext-simplexml": "*",
+                "fidry/makefile": "^0.2.0",
                 "helmich/phpunit-json-assert": "^3.0",
                 "phpspec/prophecy-phpunit": "^2.0",
                 "phpstan/extension-installer": "^1.1.0",
@@ -1984,7 +1986,7 @@
             ],
             "support": {
                 "issues": "https://github.com/infection/infection/issues",
-                "source": "https://github.com/infection/infection/tree/0.26.16"
+                "source": "https://github.com/infection/infection/tree/0.26.17"
             },
             "funding": [
                 {
@@ -1996,7 +1998,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2022-10-22T10:07:33+00:00"
+            "time": "2023-01-19T17:26:32+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -3697,16 +3699,16 @@
         },
         {
             "name": "sanmai/pipeline",
-            "version": "v6.2",
+            "version": "v6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sanmai/pipeline.git",
-                "reference": "1c14946cb089776fb024807f1e4f5a985db0ce3c"
+                "reference": "929b115ca58d62b6b2574702df1ebde4562c7c43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sanmai/pipeline/zipball/1c14946cb089776fb024807f1e4f5a985db0ce3c",
-                "reference": "1c14946cb089776fb024807f1e4f5a985db0ce3c",
+                "url": "https://api.github.com/repos/sanmai/pipeline/zipball/929b115ca58d62b6b2574702df1ebde4562c7c43",
+                "reference": "929b115ca58d62b6b2574702df1ebde4562c7c43",
                 "shasum": ""
             },
             "require": {
@@ -3750,7 +3752,7 @@
             "description": "General-purpose collections pipeline",
             "support": {
                 "issues": "https://github.com/sanmai/pipeline/issues",
-                "source": "https://github.com/sanmai/pipeline/tree/v6.2"
+                "source": "https://github.com/sanmai/pipeline/tree/v6.3"
             },
             "funding": [
                 {
@@ -3758,7 +3760,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-11-09T05:47:57+00:00"
+            "time": "2022-11-30T06:07:06+00:00"
         },
         {
             "name": "sebastian/cli-parser",
