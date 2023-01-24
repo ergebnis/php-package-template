@@ -158,6 +158,7 @@ jobs:
           coverage: "none"
           extensions: "none, ctype, dom, json, mbstring, phar, simplexml, tokenizer, xml, xmlwriter"
           php-version: "${{ matrix.php-version }}"
+          tools: "phive"
 
       - name: "Set up problem matchers for PHP"
         run: "echo \"::add-matcher::${{ runner.tool_cache }}/php.json\""
@@ -176,6 +177,11 @@ jobs:
         uses: "ergebnis/.github/actions/composer/install@1.7.0"
         with:
           dependencies: "${{ matrix.dependencies }}"
+
+      - name: "Install dependencies with phive"
+        uses: "ergebnis/.github/actions/phive/install@1.8.0"
+        with:
+          trust-gpg-keys: "0x033E5F8D801A2F8D"
 
       - name: "Run maglnet/composer-require-checker"
         run: ".phive/composer-require-checker check --config-file=$(pwd)/composer-require-checker.json"
