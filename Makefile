@@ -14,7 +14,7 @@ coding-standards: vendor ## Lints YAML files with yamllint, normalizes composer.
 	vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --verbose
 
 .PHONY: dependency-analysis
-dependency-analysis: vendor ## Runs a dependency analysis with maglnet/composer-require-checker
+dependency-analysis: phive ## Runs a dependency analysis with maglnet/composer-require-checker
 	.phive/composer-require-checker check --config-file=$(shell pwd)/composer-require-checker.json
 
 .PHONY: help
@@ -25,6 +25,11 @@ help: ## Displays this list of targets with descriptions
 mutation-tests: vendor ## Runs mutation tests with infection/infection
 	mkdir -p .build/infection
 	vendor/bin/infection --configuration=infection.json
+
+.PHONY: phive
+phive: .phive## Installs dependencies with phive
+	mkdir -p .build/phive
+	PHIVE_HOME=.build/phive phive install --trust-gpg-keys 0x033E5F8D801A2F8D
 
 .PHONY: refactoring
 refactoring: vendor ## Runs automated refactoring with rector/rector
