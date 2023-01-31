@@ -45,4 +45,4 @@ Please have a look at [`LICENSE.md`](LICENSE.md).
 
 ## Curious what I am up to?
 
-Follow me on [Twitter](https://twitter.com/localheinz)!
+Follow me on [Twitter](https://twitter.com/intent/follow?screen_name=localheinz)!
