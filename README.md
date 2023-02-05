@@ -9,6 +9,7 @@
 
 [![Latest Stable Version](https://poser.pugx.org/ergebnis/php-package-template/v/stable)](https://packagist.org/packages/ergebnis/php-package-template)
 [![Total Downloads](https://poser.pugx.org/ergebnis/php-package-template/downloads)](https://packagist.org/packages/ergebnis/php-package-template)
+[![Monthly Downloads](http://poser.pugx.org/ergebnis/php-package-templaye/d/monthly)](https://packagist.org/packages/ergebnis/php-package-templaye)
 
 ## Installation
 
