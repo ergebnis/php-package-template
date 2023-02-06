@@ -1,6 +1,7 @@
 # php-package-template
 
 [![Integrate](https://github.com/ergebnis/php-package-template/workflows/Integrate/badge.svg)](https://github.com/ergebnis/php-package-template/actions)
+[![Merge](https://github.com/ergebnis/php-package-template/workflows/Merge/badge.svg)](https://github.com/ergebnis/php-package-template/actions)
 [![Release](https://github.com/ergebnis/php-package-template/workflows/Release/badge.svg)](https://github.com/ergebnis/php-package-template/actions)
 [![Renew](https://github.com/ergebnis/php-package-template/workflows/Renew/badge.svg)](https://github.com/ergebnis/php-package-template/actions)
 
