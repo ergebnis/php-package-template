@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dfd23e43a598ff7b60c48175b191ed8b",
+    "content-hash": "cea133e864c50a6d60103137e322fc6e",
     "packages": [],
     "packages-dev": [
         {
@@ -1875,16 +1875,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.26.18",
+            "version": "0.26.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "ec533cd367eef0e52ee7b3435feabf9b61eeb7d5"
+                "reference": "bd7351c88f3a797ea8977e68fe6a3f4d4c5f457f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/ec533cd367eef0e52ee7b3435feabf9b61eeb7d5",
-                "reference": "ec533cd367eef0e52ee7b3435feabf9b61eeb7d5",
+                "url": "https://api.github.com/repos/infection/infection/zipball/bd7351c88f3a797ea8977e68fe6a3f4d4c5f457f",
+                "reference": "bd7351c88f3a797ea8977e68fe6a3f4d4c5f457f",
                 "shasum": ""
             },
             "require": {
@@ -1905,7 +1905,7 @@
                 "php": "^8.0",
                 "sanmai/later": "^0.1.1",
                 "sanmai/pipeline": "^5.1 || ^6",
-                "sebastian/diff": "^3.0.2 || ^4.0",
+                "sebastian/diff": "^3.0.2 || ^4.0 || ^5.0",
                 "symfony/console": "^5.4 || ^6.0",
                 "symfony/filesystem": "^5.4 || ^6.0",
                 "symfony/finder": "^5.4 || ^6.0",
@@ -1987,7 +1987,7 @@
             ],
             "support": {
                 "issues": "https://github.com/infection/infection/issues",
-                "source": "https://github.com/infection/infection/tree/0.26.18"
+                "source": "https://github.com/infection/infection/tree/0.26.19"
             },
             "funding": [
                 {
@@ -1999,7 +1999,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-01-20T23:10:11+00:00"
+            "time": "2023-02-05T21:47:26+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
