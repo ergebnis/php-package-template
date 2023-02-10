@@ -28,6 +28,9 @@
             <directory suffix=".php">../../src/</directory>
         </include>
     </coverage>
+    <extensions>
+        <bootstrap class="Ergebnis\PHPUnit\SlowTestDetector\Extension"/>
+    </extensions>
     <testsuites>
         <testsuite name="Unit Tests">
             <directory>.</directory>
