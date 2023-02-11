@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "671a75840e2a739cdc466dc56f056573",
+    "content-hash": "4890c8008f6dfb808da196a55187f384",
     "packages": [],
     "packages-dev": [
         {
@@ -1308,16 +1308,16 @@
         },
         {
             "name": "ergebnis/phpunit-slow-test-detector",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/phpunit-slow-test-detector.git",
-                "reference": "5b9d29ce0f04db25c2e915cc3125ffc02d161060"
+                "reference": "ec60e229beed61b76873573359e7be92f6d0d36b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/5b9d29ce0f04db25c2e915cc3125ffc02d161060",
-                "reference": "5b9d29ce0f04db25c2e915cc3125ffc02d161060",
+                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/ec60e229beed61b76873573359e7be92f6d0d36b",
+                "reference": "ec60e229beed61b76873573359e7be92f6d0d36b",
                 "shasum": ""
             },
             "require": {
@@ -1328,8 +1328,10 @@
                 "ergebnis/composer-normalize": "^2.29.0",
                 "ergebnis/data-provider": "^1.3.0",
                 "ergebnis/license": "^2.1.0",
+                "ergebnis/php-cs-fixer-config": "^5.3.1",
                 "fakerphp/faker": "^1.21.0",
-                "rector/rector": "~0.15.11",
+                "psalm/plugin-phpunit": "~0.18.4",
+                "rector/rector": "~0.15.13",
                 "vimeo/psalm": "^5.6.0"
             },
             "type": "library",
@@ -1367,7 +1369,7 @@
                 "issues": "https://github.com/ergebnis/phpunit-slow-test-detector/issues",
                 "source": "https://github.com/ergebnis/phpunit-slow-test-detector"
             },
-            "time": "2023-02-03T14:37:37+00:00"
+            "time": "2023-02-11T09:24:48+00:00"
         },
         {
             "name": "fakerphp/faker",
@@ -2974,16 +2976,16 @@
         },
         {
             "name": "phpunit/php-file-iterator",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
-                "reference": "7d66d4e816d34e90acec9db9d8d94b5cfbfe926f"
+                "reference": "fd9329ab3368f59fe1fe808a189c51086bd4b6bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/7d66d4e816d34e90acec9db9d8d94b5cfbfe926f",
-                "reference": "7d66d4e816d34e90acec9db9d8d94b5cfbfe926f",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/fd9329ab3368f59fe1fe808a189c51086bd4b6bd",
+                "reference": "fd9329ab3368f59fe1fe808a189c51086bd4b6bd",
                 "shasum": ""
             },
             "require": {
@@ -3022,7 +3024,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-file-iterator/issues",
-                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/4.0.0"
+                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/4.0.1"
             },
             "funding": [
                 {
@@ -3030,7 +3032,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-02-03T06:55:11+00:00"
+            "time": "2023-02-10T16:53:14+00:00"
         },
         {
             "name": "phpunit/php-invoker",
