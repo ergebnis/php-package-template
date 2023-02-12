@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4890c8008f6dfb808da196a55187f384",
+    "content-hash": "807fd9c38818955e567ed30f2db19a9a",
     "packages": [],
     "packages-dev": [
         {
@@ -1308,16 +1308,16 @@
         },
         {
             "name": "ergebnis/phpunit-slow-test-detector",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/phpunit-slow-test-detector.git",
-                "reference": "ec60e229beed61b76873573359e7be92f6d0d36b"
+                "reference": "771a054073d7d3f43cff51fa5dd86143b2c97f6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/ec60e229beed61b76873573359e7be92f6d0d36b",
-                "reference": "ec60e229beed61b76873573359e7be92f6d0d36b",
+                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/771a054073d7d3f43cff51fa5dd86143b2c97f6f",
+                "reference": "771a054073d7d3f43cff51fa5dd86143b2c97f6f",
                 "shasum": ""
             },
             "require": {
@@ -1369,7 +1369,7 @@
                 "issues": "https://github.com/ergebnis/phpunit-slow-test-detector/issues",
                 "source": "https://github.com/ergebnis/phpunit-slow-test-detector"
             },
-            "time": "2023-02-11T09:24:48+00:00"
+            "time": "2023-02-12T12:41:55+00:00"
         },
         {
             "name": "fakerphp/faker",

@@ -23,7 +23,7 @@
     "ergebnis/license": "^2.1.0",
     "ergebnis/php-cs-fixer-config": "^5.3.1",
     "ergebnis/phpstan-rules": "^1.0.0",
-    "ergebnis/phpunit-slow-test-detector": "^2.0.0",
+    "ergebnis/phpunit-slow-test-detector": "^2.1.0",
     "fakerphp/faker": "^1.21.0",
     "infection/infection": "~0.26.19",
     "phpstan/extension-installer": "^1.2.0",
