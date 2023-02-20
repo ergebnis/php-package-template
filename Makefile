@@ -27,7 +27,7 @@ mutation-tests: vendor ## Runs mutation tests with infection/infection
 	vendor/bin/infection --configuration=infection.json
 
 .PHONY: phive
-phive: .phive## Installs dependencies with phive
+phive: .phive ## Installs dependencies with phive
 	mkdir -p .build/phive
 	PHIVE_HOME=.build/phive phive install --trust-gpg-keys 0x033E5F8D801A2F8D
 
