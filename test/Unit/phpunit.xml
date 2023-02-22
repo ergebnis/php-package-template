@@ -18,6 +18,7 @@
     displayDetailsOnTestsThatTriggerNotices="true"
     displayDetailsOnTestsThatTriggerWarnings="true"
     executionOrder="random"
+    requireCoverageMetadata="true"
     stopOnError="false"
     stopOnFailure="false"
     stopOnIncomplete="false"
