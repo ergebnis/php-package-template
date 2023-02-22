@@ -26,12 +26,12 @@ final class ExampleTest extends Framework\TestCase
 {
     use Test\Util\Helper;
 
-    public function testFromNameReturnsExample(): void
+    public function testFromStringReturnsExample(): void
     {
-        $name = self::faker()->sentence();
+        $value = self::faker()->sentence();
 
-        $example = Example::fromName($name);
+        $example = Example::fromString($value);
 
-        self::assertSame($name, $example->name());
+        self::assertSame($value, $example->toString());
     }
 }

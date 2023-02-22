@@ -15,17 +15,17 @@ namespace Ergebnis\Package;
 
 final class Example
 {
-    private function __construct(private readonly string $name)
+    private function __construct(private readonly string $value)
     {
     }
 
-    public static function fromName(string $name): self
+    public static function fromString(string $value): self
     {
-        return new self($name);
+        return new self($value);
     }
 
-    public function name(): string
+    public function toString(): string
     {
-        return $this->name;
+        return $this->value;
     }
 }
