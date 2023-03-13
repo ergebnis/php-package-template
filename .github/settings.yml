@@ -76,6 +76,7 @@ repository:
   description: ":octocat: + :ledger: Provides a GitHub template repository for a PHP package, using GitHub Actions."
   enable_automated_security_fixes: true
   enable_vulnerability_alerts: true
+  has_discussions: false
   has_downloads: true
   has_issues: true
   has_pages: false
