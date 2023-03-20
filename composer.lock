@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64df6f400a7a70562f087ae5c673c5c5",
+    "content-hash": "a15619d4bd1095bcd852ef68058003ad",
     "packages": [],
     "packages-dev": [
         {
@@ -1392,16 +1392,16 @@
         },
         {
             "name": "ergebnis/phpunit-slow-test-detector",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/phpunit-slow-test-detector.git",
-                "reference": "771a054073d7d3f43cff51fa5dd86143b2c97f6f"
+                "reference": "a3077c34932fdd293fd204efbfa71748659e0315"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/771a054073d7d3f43cff51fa5dd86143b2c97f6f",
-                "reference": "771a054073d7d3f43cff51fa5dd86143b2c97f6f",
+                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/a3077c34932fdd293fd204efbfa71748659e0315",
+                "reference": "a3077c34932fdd293fd204efbfa71748659e0315",
                 "shasum": ""
             },
             "require": {
@@ -1409,14 +1409,14 @@
                 "phpunit/phpunit": "^10.0.1"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.29.0",
+                "ergebnis/composer-normalize": "^2.30.2",
                 "ergebnis/data-provider": "^1.3.0",
                 "ergebnis/license": "^2.1.0",
-                "ergebnis/php-cs-fixer-config": "^5.3.1",
+                "ergebnis/php-cs-fixer-config": "^5.3.3",
                 "fakerphp/faker": "^1.21.0",
                 "psalm/plugin-phpunit": "~0.18.4",
-                "rector/rector": "~0.15.13",
-                "vimeo/psalm": "^5.6.0"
+                "rector/rector": "~0.15.21",
+                "vimeo/psalm": "^5.8.0"
             },
             "type": "library",
             "extra": {
@@ -1453,7 +1453,7 @@
                 "issues": "https://github.com/ergebnis/phpunit-slow-test-detector/issues",
                 "source": "https://github.com/ergebnis/phpunit-slow-test-detector"
             },
-            "time": "2023-02-12T12:41:55+00:00"
+            "time": "2023-03-18T11:12:20+00:00"
         },
         {
             "name": "fakerphp/faker",
@@ -3311,16 +3311,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.0.16",
+            "version": "10.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "07d386a11ac7094032900f07cada1c8975d16607"
+                "reference": "b75eddcabca052312ae38c8a2bc69ff1a7b89b77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/07d386a11ac7094032900f07cada1c8975d16607",
-                "reference": "07d386a11ac7094032900f07cada1c8975d16607",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b75eddcabca052312ae38c8a2bc69ff1a7b89b77",
+                "reference": "b75eddcabca052312ae38c8a2bc69ff1a7b89b77",
                 "shasum": ""
             },
             "require": {
@@ -3391,7 +3391,8 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.0.16"
+                "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.0.17"
             },
             "funding": [
                 {
@@ -3407,7 +3408,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-13T09:02:40+00:00"
+            "time": "2023-03-20T14:42:33+00:00"
         },
         {
             "name": "psalm/plugin-phpunit",
