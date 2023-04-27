@@ -18,8 +18,6 @@ use Ergebnis\Package\Test;
 use PHPUnit\Framework;
 
 /**
- * @internal
- *
  * @covers \Ergebnis\Package\Example
  */
 final class ExampleTest extends Framework\TestCase
