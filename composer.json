@@ -12,7 +12,8 @@
   "homepage": "https://github.com/ergebnis/php-package-template",
   "support": {
     "issues": "https://github.com/ergebnis/php-package-template/issues",
-    "source": "https://github.com/ergebnis/php-package-template"
+    "source": "https://github.com/ergebnis/php-package-template",
+    "security": "https://github.com/ergebnis/php-package-template/.github/SECURITY.md"
   },
   "require": {
     "php": "~8.1.0 || ~8.2.0"
