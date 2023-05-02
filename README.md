@@ -38,6 +38,10 @@ Please have a look at [`CONTRIBUTING.md`](.github/CONTRIBUTING.md).
 
 Please have a look at [`CODE_OF_CONDUCT.md`](.github/CODE_OF_CONDUCT.md).
 
+## Security Policy
+
+Please have a look at [`SECURITY.md`](.github/SECURITY.md).
+
 ## License
 
 This package is licensed using the MIT License.
