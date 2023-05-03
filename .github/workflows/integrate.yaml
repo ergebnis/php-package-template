@@ -332,6 +332,21 @@ jobs:
       - name: "Validate composer.json and composer.lock"
         run: "composer validate --ansi --strict"
 
+      - name: "Determine composer cache directory"
+        uses: "ergebnis/.github/actions/composer/determine-cache-directory@1.8.0"
+
+      - name: "Cache dependencies installed with composer"
+        uses: "actions/cache@v3.3.1"
+        with:
+          path: "${{ env.COMPOSER_CACHE_DIR }}"
+          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
+          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+
+      - name: "Install ${{ matrix.dependencies }} dependencies with composer"
+        uses: "ergebnis/.github/actions/composer/install@1.8.0"
+        with:
+          dependencies: "${{ matrix.dependencies }}"
+
       - name: "Check installed packages for security vulnerability advisories"
         run: "composer audit --ansi"
 
