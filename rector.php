@@ -30,10 +30,9 @@ return static function (Config\RectorConfig $rectorConfig): void {
 
     $rectorConfig->rules([
         Php81\Rector\Property\ReadOnlyPropertyRector::class,
-        PHPUnit\Rector\ClassMethod\DataProviderAnnotationToAttributeRector::class,
     ]);
 
     $rectorConfig->sets([
-        PHPUnit\Set\PHPUnitSetList::PHPUNIT_90,
+        PHPUnit\Set\PHPUnitSetList::PHPUNIT_100,
     ]);
 };
