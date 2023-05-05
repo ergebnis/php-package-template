@@ -17,9 +17,7 @@ use Ergebnis\Package\Example;
 use Ergebnis\Package\Test;
 use PHPUnit\Framework;
 
-/**
- * @covers \Ergebnis\Package\Example
- */
+#[\PHPUnit\Framework\Attributes\CoversClass(\Ergebnis\Package\Example::class)]
 final class ExampleTest extends Framework\TestCase
 {
     use Test\Util\Helper;
