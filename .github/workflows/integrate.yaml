@@ -124,7 +124,7 @@ jobs:
         run: "composer normalize --ansi --dry-run"
 
       - name: "Create cache directory for friendsofphp/php-cs-fixer"
-        run: "mkdir -p .build/php-cs-fixer"
+        run: "mkdir -p .build/php-cs-fixer/"
 
       - name: "Cache cache directory for friendsofphp/php-cs-fixer"
         uses: "actions/cache@v3.3.1"
@@ -288,7 +288,7 @@ jobs:
           dependencies: "${{ matrix.dependencies }}"
 
       - name: "Create cache directory for rector/rector"
-        run: "mkdir -p .build/rector"
+        run: "mkdir -p .build/rector/"
 
       - name: "Cache cache directory for rector/rector"
         uses: "actions/cache@v3.3.1"
@@ -396,13 +396,13 @@ jobs:
           dependencies: "${{ matrix.dependencies }}"
 
       - name: "Create cache directory for phpstan/phpstan"
-        run: "mkdir -p .build/phpstan"
+        run: "mkdir -p .build/phpstan/"
 
       - name: "Run phpstan/phpstan"
         run: "vendor/bin/phpstan --configuration=phpstan.neon --memory-limit=-1"
 
       - name: "Create cache directory for vimeo/psalm"
-        run: "mkdir -p .build/psalm"
+        run: "mkdir -p .build/psalm/"
 
       - name: "Run vimeo/psalm"
         run: "vendor/bin/psalm --config=psalm.xml --output-format=github --shepherd --show-info=false --stats --threads=4"
