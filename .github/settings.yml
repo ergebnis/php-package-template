@@ -82,6 +82,7 @@ repository:
   has_pages: false
   has_projects: false
   has_wiki: false
+  is_template: true
   name: "php-package-template"
   private: false
 
