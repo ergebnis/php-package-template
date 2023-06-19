@@ -263,7 +263,7 @@ jobs:
         uses: "shivammathur/setup-php@2.25.4"
         with:
           coverage: "none"
-          extensions: "none, ctype, curl, dom, intl, json, mbstring, phar, simplexml, tokenizer, xml, xmlwriter"
+          extensions: "none, ctype, curl, dom, json, mbstring, phar, simplexml, tokenizer, xml, xmlwriter"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Set up problem matchers for PHP"
@@ -323,7 +323,7 @@ jobs:
         uses: "shivammathur/setup-php@2.25.4"
         with:
           coverage: "none"
-          extensions: "none, ctype, dom, json, mbstring, phar, simplexml, tokenizer, xml, xmlwriter"
+          extensions: "none, ctype, curl, dom, json, mbstring, phar, simplexml, tokenizer, xml, xmlwriter"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Set up problem matchers for PHP"
