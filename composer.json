@@ -34,7 +34,7 @@
     "phpstan/phpstan-strict-rules": "^1.5.1",
     "phpunit/phpunit": "^10.2.2",
     "psalm/plugin-phpunit": "~0.18.4",
-    "rector/rector": "~0.17.1",
+    "rector/rector": "~0.17.2",
     "vimeo/psalm": "^5.13.1"
   },
   "autoload": {
