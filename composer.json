@@ -20,7 +20,7 @@
   },
   "require-dev": {
     "ergebnis/composer-normalize": "^2.33.0",
-    "ergebnis/data-provider": "^2.0.0",
+    "ergebnis/data-provider": "^3.0.0",
     "ergebnis/license": "^2.1.0",
     "ergebnis/php-cs-fixer-config": "^5.11.0",
     "ergebnis/phpstan-rules": "^2.0.0",

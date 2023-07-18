@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e79263fbfe9f0e90893b93e6c8197f5",
+    "content-hash": "aebbcbe2c84529edf59889fc4f216db8",
     "packages": [],
     "packages-dev": [
         {
@@ -870,16 +870,16 @@
         },
         {
             "name": "ergebnis/data-provider",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/data-provider.git",
-                "reference": "932ec50f2d8e478e7d440b1db0ee61277c22e5d2"
+                "reference": "9c616133aad46755344e8241251dfa4815146402"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/data-provider/zipball/932ec50f2d8e478e7d440b1db0ee61277c22e5d2",
-                "reference": "932ec50f2d8e478e7d440b1db0ee61277c22e5d2",
+                "url": "https://api.github.com/repos/ergebnis/data-provider/zipball/9c616133aad46755344e8241251dfa4815146402",
+                "reference": "9c616133aad46755344e8241251dfa4815146402",
                 "shasum": ""
             },
             "require": {
@@ -887,15 +887,15 @@
                 "php": "~8.1.0 || ~8.2.0"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.31.0",
+                "ergebnis/composer-normalize": "^2.33.0",
                 "ergebnis/license": "^2.1.0",
-                "ergebnis/php-cs-fixer-config": "^5.9.2",
+                "ergebnis/php-cs-fixer-config": "^5.11.0",
                 "ergebnis/phpunit-slow-test-detector": "^2.3.0",
                 "infection/infection": "~0.27.0",
-                "phpunit/phpunit": "^10.2.2",
+                "phpunit/phpunit": "^10.2.5",
                 "psalm/plugin-phpunit": "~0.18.4",
-                "rector/rector": "~0.17.1",
-                "vimeo/psalm": "^5.13.0"
+                "rector/rector": "~0.17.6",
+                "vimeo/psalm": "^5.13.1"
             },
             "type": "library",
             "extra": {
@@ -929,7 +929,7 @@
                 "issues": "https://github.com/ergebnis/data-provider/issues",
                 "source": "https://github.com/ergebnis/data-provider"
             },
-            "time": "2023-06-27T11:58:55+00:00"
+            "time": "2023-07-16T20:52:08+00:00"
         },
         {
             "name": "ergebnis/json",
