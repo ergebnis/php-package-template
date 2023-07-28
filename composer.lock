@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "574fd392a064b62d61f95ccf98a95ead",
+    "content-hash": "b54ae301265edbd5b4d78700ab140e22",
     "packages": [],
     "packages-dev": [
         {
@@ -794,16 +794,16 @@
         },
         {
             "name": "ergebnis/composer-normalize",
-            "version": "2.33.0",
+            "version": "2.34.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/composer-normalize.git",
-                "reference": "23ecbe11eee14691094ad994ac3365aad46d1339"
+                "reference": "39beb6b5f1e2d923c27fe30c48c3b88582081228"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/composer-normalize/zipball/23ecbe11eee14691094ad994ac3365aad46d1339",
-                "reference": "23ecbe11eee14691094ad994ac3365aad46d1339",
+                "url": "https://api.github.com/repos/ergebnis/composer-normalize/zipball/39beb6b5f1e2d923c27fe30c48c3b88582081228",
+                "reference": "39beb6b5f1e2d923c27fe30c48c3b88582081228",
                 "shasum": ""
             },
             "require": {
@@ -819,13 +819,13 @@
             "require-dev": {
                 "composer/composer": "^2.5.8",
                 "ergebnis/license": "^2.1.0",
-                "ergebnis/php-cs-fixer-config": "^5.11.0",
+                "ergebnis/php-cs-fixer-config": "^5.12.0",
                 "ergebnis/phpunit-slow-test-detector": "^2.3.0",
                 "fakerphp/faker": "^1.23.0",
                 "infection/infection": "~0.27.0",
-                "phpunit/phpunit": "^10.2.3",
+                "phpunit/phpunit": "^10.2.6",
                 "psalm/plugin-phpunit": "~0.18.4",
-                "rector/rector": "~0.17.2",
+                "rector/rector": "~0.17.7",
                 "symfony/filesystem": "^6.0.13",
                 "vimeo/psalm": "^5.13.1"
             },
@@ -866,7 +866,7 @@
                 "security": "https://github.com/ergebnis/composer-normalize/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/composer-normalize"
             },
-            "time": "2023-07-09T16:32:12+00:00"
+            "time": "2023-07-28T06:34:54+00:00"
         },
         {
             "name": "ergebnis/data-provider",
