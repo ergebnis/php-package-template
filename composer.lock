@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae4ac4444107c53696bd8e6be38a00ba",
+    "content-hash": "aea8d3d5d4ea4df19994013a02d6dc94",
     "packages": [],
     "packages-dev": [
         {
@@ -3783,21 +3783,21 @@
         },
         {
             "name": "rector/rector",
-            "version": "0.18.0",
+            "version": "0.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "758ada29b5c80d933f906735d3026520390a2a1d"
+                "reference": "ee72ef542680a7f47ed8c6784f78b032c0d2f381"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/758ada29b5c80d933f906735d3026520390a2a1d",
-                "reference": "758ada29b5c80d933f906735d3026520390a2a1d",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/ee72ef542680a7f47ed8c6784f78b032c0d2f381",
+                "reference": "ee72ef542680a7f47ed8c6784f78b032c0d2f381",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2|^8.0",
-                "phpstan/phpstan": "^1.10.26"
+                "phpstan/phpstan": "^1.10.31"
             },
             "conflict": {
                 "rector/rector-doctrine": "*",
@@ -3827,7 +3827,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/0.18.0"
+                "source": "https://github.com/rectorphp/rector/tree/0.18.1"
             },
             "funding": [
                 {
@@ -3835,7 +3835,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-17T12:53:22+00:00"
+            "time": "2023-08-28T18:01:58+00:00"
         },
         {
             "name": "sanmai/later",
