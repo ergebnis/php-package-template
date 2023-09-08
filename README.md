@@ -48,9 +48,9 @@ You can support the maintenance of this package by [sponsoring @localheinz](http
 
 ## PHP Version Support Policy
 
-This package supports PHP versions with [active and security support](https://www.php.net/supported-versions.php).
+This package supports PHP versions with [active support](https://www.php.net/supported-versions.php).
 
-The maintainers of this package add support for a PHP version following its initial release and drop support for a PHP version when it has reached its end of life.
+The maintainers of this package add support for a PHP version following its initial release and drop support for a PHP version when it has reached its end of active support.
 
 ## Security Policy
 
