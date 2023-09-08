@@ -12,6 +12,8 @@
 [![Total Downloads](https://poser.pugx.org/ergebnis/php-package-template/downloads)](https://packagist.org/packages/ergebnis/php-package-template)
 [![Monthly Downloads](http://poser.pugx.org/ergebnis/php-package-template/d/monthly)](https://packagist.org/packages/ergebnis/php-package-template)
 
+This package provides a [GitHub repository template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) for a PHP package with [GitHub Actions](https://docs.github.com/en/actions) workflows using standard PHP development tools.
+
 ## Installation
 
 :bulb: This is a great place for showing how to install the package, see below:
@@ -28,30 +30,36 @@ composer require ergebnis/php-package-template
 
 ## Changelog
 
-Please have a look at [`CHANGELOG.md`](CHANGELOG.md).
+The maintainers of this package record notable changes to this project in a [changelog](CHANGELOG.md).
 
 ## Contributing
 
-Please have a look at [`CONTRIBUTING.md`](.github/CONTRIBUTING.md).
+The maintainers of this package suggest following the [contribution guide](.github/CONTRIBUTING.md).
 
 ## Code of Conduct
 
-Please have a look at [`CODE_OF_CONDUCT.md`](.github/CODE_OF_CONDUCT.md).
+The maintainers of this package ask contributors to follow the [code of conduct](.github/CODE_OF_CONDUCT.md).
+
+## General Support Policy
+
+The maintainers of this package provide limited support.
+
+You can support the maintenance of this package by [sponsoring @localheinz](https://github.com/sponsors/localheinz) or [requesting an invoice for services related to this package](mailto:am@localheinz.com?subject=ergebnis/php-package-template:%20Requesting%20invoice%20for%20services).
 
 ## PHP Version Support Policy
 
-This package adds support for PHP versions following their initial release and drops support for PHP versions when they have reached their end of life.
+This package supports PHP versions with [active and security support](https://www.php.net/supported-versions.php).
+
+The maintainers of this package add support for a PHP version following its initial release and drop support for a PHP version when it has reached its end of life.
 
 ## Security Policy
 
-Please have a look at [`SECURITY.md`](.github/SECURITY.md).
+This package has a [security policy](.github/SECURITY.md).
 
 ## License
 
-This package is licensed using the MIT License.
+This package uses the [MIT license](LICENSE.md).
 
-Please have a look at [`LICENSE.md`](LICENSE.md).
+## Social
 
-## Curious what I am up to?
-
-Follow me on [Twitter](https://twitter.com/intent/follow?screen_name=localheinz)!
+Follow [@localheinz](https://twitter.com/intent/follow?screen_name=localheinz) and [@ergebnis](https://twitter.com/intent/follow?screen_name=ergebnis) on Twitter.
