@@ -1,6 +1,6 @@
 {
   "name": "ergebnis/php-package-template",
-  "description": "Provides a GitHub repository template for a PHP library, using GitHub Actions.",
+  "description": "Provides a GitHub repository template for a PHP package with GitHub Actions workflows using standard PHP development tools.",
   "license": "MIT",
   "type": "library",
   "authors": [
