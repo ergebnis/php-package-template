@@ -38,6 +38,10 @@ Please have a look at [`CONTRIBUTING.md`](.github/CONTRIBUTING.md).
 
 Please have a look at [`CODE_OF_CONDUCT.md`](.github/CODE_OF_CONDUCT.md).
 
+## PHP Version Support Policy
+
+This package adds support for PHP versions following their initial release and drops support for PHP versions when they have reached their end of life.
+
 ## Security Policy
 
 Please have a look at [`SECURITY.md`](.github/SECURITY.md).
