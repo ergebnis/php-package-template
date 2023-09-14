@@ -29,7 +29,7 @@ jobs:
         uses: "actions/checkout@v4.0.0"
 
       - name: "Set up PHP"
-        uses: "shivammathur/setup-php@2.25.5"
+        uses: "shivammathur/setup-php@2.26.0"
         with:
           coverage: "xdebug"
           extensions: "none, ctype, curl, dom, json, mbstring, phar, simplexml, tokenizer, xml, xmlwriter"
@@ -97,7 +97,7 @@ jobs:
           strict: true
 
       - name: "Set up PHP"
-        uses: "shivammathur/setup-php@2.25.5"
+        uses: "shivammathur/setup-php@2.26.0"
         with:
           coverage: "none"
           extensions: "none, ctype, curl, dom, json, mbstring, phar, simplexml, tokenizer, xml, xmlwriter"
@@ -162,7 +162,7 @@ jobs:
         uses: "actions/checkout@v4.0.0"
 
       - name: "Set up PHP"
-        uses: "shivammathur/setup-php@2.25.5"
+        uses: "shivammathur/setup-php@2.26.0"
         with:
           coverage: "none"
           extensions: "none, ctype, curl, dom, json, mbstring, phar, simplexml, tokenizer, xml, xmlwriter"
@@ -218,7 +218,7 @@ jobs:
         uses: "actions/checkout@v4.0.0"
 
       - name: "Set up PHP"
-        uses: "shivammathur/setup-php@2.25.5"
+        uses: "shivammathur/setup-php@2.26.0"
         with:
           coverage: "xdebug"
           extensions: "none, ctype, curl, dom, json, mbstring, phar, simplexml, tokenizer, xml, xmlwriter"
@@ -270,7 +270,7 @@ jobs:
         uses: "actions/checkout@v4.0.0"
 
       - name: "Set up PHP"
-        uses: "shivammathur/setup-php@2.25.5"
+        uses: "shivammathur/setup-php@2.26.0"
         with:
           coverage: "none"
           extensions: "none, ctype, curl, dom, json, mbstring, phar, simplexml, tokenizer, xml, xmlwriter"
@@ -332,7 +332,7 @@ jobs:
         uses: "actions/checkout@v4.0.0"
 
       - name: "Set up PHP"
-        uses: "shivammathur/setup-php@2.25.5"
+        uses: "shivammathur/setup-php@2.26.0"
         with:
           coverage: "none"
           extensions: "none, ctype, curl, dom, json, mbstring, phar, simplexml, tokenizer, xml, xmlwriter"
@@ -382,7 +382,7 @@ jobs:
         uses: "actions/checkout@v4.0.0"
 
       - name: "Set up PHP"
-        uses: "shivammathur/setup-php@2.25.5"
+        uses: "shivammathur/setup-php@2.26.0"
         with:
           coverage: "none"
           extensions: "none, ctype, curl, dom, json, mbstring, opcache, pcntl, phar, posix, simplexml, tokenizer, xml, xmlwriter"
@@ -444,7 +444,7 @@ jobs:
         uses: "actions/checkout@v4.0.0"
 
       - name: "Set up PHP"
-        uses: "shivammathur/setup-php@2.25.5"
+        uses: "shivammathur/setup-php@2.26.0"
         with:
           coverage: "none"
           extensions: "none, ctype, curl, dom, json, mbstring, phar, simplexml, tokenizer, xml, xmlwriter"
