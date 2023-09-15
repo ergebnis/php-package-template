@@ -54,6 +54,9 @@
       "infection/extension-installer": true,
       "phpstan/extension-installer": true
     },
+    "audit": {
+      "abandoned": "report"
+    },
     "platform": {
       "php": "8.1.0"
     },
