@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3307df21de69b077bb63c35fc55bafa1",
+    "content-hash": "cd0f8c9cd6ae4bc44f44645a458208bd",
     "packages": [],
     "packages-dev": [
         {
@@ -1156,22 +1156,22 @@
         },
         {
             "name": "ergebnis/php-cs-fixer-config",
-            "version": "6.3.0",
+            "version": "6.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/php-cs-fixer-config.git",
-                "reference": "7fce65ccd7443c1dde1a39450944bdcaf6788e8d"
+                "reference": "33b77d70fa77edb3c4abd6f6169fde507fbd2813"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/php-cs-fixer-config/zipball/7fce65ccd7443c1dde1a39450944bdcaf6788e8d",
-                "reference": "7fce65ccd7443c1dde1a39450944bdcaf6788e8d",
+                "url": "https://api.github.com/repos/ergebnis/php-cs-fixer-config/zipball/33b77d70fa77edb3c4abd6f6169fde507fbd2813",
+                "reference": "33b77d70fa77edb3c4abd6f6169fde507fbd2813",
                 "shasum": ""
             },
             "require": {
                 "erickskrauch/php-cs-fixer-custom-fixers": "~1.2.0",
                 "ext-filter": "*",
-                "friendsofphp/php-cs-fixer": "~3.29.0",
+                "friendsofphp/php-cs-fixer": "~3.30.0",
                 "kubawerlos/php-cs-fixer-custom-fixers": "~3.16.2",
                 "php": "~8.1.0 || ~8.2.0"
             },
@@ -1218,7 +1218,7 @@
                 "security": "https://github.com/ergebnis/php-cs-fixer-config/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/php-cs-fixer-config"
             },
-            "time": "2023-09-26T13:52:15+00:00"
+            "time": "2023-09-27T07:19:36+00:00"
         },
         {
             "name": "ergebnis/phpstan-rules",
@@ -1654,16 +1654,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.29.0",
+            "version": "v3.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "a55c488e8bfdd9b315880095cd02fa0e49e884d8"
+                "reference": "95c64693b2f149966a2bc05a7a4981b0343ea52f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/a55c488e8bfdd9b315880095cd02fa0e49e884d8",
-                "reference": "a55c488e8bfdd9b315880095cd02fa0e49e884d8",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/95c64693b2f149966a2bc05a7a4981b0343ea52f",
+                "reference": "95c64693b2f149966a2bc05a7a4981b0343ea52f",
                 "shasum": ""
             },
             "require": {
@@ -1737,7 +1737,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.29.0"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.30.0"
             },
             "funding": [
                 {
@@ -1745,7 +1745,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-09-26T13:02:53+00:00"
+            "time": "2023-09-26T22:10:43+00:00"
         },
         {
             "name": "infection/abstract-testframework-adapter",
