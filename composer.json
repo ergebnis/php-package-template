@@ -23,7 +23,7 @@
     "ergebnis/composer-normalize": "^2.37.0",
     "ergebnis/data-provider": "^3.0.0",
     "ergebnis/license": "^2.2.0",
-    "ergebnis/php-cs-fixer-config": "^6.4.0",
+    "ergebnis/php-cs-fixer-config": "^6.6.0",
     "ergebnis/phpstan-rules": "^2.1.0",
     "ergebnis/phpunit-slow-test-detector": "^2.3.0",
     "fakerphp/faker": "^1.23.0",
