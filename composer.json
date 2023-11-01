@@ -17,7 +17,7 @@
     "security": "https://github.com/ergebnis/php-package-template/blob/main/.github/SECURITY.md"
   },
   "require": {
-    "php": "~8.1.0 || ~8.2.0"
+    "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
   },
   "require-dev": {
     "ergebnis/composer-normalize": "^2.39.0",
