@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ccebfbd65bf422d953f7084380e42c6",
+    "content-hash": "98d5947b901bf6c6b684e57388d54087",
     "packages": [],
     "packages-dev": [
         {
@@ -718,32 +718,32 @@
         },
         {
             "name": "ergebnis/data-provider",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/data-provider.git",
-                "reference": "9c616133aad46755344e8241251dfa4815146402"
+                "reference": "af9e67ac1be167f43be9315bf8bcd3240d351ae6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/data-provider/zipball/9c616133aad46755344e8241251dfa4815146402",
-                "reference": "9c616133aad46755344e8241251dfa4815146402",
+                "url": "https://api.github.com/repos/ergebnis/data-provider/zipball/af9e67ac1be167f43be9315bf8bcd3240d351ae6",
+                "reference": "af9e67ac1be167f43be9315bf8bcd3240d351ae6",
                 "shasum": ""
             },
             "require": {
                 "fakerphp/faker": "^1.21.0",
-                "php": "~8.1.0 || ~8.2.0"
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.33.0",
-                "ergebnis/license": "^2.1.0",
-                "ergebnis/php-cs-fixer-config": "^5.11.0",
-                "ergebnis/phpunit-slow-test-detector": "^2.3.0",
-                "infection/infection": "~0.27.0",
-                "phpunit/phpunit": "^10.2.5",
+                "ergebnis/composer-normalize": "^2.39.0",
+                "ergebnis/license": "^2.2.0",
+                "ergebnis/php-cs-fixer-config": "~6.11.0",
+                "ergebnis/phpunit-slow-test-detector": "^2.4.0",
+                "infection/infection": "~0.27.8",
+                "phpunit/phpunit": "^10.4.2",
                 "psalm/plugin-phpunit": "~0.18.4",
-                "rector/rector": "~0.17.6",
-                "vimeo/psalm": "^5.13.1"
+                "rector/rector": "~0.18.10",
+                "vimeo/psalm": "^5.16.0"
             },
             "type": "library",
             "extra": {
@@ -764,7 +764,8 @@
             "authors": [
                 {
                     "name": "Andreas Möller",
-                    "email": "am@localheinz.com"
+                    "email": "am@localheinz.com",
+                    "homepage": "https://localheinz.com"
                 }
             ],
             "description": "Provides generic data providers for use with phpunit/phpunit.",
@@ -777,7 +778,7 @@
                 "issues": "https://github.com/ergebnis/data-provider/issues",
                 "source": "https://github.com/ergebnis/data-provider"
             },
-            "time": "2023-07-16T20:52:08+00:00"
+            "time": "2023-11-27T14:54:42+00:00"
         },
         {
             "name": "ergebnis/json",
