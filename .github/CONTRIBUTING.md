@@ -12,9 +12,9 @@ For details, take a look at the following workflow configuration files:
 
 ## Coding Standards
 
-We are using [`ergebnis/composer-normalize`](https://github.com/ergebnis/composer-normalize) to normalize `composer.json`.
+We use [`ergebnis/composer-normalize`](https://github.com/ergebnis/composer-normalize) to normalize `composer.json`.
 
-We are using [`yamllint`](https://github.com/adrienverge/yamllint) to enforce coding standards in YAML files.
+We use [`yamllint`](https://github.com/adrienverge/yamllint) to enforce coding standards in YAML files.
 
 If you do not have `yamllint` installed yet, run
 
@@ -24,7 +24,7 @@ brew install yamllint
 
 to install `yamllint`.
 
-We are using [`friendsofphp/php-cs-fixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer) to enforce coding standards in PHP files.
+We use [`friendsofphp/php-cs-fixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer) to enforce coding standards in PHP files.
 
 Run
 
@@ -36,7 +36,7 @@ to automatically fix coding standard violations.
 
 ## Dependency Analysis
 
-We are using [`maglnet/composer-require-checker`](https://github.com/maglnet/ComposerRequireChecker) to prevent the use of unknown symbols in production code.
+We use [`maglnet/composer-require-checker`](https://github.com/maglnet/ComposerRequireChecker) to prevent the use of unknown symbols in production code.
 
 Run
 
@@ -48,7 +48,7 @@ to run a dependency analysis.
 
 ## Mutation Tests
 
-We are using [`infection/infection`](https://github.com/infection/infection) to ensure a minimum quality of the tests.
+We use [`infection/infection`](https://github.com/infection/infection) to ensure a minimum quality of the tests.
 
 Enable `Xdebug` and run
 
@@ -60,7 +60,7 @@ to run mutation tests.
 
 ## Refactoring
 
-We are using [`rector/rector`](https://github.com/rectorphp/rector) to automatically refactor code.
+We use [`rector/rector`](https://github.com/rectorphp/rector) to automatically refactor code.
 
 Run
 
@@ -72,7 +72,7 @@ to automatically refactor code.
 
 ## Security Analysis
 
-We are using [`composer`](https://github.com/composer/composer) to run a security analysis.
+We use [`composer`](https://github.com/composer/composer) to run a security analysis.
 
 Run
 
@@ -84,7 +84,7 @@ to run a security analysis.
 
 ## Static Code Analysis
 
-We are using [`phpstan/phpstan`](https://github.com/phpstan/phpstan) and [`vimeo/psalm`](https://github.com/vimeo/psalm) to statically analyze the code.
+We use [`phpstan/phpstan`](https://github.com/phpstan/phpstan) and [`vimeo/psalm`](https://github.com/vimeo/psalm) to statically analyze the code.
 
 Run
 
@@ -108,7 +108,7 @@ to regenerate the baselines in [`../phpstan-baseline.neon`](../phpstan-baseline.
 
 ## Tests
 
-We are using [`phpunit/phpunit`](https://github.com/sebastianbergmann/phpunit) to drive the development.
+We use [`phpunit/phpunit`](https://github.com/sebastianbergmann/phpunit) to drive the development.
 
 Run
 
