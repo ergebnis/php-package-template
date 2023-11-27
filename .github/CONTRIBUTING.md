@@ -1,6 +1,6 @@
 # CONTRIBUTING
 
-We are using [GitHub Actions](https://github.com/features/actions) as a continuous integration system.
+We use [GitHub Actions](https://github.com/features/actions) as a continuous integration system.
 
 For details, take a look at the following workflow configuration files:
 
@@ -94,7 +94,7 @@ make static-code-analysis
 
 to run a static code analysis.
 
-We are also using the baseline features of [`phpstan/phpstan`](https://phpstan.org/user-guide/baseline) and [`vimeo/psalm`](https://psalm.dev/docs/running_psalm/dealing_with_code_issues/#using-a-baseline-file).
+We also use the baseline features of [`phpstan/phpstan`](https://phpstan.org/user-guide/baseline) and [`vimeo/psalm`](https://psalm.dev/docs/running_psalm/dealing_with_code_issues/#using-a-baseline-file).
 
 Run
 
