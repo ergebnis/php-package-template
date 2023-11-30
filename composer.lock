@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e8108f7bbe53de7f5f4e1057016259c",
+    "content-hash": "06dce35c287e1e92dfee430818c94432",
     "packages": [],
     "packages-dev": [
         {
@@ -718,31 +718,30 @@
         },
         {
             "name": "ergebnis/data-provider",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/data-provider.git",
-                "reference": "af9e67ac1be167f43be9315bf8bcd3240d351ae6"
+                "reference": "e2b0b79b833f5a5799f2ee52ebc8e08e8d52f9eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/data-provider/zipball/af9e67ac1be167f43be9315bf8bcd3240d351ae6",
-                "reference": "af9e67ac1be167f43be9315bf8bcd3240d351ae6",
+                "url": "https://api.github.com/repos/ergebnis/data-provider/zipball/e2b0b79b833f5a5799f2ee52ebc8e08e8d52f9eb",
+                "reference": "e2b0b79b833f5a5799f2ee52ebc8e08e8d52f9eb",
                 "shasum": ""
             },
             "require": {
                 "fakerphp/faker": "^1.21.0",
-                "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
+                "php": "~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.39.0",
-                "ergebnis/license": "^2.2.0",
-                "ergebnis/php-cs-fixer-config": "~6.11.0",
-                "ergebnis/phpunit-slow-test-detector": "^2.4.0",
-                "infection/infection": "~0.27.8",
-                "phpunit/phpunit": "^10.4.2",
+                "ergebnis/composer-normalize": "^2.28.3",
+                "ergebnis/license": "^2.4.0",
+                "ergebnis/php-cs-fixer-config": "^6.13.0",
+                "infection/infection": "~0.26.6",
+                "phpunit/phpunit": "^9.6.13",
                 "psalm/plugin-phpunit": "~0.18.4",
-                "rector/rector": "~0.18.10",
+                "rector/rector": "~0.18.11",
                 "vimeo/psalm": "^5.16.0"
             },
             "type": "library",
@@ -778,7 +777,7 @@
                 "issues": "https://github.com/ergebnis/data-provider/issues",
                 "source": "https://github.com/ergebnis/data-provider"
             },
-            "time": "2023-11-27T14:54:42+00:00"
+            "time": "2023-11-30T17:30:28+00:00"
         },
         {
             "name": "ergebnis/json",
