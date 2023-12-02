@@ -16,7 +16,7 @@ This project provides a [GitHub repository template](https://docs.github.com/en/
 
 ## Installation
 
-:bulb: This is a great place for showing how to install the package, see below:
+💡 This is a great place for showing how to install the package, see below:
 
 Run
 
@@ -26,7 +26,7 @@ composer require ergebnis/php-package-template
 
 ## Usage
 
-:bulb: This is a great place for showing a few usage examples!
+💡 This is a great place for showing a few usage examples!
 
 ## Changelog
 
