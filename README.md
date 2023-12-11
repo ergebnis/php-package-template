@@ -50,7 +50,7 @@ You can support the maintenance of this project by [sponsoring @localheinz](http
 
 This project supports PHP versions with [active and security support](https://www.php.net/supported-versions.php).
 
-The maintainers of this project add support for a PHP version following its initial release and drop support for a PHP version when it has reached its end of security support.
+The maintainers of this project add support for a PHP version following its initial release and drop support for a PHP version when it has reached the end of security support.
 
 ## Security Policy
 
