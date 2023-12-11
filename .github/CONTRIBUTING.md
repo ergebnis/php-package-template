@@ -10,6 +10,18 @@ For details, take a look at the following workflow configuration files:
 - [`workflows/renew.yaml`](workflows/renew.yaml)
 - [`workflows/triage.yaml`](workflows/triage.yaml)
 
+## Backward-compatibility Analysis
+
+We use [`roave/backward-compatibility-check`](https://github.com/Roave/BackwardCompatibilityCheck) to prevent breaking backwards-compatibility.
+
+Run
+
+```sh
+make backward-compatibility-analysis
+```
+
+to run a backward-compatibility analysis.
+
 ## Coding Standards
 
 We use [`ergebnis/composer-normalize`](https://github.com/ergebnis/composer-normalize) to normalize `composer.json`.
