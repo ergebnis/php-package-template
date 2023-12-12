@@ -12,7 +12,7 @@
 [![Total Downloads](https://poser.pugx.org/ergebnis/php-package-template/downloads)](https://packagist.org/packages/ergebnis/php-package-template)
 [![Monthly Downloads](http://poser.pugx.org/ergebnis/php-package-template/d/monthly)](https://packagist.org/packages/ergebnis/php-package-template)
 
-This project provides a [GitHub repository template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) for a PHP package with [GitHub Actions](https://docs.github.com/en/actions) workflows using standard PHP development tools.
+This project provides a [GitHub repository template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) for a [`composer`](https://getcomposer.org) package with [GitHub Actions](https://docs.github.com/en/actions) workflows using standard PHP development tools.
 
 ## Installation
 
