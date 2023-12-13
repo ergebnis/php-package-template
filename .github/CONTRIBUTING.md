@@ -10,7 +10,7 @@ For details, take a look at the following workflow configuration files:
 - [`workflows/renew.yaml`](workflows/renew.yaml)
 - [`workflows/triage.yaml`](workflows/triage.yaml)
 
-## Backward-compatibility Analysis
+## Backward-Compatibility Analysis
 
 We use [`roave/backward-compatibility-check`](https://github.com/Roave/BackwardCompatibilityCheck) to prevent breaking backwards-compatibility.
 
