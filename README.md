@@ -16,8 +16,6 @@ This project provides a [GitHub repository template](https://docs.github.com/en/
 
 ## Installation
 
-💡 This is a great place for showing how to install the package, see below:
-
 Run
 
 ```sh
