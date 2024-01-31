@@ -21,8 +21,5 @@
         <directory name="test/" />
         <file name=".php-cs-fixer.php" />
         <file name="rector.php" />
-        <ignoreFiles>
-            <directory name="vendor/" />
-        </ignoreFiles>
     </projectFiles>
 </psalm>
