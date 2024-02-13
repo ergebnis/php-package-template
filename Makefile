@@ -6,7 +6,7 @@ backward-compatibility-analysis: vendor ## Runs a backward-compatibility analysi
 	vendor/bin/roave-backward-compatibility-check --from=1902cc2
 
 .PHONY: code-coverage
-code-coverage: vendor ## Collects coverage from running unit tests with phpunit/phpunit
+code-coverage: vendor ## Collects code coverage from running unit tests with phpunit/phpunit
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-text
 
 .PHONY: coding-standards
