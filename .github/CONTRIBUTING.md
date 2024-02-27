@@ -1,4 +1,4 @@
-# CONTRIBUTING
+# Contributing
 
 We use [GitHub Actions](https://github.com/features/actions) as a continuous integration system.
 
