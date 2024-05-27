@@ -2,8 +2,6 @@ includes:
 	- phpstan-baseline.neon
 
 parameters:
-	checkMissingIterableValueType: false
-
 	inferPrivatePropertyTypeFromConstructor: true
 
 	level: max
