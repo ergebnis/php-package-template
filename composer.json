@@ -29,7 +29,7 @@
     "fakerphp/faker": "^1.23.1",
     "infection/infection": "~0.27.11",
     "phpstan/extension-installer": "^1.4.1",
-    "phpstan/phpstan": "^1.11.4",
+    "phpstan/phpstan": "^1.11.5",
     "phpstan/phpstan-deprecation-rules": "^1.2.0",
     "phpstan/phpstan-phpunit": "^1.4.0",
     "phpstan/phpstan-strict-rules": "^1.6.0",
