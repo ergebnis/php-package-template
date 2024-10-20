@@ -458,9 +458,6 @@ jobs:
       - name: "Run phpstan/phpstan"
         run: "vendor/bin/phpstan --ansi --configuration=phpstan.neon --memory-limit=-1"
 
-      - name: "Run vimeo/psalm"
-        run: "vendor/bin/psalm --config=psalm.xml --output-format=github --shepherd --show-info=false --stats --threads=4"
-
   tests:
     name: "Tests"
 
