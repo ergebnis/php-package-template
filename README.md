@@ -6,7 +6,6 @@
 [![Renew](https://github.com/ergebnis/php-package-template/workflows/Renew/badge.svg)](https://github.com/ergebnis/php-package-template/actions)
 
 [![Code Coverage](https://codecov.io/gh/ergebnis/php-package-template/branch/main/graph/badge.svg)](https://codecov.io/gh/ergebnis/php-package-template)
-[![Type Coverage](https://shepherd.dev/github/ergebnis/php-package-template/coverage.svg)](https://shepherd.dev/github/ergebnis/php-package-template)
 
 [![Latest Stable Version](https://poser.pugx.org/ergebnis/php-package-template/v/stable)](https://packagist.org/packages/ergebnis/php-package-template)
 [![Total Downloads](https://poser.pugx.org/ergebnis/php-package-template/downloads)](https://packagist.org/packages/ergebnis/php-package-template)
