@@ -26,7 +26,7 @@
     "ergebnis/php-cs-fixer-config": "^6.37.0",
     "ergebnis/phpstan-rules": "^2.2.0",
     "ergebnis/phpunit-slow-test-detector": "^2.16.1",
-    "fakerphp/faker": "^1.23.1",
+    "fakerphp/faker": "^1.24.0",
     "infection/infection": "~0.27.11",
     "phpstan/extension-installer": "^1.4.3",
     "phpstan/phpstan": "^1.12.8",
