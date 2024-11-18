@@ -510,6 +510,7 @@ jobs:
           restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
 
       - name: "Remove incompatible dependencies with composer"
+        if: "matrix.dependencies != 'locked'"
         run: "composer remove roave/backward-compatibility-check --ansi --dev --no-interaction --no-progress"
 
       - name: "Remove platform configuration with composer"
