@@ -13,3 +13,5 @@ parameters:
 		- rector.php
 
 	tmpDir: .build/phpstan/
+
+	treatPhpDocTypesAsCertain: false
