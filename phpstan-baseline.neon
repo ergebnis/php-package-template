@@ -1,7 +1,3 @@
 parameters:
-	ignoreErrors:
-		-
-			message: "#^Method Ergebnis\\\\Package\\\\Test\\\\Unit\\\\ExampleTest\\:\\:faker\\(\\) is protected, but since the containing class is final, it can be private\\.$#"
-			count: 1
-			path: test/Unit/ExampleTest.php
+	ignoreErrors: []
 
