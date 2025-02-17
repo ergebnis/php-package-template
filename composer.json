@@ -24,7 +24,7 @@
     "ergebnis/data-provider": "^3.4.0",
     "ergebnis/license": "^2.6.0",
     "ergebnis/php-cs-fixer-config": "^6.42.2",
-    "ergebnis/phpstan-rules": "^2.6.1",
+    "ergebnis/phpstan-rules": "^2.7.0",
     "ergebnis/phpunit-slow-test-detector": "^2.18.0",
     "fakerphp/faker": "^1.24.1",
     "infection/infection": "~0.27.11",
