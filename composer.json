@@ -20,7 +20,7 @@
     "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
   },
   "require-dev": {
-    "ergebnis/composer-normalize": "^2.45.0",
+    "ergebnis/composer-normalize": "^2.46.0",
     "ergebnis/data-provider": "^3.4.0",
     "ergebnis/license": "^2.6.0",
     "ergebnis/php-cs-fixer-config": "^6.45.0",
