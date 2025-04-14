@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "418cac467de93c3bcbd3db7845de9381",
+    "content-hash": "d759bf4cf6cdba8881092a57fb7aed48",
     "packages": [],
     "packages-dev": [
         {
@@ -1676,16 +1676,16 @@
         },
         {
             "name": "ergebnis/phpunit-slow-test-detector",
-            "version": "2.19.0",
+            "version": "2.19.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/phpunit-slow-test-detector.git",
-                "reference": "2f66ad7fcc468a5db03592a0c73a930e0c0eccce"
+                "reference": "9e37104430a812e7573048c0abfb9452358272bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/2f66ad7fcc468a5db03592a0c73a930e0c0eccce",
-                "reference": "2f66ad7fcc468a5db03592a0c73a930e0c0eccce",
+                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/9e37104430a812e7573048c0abfb9452358272bb",
+                "reference": "9e37104430a812e7573048c0abfb9452358272bb",
                 "shasum": ""
             },
             "require": {
@@ -1693,9 +1693,9 @@
                 "phpunit/phpunit": "^6.5.0 || ^7.5.0 || ^8.5.19 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.45.0",
+                "ergebnis/composer-normalize": "^2.46.0",
                 "ergebnis/license": "^2.6.0",
-                "ergebnis/php-cs-fixer-config": "^6.43.1",
+                "ergebnis/php-cs-fixer-config": "^6.46.0",
                 "fakerphp/faker": "~1.20.0",
                 "phpstan/extension-installer": "^1.4.3",
                 "phpstan/phpstan": "^1.12.11",
@@ -1745,7 +1745,7 @@
                 "security": "https://github.com/ergebnis/phpunit-slow-test-detector/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/phpunit-slow-test-detector"
             },
-            "time": "2025-02-23T15:25:48+00:00"
+            "time": "2025-04-11T09:18:34+00:00"
         },
         {
             "name": "erickskrauch/php-cs-fixer-custom-fixers",
