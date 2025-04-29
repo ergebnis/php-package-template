@@ -34,7 +34,7 @@
     "phpstan/phpstan-phpunit": "^2.0.6",
     "phpstan/phpstan-strict-rules": "^2.0.4",
     "phpunit/phpunit": "^10.5.27",
-    "rector/rector": "^2.0.11",
+    "rector/rector": "^2.0.14",
     "roave/backward-compatibility-check": "^8.6.0",
     "tomasvotruba/type-coverage": "^2.0.2"
   },
