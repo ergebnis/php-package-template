@@ -41,12 +41,10 @@ security-analysis: vendor ## Runs a security analysis with composer
 
 .PHONY: static-code-analysis
 static-code-analysis: vendor ## Runs a static code analysis with phpstan/phpstan
-	vendor/bin/phpstan clear-result-cache --configuration=phpstan.neon
 	vendor/bin/phpstan --configuration=phpstan.neon --memory-limit=-1
 
 .PHONY: static-code-analysis-baseline
 static-code-analysis-baseline: vendor ## Generates a baseline for static code analysis with phpstan/phpstan
-	vendor/bin/phpstan clear-result-cache --configuration=phpstan.neon
 	vendor/bin/phpstan --allow-empty-baseline --configuration=phpstan.neon --generate-baseline=phpstan-baseline.neon --memory-limit=-1
 
 .PHONY: tests
