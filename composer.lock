@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a19f14c91d3c17f52e9263b7e98ddb01",
+    "content-hash": "65372449de6a2783dc4ef219443414f1",
     "packages": [],
     "packages-dev": [
         {
@@ -1026,16 +1026,16 @@
         },
         {
             "name": "ergebnis/data-provider",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/data-provider.git",
-                "reference": "68c074d4fe0e26821ca83014c354dd85ae473a99"
+                "reference": "db11d3e1e571b879e59e03b68376d29f0630dada"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/data-provider/zipball/68c074d4fe0e26821ca83014c354dd85ae473a99",
-                "reference": "68c074d4fe0e26821ca83014c354dd85ae473a99",
+                "url": "https://api.github.com/repos/ergebnis/data-provider/zipball/db11d3e1e571b879e59e03b68376d29f0630dada",
+                "reference": "db11d3e1e571b879e59e03b68376d29f0630dada",
                 "shasum": ""
             },
             "require": {
@@ -1043,10 +1043,10 @@
                 "php": "~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.47.0",
-                "ergebnis/license": "^2.6.0",
-                "ergebnis/php-cs-fixer-config": "^6.52.0",
-                "ergebnis/phpunit-slow-test-detector": "^2.19.1",
+                "ergebnis/composer-normalize": "^2.48.1",
+                "ergebnis/license": "^2.7.0",
+                "ergebnis/php-cs-fixer-config": "^6.53.0",
+                "ergebnis/phpunit-slow-test-detector": "^2.20.0",
                 "infection/infection": "~0.26.6",
                 "phpstan/extension-installer": "^1.4.3",
                 "phpstan/phpstan": "^1.12.10",
@@ -1092,7 +1092,7 @@
                 "issues": "https://github.com/ergebnis/data-provider/issues",
                 "source": "https://github.com/ergebnis/data-provider"
             },
-            "time": "2025-08-19T10:57:21+00:00"
+            "time": "2025-09-01T20:26:53+00:00"
         },
         {
             "name": "ergebnis/json",
