@@ -36,7 +36,7 @@
     "phpunit/phpunit": "^10.5.45",
     "rector/rector": "^2.2.3",
     "roave/backward-compatibility-check": "^8.6.0",
-    "tomasvotruba/type-coverage": "^2.0.2"
+    "tomasvotruba/type-coverage": "^2.1.0"
   },
   "autoload": {
     "psr-4": {
