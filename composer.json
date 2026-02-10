@@ -36,7 +36,6 @@
     "phpstan/phpstan-strict-rules": "^2.0.7",
     "phpunit/phpunit": "^10.5.45",
     "rector/rector": "^2.3.0",
-    "roave/backward-compatibility-check": "^8.6.0",
     "tomasvotruba/type-coverage": "^2.1.0"
   },
   "autoload": {
