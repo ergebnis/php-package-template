@@ -15,10 +15,3 @@ parameters:
 	tmpDir: .build/phpstan/
 
 	treatPhpDocTypesAsCertain: false
-
-	# https://github.com/TomasVotruba/type-coverage
-	type_coverage:
-		declare: 100
-		param: 100
-		property: 100
-		return: 100
