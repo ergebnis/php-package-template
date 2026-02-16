@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "883c266d6fe8f26d2111070bb6b0f4fc",
+    "content-hash": "bf0fa95af29338356439736bab30c91a",
     "packages": [],
     "packages-dev": [
         {
@@ -2554,16 +2554,16 @@
         },
         {
             "name": "phpstan/phpstan-phpunit",
-            "version": "2.0.14",
+            "version": "2.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-phpunit.git",
-                "reference": "f7553d6c613878d04f7e7ef129d4607118cd7cd4"
+                "reference": "6ab598e1bc106e6827fd346ae4a12b4a5d634c32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/f7553d6c613878d04f7e7ef129d4607118cd7cd4",
-                "reference": "f7553d6c613878d04f7e7ef129d4607118cd7cd4",
+                "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/6ab598e1bc106e6827fd346ae4a12b4a5d634c32",
+                "reference": "6ab598e1bc106e6827fd346ae4a12b4a5d634c32",
                 "shasum": ""
             },
             "require": {
@@ -2604,9 +2604,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-phpunit/issues",
-                "source": "https://github.com/phpstan/phpstan-phpunit/tree/2.0.14"
+                "source": "https://github.com/phpstan/phpstan-phpunit/tree/2.0.16"
             },
-            "time": "2026-02-10T11:57:48+00:00"
+            "time": "2026-02-14T09:05:21+00:00"
         },
         {
             "name": "phpstan/phpstan-strict-rules",
