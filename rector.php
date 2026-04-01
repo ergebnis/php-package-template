@@ -36,6 +36,9 @@ return static function (Config\RectorConfig $rectorConfig): void {
 
     $rectorConfig->ruleWithConfiguration(Rector\Rules\Files\ReferenceNamespacedSymbolsRelativeToNamespacePrefixRector::class, [
         'discoverNamespacePrefixes' => true,
+        'parentNamespacePrefixes' => [
+            'Ergebnis\Package',
+        ],
     ]);
 
     $rectorConfig->sets([
