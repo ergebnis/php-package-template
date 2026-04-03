@@ -130,7 +130,7 @@ to automatically refactor code, enforce coding standards, run a static code anal
 
 ## Help
 
-:bulb: Run
+💡 Run
 
 ```sh
 make help
