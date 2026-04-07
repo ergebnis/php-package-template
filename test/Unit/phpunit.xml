@@ -27,6 +27,7 @@
     <coverage includeUncoveredFiles="true"/>
     <extensions>
         <bootstrap class="Ergebnis\PHPUnit\SlowTestDetector\Extension"/>
+        <bootstrap class="Ergebnis\PHPUnit\AgentReporter\Extension"/>
     </extensions>
     <source>
         <include>
