@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4c608f1a38e81a02bfba1968a2b5b64",
+    "content-hash": "904da01c346dc2e7f7eb12d2414fe3c5",
     "packages": [],
     "packages-dev": [
         {
@@ -1137,16 +1137,16 @@
         },
         {
             "name": "ergebnis/phpunit-agent-reporter",
-            "version": "0.1.0",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/phpunit-agent-reporter.git",
-                "reference": "eaf114cde6c1612d5d432b5682ec411a3bbba274"
+                "reference": "d0832ab43bd149ff4176007656ea2def44170c41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/phpunit-agent-reporter/zipball/eaf114cde6c1612d5d432b5682ec411a3bbba274",
-                "reference": "eaf114cde6c1612d5d432b5682ec411a3bbba274",
+                "url": "https://api.github.com/repos/ergebnis/phpunit-agent-reporter/zipball/d0832ab43bd149ff4176007656ea2def44170c41",
+                "reference": "d0832ab43bd149ff4176007656ea2def44170c41",
                 "shasum": ""
             },
             "require": {
@@ -1155,7 +1155,6 @@
             },
             "require-dev": {
                 "ergebnis/composer-normalize": "^2.50.0",
-                "ergebnis/data-provider": "^3.6.0",
                 "ergebnis/license": "^2.7.0",
                 "ergebnis/php-cs-fixer-config": "^6.60.2",
                 "ergebnis/phpstan-rules": "^2.13.1",
@@ -1202,7 +1201,7 @@
                 "security": "https://github.com/ergebnis/phpunit-agent-reporter/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/phpunit-agent-reporter"
             },
-            "time": "2026-04-07T11:24:33+00:00"
+            "time": "2026-04-07T13:42:40+00:00"
         },
         {
             "name": "ergebnis/phpunit-slow-test-detector",
