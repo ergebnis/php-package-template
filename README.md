@@ -43,9 +43,15 @@ The maintainers of this project provide limited support.
 
 ## PHP Version Support Policy
 
-This project supports PHP versions with [active and security support](https://www.php.net/supported-versions.php).
+This project currently supports the following PHP versions:
 
-The maintainers of this project add support for a PHP version following its initial release and drop support for a PHP version when it has reached the end of security support.
+- [PHP 8.1](https://www.php.net/releases/#8.1.0) (has reached its end of life on December 31, 2025)
+- [PHP 8.2](https://www.php.net/releases/#8.2.0)
+- [PHP 8.3](https://www.php.net/releases/#8.3.0)
+- [PHP 8.4](https://www.php.net/releases/#8.4.0)
+- [PHP 8.5](https://www.php.net/releases/#8.5.0)
+
+The maintainers of this project add support for a PHP version following its initial release and _may_ drop support for a PHP version when it has reached its [end of life](https://www.php.net/supported-versions.php).
 
 ## Security Policy
 
