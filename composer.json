@@ -27,7 +27,7 @@
     "ergebnis/phpstan-rules": "^2.13.1",
     "ergebnis/phpunit-agent-reporter": "~0.3.0",
     "ergebnis/phpunit-slow-test-detector": "^2.24.0",
-    "ergebnis/rector-rules": "^1.18.0",
+    "ergebnis/rector-rules": "^1.18.1",
     "fakerphp/faker": "^1.24.1",
     "infection/infection": "~0.27.11",
     "phpstan/extension-installer": "^1.4.3",
