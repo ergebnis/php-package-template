@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "34e7f59ed7a38da107c7638247b6d0c9",
+    "content-hash": "f5a60e94ff20a19b7580207932641807",
     "packages": [],
     "packages-dev": [
         {
@@ -1208,16 +1208,16 @@
         },
         {
             "name": "ergebnis/phpunit-agent-reporter",
-            "version": "0.3.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/phpunit-agent-reporter.git",
-                "reference": "71c97075bed1279c26f708bf17f4d502d0168bcd"
+                "reference": "d445ca69f20d84b62323d102b274e52f97d0ba05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/phpunit-agent-reporter/zipball/71c97075bed1279c26f708bf17f4d502d0168bcd",
-                "reference": "71c97075bed1279c26f708bf17f4d502d0168bcd",
+                "url": "https://api.github.com/repos/ergebnis/phpunit-agent-reporter/zipball/d445ca69f20d84b62323d102b274e52f97d0ba05",
+                "reference": "d445ca69f20d84b62323d102b274e52f97d0ba05",
                 "shasum": ""
             },
             "require": {
@@ -1226,19 +1226,19 @@
                 "phpunit/phpunit": "^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.50.0",
+                "ergebnis/composer-normalize": "^2.52.0",
                 "ergebnis/license": "^2.7.0",
-                "ergebnis/php-cs-fixer-config": "^6.60.2",
+                "ergebnis/php-cs-fixer-config": "^6.62.1",
                 "ergebnis/phpstan-rules": "^2.13.1",
-                "ergebnis/rector-rules": "^1.16.0",
+                "ergebnis/rector-rules": "^1.18.1",
                 "fakerphp/faker": "^1.24.1",
                 "infection/infection": "~0.27.11",
                 "justinrainbow/json-schema": "^5.0.0 || ^6.0.0",
-                "phpstan/phpstan": "^2.1.46",
+                "phpstan/phpstan": "^2.2.2",
                 "phpstan/phpstan-deprecation-rules": "^2.0.4",
                 "phpstan/phpstan-phpunit": "^2.0.16",
-                "phpstan/phpstan-strict-rules": "^2.0.10",
-                "rector/rector": "^2.4.1"
+                "phpstan/phpstan-strict-rules": "^2.0.11",
+                "rector/rector": "^2.4.5"
             },
             "type": "library",
             "extra": {
@@ -1273,7 +1273,7 @@
                 "security": "https://github.com/ergebnis/phpunit-agent-reporter/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/phpunit-agent-reporter"
             },
-            "time": "2026-04-09T08:34:19+00:00"
+            "time": "2026-06-22T15:44:43+00:00"
         },
         {
             "name": "ergebnis/phpunit-slow-test-detector",
