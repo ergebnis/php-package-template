@@ -31,11 +31,11 @@
     "fakerphp/faker": "^1.24.1",
     "infection/infection": "~0.27.11",
     "phpstan/extension-installer": "^1.4.3",
-    "phpstan/phpstan": "^2.2.2",
+    "phpstan/phpstan": "^2.2.13",
     "phpstan/phpstan-deprecation-rules": "^2.0.5",
     "phpstan/phpstan-phpunit": "^2.0.18",
     "phpstan/phpstan-strict-rules": "^2.0.12",
-    "phpunit/phpunit": "^10.5.62",
+    "phpunit/phpunit": "^10.5.64",
     "rector/rector": "^2.6.6"
   },
   "autoload": {
