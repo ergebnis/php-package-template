@@ -31,23 +31,23 @@ jobs:
 
     steps:
       - name: "Request review from @ergebnis-bot"
-        uses: "ergebnis/.github/actions/github/pull-request/request-review@fa753ba19f89b4923380b19dfcd80ad7eca4def9" # 1.13.0
+        uses: "ergebnis/.github/actions/github/pull-request/request-review@f5048b197f24b30496f4989821523d688959fbc3" # 1.13.1
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
           reviewer: "ergebnis-bot"
 
       - name: "Assign @ergebnis-bot"
-        uses: "ergebnis/.github/actions/github/pull-request/add-assignee@fa753ba19f89b4923380b19dfcd80ad7eca4def9" # 1.13.0
+        uses: "ergebnis/.github/actions/github/pull-request/add-assignee@f5048b197f24b30496f4989821523d688959fbc3" # 1.13.1
         with:
           assignee: "ergebnis-bot"
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
 
       - name: "Approve pull request"
-        uses: "ergebnis/.github/actions/github/pull-request/approve@fa753ba19f89b4923380b19dfcd80ad7eca4def9" # 1.13.0
+        uses: "ergebnis/.github/actions/github/pull-request/approve@f5048b197f24b30496f4989821523d688959fbc3" # 1.13.1
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
 
       - name: "Merge pull request"
-        uses: "ergebnis/.github/actions/github/pull-request/merge@fa753ba19f89b4923380b19dfcd80ad7eca4def9" # 1.13.0
+        uses: "ergebnis/.github/actions/github/pull-request/merge@f5048b197f24b30496f4989821523d688959fbc3" # 1.13.1
         with:
           github-token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
