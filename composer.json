@@ -22,7 +22,7 @@
   "require-dev": {
     "ergebnis/composer-normalize": "^2.54.0",
     "ergebnis/data-provider": "^3.6.0",
-    "ergebnis/license": "^2.7.0",
+    "ergebnis/license": "^2.8.0",
     "ergebnis/php-cs-fixer-config": "^6.63.3",
     "ergebnis/phpstan-rules": "^2.13.1",
     "ergebnis/phpunit-agent-reporter": "^1.2.0",
