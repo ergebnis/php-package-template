@@ -6,7 +6,8 @@ code-coverage: vendor ## Collects code coverage from running unit tests with php
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-text
 
 .PHONY: coding-standards
-coding-standards: vendor ## Lints YAML files with yamllint, normalizes composer.json with ergebnis/composer-normalize, and fixes code style issues with friendsofphp/php-cs-fixer
+coding-standards: vendor ## Enforces .editorconfig with editorconfig-checker, lints YAML files with yamllint, normalizes composer.json with ergebnis/composer-normalize, and fixes code style issues with friendsofphp/php-cs-fixer
+	editorconfig-checker
 	yamllint -c .yamllint.yaml --strict .
 	composer normalize
 	vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --show-progress=dots --verbose

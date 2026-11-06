@@ -12,6 +12,16 @@ For details, take a look at the following workflow configuration files:
 
 ## Coding Standards
 
+We use [`editorconfig-checker`](https://github.com/editorconfig-checker/editorconfig-checker) to enforce the settings in [`.editorconfig`](../.editorconfig) in all files.
+
+If you do not have `editorconfig-checker` installed yet, run
+
+```sh
+brew install editorconfig-checker
+```
+
+to install `editorconfig-checker`.
+
 We use [`ergebnis/composer-normalize`](https://github.com/ergebnis/composer-normalize) to normalize `composer.json`.
 
 We use [`yamllint`](https://github.com/adrienverge/yamllint) to enforce coding standards in YAML files.
