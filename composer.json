@@ -24,7 +24,7 @@
     "ergebnis/data-provider": "^3.7.1",
     "ergebnis/license": "^2.9.0",
     "ergebnis/php-cs-fixer-config": "^6.64.1",
-    "ergebnis/phpstan-rules": "^2.17.0",
+    "ergebnis/phpstan-rules": "^2.17.1",
     "ergebnis/phpunit-agent-reporter": "^1.3.0",
     "ergebnis/phpunit-slow-test-detector": "^2.27.0",
     "ergebnis/rector-rules": "^1.19.0",
