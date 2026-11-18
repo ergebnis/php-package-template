@@ -101,6 +101,12 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: "Install editorconfig-checker"
+        uses: "editorconfig-checker/action-editorconfig-checker@51f63319f592f97930c73d9c46184d20bd206393" # v3.0.0
+
+      - name: "Enforce .editorconfig with editorconfig-checker"
+        run: "editorconfig-checker"
+
       - name: "Lint YAML files"
         uses: "ibiqlik/action-yamllint@2576378a8e339169678f9939646ee3ee325e845c" # v3.1.1
         with:
