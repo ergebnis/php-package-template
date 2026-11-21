@@ -22,3 +22,6 @@ indent_size = 2
 
 [Makefile]
 indent_style = tab
+
+[.github/{ISSUE_TEMPLATE,PULL_REQUEST_TEMPLATE}.md]
+trim_trailing_whitespace = false
