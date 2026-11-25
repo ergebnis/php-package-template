@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "969bf7a9ae7c9b32ff12e9d2c1f502f6",
+    "content-hash": "da4d6bbbc7517f7ab2bf7adf85d1ae7d",
     "packages": [],
     "packages-dev": [
         {
@@ -2772,21 +2772,21 @@
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
-            "version": "2.0.5",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-deprecation-rules.git",
-                "reference": "67bedd65c24bc72840afc45aed48b1059dd44bec"
+                "reference": "bcb050f0a5c923798ff408926ec5f9b9b59faafc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-deprecation-rules/zipball/67bedd65c24bc72840afc45aed48b1059dd44bec",
-                "reference": "67bedd65c24bc72840afc45aed48b1059dd44bec",
+                "url": "https://api.github.com/repos/phpstan/phpstan-deprecation-rules/zipball/bcb050f0a5c923798ff408926ec5f9b9b59faafc",
+                "reference": "bcb050f0a5c923798ff408926ec5f9b9b59faafc",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4 || ^8.0",
-                "phpstan/phpstan": "^2.1.39"
+                "phpstan/phpstan": "^2.3.6"
             },
             "require-dev": {
                 "php-parallel-lint/php-parallel-lint": "^1.2",
@@ -2817,9 +2817,9 @@
             ],
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-deprecation-rules/issues",
-                "source": "https://github.com/phpstan/phpstan-deprecation-rules/tree/2.0.5"
+                "source": "https://github.com/phpstan/phpstan-deprecation-rules/tree/2.0.6"
             },
-            "time": "2026-07-22T06:50:43+00:00"
+            "time": "2026-11-23T08:55:59+00:00"
         },
         {
             "name": "phpstan/phpstan-phpunit",
