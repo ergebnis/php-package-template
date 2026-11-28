@@ -12,40 +12,14 @@ declare(strict_types=1);
  */
 
 use Ergebnis\Rector;
-use Rector\Config;
-use Rector\Php81;
-use Rector\PHPUnit;
-use Rector\ValueObject;
 
-return static function (Config\RectorConfig $rectorConfig): void {
-    $rectorConfig->cacheDirectory(__DIR__ . '/.build/rector/');
+$ruleSet = Rector\Config\RuleSet\Php81::create();
 
-    $rectorConfig->paths([
+return Rector\Config\Factory::fromRuleSet($ruleSet)
+    ->withCache(__DIR__ . '/.build/rector/')
+    ->withPaths([
         __DIR__ . '/src/',
         __DIR__ . '/test/',
         __DIR__ . '/.php-cs-fixer.php',
         __DIR__ . '/rector.php',
     ]);
-
-    $rectorConfig->phpVersion(ValueObject\PhpVersion::PHP_81);
-
-    $rectorConfig->rules([
-        Php81\Rector\Property\ReadOnlyPropertyRector::class,
-        Rector\Rules\Expressions\Arrays\SortAssociativeArrayByKeyRector::class,
-        Rector\Rules\Expressions\CallLikes\RemoveNamedArgumentForSingleParameterRector::class,
-        Rector\Rules\Expressions\Matches\SortMatchArmsByConditionalRector::class,
-        Rector\Rules\Faker\GeneratorPropertyFetchToMethodCallRector::class,
-        Rector\Rules\PHPUnit\ReplaceTestAttributeWithTestPrefixRector::class,
-    ]);
-
-    $rectorConfig->ruleWithConfiguration(Rector\Rules\Files\ReferenceNamespacedSymbolsRelativeToNamespacePrefixRector::class, [
-        'discoverNamespacePrefixes' => true,
-        'parentNamespacePrefixes' => [
-            'Ergebnis\Package',
-        ],
-    ]);
-
-    $rectorConfig->sets([
-        PHPUnit\Set\PHPUnitSetList::COMPOSER_BASED,
-    ]);
-};
